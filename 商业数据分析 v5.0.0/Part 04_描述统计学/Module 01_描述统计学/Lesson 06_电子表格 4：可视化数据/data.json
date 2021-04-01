@@ -1,0 +1,1301 @@
+{
+  "data": {
+    "lesson": {
+      "id": 390484,
+      "key": "a5450c84-d583-4c69-9f33-b11aeacc53ee",
+      "title": "电子表格 4：可视化数据",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "在这节课中，你将学习使用电子表格以专业的方式展示数据：图表、直方图、箱线图和数据格式。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/a5450c84-d583-4c69-9f33-b11aeacc53ee/390484/1544256017125/%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC+4%EF%BC%9A%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%B0%E6%8D%AE+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/a5450c84-d583-4c69-9f33-b11aeacc53ee/390484/1544256012506/%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC+4%EF%BC%9A%E5%8F%AF%E8%A7%86%E5%8C%96%E6%95%B0%E6%8D%AE+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 390459,
+          "key": "37b36c47-8c1c-41bc-8ad1-1d68cda589a7",
+          "title": "简介",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "37b36c47-8c1c-41bc-8ad1-1d68cda589a7",
+            "completed_at": "2019-01-29T06:43:24.334Z",
+            "last_viewed_at": "2019-11-10T14:14:17.415Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390288,
+              "key": "43723d1e-a9c3-4411-bd40-4a42ac5af318",
+              "title": "可视化数据简介",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "oQJg_evGap4",
+                "china_cdn_id": "oQJg_evGap4.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390460,
+          "key": "2a2dcd16-27a4-4751-ae7d-d4b99ecd8707",
+          "title": "饼图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2a2dcd16-27a4-4751-ae7d-d4b99ecd8707",
+            "completed_at": "2019-01-29T09:25:47.884Z",
+            "last_viewed_at": "2019-07-31T12:40:14.035Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390289,
+              "key": "aa66a6ff-7c32-4d02-b064-12ef0163180a",
+              "title": "饼图",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "H8Jpk7-Hdfk",
+                "china_cdn_id": "H8Jpk7-Hdfk.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390461,
+          "key": "f66cac26-3b53-4e84-a69e-be26a81527e9",
+          "title": "练习：饼图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f66cac26-3b53-4e84-a69e-be26a81527e9",
+            "completed_at": "2019-01-29T09:28:02.607Z",
+            "last_viewed_at": "2019-09-24T10:04:13.460Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "sp500_companies.xlsx",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/59a47db7_sp500-companies/sp500-companies.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390290,
+              "key": "01e7d4c9-f843-4e9e-8e66-80649f61169b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：饼图\n在下面的练习中，你将打开从[维基百科](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) 复制的财务信息的电子表格 `sp500_companies.xlsx`，其中包含有关标准普尔 500 指数公司的信息。你将使用学到的关于数据透视表和饼图的知识来回答关于数据的问题。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390291,
+              "key": "479b6e36-6496-40c8-840c-3c4ac6aadbcf",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "479b6e36-6496-40c8-840c-3c4ac6aadbcf",
+                "completed_at": "2019-02-05T04:29:39.678Z",
+                "last_viewed_at": "2019-02-05T04:29:42.468Z",
+                "unstructured": "{\"selected_ids\":[0,1,2,3,4]}"
+              },
+              "tasks": [
+                "下载并打开 `sp500_companies.xlsx`（见页面底部）",
+                "使用整个数据集创建一个数据透视表",
+                "在“数据透视表”页面上，将 **GICS Sector**（GICS 行业）字段设为“行”，每行为股票数。",
+                "练习：计数（见下文）",
+                "创建行业饼图并显示百分比",
+                "练习：比例（见下文）"
+              ],
+              "positive_feedback": "恭喜！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390292,
+              "key": "3001d3c9-3bfc-48af-9f0d-e59be4afa04b",
+              "title": "计数",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3001d3c9-3bfc-48af-9f0d-e59be4afa04b",
+                "completed_at": "2019-02-16T14:58:41.251Z",
+                "last_viewed_at": "2019-02-16T14:58:41.251Z",
+                "unstructured": "{\"answer\":\"32\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "Energy sector（能源行业）有多少股票？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*32\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390293,
+              "key": "dceb7a9b-cc38-4107-8402-e25cf551dc52",
+              "title": "比例",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "dceb7a9b-cc38-4107-8402-e25cf551dc52",
+                "completed_at": "2019-02-16T14:59:41.025Z",
+                "last_viewed_at": "2019-02-16T14:59:41.025Z",
+                "unstructured": "{\"answer\":\"14%\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "S&P 500 stocks（标普 500 指数股票）中 Information Technology sector（信息技术行业）的比例是多少？（填写最接近的整数百分比）",
+                "matchers": [
+                  {
+                    "expression": "^\\s*14%?\\s*$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390462,
+          "key": "6f9ea7b5-884b-4379-9185-daee69e3cc15",
+          "title": "柱形图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6f9ea7b5-884b-4379-9185-daee69e3cc15",
+            "completed_at": "2019-01-29T09:28:04.583Z",
+            "last_viewed_at": "2019-07-31T12:41:47.520Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390294,
+              "key": "6dc33e71-5a27-4153-bffd-45e65287a171",
+              "title": "柱形图",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "YO-4rLLRKj8",
+                "china_cdn_id": "YO-4rLLRKj8.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390463,
+          "key": "8fde432c-7bd7-4b22-a2f7-346f45478de3",
+          "title": "散点图和折线图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8fde432c-7bd7-4b22-a2f7-346f45478de3",
+            "completed_at": "2019-01-29T09:29:11.846Z",
+            "last_viewed_at": "2019-07-31T12:41:48.819Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390295,
+              "key": "c8e31c5b-5a58-48bd-807b-497c6a1194e7",
+              "title": "散点图和折线图",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VBkw6H1LMOk",
+                "china_cdn_id": "VBkw6H1LMOk.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390464,
+          "key": "86ffdd15-9e1b-4d5a-9e44-80a513cb3bf1",
+          "title": "练习：图表类型",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "86ffdd15-9e1b-4d5a-9e44-80a513cb3bf1",
+            "completed_at": "2019-01-29T09:33:37.737Z",
+            "last_viewed_at": "2019-07-31T12:41:51.918Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390298,
+              "key": "a28242a9-11cd-42cf-a493-cc2bdd51cda2",
+              "title": "图表类型",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a28242a9-11cd-42cf-a493-cc2bdd51cda2",
+                "completed_at": "2019-02-05T04:32:46.091Z",
+                "last_viewed_at": "2019-02-16T15:04:30.527Z",
+                "unstructured": "{\"answer_ids\":[\"a1503696166845\",\"a1503696311535\",\"a1503696341720\",\"a1503696406876\",\"a1503696612483\",\"a1503696694251\"],\"is_correct\":true}"
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "根据提出的问题，匹配要使用的图表类型（选择最佳答案）。其中一些我们还未讲到，尽最大努力解答即可。"
+                },
+                "concepts_label": "提出的问题",
+                "answers_label": "图表类型",
+                "concepts": [
+                  {
+                    "text": "本月销售的不同水果的相对百分比是多少？",
+                    "correct_answer": {
+                      "id": "a1503696166845",
+                      "text": "饼图"
+                    }
+                  },
+                  {
+                    "text": "这个月销售的苹果，橘子和梨的数量如何比较？",
+                    "correct_answer": {
+                      "id": "a1503696311535",
+                      "text": "柱形图"
+                    }
+                  },
+                  {
+                    "text": "AAPL 股票的价格随时间的变化是怎样的？",
+                    "correct_answer": {
+                      "id": "a1503696341720",
+                      "text": "折线图"
+                    }
+                  },
+                  {
+                    "text": "一个人群中体重和年龄之间是否存在关系？",
+                    "correct_answer": {
+                      "id": "a1503696406876",
+                      "text": "散点图"
+                    }
+                  },
+                  {
+                    "text": "所有主要联盟棒球球员中，百万薪资出现的频数是多少？",
+                    "correct_answer": {
+                      "id": "a1503696612483",
+                      "text": "直方图"
+                    }
+                  },
+                  {
+                    "text": "我的数值数据集从最小到最大的分布是怎样的，包括第一四分位数、第二四分位数和第三四分位数？",
+                    "correct_answer": {
+                      "id": "a1503696694251",
+                      "text": "箱线图"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1503696341720",
+                    "text": "折线图"
+                  },
+                  {
+                    "id": "a1503696166845",
+                    "text": "饼图"
+                  },
+                  {
+                    "id": "a1503696311535",
+                    "text": "柱形图"
+                  },
+                  {
+                    "id": "a1503696612483",
+                    "text": "直方图"
+                  },
+                  {
+                    "id": "a1503696694251",
+                    "text": "箱线图"
+                  },
+                  {
+                    "id": "a1503696406876",
+                    "text": "散点图"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390465,
+          "key": "aea15e06-89f0-44fc-bd54-8a9e66ccc579",
+          "title": "练习：散点图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "aea15e06-89f0-44fc-bd54-8a9e66ccc579",
+            "completed_at": "2019-01-29T09:33:39.321Z",
+            "last_viewed_at": "2019-09-24T10:04:54.674Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "puget_sound_butter_clams.xlsx",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/59a588a3_puget-sound-butter-clams/puget-sound-butter-clams.xlsx"
+              },
+              {
+                "name": "lake_superior.xlsx",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/59a588c6_lake-superior/lake-superior.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390296,
+              "key": "e1ba495d-abe0-4078-a6ad-904caa5653fd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：散点图\t\t\n          \n散点图可用于显示[双变量](https://en.wikipedia.org/wiki/Bivariate_data) 数值数据，即具有两个变量的数据集，例如一些人的身高和体重测量值。\n          \n如果两个变量的数据一同上升，则它们具有正[相关性](https://www.mathsisfun.com/data/correlation.html)，这可以在散点图中看到，例如在下面的人物[身高和体重数据](http://wiki.stat.ucla.edu/socr/index.php/SOCR_Data_Dinov_020108_HeightsWeights)图中。我们可以看到一般情况下，身高增加时，体重也会增加。其中显示的虚线为\"趋势线\"，可以通过选中散点图，然后选择**设计（Design）->添加图表元素（Add Chart Element）->趋势线（Trendline）->线性（Linear）**添加到 Excel 中。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390297,
+              "key": "bd5a8e4c-8448-4ded-965f-65aa031d2dac",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59a57f8a_ht-wt-chart/ht-wt-chart.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/bd5a8e4c-8448-4ded-965f-65aa031d2dac",
+              "caption": "",
+              "alt": null,
+              "width": 1425,
+              "height": 1035,
+              "instructor_notes": null
+            },
+            {
+              "id": 390299,
+              "key": "ae42266b-3d0f-4486-83b0-dd3d063df85b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "如果一个变量增加时另一个变量会减少，则这两个变量为负相关关系，如下图[哥伦比亚河的速度与深度](http://www.seattlecentral.edu/qelp/sets/011/011.html) 所示：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390300,
+              "key": "bd386fde-5675-4f9f-bb15-e4717a4eeeb4",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59a5827d_columbia-river/columbia-river.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/bd386fde-5675-4f9f-bb15-e4717a4eeeb4",
+              "caption": "",
+              "alt": null,
+              "width": 1413,
+              "height": 964,
+              "instructor_notes": null
+            },
+            {
+              "id": 390301,
+              "key": "e830878b-c13c-4a02-b44d-640102bb7d7c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "打开在此练习中提供的电子表格，按要求创建散点图，并回答每个数据相关性的问题。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390302,
+              "key": "b795c800-5559-44d8-9311-0602d338e8bd",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b795c800-5559-44d8-9311-0602d338e8bd",
+                "completed_at": "2019-02-05T04:36:16.157Z",
+                "last_viewed_at": "2019-02-16T15:05:14.865Z",
+                "unstructured": "{\"selected_ids\":[1,2,3,4,5]}"
+              },
+              "tasks": [
+                "下载并打开 `puget_sound_butter_clams.xlsx`（见页面底部）",
+                "创建一个关于 Butter Clams（黄油蛤）的体重和长度数据的散点图",
+                "练习：Butter Clams（见下文）",
+                "下载并打开 `lake_superior.xlsx`（见页面底部）",
+                "创建一个关于苏必利尔湖的平均气温和结冰天数的散点图",
+                "练习：苏必利尔湖"
+              ],
+              "positive_feedback": "恭喜！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390303,
+              "key": "ecbf55da-165b-404e-8f49-caafbdb29a19",
+              "title": "Butter Clams",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ecbf55da-165b-404e-8f49-caafbdb29a19",
+                "completed_at": "2019-02-05T04:36:23.158Z",
+                "last_viewed_at": "2019-02-16T15:06:02.169Z",
+                "unstructured": "{\"selected_id\":\"a1504020296263\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "下面哪一项最好地描述了 Puget Sound butter clams（皮吉特湾黄油蛤）的 weight（体重）与 length（长度）之间的关系？",
+                "answers": [
+                  {
+                    "id": "a1504020296263",
+                    "text": "正相关",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1504020344221",
+                    "text": "无相关性",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1504020350329",
+                    "text": "负相关",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390304,
+              "key": "d49792ba-3d2f-47a9-802d-7a12a1a919ac",
+              "title": "苏必利尔湖",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d49792ba-3d2f-47a9-802d-7a12a1a919ac",
+                "completed_at": "2019-02-05T04:36:30.880Z",
+                "last_viewed_at": "2019-02-16T15:13:00.299Z",
+                "unstructured": "{\"selected_id\":\"a1504020529205\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "下面哪一项最好地描述了 Lake Superior（苏必利尔湖）每年的 mean temperature（平均气温）与 days of ice（结冰天数）之间的关系？",
+                "answers": [
+                  {
+                    "id": "a1504020472329",
+                    "text": "正相关",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1504020520653",
+                    "text": "无相关性",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1504020529205",
+                    "text": "负相关",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390467,
+          "key": "4ff9f04d-8373-4ec0-ad9b-4218663c7951",
+          "title": "图表布局工具",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4ff9f04d-8373-4ec0-ad9b-4218663c7951",
+            "completed_at": "2019-01-29T09:34:53.222Z",
+            "last_viewed_at": "2019-07-31T12:42:15.496Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390305,
+              "key": "60d6940a-e322-411a-b2de-ecb501590d6c",
+              "title": "图表布局工具",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "pNhB0XBcCP0",
+                "china_cdn_id": "pNhB0XBcCP0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390468,
+          "key": "c3c5013a-f2ef-4e5c-abbf-598e99aa90ea",
+          "title": "练习：图表布局",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c3c5013a-f2ef-4e5c-abbf-598e99aa90ea",
+            "completed_at": "2019-01-29T09:36:09.575Z",
+            "last_viewed_at": "2019-07-31T12:42:16.337Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390306,
+              "key": "3cf0cd50-0db5-47e9-8de1-9c9542dd7003",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：图表布局\t\t\n          \n电子表格图表有一些标准元素，可以通过选中图表，使用“设计（Design）”菜单中的“快速布局（Quick Layout）”和“添加图表元素（Add Chart Element）”子菜单来添加或删除。下面的图表有几个这样的元素，你能通过名称识别它们吗？",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390307,
+              "key": "3241a921-d3df-4e3a-9e0d-9ed1babcfd56",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59a59445_chart-match-pic/chart-match-pic.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3241a921-d3df-4e3a-9e0d-9ed1babcfd56",
+              "caption": "",
+              "alt": null,
+              "width": 1659,
+              "height": 1220,
+              "instructor_notes": null
+            },
+            {
+              "id": 390308,
+              "key": "0daee573-fb2f-4167-b758-93f47373ac21",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0daee573-fb2f-4167-b758-93f47373ac21",
+                "completed_at": "2019-02-16T15:15:08.925Z",
+                "last_viewed_at": "2019-02-16T15:15:08.925Z",
+                "unstructured": "{\"answer_ids\":[\"a1504023249845\",\"a1504023340892\",\"a1504023417812\",\"a1504023460895\",\"a1504023509376\",\"a1504023528253\",\"a1504023635276\"],\"is_correct\":true}"
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "将图表元素描述与其在样本图上的位置进行匹配。"
+                },
+                "concepts_label": "图表元素",
+                "answers_label": "位置",
+                "concepts": [
+                  {
+                    "text": "图表标题",
+                    "correct_answer": {
+                      "id": "a1504023249845",
+                      "text": "C"
+                    }
+                  },
+                  {
+                    "text": "横轴",
+                    "correct_answer": {
+                      "id": "a1504023340892",
+                      "text": "F"
+                    }
+                  },
+                  {
+                    "text": "纵轴",
+                    "correct_answer": {
+                      "id": "a1504023417812",
+                      "text": "None"
+                    }
+                  },
+                  {
+                    "text": "趋势线",
+                    "correct_answer": {
+                      "id": "a1504023460895",
+                      "text": "B"
+                    }
+                  },
+                  {
+                    "text": "图例",
+                    "correct_answer": {
+                      "id": "a1504023509376",
+                      "text": "D"
+                    }
+                  },
+                  {
+                    "text": "纵轴标题",
+                    "correct_answer": {
+                      "id": "a1504023528253",
+                      "text": "A"
+                    }
+                  },
+                  {
+                    "text": "网格线",
+                    "correct_answer": {
+                      "id": "a1504023635276",
+                      "text": "E"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1504023340892",
+                    "text": "F"
+                  },
+                  {
+                    "id": "a1504023528253",
+                    "text": "A"
+                  },
+                  {
+                    "id": "a1504023635276",
+                    "text": "E"
+                  },
+                  {
+                    "id": "a1504023460895",
+                    "text": "B"
+                  },
+                  {
+                    "id": "a1504023417812",
+                    "text": "None"
+                  },
+                  {
+                    "id": "a1504023509376",
+                    "text": "D"
+                  },
+                  {
+                    "id": "a1504023249845",
+                    "text": "C"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390466,
+          "key": "3efb9556-6821-4dec-83be-58ae20efd800",
+          "title": "直方图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3efb9556-6821-4dec-83be-58ae20efd800",
+            "completed_at": "2019-01-29T09:36:32.947Z",
+            "last_viewed_at": "2019-07-31T12:42:18.870Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390309,
+              "key": "53c2449a-6440-42ee-9c66-e7ba2055213e",
+              "title": "直方图",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "BRprW40Atvo",
+                "china_cdn_id": "BRprW40Atvo.mp4"
+              }
+            },
+            {
+              "id": 728679,
+              "key": "aba191f2-0f08-4e85-89c4-c00dff92617d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "视频 1分 48秒 处，现在 Mac 下的 Excel 也可以在 Data 菜单里找到 Data Analysis 工具。\n\n视频 2分31秒 处提到的方法现在在 Mac 下也可以实现。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 390470,
+          "key": "0b04cf98-888d-4fc3-badf-7a69d963000c",
+          "title": "练习：直方图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0b04cf98-888d-4fc3-badf-7a69d963000c",
+            "completed_at": "2019-01-29T09:40:18.587Z",
+            "last_viewed_at": "2019-07-31T12:42:20.283Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390310,
+              "key": "33fbf309-85ce-4fd1-86b6-90c982fa33de",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " # 练习：直方图\t\t\n          \n直方图和条形图（或柱状图）很容易让人混淆。直方图绘制定量（数值）数据的分布。数据的数值范围被划分为箱（bin）来绘制图标。条形图或柱状图绘制分类数据的计数。思考以下两个类似的图表，并回答练习中的问题。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390311,
+              "key": "70c5fb13-cab4-4b00-8723-6d9533200ab2",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59a5a447_charta/charta.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/70c5fb13-cab4-4b00-8723-6d9533200ab2",
+              "caption": "",
+              "alt": null,
+              "width": 1427,
+              "height": 1037,
+              "instructor_notes": null
+            },
+            {
+              "id": 390312,
+              "key": "5a159d95-b532-4872-bf72-1326174385c9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59a5a453_chartb/chartb.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5a159d95-b532-4872-bf72-1326174385c9",
+              "caption": "",
+              "alt": null,
+              "width": 1421,
+              "height": 1033,
+              "instructor_notes": null
+            },
+            {
+              "id": 390313,
+              "key": "16fa5a69-91fc-481e-a44a-1613ec6f77c5",
+              "title": "直方图",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "16fa5a69-91fc-481e-a44a-1613ec6f77c5",
+                "completed_at": "2019-01-30T14:06:32.220Z",
+                "last_viewed_at": "2019-02-05T04:42:52.048Z",
+                "unstructured": "{\"selected_ids\":[\"a1504027891947\",\"a1504027962630\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "使用上面的图 A 和图 B，勾选所有适用项。",
+                "answers": [
+                  {
+                    "id": "a1504027810342",
+                    "text": "A 是直方图，因为条高与类别的计数相关联。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1504027891947",
+                    "text": "B 是直方图，因为条高与分条的数值数据的计数相关联。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1504027962630",
+                    "text": "A 不是直方图，因为条高与类别的计数相关联。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1504028014183",
+                    "text": "B 不是直方图，因为条高与分条的数值数据的计数相关联。",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390469,
+          "key": "fe164a52-5bc9-4d37-b76c-e1a4d166fd33",
+          "title": "箱线图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fe164a52-5bc9-4d37-b76c-e1a4d166fd33",
+            "completed_at": "2019-01-29T09:40:23.619Z",
+            "last_viewed_at": "2019-07-31T12:42:22.778Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390314,
+              "key": "9583339e-f3f9-4aa2-8bad-c02b63d514cd",
+              "title": "箱线图",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7XM3Ca2iz-4",
+                "china_cdn_id": "7XM3Ca2iz-4.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390472,
+          "key": "1511819f-50a3-401d-9785-fcb1eee54571",
+          "title": "练习：箱线图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1511819f-50a3-401d-9785-fcb1eee54571",
+            "completed_at": "2019-01-29T09:56:59.527Z",
+            "last_viewed_at": "2019-07-31T12:42:24.124Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390315,
+              "key": "9d503861-fe42-4231-877f-74fa5cd00581",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59a4714d_quiz-pic/quiz-pic.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9d503861-fe42-4231-877f-74fa5cd00581",
+              "caption": "",
+              "alt": null,
+              "width": 1423,
+              "height": 1091,
+              "instructor_notes": null
+            },
+            {
+              "id": 390316,
+              "key": "2bb4d5df-e785-4fcc-ae75-98166848b34e",
+              "title": "箱线图",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2bb4d5df-e785-4fcc-ae75-98166848b34e",
+                "completed_at": "2019-02-16T15:24:40.332Z",
+                "last_viewed_at": "2019-02-16T15:24:40.332Z",
+                "unstructured": "{\"answer_ids\":[\"a1503947275189\",\"a1503947554637\",\"a1503947629181\",\"a1503947584418\",\"a1503947596174\",\"a1503947571817\",\"a1503949411735\"],\"is_correct\":true}"
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "箱线图使用\"五数概括法\"来显示数据分散情况。Excel 甚至额外提供第六个数值可视化。将箱线图的以下部分与这些统计值相匹配。"
+                },
+                "concepts_label": "统计值",
+                "answers_label": "图表上的位置",
+                "concepts": [
+                  {
+                    "text": "数据集的最小值",
+                    "correct_answer": {
+                      "id": "a1503947275189",
+                      "text": "F"
+                    }
+                  },
+                  {
+                    "text": "数据集的最大值",
+                    "correct_answer": {
+                      "id": "a1503947554637",
+                      "text": "C"
+                    }
+                  },
+                  {
+                    "text": "数据集的中位数",
+                    "correct_answer": {
+                      "id": "a1503947571817",
+                      "text": "E"
+                    }
+                  },
+                  {
+                    "text": "数据集的平均数",
+                    "correct_answer": {
+                      "id": "a1503947584418",
+                      "text": "B"
+                    }
+                  },
+                  {
+                    "text": "数据集的第 1 四分位数",
+                    "correct_answer": {
+                      "id": "a1503947596174",
+                      "text": "A"
+                    }
+                  },
+                  {
+                    "text": "数据集的第 2 四分位数",
+                    "correct_answer": {
+                      "id": "a1503947629181",
+                      "text": "E"
+                    }
+                  },
+                  {
+                    "text": "数据集的第 3 四分位数",
+                    "correct_answer": {
+                      "id": "a1503949411735",
+                      "text": "D"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1503947596174",
+                    "text": "A"
+                  },
+                  {
+                    "id": "a1503947584418",
+                    "text": "B"
+                  },
+                  {
+                    "id": "a1503947554637",
+                    "text": "C"
+                  },
+                  {
+                    "id": "a1503947571817",
+                    "text": "E"
+                  },
+                  {
+                    "id": "a1503949411735",
+                    "text": "D"
+                  },
+                  {
+                    "id": "a1503947629181",
+                    "text": "E"
+                  },
+                  {
+                    "id": "a1503947275189",
+                    "text": "F"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390471,
+          "key": "be5ce6ac-5dc4-4e8c-bb30-4836ab47aac2",
+          "title": "专业展示",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "be5ce6ac-5dc4-4e8c-bb30-4836ab47aac2",
+            "completed_at": "2019-01-29T09:57:04.935Z",
+            "last_viewed_at": "2019-07-31T12:42:26.653Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390317,
+              "key": "019a19a4-9b3a-45cf-9ecd-882a347ef9a5",
+              "title": "专业展示",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1016O8dBZZ0",
+                "china_cdn_id": "1016O8dBZZ0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390473,
+          "key": "11705fe5-0ebb-4f3e-b44f-8d98f5b3fd0f",
+          "title": "练习：专业展示",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "11705fe5-0ebb-4f3e-b44f-8d98f5b3fd0f",
+            "completed_at": "2019-01-29T10:02:52.198Z",
+            "last_viewed_at": "2019-09-24T10:07:17.245Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "american_colleges.xlsx",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/September/59a97e53_american-colleges/american-colleges.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390318,
+              "key": "8fbab98b-36df-4bcf-96b8-5f886461006c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：专业展示\t\t\n          \n在下面的练习中，你将获得有关美国大学的信息数据集。此数据集可在页面底部的资源中找到，名称为\n `american_colleges.xlsx`，也可从 [mathforum.org](http://mathforum.org/workshops/sum96/data.collections/datalibrary/data.set6.html) 下载，你会在此找到多个可用于练习的数据集。\n          \n假设你接到一个任务，那就是为高中学校辅导员制作一个图表，向学生和家长展示大学选择。这些家庭开始了解他们的大学选择，而此图表只是谈话的一部分。它的目的是向受众展示不同地点的大学费用会有所差异。辅导员想比较美国几个（6 个）示例州的费用。\n          \n你将创建一个堆叠柱状图，比较六个州的 **Public（公立）**大学的平均费用：加利福尼亚州（**CA**）、德克萨斯州（**TX**）、纽约州（**NY**）、密歇根州（**MI**）、佐治亚州（**GA**）和伊利诺伊州（**IL**）。假定我们要看的费用仅包含 **out-of-state tuition（外州学生学费）**、**room（住宿费）**和 ** board（伙食费）**。制作图表时，记得回顾来自课堂的以下问题：\t\t\n          \n* 你想回答什么问题？\n* 你想展现什么样的规律？\n* 受众是谁？\n* 概述还是深入讲解？",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390319,
+              "key": "a2a71e0f-a343-4d73-8171-98841921fd8b",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a2a71e0f-a343-4d73-8171-98841921fd8b",
+                "completed_at": "2019-01-29T10:05:43.701Z",
+                "last_viewed_at": "2019-01-29T10:20:46.398Z",
+                "unstructured": "{\"selected_ids\":[0,2,3,1,4,5,6,7,8]}"
+              },
+              "tasks": [
+                "下载并打开 `american_colleges.xlsx`（见页面底部）",
+                "筛选数据集，使其仅包含加利福尼亚州（**CA**）、德克萨斯州（**TX**）、纽约州（**NY**）、密歇根州（**MI**）、佐治亚州（**GA**）和伊利诺伊州（**IL**）的公立学校（Public）",
+                "将筛选过的数据集复制到新选项卡，并给新的工作表选项卡命名：Public Selected（选定的公立学校）",
+                "练习：Public Selected（见下文）",
+                "将新的“Public Selected”数据集转换到一个新表，命名为：数据透视表",
+                "设置你的数据透视表，设置“行”为 State，设置 out-of-state tuition、room 及 board 为均值汇总方式",
+                "练习：数据透视表（见下文）",
+                "选择数据透视表中的州、平均学费、平均住宿费、平均伙食费，创建一个堆叠柱状图",
+                "练习：堆叠柱状图（见下文）"
+              ],
+              "positive_feedback": "恭喜！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390320,
+              "key": "cb2097ca-623c-4e41-882f-5426c1437d7a",
+              "title": "Public Selected",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cb2097ca-623c-4e41-882f-5426c1437d7a",
+                "completed_at": "2019-01-29T10:21:26.439Z",
+                "last_viewed_at": "2019-01-29T10:30:02.435Z",
+                "unstructured": "{\"answer\":\"125\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "Public Selected 数据集中有多少条记录？不要在计数中包含标题行。",
+                "matchers": [
+                  {
+                    "expression": "^\\s*125\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*352\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*227\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390321,
+              "key": "113ee1e1-7451-477f-b1a2-ba546e576e46",
+              "title": "数字透视表",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "113ee1e1-7451-477f-b1a2-ba546e576e46",
+                "completed_at": "2019-01-29T10:38:18.965Z",
+                "last_viewed_at": "2019-01-29T10:38:18.965Z",
+                "unstructured": "{\"answer\":\"2430\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "Illinois public colleges（伊利诺伊州公立大学）的 average room cost（平均住宿费）近似到美元整数是多少？（不含小数点或美分）",
+                "matchers": [
+                  {
+                    "expression": "^\\s*\\$?2,?430\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390322,
+              "key": "4ec8a94a-2cfb-4520-9a82-ad003f3586c9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/September/59a9851a_stacked-bad/stacked-bad.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4ec8a94a-2cfb-4520-9a82-ad003f3586c9",
+              "caption": "",
+              "alt": "",
+              "width": 1062,
+              "height": 773,
+              "instructor_notes": null
+            },
+            {
+              "id": 390323,
+              "key": "b010954a-fd9e-488b-87f2-6395bfc435cb",
+              "title": "堆叠柱状图",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b010954a-fd9e-488b-87f2-6395bfc435cb",
+                "completed_at": "2019-01-29T10:39:21.411Z",
+                "last_viewed_at": "2019-02-05T04:46:33.926Z",
+                "unstructured": "{\"selected_ids\":[\"a1504282496037\",\"a1504282528098\",\"a1504282592602\",\"a1504282663303\",\"a1504282719133\",\"a1504282906603\",\"a1504282735867\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "上图为堆叠柱状图，包含要求的所有信息，但看起来并不正确。以下哪个更改会使它变为更好的图表，使辅导员进行更好的概述展示？",
+                "answers": [
+                  {
+                    "id": "a1504281902543",
+                    "text": "将背景颜色更改为桃红色之类的明亮而清爽的颜色",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1504282496037",
+                    "text": "将背景颜色更改为使图形易于阅读的颜色，例如白色",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1504282528098",
+                    "text": "将数字改为不含小数位数的美元",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1504282592602",
+                    "text": "重新对类别排序，使最高总数位于左侧，最低总数位于右侧",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1504282663303",
+                    "text": "隐藏所有字段按钮（**数据透视图工具（PivotChart Tools）->分析（Analyze）->字段按钮（Field Buttons）**)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1504282719133",
+                    "text": "添加标题",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1504282735867",
+                    "text": "删除堆叠柱状图中的单个值，但在左侧添加带标注的轴",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1504282906603",
+                    "text": "将所有标签和数字调大，以便受众可以看清它们",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390324,
+              "key": "7be6c293-0ee0-49da-8f61-faec6a4eb28f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "演示中的选择要你根据自己的判断决定，你可以在图表上进行各种颜色和设计元素的置换。或许你在这个例子中不需要将图表分解为学费、住宿费和伙食费，而只是展示整体平均费用就可以。下面是对堆叠柱状图的重新配置。你的图看起来可能略有不同，不过没关系。此练习的重点是在每次做出选择时，记得思考一下你想展示什么，以及展示给谁看。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390325,
+              "key": "4190623c-2476-430a-a980-640eb796e907",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/September/59a98caa_stacked-good/stacked-good.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4190623c-2476-430a-a980-640eb796e907",
+              "caption": "",
+              "alt": "",
+              "width": 1064,
+              "height": 775,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 390475,
+          "key": "006c45bf-10cd-40a4-904c-027d4a947c7f",
+          "title": "概括",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "006c45bf-10cd-40a4-904c-027d4a947c7f",
+            "completed_at": "2019-01-29T10:42:01.940Z",
+            "last_viewed_at": "2019-07-31T12:42:30.520Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390326,
+              "key": "83262eee-f4cd-4c02-b583-7b8ec698893c",
+              "title": "概括：可视化数据",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "nht_cnp-w0Q",
+                "china_cdn_id": "nht_cnp-w0Q.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

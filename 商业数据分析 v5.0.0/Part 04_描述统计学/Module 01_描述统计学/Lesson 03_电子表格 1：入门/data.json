@@ -1,0 +1,1029 @@
+{
+  "data": {
+    "lesson": {
+      "id": 390481,
+      "key": "9c74932f-b8bd-49c8-9f69-159fca857beb",
+      "title": "电子表格 1：入门",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "在本课中，你将学习开始使用电子表格：创建和保存电子表格、基本操作、填充和寻址。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/9c74932f-b8bd-49c8-9f69-159fca857beb/390481/1544209014356/%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC+1%EF%BC%9A%E5%85%A5%E9%97%A8+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/9c74932f-b8bd-49c8-9f69-159fca857beb/390481/1544209010785/%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC+1%EF%BC%9A%E5%85%A5%E9%97%A8+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 390402,
+          "key": "d79b03f4-b4c1-4543-b8b8-3001a208180d",
+          "title": "简介",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d79b03f4-b4c1-4543-b8b8-3001a208180d",
+            "completed_at": "2018-11-14T12:19:39.170Z",
+            "last_viewed_at": "2019-12-11T05:38:30.244Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390178,
+              "key": "7bf93909-5e0f-48bb-8222-f7913b219278",
+              "title": "入门简介",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PcBvtec4yRU",
+                "china_cdn_id": "PcBvtec4yRU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390405,
+          "key": "d1093112-cbb3-4a71-b399-3e5a7ec6874e",
+          "title": "为何要用电子表格？",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d1093112-cbb3-4a71-b399-3e5a7ec6874e",
+            "completed_at": "2019-01-29T06:35:30.467Z",
+            "last_viewed_at": "2019-07-31T12:06:22.247Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390179,
+              "key": "b294825e-8925-49d1-bca5-21f671e3baf4",
+              "title": "为何要用电子表格",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "WdQJ5X85wkQ",
+                "china_cdn_id": "WdQJ5X85wkQ.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390403,
+          "key": "1d83283c-8a60-4cb0-818c-fb8e09989d26",
+          "title": "电子表格的优点",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1d83283c-8a60-4cb0-818c-fb8e09989d26",
+            "completed_at": "2019-01-29T07:03:45.097Z",
+            "last_viewed_at": "2019-12-11T05:38:33.535Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390180,
+              "key": "7311317b-9825-4c9f-8fe6-feca076cd58f",
+              "title": "电子表格的优点",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7311317b-9825-4c9f-8fe6-feca076cd58f",
+                "completed_at": "2019-01-30T09:13:50.364Z",
+                "last_viewed_at": "2019-02-16T12:50:57.597Z",
+                "unstructured": "{\"selected_ids\":[\"a1501167783194\",\"a1501167782402\",\"a1501167780809\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "电子表格有哪些优点？勾选所有适用项。",
+                "answers": [
+                  {
+                    "id": "a1501167750638",
+                    "text": "它们非常适合处理大型数据集",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1501167780809",
+                    "text": "你可以快速加载和让数据可视化",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501167782402",
+                    "text": "你可以添加公式来分析数据",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501167783194",
+                    "text": "它们使处理数据变得简单",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390404,
+          "key": "8df2b57f-a477-4cf9-aa5b-9c670b1fbe98",
+          "title": "入门",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8df2b57f-a477-4cf9-aa5b-9c670b1fbe98",
+            "completed_at": "2019-01-29T07:04:30.429Z",
+            "last_viewed_at": "2019-07-31T12:06:32.951Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390181,
+              "key": "25321afa-f038-4908-ae79-a7bdf56459ce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 电子表格入门\n本课程演示使用 *Windows 10 上的 Microsoft Excel 2016 桌面版*的功能、工具和技术。如果你没有 Windows Excel 2016，你可以使用其他电子表格应用程序做小测试和练习。尽管函数与公式在各种应用程序中的表现相同，但其中的菜单和工具有时会有较大差异，特别是更为高级的工具，例如[箱形图](https://en.wikipedia.org/wiki/Box_plot)。有时弄清楚这些差异很容易，但有疑问时，最好养成在帮助文件中和网上搜索答案的习惯...你会找到大量关于电子表格的信息！\n\n## Excel 2016\n[Microsoft Office 365 购买信息](https://products.office.com/zh-cn/compare-all-microsoft-office-products?tab=1&wt.srch=1&wt.mc_id=AID623587_SEM_5SOqeNbs)\n<br>有多个价位可供选择。无论你处于什么环境，请确保下载桌面版本。它具有浏览器版本不具备的一些额外功能。注意，Excel 2016 的 Windows 和 Mac 版本[是不同的](https://thesmartmethod.com/excel-2016-for-mac-vs-excel-2016-for-windows/)，且 Mac 版本没有箱线图内置功能。还要注意，Excel 免费在线版本的功能有限，*不*建议用于此课程。<br> 在将 Excel 2016 安装到 PC 或 Mac 上后，你需要加载以下插件：\n* [分析工具库](https://support.office.com/zh-cn/article/%E5%8A%A0%E8%BD%BD%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E5%BA%93%EF%BC%8C%E5%9C%A8-excel-%E4%B8%AD-6a63e598-cd6d-42e3-9317-6b40ba1a66b4?ui=zh-CN&rs=zh-CN&ad=CN)。  \n\n\n## Google 表格\n[打开表格的链接](https://docs.google.com/spreadsheets/)\n<br>Google 表格是一款免费的电子表格替代品，可通过添加一些附加组件进行改进可使其功能完备。你需要有一个免费的 Google 账户才能开始使用。如果你已经有账户了，上面的链接会将你导航至相应的位置。如果你没有 Google 账户，可点击“更多选项”创建一个。创建好账户后，打开一页空白表并使用“附加组件”菜单将以下功能添加到你的账户中: \n* [删除重复](https://www.ablebits.com/google-sheets-add-ons/remove-duplicates/howto.php)\n* [统计](https://sites.google.com/site/statisticsforspreadsheets/)\n\n👆能访问Google的童鞋可以尝试👆\n\n## Apple Numbers\n[有关 Apple Numbers 的信息](https://www.apple.com/numbers/)\n<br> 如果你使用的是 Mac，此应用应该已经内置在其中了。我们演示的大多数功能都能在 Numbers 中使用，并且它与 Excel 文件兼容。不过其中似乎没有轻松创建箱线图的方法，但我们会在“可视化数据”课程中介绍。\n\n## 开源替代品\n[Apache Open Office 下载](https://www.openoffice.org/download/)\n<br>[LibreOffice 下载](https://www.libreoffice.org/download/download/)\n<br>Apache Open Office Calc 和 LibreOffice Calc 都是开源免费的。它们会读取 Excel 格式并提供大部分相同的功能。但是，有[一些重要的区别](https://wiki.openoffice.org/wiki/Documentation/UserGuide/Migration_Guide/Calc_and_Excel) 要注意，包括公式语法的差异。有些功能，如箱线图，可能需要在网络上搜索解决方案并执行一些步骤来完成。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 390406,
+          "key": "240f7460-074a-434f-b0d9-33fb43c7094c",
+          "title": "导航：工作表",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "240f7460-074a-434f-b0d9-33fb43c7094c",
+            "completed_at": "2019-01-29T07:06:02.279Z",
+            "last_viewed_at": "2019-07-31T12:06:35.625Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390182,
+              "key": "e3adff97-30d3-4b99-973d-87b86b69ba93",
+              "title": "导航：工作表",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "y4cqc0txVzo",
+                "china_cdn_id": "y4cqc0txVzo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390407,
+          "key": "1ba426b9-de68-4c0a-868d-a6337338071a",
+          "title": "列和行标签",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1ba426b9-de68-4c0a-868d-a6337338071a",
+            "completed_at": "2019-01-29T07:08:27.923Z",
+            "last_viewed_at": "2019-12-11T05:38:36.542Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390183,
+              "key": "9de4195f-6f9b-4b08-bf32-1bcd5fa30875",
+              "title": "列和行标签",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9de4195f-6f9b-4b08-bf32-1bcd5fa30875",
+                "completed_at": "2019-01-29T07:08:37.095Z",
+                "last_viewed_at": "2019-02-04T14:56:34.216Z",
+                "unstructured": "{\"selected_id\":\"a1501168063930\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "电子表格第 28 列的标签是什么？",
+                "answers": [
+                  {
+                    "id": "a1501168009146",
+                    "text": "BB",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1501168063930",
+                    "text": "AB",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501168064737",
+                    "text": "28",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1501168065485",
+                    "text": "A28",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390408,
+          "key": "2c0e3156-658c-45ad-9073-ab30dbfb30a8",
+          "title": "导航：菜单栏",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2c0e3156-658c-45ad-9073-ab30dbfb30a8",
+            "completed_at": "2019-01-29T07:08:50.666Z",
+            "last_viewed_at": "2019-07-31T12:06:38.485Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390184,
+              "key": "600b7578-355a-460c-ade2-93f62bea6266",
+              "title": "导航：菜单栏",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "2Cwb5c1hoz8",
+                "china_cdn_id": "2Cwb5c1hoz8.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390410,
+          "key": "a5420769-855e-4845-b503-5db9d6dbaa23",
+          "title": "菜单栏",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a5420769-855e-4845-b503-5db9d6dbaa23",
+            "completed_at": "2019-01-29T07:12:17.089Z",
+            "last_viewed_at": "2019-07-31T12:06:40.001Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390185,
+              "key": "c3fde826-645e-423b-bb9e-f7096c05907b",
+              "title": "菜单栏",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c3fde826-645e-423b-bb9e-f7096c05907b",
+                "completed_at": "2019-01-30T09:20:50.186Z",
+                "last_viewed_at": "2019-02-04T14:58:02.332Z",
+                "unstructured": "{\"selected_ids\":[\"a1501168695223\",\"a1501168709668\",\"a1501168711199\"],\"is_correct\":false}"
+              },
+              "question": {
+                "prompt": "数据菜单操作的例子有哪些？勾选所有适用项。",
+                "answers": [
+                  {
+                    "id": "a1501168695223",
+                    "text": "排序",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501168708907",
+                    "text": "筛选",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501168709668",
+                    "text": "图表",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1501168711199",
+                    "text": "分列",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390409,
+          "key": "33489636-9377-4d22-9ece-f9df5ff5d612",
+          "title": "导航：快捷键",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "33489636-9377-4d22-9ece-f9df5ff5d612",
+            "completed_at": "2019-01-29T07:12:19.878Z",
+            "last_viewed_at": "2019-07-31T12:06:41.290Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390186,
+              "key": "834bb6e7-38c6-446a-9f1d-17a70ff4f8c6",
+              "title": "导航：快捷键",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "LhUneH6cEfk",
+                "china_cdn_id": "LhUneH6cEfk.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390411,
+          "key": "eed32ba2-aba0-4d67-8674-d3a37c0956d5",
+          "title": "填充",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "eed32ba2-aba0-4d67-8674-d3a37c0956d5",
+            "completed_at": "2019-01-29T07:14:23.614Z",
+            "last_viewed_at": "2019-07-31T12:06:42.441Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390187,
+              "key": "4f4f4825-1922-40c3-bf1b-091f26735c9e",
+              "title": "填充",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4f4f4825-1922-40c3-bf1b-091f26735c9e",
+                "completed_at": "2019-01-30T09:23:29.709Z",
+                "last_viewed_at": "2019-02-04T15:01:42.207Z",
+                "unstructured": "{\"selected_ids\":[\"a1501168863494\",\"a1501168916767\",\"a1501168917551\",\"a1501168918251\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "我们可以朝哪些方向“填充”数据？勾选所有适用项。",
+                "answers": [
+                  {
+                    "id": "a1501168863494",
+                    "text": "上",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501168916767",
+                    "text": "下",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501168917551",
+                    "text": "左",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501168918251",
+                    "text": "右",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390412,
+          "key": "c730344b-0f57-4be0-96d3-bda18cb1d4e4",
+          "title": "复制数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c730344b-0f57-4be0-96d3-bda18cb1d4e4",
+            "completed_at": "2019-01-29T07:16:15.493Z",
+            "last_viewed_at": "2019-12-11T05:38:39.278Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390188,
+              "key": "c06bb209-d1b4-49e8-bebd-9f81331dfed0",
+              "title": "复制数据",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KMVnA7u2cKQ",
+                "china_cdn_id": "KMVnA7u2cKQ.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390414,
+          "key": "de458eae-860f-4505-b684-aece84e961cc",
+          "title": "练习：复制数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "de458eae-860f-4505-b684-aece84e961cc",
+            "completed_at": "2019-01-29T07:16:49.453Z",
+            "last_viewed_at": "2019-07-31T12:06:44.401Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390189,
+              "key": "d58d134f-0ee1-4dc4-adcc-ca8215a518ce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：复制数据\n\n<add instructions here>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390190,
+              "key": "04ab0efb-32f7-4a28-abf9-4df994dc1d31",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "04ab0efb-32f7-4a28-abf9-4df994dc1d31",
+                "completed_at": "2019-01-30T09:24:10.414Z",
+                "last_viewed_at": "2019-02-16T12:53:04.903Z",
+                "unstructured": "{\"selected_ids\":[1,2,3,4,6,7,8,9,5,0]}"
+              },
+              "tasks": [
+                "打开一个新的电子表格",
+                "打开[苹果历史股价网页](https://finance.yahoo.com/quote/AAPL/history?p=AAPL)",
+                "选择表格并复制",
+                "将表格粘贴到 Sheet1 电子表格的 A1 单元格",
+                "小测试：表格粘贴",
+                "添加新工作表并选择它",
+                "打开[维基百科电子表格网页](https://en.wikipedia.org/wiki/Spreadsheet)",
+                "选择前五个段落并复制",
+                "将这些段落粘贴到 Sheet2 电子表格的 A1 单元格中",
+                "小测试：段落粘贴"
+              ],
+              "positive_feedback": "恭喜你完成了复制数据练习！",
+              "video_feedback": null,
+              "description": "以下列表列出了此练习的一系列步骤。每完成一步，就从列表中划掉一个。任务列表中的测试题见下方。\n\n注意：Google不再提供股票的历史数据。\n然而，这些信息可以在雅虎上找到：https://finance.yahoo.com/quote/AAPL/history?p=AAPL"
+            },
+            {
+              "id": 922040,
+              "key": "0261d637-076f-4a88-bc18-6e1c90ad9a9f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "若你打开维基百科链接有困难，请直接复制下面文本：\n\nA spreadsheet is an interactive computer application for organization, analysis and storage of data in tabular form.[1][2][3] Spreadsheets developed as computerized analogs of paper accounting worksheets.[4] The program operates on data entered in cells of a table. Each cell may contain either numeric or text data, or the results of formulas that automatically calculate and display a value based on the contents of other cells. A spreadsheet may also refer to one such electronic document.[5][6][7]\n\nSpreadsheet users can adjust any stored value and observe the effects on calculated values. This makes the spreadsheet useful for \"what-if\" analysis since many cases can be rapidly investigated without manual recalculation. Modern spreadsheet software can have multiple interacting sheets, and can display data either as text and numerals, or in graphical form.\n\nBesides performing basic arithmetic and mathematical functions, modern spreadsheets provide built-in functions for common financial and statistical operations. Such calculations as net present value or standard deviation can be applied to tabular data with a pre-programmed function in a formula. Spreadsheet programs also provide conditional expressions, functions to convert between text and numbers, and functions that operate on strings of text.\n\nSpreadsheets have replaced paper-based systems throughout the business world. Although they were first developed for accounting or bookkeeping tasks, they now are used extensively in any context where tabular lists are built, sorted, and shared.\n\nLANPAR, available in 1969,[8] was the first electronic spreadsheet on mainframe and time sharing computers. LANPAR was an acronym: LANguage for Programming Arrays at Random.[8] VisiCalc was the first electronic spreadsheet on a microcomputer,[9] and it helped turn the Apple II computer into a popular and widely used system. Lotus 1-2-3 was the leading spreadsheet when DOS was the dominant operating system.[10] Excel now has the largest market share on the Windows and Macintosh platforms.[11][12][13] A spreadsheet program is a standard feature of an office productivity suite; since the advent of web apps, office suites now also exist in web app form. Web based spreadsheets are a relatively new category.",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390191,
+              "key": "3e3ef855-17e0-4875-af36-480b274df07a",
+              "title": "表粘贴",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3e3ef855-17e0-4875-af36-480b274df07a",
+                "completed_at": "2019-01-30T09:25:11.580Z",
+                "last_viewed_at": "2019-01-30T09:25:11.580Z",
+                "unstructured": "{\"answer\":\"7\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "当你粘贴来自网站的 AAPL 历史股价表时，创建了多少列？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*7\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390192,
+              "key": "81566fdc-4e2e-4573-8a86-c31bffecf020",
+              "title": "段落粘贴",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "81566fdc-4e2e-4573-8a86-c31bffecf020",
+                "completed_at": "2019-01-30T09:26:27.429Z",
+                "last_viewed_at": "2019-01-30T09:26:38.429Z",
+                "unstructured": "{\"answer\":\"1\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "当粘贴来自维基百科网站的段落时，共创建了多少列？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*1\\s*$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390413,
+          "key": "19df2337-f2b6-40d7-8fa4-9def3b74512f",
+          "title": "区域寻址",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "19df2337-f2b6-40d7-8fa4-9def3b74512f",
+            "completed_at": "2019-01-29T07:17:03.107Z",
+            "last_viewed_at": "2019-07-31T12:10:41.735Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390193,
+              "key": "e3754361-a5ba-4610-acb0-5b9293f51623",
+              "title": "区域寻址",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "4uNhE3WI_m4",
+                "china_cdn_id": "4uNhE3WI_m4.mp4"
+              }
+            },
+            {
+              "id": 562578,
+              "key": "15618cc5-bd04-4f99-b102-b9020771d91c",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "参考链接：[使用 SUM 函数对区域中的数字求和](https://support.office.com/zh-cn/article/%E4%BD%BF%E7%94%A8-SUM-%E5%87%BD%E6%95%B0%E5%AF%B9%E5%8C%BA%E5%9F%9F%E4%B8%AD%E7%9A%84%E6%95%B0%E5%AD%97%E6%B1%82%E5%92%8C-323569b2-0d2b-4e7b-b2f8-b433f9f0ac96)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 390415,
+          "key": "603024fd-b169-4aa9-b715-b45e68eb8505",
+          "title": "区域寻址",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "603024fd-b169-4aa9-b715-b45e68eb8505",
+            "completed_at": "2019-01-29T07:19:59.493Z",
+            "last_viewed_at": "2019-07-31T12:10:43.647Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390194,
+              "key": "d5430b4d-29bb-4f68-a6d3-5e468355298d",
+              "title": "区域寻址",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d5430b4d-29bb-4f68-a6d3-5e468355298d",
+                "completed_at": "2019-01-30T09:29:52.469Z",
+                "last_viewed_at": "2019-02-24T14:44:01.730Z",
+                "unstructured": "{\"selected_ids\":[\"a1501184675252\",\"a1501184703404\",\"a1501184702052\",\"a1501184704039\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "以下哪一个是有效的区域地址？勾选所有适用项。",
+                "answers": [
+                  {
+                    "id": "a1501184675252",
+                    "text": "A1:A2",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501184700829",
+                    "text": "C8:A9",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1501184702052",
+                    "text": "AA3:BB5",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501184702777",
+                    "text": "9F:9G",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1501184703404",
+                    "text": "E:G",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501184704039",
+                    "text": "16:18",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390421,
+          "key": "db95e48d-3ba2-4107-9d49-9caeb84531f7",
+          "title": "相对与绝对寻址",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "db95e48d-3ba2-4107-9d49-9caeb84531f7",
+            "completed_at": "2019-01-29T07:20:01.447Z",
+            "last_viewed_at": "2019-07-31T12:10:45.165Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390200,
+              "key": "6510a479-31db-40d6-a46e-f06f9949e9f5",
+              "title": "相对与绝对寻址",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sZXv1HfeT04",
+                "china_cdn_id": "sZXv1HfeT04.mp4"
+              }
+            },
+            {
+              "id": 562580,
+              "key": "afbf98ef-9a39-4f97-bb07-63f74bd451f1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "参考链接:[在相对引用、绝对引用和混合引用间切换](https://support.office.com/zh-cn/article/%E5%9C%A8%E7%9B%B8%E5%AF%B9%E5%BC%95%E7%94%A8%E3%80%81%E7%BB%9D%E5%AF%B9%E5%BC%95%E7%94%A8%E5%92%8C%E6%B7%B7%E5%90%88%E5%BC%95%E7%94%A8%E9%97%B4%E5%88%87%E6%8D%A2-dfec08cd-ae65-4f56-839e-5f0d8d0baca9)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 390417,
+          "key": "f501119a-2c27-4c7d-a0ac-94053ef2e29e",
+          "title": "相对与绝对寻址",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f501119a-2c27-4c7d-a0ac-94053ef2e29e",
+            "completed_at": "2019-01-29T07:24:52.397Z",
+            "last_viewed_at": "2019-07-31T12:10:46.520Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390195,
+              "key": "b6982855-e88f-4e6b-91c0-b1e0cd6df572",
+              "title": "相对与绝对寻址",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b6982855-e88f-4e6b-91c0-b1e0cd6df572",
+                "completed_at": "2019-01-30T09:33:32.737Z",
+                "last_viewed_at": "2019-02-04T15:17:20.525Z",
+                "unstructured": "{\"selected_ids\":[\"a1501185452902\",\"a1501185475043\",\"a1501185475725\",\"a1501185474377\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "以下哪个是有效的单元格地址？",
+                "answers": [
+                  {
+                    "id": "a1501185452902",
+                    "text": "A1",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501185474377",
+                    "text": "$A$1",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501185475043",
+                    "text": "$A1",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501185475725",
+                    "text": "A$1",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390420,
+          "key": "6499f367-11d7-48c3-b06b-f734e6ce6ce6",
+          "title": "插入和删除",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6499f367-11d7-48c3-b06b-f734e6ce6ce6",
+            "completed_at": "2019-01-29T07:26:36.922Z",
+            "last_viewed_at": "2019-07-31T12:10:47.770Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390196,
+              "key": "308bd5a2-4f09-4980-9249-4e83826fc999",
+              "title": "插入和删除",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "yDBQ5ZawVMs",
+                "china_cdn_id": "yDBQ5ZawVMs.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390423,
+          "key": "71ece582-5ff7-4a23-8ae1-a67e2c832e25",
+          "title": "练习：插入和删除",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "71ece582-5ff7-4a23-8ae1-a67e2c832e25",
+            "completed_at": "2019-01-29T07:28:37.680Z",
+            "last_viewed_at": "2019-12-11T11:18:00.026Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "fruit_stand.xlsx",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/599cb088_fruit-stand/fruit-stand.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390204,
+              "key": "724ef1d6-acf9-4938-a2f4-c5ae4d3868ed",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：插入和删除\n在下面的练习中，你将整合学到的关于**插入**和**删除**以及关于**寻址**和**填充**的知识。开始练习前，系统会要求你下载并打开 `fruit_stand.xlsx`，该文件在本页底部提供下载链接。查找页面底部\"辅助材料\"，其下方有一个指向 `fruit_stand.xlsx` 的链接，点击并进行下载。使用你电脑上的电子表格应用程序打开该文件。它看起来应该是这样的：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390201,
+              "key": "dd125b8d-d6a6-4a54-9be5-a13c5b22c40a",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/July/597a53a2_fruit-stand/fruit-stand.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/dd125b8d-d6a6-4a54-9be5-a13c5b22c40a",
+              "caption": "",
+              "alt": null,
+              "width": 851,
+              "height": 692,
+              "instructor_notes": null
+            },
+            {
+              "id": 390202,
+              "key": "83b6b78a-67b0-4320-a194-49faa5fee915",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "通过完成任务来完成练习！",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390203,
+              "key": "0c5c7c16-4ccd-4521-a675-5a3382dbda46",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0c5c7c16-4ccd-4521-a675-5a3382dbda46",
+                "completed_at": "2019-01-30T09:34:43.803Z",
+                "last_viewed_at": "2019-01-30T09:34:50.535Z",
+                "unstructured": "{\"selected_ids\":[0,1,2,4,3,5,6,7,8,9]}"
+              },
+              "tasks": [
+                "从“辅助材料”（见页面底部）下载 `fruit_stand.xlsx` 文件",
+                "在你的电子表格应用中打开 `fruit_stand.xlsx`",
+                "删除重复行",
+                "在**橙子（Oranges）** 的右侧插入一个标有**桃子（Peaches）** 的列",
+                "在**桃子**列单元格中输入值 **2、3、4、2、1**",
+                "在**橙子**的价格（Price）下为**桃子**输入价格 **$0.90**",
+                "更正**所有水果（All Fruit）** 的计算并`填充`公式",
+                "小测试：所有水果（见下文）",
+                "更正**收入（Income）** 的计算，并`填充`公式",
+                "小测试：收入（见下文）"
+              ],
+              "positive_feedback": "棒极了！你成功使用一些技巧和公式创建了一个电子表格！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一个步骤，则从列表中划掉一个。任务列表中的小测试见下方。"
+            },
+            {
+              "id": 390205,
+              "key": "4f1ac255-462b-4a24-a6ec-df084b8213e3",
+              "title": "所有水果",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4f1ac255-462b-4a24-a6ec-df084b8213e3",
+                "completed_at": "2019-02-04T15:18:29.450Z",
+                "last_viewed_at": "2019-02-04T15:18:29.450Z",
+                "unstructured": "{\"answer\":\"3\",\"is_correct\":false}"
+              },
+              "question": {
+                "prompt": "你为 3 号订单计算的**所有水果**的值是多少？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*7\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390206,
+              "key": "5389c408-57a8-4e89-af6f-9a2290acf8c5",
+              "title": "收入",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5389c408-57a8-4e89-af6f-9a2290acf8c5",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "你为 5 号订单计算的**收入**值是多少？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*\\$?\\s*3\\.70*\\s*$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390418,
+          "key": "59a414b6-7f4e-4888-b3b9-c8bef23c6e3f",
+          "title": "保存数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "59a414b6-7f4e-4888-b3b9-c8bef23c6e3f",
+            "completed_at": "2019-01-29T07:41:00.476Z",
+            "last_viewed_at": "2019-07-31T12:15:40.838Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390197,
+              "key": "996a012c-9959-42a2-9aba-4cde0b78282b",
+              "title": "保存数据",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "g4o6FCo6eIs",
+                "china_cdn_id": "g4o6FCo6eIs.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390419,
+          "key": "fad99502-4b6a-4c47-a4c4-d5d839e15352",
+          "title": "文件类型",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fad99502-4b6a-4c47-a4c4-d5d839e15352",
+            "completed_at": "2019-01-29T07:42:07.622Z",
+            "last_viewed_at": "2019-07-31T12:15:41.565Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390198,
+              "key": "4373ebb5-5f3b-4502-8243-cbe21f95445d",
+              "title": "文件类型",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4373ebb5-5f3b-4502-8243-cbe21f95445d",
+                "completed_at": "2019-01-30T09:35:45.764Z",
+                "last_viewed_at": "2019-02-24T14:45:54.277Z",
+                "unstructured": "{\"selected_ids\":[\"a1501195401632\",\"a1501195425432\",\"a1501195424403\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "以下哪些文件类型可以被 Excel 和大多数其他电子表格应用程序有效地读取？",
+                "answers": [
+                  {
+                    "id": "a1501195401632",
+                    "text": "Excel 工作簿 (*.xlsx)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501195424403",
+                    "text": "逗号分割文件 (*.csv)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501195425432",
+                    "text": "Excel 2003 (*.xls)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1501195426140",
+                    "text": "JSON (*.json)",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390416,
+          "key": "7e5dea11-9849-44b5-be2f-d79ceae4c0e1",
+          "title": "概括",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7e5dea11-9849-44b5-be2f-d79ceae4c0e1",
+            "completed_at": "2019-01-29T07:45:20.696Z",
+            "last_viewed_at": "2019-07-31T12:15:44.514Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390199,
+              "key": "a59af5e7-3efb-4cdd-af6d-27eb4c08b0fd",
+              "title": "入门概括",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "QUE66WzMKVw",
+                "china_cdn_id": "QUE66WzMKVw.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

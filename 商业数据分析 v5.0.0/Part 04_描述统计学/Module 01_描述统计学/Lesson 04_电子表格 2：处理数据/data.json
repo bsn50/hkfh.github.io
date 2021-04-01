@@ -1,0 +1,1596 @@
+{
+  "data": {
+    "lesson": {
+      "id": 390482,
+      "key": "b829e504-fe21-4900-a223-9356d479e545",
+      "title": "电子表格 2：处理数据",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "在本课中，你将学习在电子表格中处理数据：公式、函数、删除重复行、拆分列、筛选和排序。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/b829e504-fe21-4900-a223-9356d479e545/390482/1544209116992/%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC+2%EF%BC%9A%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/b829e504-fe21-4900-a223-9356d479e545/390482/1544209112183/%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC+2%EF%BC%9A%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 390424,
+          "key": "b4dc100a-1373-43c6-9c24-8255ed51bfb1",
+          "title": "简介",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b4dc100a-1373-43c6-9c24-8255ed51bfb1",
+            "completed_at": "2018-11-14T12:19:46.332Z",
+            "last_viewed_at": "2019-09-06T02:56:16.966Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390207,
+              "key": "972b0232-502a-427e-83d5-102dc5fbc2f1",
+              "title": "处理数据简介",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "OG3vMznXkB8",
+                "china_cdn_id": "OG3vMznXkB8.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390422,
+          "key": "bc800917-db5b-44e2-9a22-69898f089e50",
+          "title": "单元格公式",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bc800917-db5b-44e2-9a22-69898f089e50",
+            "completed_at": "2019-01-29T07:50:54.713Z",
+            "last_viewed_at": "2019-07-31T12:16:13.836Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390208,
+              "key": "65068685-6ef6-47d8-83bb-e21547f5b23a",
+              "title": "单元格公式",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "tBRewlzRoHU",
+                "china_cdn_id": "tBRewlzRoHU.mp4"
+              }
+            },
+            {
+              "id": 562582,
+              "key": "4cf418f7-0bf6-422c-bb35-e0ef2d5fe461",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "参考链接：[Excel 中的公式概述](https://support.office.com/zh-cn/article/Excel-%E4%B8%AD%E7%9A%84%E5%85%AC%E5%BC%8F%E6%A6%82%E8%BF%B0-ecfdc708-9162-49e8-b993-c311f47ca173)、[Excel 函数（按类别列出）](https://support.office.com/zh-cn/article/Excel-%E5%87%BD%E6%95%B0%EF%BC%88%E6%8C%89%E7%B1%BB%E5%88%AB%E5%88%97%E5%87%BA%EF%BC%89-5f91f4e9-7b42-46d2-9bd1-63f26a86c0eb)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 390426,
+          "key": "9a462281-9faa-449e-be45-b4a44aeec417",
+          "title": "练习：电子表格函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9a462281-9faa-449e-be45-b4a44aeec417",
+            "completed_at": "2019-01-29T07:57:17.500Z",
+            "last_viewed_at": "2019-07-31T12:16:15.727Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390209,
+              "key": "c77f83c7-4fb8-45a5-ae02-aa7edb4c75bb",
+              "title": "函数",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c77f83c7-4fb8-45a5-ae02-aa7edb4c75bb",
+                "completed_at": "2019-01-29T07:57:53.831Z",
+                "last_viewed_at": "2019-02-04T15:34:44.801Z",
+                "unstructured": "{\"answer_ids\":[\"a1503003815502\",\"a1503003846085\",\"a1503003860023\",\"a1503003877157\",\"a1503003889319\",\"a1503003903070\"],\"is_correct\":true}"
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "将以下函数与定义相匹配。你可能需要使用电子表格应用程序中的\"帮助\"或者在公式菜单中查看有关这些函数的更多信息。"
+                },
+                "concepts_label": "定义",
+                "answers_label": "函数",
+                "concepts": [
+                  {
+                    "text": "将文本字符串转换为大写字母",
+                    "correct_answer": {
+                      "id": "a1503003815502",
+                      "text": "UPPER(text)"
+                    }
+                  },
+                  {
+                    "text": "返回逻辑值 TRUE",
+                    "correct_answer": {
+                      "id": "a1503003846085",
+                      "text": "TRUE()"
+                    }
+                  },
+                  {
+                    "text": "返回文本字符串中的字符数",
+                    "correct_answer": {
+                      "id": "a1503003860023",
+                      "text": "LEN(text)"
+                    }
+                  },
+                  {
+                    "text": "根据样本估计标准偏差（忽略逻辑值和文本）",
+                    "correct_answer": {
+                      "id": "a1503003877157",
+                      "text": "STDEV(n1, n2, ...)"
+                    }
+                  },
+                  {
+                    "text": "将一个区域内单元格中的数字累加到一起",
+                    "correct_answer": {
+                      "id": "a1503003889319",
+                      "text": "SUM(n1, n2, ...)"
+                    }
+                  },
+                  {
+                    "text": "删除文本字符串中的所有空格，单词之间的单个空格除外",
+                    "correct_answer": {
+                      "id": "a1503003903070",
+                      "text": "TRIM(text)"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1503003877157",
+                    "text": "STDEV(n1, n2, ...)"
+                  },
+                  {
+                    "id": "a1503003815502",
+                    "text": "UPPER(text)"
+                  },
+                  {
+                    "id": "a1503003903070",
+                    "text": "TRIM(text)"
+                  },
+                  {
+                    "id": "a1503003846085",
+                    "text": "TRUE()"
+                  },
+                  {
+                    "id": "a1503003860023",
+                    "text": "LEN(text)"
+                  },
+                  {
+                    "id": "a1503003889319",
+                    "text": "SUM(n1, n2, ...)"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390425,
+          "key": "7308d524-a2b2-4f1b-a09a-007fda2d0689",
+          "title": "SUBSTITUTE 函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7308d524-a2b2-4f1b-a09a-007fda2d0689",
+            "completed_at": "2019-01-29T07:58:04.554Z",
+            "last_viewed_at": "2019-07-31T12:16:18.880Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390210,
+              "key": "a2959d65-c6e7-4ca1-a05b-384ef5150f48",
+              "title": "SUBSTITUTE 函数",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "MKzr4Z-2AgY",
+                "china_cdn_id": "MKzr4Z-2AgY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390427,
+          "key": "f1201e8e-f210-461e-9204-779313826d38",
+          "title": "练习：SUBSTITUTE 函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f1201e8e-f210-461e-9204-779313826d38",
+            "completed_at": "2019-01-29T08:03:15.291Z",
+            "last_viewed_at": "2019-07-31T12:16:20.867Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390211,
+              "key": "2d7671eb-8850-4594-a508-b3daca575c89",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/599e126c_substitute2/substitute2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2d7671eb-8850-4594-a508-b3daca575c89",
+              "caption": "",
+              "alt": "",
+              "width": 702,
+              "height": 188,
+              "instructor_notes": null
+            },
+            {
+              "id": 390212,
+              "key": "51a2a588-b58a-4f78-969d-0d283d25b1e6",
+              "title": "SUBSTITUTE 函数",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "51a2a588-b58a-4f78-969d-0d283d25b1e6",
+                "completed_at": "2019-01-29T08:04:49.629Z",
+                "last_viewed_at": "2019-02-16T13:04:08.762Z",
+                "unstructured": "{\"selected_ids\":[\"a1503022459936\"],\"is_correct\":false}"
+              },
+              "question": {
+                "prompt": "假设你必须为 **B2** 单元格写一个公式来显示结果。从下面的列表中选择对 **B2** 单元格有效的所有公式。\t",
+                "answers": [
+                  {
+                    "id": "a1503022204124",
+                    "text": "=SUBSTITUTE(A2,B5,B4)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1503022362386",
+                    "text": "=SUBSTITUTE(A2,B4,B5)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503022369461",
+                    "text": "=SUBSTITUTE($A2,$B4,$B5)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503022372521",
+                    "text": "=SUBSTITUTE($A2,B5,B4)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1503022374761",
+                    "text": "=SUBSTITUTE(A2,$B$4,$B$5)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503022377799",
+                    "text": "=SUBSTITUTE($A$2,$B$4,$B$5)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503022459936",
+                    "text": "=SUBSTITUTE(A2,\"will solve\",B4)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1503022847311",
+                    "text": "=SUBSTITUTE(A2,\"I will solve\",B4)",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390428,
+          "key": "84fd1538-4930-4bfb-a1ed-16a076401b55",
+          "title": "提取文本",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "84fd1538-4930-4bfb-a1ed-16a076401b55",
+            "completed_at": "2019-01-29T08:04:52.066Z",
+            "last_viewed_at": "2019-07-31T12:16:23.081Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390213,
+              "key": "091a4c54-83ba-4f6f-a77c-05b71ae8ecb0",
+              "title": "提取文本",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zWFdezbhidU",
+                "china_cdn_id": "zWFdezbhidU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390429,
+          "key": "5637903a-2645-48a6-a8ea-987aa426a600",
+          "title": "练习：提取文本",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5637903a-2645-48a6-a8ea-987aa426a600",
+            "completed_at": "2019-01-29T08:07:14.564Z",
+            "last_viewed_at": "2019-09-06T08:27:49.856Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "extract_text.xlsx",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/599cafcf_extract-text/extract-text.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390214,
+              "key": "3ab5ebf1-ed2b-42f7-a227-81de4453d29b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：提取文本\n在下面的练习中，结合你学到的关于 **FIND** 和 **MID** 函数的知识，提取一系列句子中首次出现 \"data\" 一词时_其后_ 的第一个单词。比如，在下面这个句子里，你的目标单词为 \"is\"：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390215,
+              "key": "fdfaa063-88d6-43ed-8ba4-aee5902b00fe",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59973b25_extract1/extract1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fdfaa063-88d6-43ed-8ba4-aee5902b00fe",
+              "caption": "",
+              "alt": "",
+              "width": 883,
+              "height": 409,
+              "instructor_notes": null
+            },
+            {
+              "id": 390216,
+              "key": "68257363-c47b-43d2-be63-ba595d79b490",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "由于此次是从文本字符串的中间提取内容，因此你要使用 **MID** 函数和以下语法：\n\n```text\nMID(text, start_num, num_chars)\ntext     \n         包含你要提取的字符的文本字符串\nstart_num    \n         你要在文本中提取的第一个字符的位置\nnum_chars\n         你希望 MID 从文本中返回字符的个数\n```\n想想如何解决这个问题。在使用 **MID** 函数之前，你需要先**查找（FIND）** data 一词后的第一个单词，并确定其中的字符个数。要确定目标单词中的字符个数，你还要**查找（FIND）**目标单词之后的空格。目标单词的大小将等于它之后的空格的位置减去目标单词的开始位置。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390217,
+              "key": "eed1babb-d4ba-43b6-8e19-11c14ddbe124",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59973d9b_extract2/extract2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/eed1babb-d4ba-43b6-8e19-11c14ddbe124",
+              "caption": "",
+              "alt": null,
+              "width": 878,
+              "height": 316,
+              "instructor_notes": null
+            },
+            {
+              "id": 390218,
+              "key": "80fc4027-8ad1-4424-bedf-4459746c9eab",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "此练习将带你一步步使用中间公式获得最终答案。当在每列顶部单元格中找到正确的公式，你便可以对后面所给的所有例子“自动填充公式”（或复制）单元格。\n\n提醒一下，这里是使用 **FIND** 函数的语法:\n```text\nFIND(find_text, within_text, [start_num])\nfind_text    \n         你想查找的文本\nwithin_text   \n         包含你要查找文本的文本\nstart_num    \n         可选 - 开始搜索的字符位置\t\n```",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390219,
+              "key": "f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8",
+                "completed_at": "2019-02-04T15:37:19.402Z",
+                "last_viewed_at": "2019-02-04T15:37:26.909Z",
+                "unstructured": "{\"selected_ids\":[0,2,1,3,4,5,6,7,8,9,10,11,12]}"
+              },
+              "tasks": [
+                "从资源（参见页面底部的\"辅助材料\"）下载 `extract_text.xlsx` 文件",
+                "在你的电子表格应用中打开 `extract_text.xlsx`",
+                "使用 **FIND** 函数创建一个公式，并在Sentence文本中查找单词 \"data\" 的首字母位置(并自动充填公式)。",
+                "练习：首个 \"data\" 的位置（见下文）",
+                "使用 **FIND** 函数创建公式，来查找目标单词第一个字母的位置（并自动填充公式）",
+                "练习：目标单词位置（见下文）",
+                "创建一个公式来找到目标单词后的第一个空格（并自动填充公式）",
+                "创建一个公式来确定目标单词的长度（并自动填充公式）",
+                "练习：目标单词长度（见下文）",
+                "使用 **MID** 函数创建一个公式来输出目标单词（并自动填充公式）",
+                "练习：目标单词（见下文）",
+                "创建一个仅依赖原始文本字符串的单个公式（并自动填充公式）",
+                "练习：嵌套公式（见下文）"
+              ],
+              "positive_feedback": "恭喜！这个练习有点难度，但你搞定了！！！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390220,
+              "key": "204d5352-adfa-4e57-9439-ec505b152b50",
+              "title": "首个 \"data\" 的位置",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "204d5352-adfa-4e57-9439-ec505b152b50",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "第六行句子的首个 \"data\" 的位置在哪里？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*111\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390221,
+              "key": "55e42012-05fe-4243-86ee-fc064dc4cf0d",
+              "title": "目标单词位置",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "55e42012-05fe-4243-86ee-fc064dc4cf0d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "第 5 行中目标单词的第一个字母的位置在哪里？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*79\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390222,
+              "key": "ba3d5f43-b820-4d3c-89bb-54a64a06464d",
+              "title": "目标单词长度",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ba3d5f43-b820-4d3c-89bb-54a64a06464d",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "第 3 行中的目标单词多长？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*7\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390223,
+              "key": "2174386c-aa4c-4735-ac06-21966ba35b5e",
+              "title": "目标单词",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2174386c-aa4c-4735-ac06-21966ba35b5e",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "列出找到的九个目标单词，用空格分隔（请勿使用逗号或其他标点符号！）",
+                "matchers": [
+                  {
+                    "expression": "^\\s*this\\s*student\\s*shows\\s*that\\s*study\\s*and\\s*practice\\s*get\\s*results\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390224,
+              "key": "061ffc56-a72f-4726-bea5-d0a4431007be",
+              "title": "嵌套公式",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "061ffc56-a72f-4726-bea5-d0a4431007be",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "以下哪个 **G2** 的公式会计算目标单词，并只取决于原文？",
+                "answers": [
+                  {
+                    "id": "a1503431267713",
+                    "text": "=MID(A2,C2,D2-C2)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1503431488858",
+                    "text": "=MID(A2,FIND(\" \",A2,B2)+1,E2)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1503431536478",
+                    "text": "=MID(A2,FIND(\" \",A2,FIND(\"data\",A2))+1,FIND(\" \",A2,(FIND(\" \",A2,FIND(\"data\",A2))+1))-(FIND(\" \",A2,FIND(\"data\",A2))+1))",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503431556806",
+                    "text": "=\"this\"",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390430,
+          "key": "a41f78d9-e0e5-4e31-aa7b-e32e7680b227",
+          "title": "调整文本格式",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a41f78d9-e0e5-4e31-aa7b-e32e7680b227",
+            "completed_at": "2019-01-29T08:07:20.147Z",
+            "last_viewed_at": "2019-07-31T12:24:38.620Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390225,
+              "key": "380283c8-a28f-4b82-be06-a3ce9a3b6700",
+              "title": "调整文本格式",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "b2U-WnMiD3g",
+                "china_cdn_id": "b2U-WnMiD3g.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390431,
+          "key": "69b74220-7e7c-481f-a939-c4aa92bb13b4",
+          "title": "练习：UPPER、LOWER 和 PROPER 函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "69b74220-7e7c-481f-a939-c4aa92bb13b4",
+            "completed_at": "2019-01-29T08:08:14.554Z",
+            "last_viewed_at": "2019-07-31T12:25:10.585Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390226,
+              "key": "d0ba7a3a-ab33-41be-a181-2dbcd89fe91f",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d0ba7a3a-ab33-41be-a181-2dbcd89fe91f",
+                "completed_at": "2019-01-29T08:15:37.801Z",
+                "last_viewed_at": "2019-02-25T14:58:55.994Z",
+                "unstructured": "{\"answer_ids\":[\"a1503432630316\",\"a1503433022746\",\"a1503433044081\"],\"is_correct\":true}"
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "将以下函数与应用于这句话时的结果匹配： \n```text\n\"It is a capital mistake to theorize before one has data\"  \n- Sherlock Holmes\n```"
+                },
+                "concepts_label": "句子",
+                "answers_label": "应用的函数",
+                "concepts": [
+                  {
+                    "text": "\"It Is A Capital Mistake To Theorize Before One Has Data\"  - Sherlock Holmes",
+                    "correct_answer": {
+                      "id": "a1503432630316",
+                      "text": "PROPER"
+                    }
+                  },
+                  {
+                    "text": "\"IT IS A CAPITAL MISTAKE TO THEORIZE BEFORE ONE HAS DATA\"  - SHERLOCK HOLMES",
+                    "correct_answer": {
+                      "id": "a1503433022746",
+                      "text": "UPPER"
+                    }
+                  },
+                  {
+                    "text": "\"it is a capital mistake to theorize before one has data\"  - sherlock holmes",
+                    "correct_answer": {
+                      "id": "a1503433044081",
+                      "text": "LOWER"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1503433044081",
+                    "text": "LOWER"
+                  },
+                  {
+                    "id": "a1503432630316",
+                    "text": "PROPER"
+                  },
+                  {
+                    "id": "a1503433022746",
+                    "text": "UPPER"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390432,
+          "key": "927d63f8-5f85-4fd7-b7c4-56f0bf779daa",
+          "title": "数学函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "927d63f8-5f85-4fd7-b7c4-56f0bf779daa",
+            "completed_at": "2019-01-29T08:15:39.898Z",
+            "last_viewed_at": "2019-07-31T12:25:20.034Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390227,
+              "key": "573c5a0b-d8d4-4263-b988-dc35f620ac85",
+              "title": "数学函数",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "IMtDLBTYt18",
+                "china_cdn_id": "IMtDLBTYt18.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390433,
+          "key": "ad07ecaa-8d59-4929-bec7-1f8ba47c5065",
+          "title": "练习：数学函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ad07ecaa-8d59-4929-bec7-1f8ba47c5065",
+            "completed_at": "2019-01-29T08:17:12.072Z",
+            "last_viewed_at": "2019-09-06T08:27:38.452Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "fruit_sum_average.xlsx",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/599caf33_fruit-sum-average/fruit-sum-average.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390228,
+              "key": "b19ab7e2-7864-4c8f-a7f5-8d0a10917602",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：数学函数\t\t\n在下面的练习中，你要使用 **SUM** 和 **AVERAGE** 函数来获得每个订单的水果总数和每个订单的平均水果数。此数据集与课堂示例非常相似，如果遇到任何问题，可返回查看前面的演示。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390229,
+              "key": "c2a22999-1bb8-4d55-86e6-598d34ef4827",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/599ca241_sum-average-01/sum-average-01.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c2a22999-1bb8-4d55-86e6-598d34ef4827",
+              "caption": "",
+              "alt": "",
+              "width": 1237,
+              "height": 586,
+              "instructor_notes": null
+            },
+            {
+              "id": 390230,
+              "key": "eabd5c28-81b0-4b69-b843-74fa350db48e",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "eabd5c28-81b0-4b69-b843-74fa350db48e",
+                "completed_at": "2019-02-04T15:42:01.169Z",
+                "last_viewed_at": "2019-02-04T15:42:03.463Z",
+                "unstructured": "{\"selected_ids\":[0,1,3,2]}"
+              },
+              "tasks": [
+                "从资源（参见页面底部的\"辅助材料\"）下载并打开 `fruit_sum_average.xlsx`",
+                "使用 **SUM** 函数获得每个订单的水果数（从 **G2** 开始然后自动填充公式）",
+                "练习：SUM 函数（见下文）",
+                "使用 **AVERAGE** 函数获取每个订单的水果数 (**G13**)",
+                "练习：AVERAGE 函数（见下文）"
+              ],
+              "positive_feedback": "恭喜！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390231,
+              "key": "a45af76b-dbf5-4a2e-ba48-c21f2f874b9f",
+              "title": "SUM 函数",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a45af76b-dbf5-4a2e-ba48-c21f2f874b9f",
+                "completed_at": "2019-02-04T16:14:51.041Z",
+                "last_viewed_at": "2019-02-04T16:14:51.041Z",
+                "unstructured": "{\"answer\":\"1\",\"is_correct\":false}"
+              },
+              "question": {
+                "prompt": "你在 **G7** 中使用的是什么公式？（在你的答案中包含等号）",
+                "matchers": [
+                  {
+                    "expression": "^\\s*\\=\\s*SUM\\s*\\(\\s*B7\\:F7\\s*\\)\\s*$"
+                  },
+                  {
+                    "expression": "\\+"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390232,
+              "key": "7d3f5d37-c35e-43fb-95cb-e2cd97064c1c",
+              "title": "AVERAGE 函数",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7d3f5d37-c35e-43fb-95cb-e2cd97064c1c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "每个订单的平均水果数是多少？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*13\\.80?\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*2\\.760?\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*14\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 440591,
+              "key": "c21695ee-2dec-44f9-8edd-b58697b7110b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "若文件无法下载，你也可以点击 [这里](https://github.com/udacity/Business_Analyst_China/raw/master/%E5%95%86%E4%B8%9A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A5%E9%97%A8%EF%BC%89/%E9%A1%B9%E7%9B%AE%E4%B8%80%EF%BC%9A%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E6%95%B0%E6%8D%AE/fruit-sum-average.xlsx)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 390434,
+          "key": "1c661b03-a6b8-4bce-a64a-569998072a26",
+          "title": "重复行",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1c661b03-a6b8-4bce-a64a-569998072a26",
+            "completed_at": "2019-01-29T08:17:16.401Z",
+            "last_viewed_at": "2019-02-25T15:01:48.726Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390233,
+              "key": "cfa85ae8-91e5-4311-9639-447744f803f1",
+              "title": "重复行",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zI6xhwLWuoA",
+                "china_cdn_id": "zI6xhwLWuoA.mp4"
+              }
+            },
+            {
+              "id": 390234,
+              "key": "5530115c-6b7b-40f3-95ec-22af084a5a79",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## Google 表格说明\t\t\n如果你使用 Google 表格作为电子表格应用程序，则有一个名为[删除重复项（Remove Duplicates）](https://chrome.google.com/webstore/detail/remove-duplicates/bckmhokpcdnhhjldhhfpebhdfipmlbog?hl=en) 的插件，可以使此操作非常简便。安装此插件后，选中列并选择`插件（Add-ons）->删除重复项（Remove Duplicates）`",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390235,
+              "key": "fac8431a-5519-45c9-b8ce-2ff0b71d61be",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/599daaa3_googlesheetsdupes/googlesheetsdupes.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fac8431a-5519-45c9-b8ce-2ff0b71d61be",
+              "caption": "",
+              "alt": "",
+              "width": 869,
+              "height": 468,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 390435,
+          "key": "66e80ddb-3991-476a-9bb4-3f46ffaf68a6",
+          "title": "练习：重复行",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "66e80ddb-3991-476a-9bb4-3f46ffaf68a6",
+            "completed_at": "2019-01-29T08:20:10.472Z",
+            "last_viewed_at": "2019-09-06T08:18:55.913Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "worldcities.csv",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/599da63f_worldcities/worldcities.csv"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390236,
+              "key": "aa074e53-f5d4-4ecb-bdbc-ddafc325ce7f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：重复行\n在此练习中，你要打开一个数据文件并删除重复的行。\n  \t\t\n你的数据文件为[逗号分隔值](https://en.wikipedia.org/wiki/Comma-separated_values) 格式或 **CSV** 格式。文件扩展名为 `.csv`，并且可以作为纯文本阅读，不同于 `.xlsx` 和 `.xls` 格式的文件。在 CSV 文件中，第一行可能是以逗号分隔的列标题，而所有后续行都是数据行。与列对应的每个值都用逗号分隔。  \t\n\t\n电子表格应用能轻松打开此类文件，并通常用于存储表格数据（Tabular Data）。例如，在 Windows 上使用 [Microsoft Notepad](https://en.wikipedia.org/wiki/Microsoft_Notepad) 或在 Apple Mac 上使用 [TextEdit](https://en.wikipedia.org/wiki/TextEdit) 打开名为 `worldcities.csv` 的 CSV 练习文件，便可看到以下文本：\n\n```text\nCity,Country\nRovaniemi,Finland\nSteinkjer,Norway\nMonterey,United States of America\nKuta,Indonesia\nLovec,Bulgaria\nMoosonee,Canada\nGulkana,United States of America\nStarorybnoye,Russia\nAmol,Iran\nKarema,Tanzania\n```\n\n如果你使用 Excel 等电子表格应用打开该文件，应用会自动为你分隔列：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390237,
+              "key": "f7f4f5ce-055f-4e9c-96cb-8e42a5d40d3d",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/599da340_duplicates/duplicates.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f7f4f5ce-055f-4e9c-96cb-8e42a5d40d3d",
+              "caption": "",
+              "alt": "",
+              "width": 659,
+              "height": 498,
+              "instructor_notes": null
+            },
+            {
+              "id": 390238,
+              "key": "76853c38-27ee-43fd-b5e1-da70cfe5ae1b",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "76853c38-27ee-43fd-b5e1-da70cfe5ae1b",
+                "completed_at": "2019-02-04T15:46:14.904Z",
+                "last_viewed_at": "2019-02-04T15:46:17.253Z",
+                "unstructured": "{\"selected_ids\":[0,1]}"
+              },
+              "tasks": [
+                "下载 `worldcities.csv` 文件（见页面底部），并使用你的电子表格应用打开它",
+                "删除所有重复的行",
+                "练习：有多少重复值？（见下文）"
+              ],
+              "positive_feedback": "恭喜！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390239,
+              "key": "fba02961-3c44-4d35-9d43-11dab66ddd3c",
+              "title": "有多少重复值？",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "fba02961-3c44-4d35-9d43-11dab66ddd3c",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "你删除了多少重复值？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*72\\s*$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390436,
+          "key": "5c21af15-ef12-439c-a849-1346c5291c16",
+          "title": "拆分列",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5c21af15-ef12-439c-a849-1346c5291c16",
+            "completed_at": "2019-01-29T08:20:38.453Z",
+            "last_viewed_at": "2019-07-31T12:28:00.443Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390240,
+              "key": "f68c5b0d-12b9-4cf5-aa44-9198a7b495fb",
+              "title": "拆分列",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "8B_mG09shXo",
+                "china_cdn_id": "8B_mG09shXo.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390438,
+          "key": "81c9bccf-fbfb-44ef-940e-ae225725a90f",
+          "title": "练习：拆分列",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "81c9bccf-fbfb-44ef-940e-ae225725a90f",
+            "completed_at": "2019-01-29T08:22:01.772Z",
+            "last_viewed_at": "2019-09-06T08:20:07.077Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "ALbb_salaries_2003.csv",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/599dc031_albb-salaries-2003/albb-salaries-2003.csv"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390241,
+              "key": "22a307d7-b6a2-4a90-8489-b972d955e31a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：拆分列\t\t\n在下面的练习中，你要下载一个数据集，其中包含 2003 年的美国棒球联盟运动员和薪水，并将球员的姓名分为两列，姓一列，名一列。\n\n在使用较大的数据集时，在滚动数据时\"冻结\"标题行或最左边的列会比较有用。要这样做：\n- Windows下，在 Excel 中使用 `视图（View）-> 冻结窗格（Freeze Panes）` 操作\n- OS X 下，在 Excel 中的 `窗口（Window）-> 冻结窗格（Freeze Panes）` 操作\n- 或在 Google 表格中使用 `查看（View）-> 冻结（Freeze）` 选择你想要始终可见的行或列。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390242,
+              "key": "db24d62a-b885-4232-9503-e73cb1c9c8c8",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59a06f45_freeze-tooltip/freeze-tooltip.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/db24d62a-b885-4232-9503-e73cb1c9c8c8",
+              "caption": "",
+              "alt": "",
+              "width": 388,
+              "height": 148,
+              "instructor_notes": null
+            },
+            {
+              "id": 390243,
+              "key": "ab5397dd-7ded-4026-9427-282345ba1674",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ab5397dd-7ded-4026-9427-282345ba1674",
+                "completed_at": "2019-01-30T12:19:21.656Z",
+                "last_viewed_at": "2019-01-30T12:19:23.906Z",
+                "unstructured": "{\"selected_ids\":[0,1,2,3]}"
+              },
+              "tasks": [
+                "下载 `ALbb_salaries_2003.csv` 文件（见页面底部），并在你的电子表格应用中打开它",
+                "在 `Player`（球员）列的右侧插入一个空列",
+                "将 `Player` 列从中间的逗号处分为两列：`Last`（姓）和`First`（名）",
+                "练习：拆分列（见下文）"
+              ],
+              "positive_feedback": "恭喜！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390244,
+              "key": "8789871f-f580-4086-96f2-b709de2e0aac",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "8789871f-f580-4086-96f2-b709de2e0aac",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "将你电子表格中的值与地址匹配。"
+                },
+                "concepts_label": "地址",
+                "answers_label": "值",
+                "concepts": [
+                  {
+                    "text": "C264",
+                    "correct_answer": {
+                      "id": "a1503510065451",
+                      "text": "Magglio"
+                    }
+                  },
+                  {
+                    "text": "A277",
+                    "correct_answer": {
+                      "id": "a1503510192545",
+                      "text": "Detroit Tigers"
+                    }
+                  },
+                  {
+                    "text": "B215",
+                    "correct_answer": {
+                      "id": "a1503510264396",
+                      "text": "May"
+                    }
+                  },
+                  {
+                    "text": "D373",
+                    "correct_answer": {
+                      "id": "a1503510306712",
+                      "text": "22,000,000"
+                    }
+                  },
+                  {
+                    "text": "E17",
+                    "correct_answer": {
+                      "id": "a1503511225751",
+                      "text": "Pitcher"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1503511225751",
+                    "text": "Pitcher"
+                  },
+                  {
+                    "id": "a1503510306712",
+                    "text": "22,000,000"
+                  },
+                  {
+                    "id": "a1503510192545",
+                    "text": "Detroit Tigers"
+                  },
+                  {
+                    "id": "a1503510065451",
+                    "text": "Magglio"
+                  },
+                  {
+                    "id": "a1503510341421",
+                    "text": "Shortstop"
+                  },
+                  {
+                    "id": "a1503510246473",
+                    "text": "Minnesota Twins"
+                  },
+                  {
+                    "id": "a1503511273871",
+                    "text": "[empty cell]"
+                  },
+                  {
+                    "id": "a1503510290884",
+                    "text": "May, Darrell"
+                  },
+                  {
+                    "id": "a1503510176411",
+                    "text": "9,000,000"
+                  },
+                  {
+                    "id": "a1503510264396",
+                    "text": "May"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390437,
+          "key": "cb2300e2-e390-41ee-9e0c-6ce44a6a19e6",
+          "title": "数据排序",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cb2300e2-e390-41ee-9e0c-6ce44a6a19e6",
+            "completed_at": "2019-01-29T08:22:09.541Z",
+            "last_viewed_at": "2019-07-31T12:30:07.545Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390245,
+              "key": "b65f0407-1768-472e-a4d4-6fd7adb707ba",
+              "title": "数据排序",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vrwhKOvBRR0",
+                "china_cdn_id": "vrwhKOvBRR0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390439,
+          "key": "afcfd3ae-88e9-4817-b5f7-4551dedc35f1",
+          "title": "练习：数据排序",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "afcfd3ae-88e9-4817-b5f7-4551dedc35f1",
+            "completed_at": "2019-01-29T08:23:10.026Z",
+            "last_viewed_at": "2019-09-06T08:20:27.223Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "ALbb_salaries_2003.csv",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/599dd2d5_albb-salaries-2003/albb-salaries-2003.csv"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390247,
+              "key": "4ea419ad-a84b-4dcf-b3d6-deaebf71fab1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：数据排序\t\t\n在下面的练习中，你要使用相同的美国棒球联盟薪资数据来练习排序。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390246,
+              "key": "0c192275-bbfa-4124-8c5f-835c0e50776d",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0c192275-bbfa-4124-8c5f-835c0e50776d",
+                "completed_at": "2019-01-30T12:22:15.989Z",
+                "last_viewed_at": "2019-01-30T12:22:19.759Z",
+                "unstructured": "{\"selected_ids\":[0,1,2,3,4]}"
+              },
+              "tasks": [
+                "下载和打开 `ALbb_salaries_2003.csv`（见页面底部）",
+                "按薪资排序（从最大到最小，降序）",
+                "练习：1 列排序（见下文）",
+                "先按位置然后按球员排序（A 到 Z，升序）",
+                "练习：2 列排序（见下文）"
+              ],
+              "positive_feedback": "恭喜！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390248,
+              "key": "47aa3a04-6d29-4ae0-a97e-b1fb2769f059",
+              "title": "1 列排序",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "47aa3a04-6d29-4ae0-a97e-b1fb2769f059",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "薪资第五高的球员的姓名是什么？（填写名和姓，用空格分隔）",
+                "matchers": [
+                  {
+                    "expression": "^\\s*Pedro\\s*Martinez\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*Martinez,\\s*Pedro\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390249,
+              "key": "f2a3cf2b-7887-4a6a-a0f5-d90c67fb67af",
+              "title": "2 列排序",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f2a3cf2b-7887-4a6a-a0f5-d90c67fb67af",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "排序后列表中的第一位 Outfielder（外场手）为哪个球队打球？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*Anaheim\\s*Angels\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*Annaheim\\s*Angels\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*Angels\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*Anaheim\\s*$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390440,
+          "key": "1abad23f-ddc9-47ce-95ee-34be3348dc5e",
+          "title": "筛选数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1abad23f-ddc9-47ce-95ee-34be3348dc5e",
+            "completed_at": "2019-01-29T08:23:12.341Z",
+            "last_viewed_at": "2019-02-25T15:08:02.278Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390250,
+              "key": "2614913b-5525-4153-a90c-3471505f443b",
+              "title": "筛选数据",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1QLYlyjTUI0",
+                "china_cdn_id": "1QLYlyjTUI0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390441,
+          "key": "ed7e1960-f4ed-4b37-bf96-d446ae4590e4",
+          "title": "练习：筛选数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ed7e1960-f4ed-4b37-bf96-d446ae4590e4",
+            "completed_at": "2019-01-29T08:24:41.854Z",
+            "last_viewed_at": "2019-09-06T08:21:46.699Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "ALbb_salaries_2003.csv",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/599dee3b_albb-salaries-2003/albb-salaries-2003.csv"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390251,
+              "key": "c7c1310a-3c65-4dda-925e-f8146a642e12",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：筛选数据\t\t\n在下面的练习中，你将再次使用美国棒球联盟的薪资数据进行练习。这里有一些不同的筛选数据挑战，难度逐渐增加。成功完成全部便可得分！",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390252,
+              "key": "d7dcc291-191c-43a8-a0e4-28dc3a44ad4f",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d7dcc291-191c-43a8-a0e4-28dc3a44ad4f",
+                "completed_at": "2019-01-30T12:30:14.170Z",
+                "last_viewed_at": "2019-01-30T12:30:17.169Z",
+                "unstructured": "{\"selected_ids\":[0,1,2,3,4,5,6]}"
+              },
+              "tasks": [
+                "下载并打开 `ALbb_salaries_2003.csv`（见页面底部）",
+                "将 `Player` 列从中间的逗号处拆分成两列：`Last` 和 `First`",
+                "选中这五列然后点击**筛选**",
+                "练习：一垒",
+                "练习：二垒",
+                "练习：三垒",
+                "练习：本垒"
+              ],
+              "positive_feedback": "得分！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390253,
+              "key": "272fc297-1614-4df7-b0f7-c8a90478d77c",
+              "title": "一垒",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "272fc297-1614-4df7-b0f7-c8a90478d77c",
+                "completed_at": "2019-01-30T12:30:51.118Z",
+                "last_viewed_at": "2019-01-30T12:30:51.118Z",
+                "unstructured": "{\"answer\":\"0\",\"is_correct\":false}"
+              },
+              "question": {
+                "prompt": "联盟中有多少球员的姓为 **Anderson**？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*5\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390254,
+              "key": "a5969c11-666b-4d44-a765-cae938809be7",
+              "title": "二垒",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "a5969c11-666b-4d44-a765-cae938809be7",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "多少个球队至少向一名 Second Baseman （二垒手）支付 30 万美元的薪资？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*3\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390255,
+              "key": "3a0693f9-f897-43c5-a9fc-7dfb904f72d9",
+              "title": "三垒",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3a0693f9-f897-43c5-a9fc-7dfb904f72d9",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "Seattle Mariners team （西雅图水手队）有多少名 infielders （内场手）的名字以 J 开头？内场手的定义为 First Baseman（一垒手）、Second Baseman（二垒手）、Third Baseman（三垒手）或 Shortstop（游击手）位置的球员。",
+                "matchers": [
+                  {
+                    "expression": "^\\s*3\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390256,
+              "key": "7d6d011d-ae18-4e0a-b8b3-df0ca6c0710b",
+              "title": "本垒",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7d6d011d-ae18-4e0a-b8b3-df0ca6c0710b",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "prompt": "California team（加州球队）pitchers（投手）的平均薪资是多少？将你的答案舍入到最近的美元。提示： 仅 Oakland（奥克兰运动家队）和 Anaheim（阿纳海姆天使队）为加州球队。",
+                "matchers": [
+                  {
+                    "expression": "^\\s*\\$?2,?276,?273\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*\\$?2,?175,?250\\s*$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390442,
+          "key": "6b3daaf5-5c3e-4bac-9c75-58a5ee15367f",
+          "title": "概括",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6b3daaf5-5c3e-4bac-9c75-58a5ee15367f",
+            "completed_at": "2019-01-29T08:32:45.462Z",
+            "last_viewed_at": "2019-03-14T09:30:37.479Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390257,
+              "key": "29a86bf9-e3be-4236-8ec9-5fad6c376e53",
+              "title": "处理数据概括\t",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "3qg5QtBf1Ww",
+                "china_cdn_id": "3qg5QtBf1Ww.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

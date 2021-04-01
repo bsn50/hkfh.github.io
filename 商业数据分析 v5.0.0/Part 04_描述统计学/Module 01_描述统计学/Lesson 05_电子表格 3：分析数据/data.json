@@ -1,0 +1,1085 @@
+{
+  "data": {
+    "lesson": {
+      "id": 390483,
+      "key": "92407fe0-857f-40de-a1c5-b232336d9e75",
+      "title": "电子表格 3：分析数据",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/92407fe0-857f-40de-a1c5-b232336d9e75/390483/1553502902822/%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC+3%EF%BC%9A%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/92407fe0-857f-40de-a1c5-b232336d9e75/390483/1553502899650/%E7%94%B5%E5%AD%90%E8%A1%A8%E6%A0%BC+3%EF%BC%9A%E5%88%86%E6%9E%90%E6%95%B0%E6%8D%AE+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 390443,
+          "key": "3b64b282-5fdd-47d5-a17b-db06c1d0770b",
+          "title": "简介",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3b64b282-5fdd-47d5-a17b-db06c1d0770b",
+            "completed_at": "2018-11-14T12:19:51.517Z",
+            "last_viewed_at": "2019-09-24T10:01:16.354Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390258,
+              "key": "a22cd3db-d4f7-48ec-9d54-80137720ecd4",
+              "title": "分析数据简介",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Nlz9bRQyYcU",
+                "china_cdn_id": "Nlz9bRQyYcU.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390445,
+          "key": "6879cbe6-6da7-4646-969d-b4fe3f52ebe9",
+          "title": "聚合函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6879cbe6-6da7-4646-969d-b4fe3f52ebe9",
+            "completed_at": "2019-01-29T08:37:05.923Z",
+            "last_viewed_at": "2019-07-31T12:32:24.611Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390259,
+              "key": "62802d38-600c-4938-8c07-bc9855bdf25f",
+              "title": "聚合函数",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sydoi5Y65bM",
+                "china_cdn_id": "sydoi5Y65bM.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390444,
+          "key": "4f6f8d58-af5d-43f6-9442-bc94b876b193",
+          "title": "聚合函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4f6f8d58-af5d-43f6-9442-bc94b876b193",
+            "completed_at": "2019-01-29T08:39:23.932Z",
+            "last_viewed_at": "2019-07-31T12:32:25.827Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390260,
+              "key": "0079cee8-e3cf-499b-8baf-76b7ada4dc9a",
+              "title": "聚合函数",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0079cee8-e3cf-499b-8baf-76b7ada4dc9a",
+                "completed_at": "2019-01-30T12:35:52.865Z",
+                "last_viewed_at": "2019-02-04T16:01:55.104Z",
+                "unstructured": "{\"selected_ids\":[\"a1503535108220\",\"a1503535155897\",\"a1503535161248\",\"a1503535166246\",\"a1503535187704\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "以下哪个是聚合函数？",
+                "answers": [
+                  {
+                    "id": "a1503535108220",
+                    "text": "SUM 函数",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503535152533",
+                    "text": "LEFT 函数",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1503535155897",
+                    "text": "AVERAGE 函数",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503535161248",
+                    "text": "MAX 函数",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503535166246",
+                    "text": "MEDIAN 函数",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503535187704",
+                    "text": "STDEV 函数",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503535192488",
+                    "text": "TRIM 函数",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390448,
+          "key": "f75e8c17-83b0-4a45-ab7f-5ebc9dcc2160",
+          "title": "逻辑函数：IF 函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f75e8c17-83b0-4a45-ab7f-5ebc9dcc2160",
+            "completed_at": "2019-01-29T08:39:51.635Z",
+            "last_viewed_at": "2019-07-31T12:32:27.604Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390265,
+              "key": "ecf7412a-bdb6-43ea-a57d-98752b365d16",
+              "title": "逻辑函数：IF 函数",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jAtpWq9okZY",
+                "china_cdn_id": "jAtpWq9okZY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390446,
+          "key": "4f36a2d0-6a0f-4fc3-a1be-3f9ef48510ad",
+          "title": "练习：比较运算符",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4f36a2d0-6a0f-4fc3-a1be-3f9ef48510ad",
+            "completed_at": "2019-01-29T08:42:49.392Z",
+            "last_viewed_at": "2019-07-31T12:32:29.777Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390261,
+              "key": "ccff90d3-2f32-44aa-abeb-8f605ee83cb9",
+              "title": "比较运算符",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ccff90d3-2f32-44aa-abeb-8f605ee83cb9",
+                "completed_at": "2019-01-30T12:38:07.406Z",
+                "last_viewed_at": "2019-02-04T16:14:05.945Z",
+                "unstructured": "{\"answer_ids\":[\"a1503588760218\",\"a1503588803689\",\"a1503588814612\",\"a1503588823599\",\"a1503588837311\",\"a1503588895065\"],\"is_correct\":true}"
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "将以下比较运算符与其含义进行匹配。"
+                },
+                "concepts_label": "意义",
+                "answers_label": "运算符",
+                "concepts": [
+                  {
+                    "text": "大于",
+                    "correct_answer": {
+                      "id": "a1503588760218",
+                      "text": "\\>"
+                    }
+                  },
+                  {
+                    "text": "大于或等于",
+                    "correct_answer": {
+                      "id": "a1503588803689",
+                      "text": "\\>="
+                    }
+                  },
+                  {
+                    "text": "小于",
+                    "correct_answer": {
+                      "id": "a1503588814612",
+                      "text": "<"
+                    }
+                  },
+                  {
+                    "text": "小于或等于",
+                    "correct_answer": {
+                      "id": "a1503588823599",
+                      "text": "<="
+                    }
+                  },
+                  {
+                    "text": "等于",
+                    "correct_answer": {
+                      "id": "a1503588837311",
+                      "text": "="
+                    }
+                  },
+                  {
+                    "text": "不等于",
+                    "correct_answer": {
+                      "id": "a1503588895065",
+                      "text": "<>"
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1503588850036",
+                    "text": "=<"
+                  },
+                  {
+                    "id": "a1503588895065",
+                    "text": "<>"
+                  },
+                  {
+                    "id": "a1503588883252",
+                    "text": "\\!="
+                  },
+                  {
+                    "id": "a1503588823599",
+                    "text": "<="
+                  },
+                  {
+                    "id": "a1503588814612",
+                    "text": "<"
+                  },
+                  {
+                    "id": "a1503588880001",
+                    "text": "=="
+                  },
+                  {
+                    "id": "a1503588760218",
+                    "text": "\\>"
+                  },
+                  {
+                    "id": "a1503588837311",
+                    "text": "="
+                  },
+                  {
+                    "id": "a1503588873992",
+                    "text": "=>"
+                  },
+                  {
+                    "id": "a1503588803689",
+                    "text": "\\>="
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390447,
+          "key": "075a2b9d-9efe-4637-9ddc-9c832f6bc96c",
+          "title": "逻辑函数：AND、OR、NOT",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "075a2b9d-9efe-4637-9ddc-9c832f6bc96c",
+            "completed_at": "2019-01-29T08:43:04.975Z",
+            "last_viewed_at": "2019-07-31T12:32:31.691Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390262,
+              "key": "19316863-7054-4049-aa9d-8983251df882",
+              "title": "逻辑函数：AND、OR、NOT",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "yASU9BOUMrU",
+                "china_cdn_id": "yASU9BOUMrU.mp4"
+              }
+            },
+            {
+              "id": 562584,
+              "key": "6f575dbc-cfaf-4ab6-90c8-38e892118691",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "参考链接：[将 IF 函数与 AND、OR 以及 NOT 函数配合使用](https://support.office.com/zh-cn/article/%E5%B0%86-IF-%E5%87%BD%E6%95%B0%E4%B8%8E-AND%E3%80%81OR-%E4%BB%A5%E5%8F%8A-NOT-%E5%87%BD%E6%95%B0%E9%85%8D%E5%90%88%E4%BD%BF%E7%94%A8-d895f58c-b36c-419e-b1f2-5c193a236d97)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 390449,
+          "key": "b26a9689-e33a-4973-abb0-952263373d4e",
+          "title": "练习：逻辑函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b26a9689-e33a-4973-abb0-952263373d4e",
+            "completed_at": "2019-01-29T08:45:17.496Z",
+            "last_viewed_at": "2019-09-24T10:01:21.783Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "special_orders.xlsx",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/599f243e_special-orders/special-orders.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390263,
+              "key": "4d985881-dca9-4969-acbf-9255355bb664",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：逻辑函数\n\n在以下练习中，你需要用新的方式来整合你目前所学的知识。`special_orders.xlsx` 电子表格可以在页面底部下载。你的任务是在 **F2** 中添加一个公式，并自动填充`Special Order`列，使该列符合以下语句：\n\n```text\n如果一个订单中任意一种水果的最大数量超过 10 件，\n\n或订单中的总水果量超过 20 件，\n\n则将其标记为 \"Special Order\"，\n\n否则，则标记为 \"No\"。\n```\n提供正确的公式后，你会看到以下结果：\n\n（提示：在表格中有一列 `All Fruit` 代表总水果量）",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390264,
+              "key": "db52b44a-b2b8-4001-965f-b33f7046ff16",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/599f1f2e_special-orders/special-orders.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/db52b44a-b2b8-4001-965f-b33f7046ff16",
+              "caption": "",
+              "alt": "",
+              "width": 805,
+              "height": 562,
+              "instructor_notes": null
+            },
+            {
+              "id": 390266,
+              "key": "c8ce5fac-3b4d-474c-9284-72e8089c00d8",
+              "title": "特殊订单",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c8ce5fac-3b4d-474c-9284-72e8089c00d8",
+                "completed_at": "2019-02-16T13:43:06.108Z",
+                "last_viewed_at": "2019-02-16T13:43:06.108Z",
+                "unstructured": "{\"answer\":\"OR(B2>10,C2>10,D2>10,E2>20)\",\"is_correct\":false}"
+              },
+              "question": {
+                "prompt": "在 **F2** 中输入正确的公式。仅对单元格使用相对寻址，这样一遍就可以轻松地对列进行自动填充。",
+                "matchers": [
+                  {
+                    "expression": "^\\s*\\=?\\s*IF\\(\\s*OR\\(\\s*MAX\\(\\s*B2:D2\\s*\\)\\s*>\\s*10\\s*,\\s*E2\\s*>\\s*20\\s*\\)\\s*,\\s*\"Special Order\"\\s*,\\s*\"No\"\\s*\\)\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*\\=?\\s*IF\\(\\s*OR\\(\\s*E2\\s*>\\s*20\\s*, \\s*MAX\\(\\s*B2:D2\\s*\\)\\s*>\\s*10\\s*\\)\\s*,\\s*\"Special Order\"\\s*,\\s*\"No\"\\s*\\)\\s*$"
+                  },
+                  {
+                    "expression": "[3-9]"
+                  },
+                  {
+                    "expression": "11"
+                  },
+                  {
+                    "expression": "12"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 681316,
+              "key": "b0a217b0-cf94-451a-8bd6-912543819266",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b0a217b0-cf94-451a-8bd6-912543819266",
+                "completed_at": "2019-01-30T12:47:53.027Z",
+                "last_viewed_at": "2019-07-31T12:32:40.463Z",
+                "unstructured": "{\"selected_ids\":[0]}"
+              },
+              "tasks": [
+                "勾选此项查看答案"
+              ],
+              "positive_feedback": "=IF(OR(MAX(B2:D2)>10,E2>20),\"Special Order\", \"No\")",
+              "video_feedback": null,
+              "description": "如果你未能答对正确的公式，可以勾选下方Checkbox查看答案。"
+            }
+          ]
+        },
+        {
+          "id": 390450,
+          "key": "6e30786c-6b06-41c4-823d-e9eedca3b4c8",
+          "title": "条件聚合函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6e30786c-6b06-41c4-823d-e9eedca3b4c8",
+            "completed_at": "2019-01-29T08:45:22.102Z",
+            "last_viewed_at": "2019-07-31T12:35:58.739Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390267,
+              "key": "d6abba41-37c1-4633-820a-c897705953be",
+              "title": "条件聚合函数",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "PZuuFfZGm6Y",
+                "china_cdn_id": "PZuuFfZGm6Y.mp4"
+              }
+            },
+            {
+              "id": 562585,
+              "key": "759795e8-ef94-44a1-a237-a97be4a5d16e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "参考链接：[COUNTIF 函数](\nhttps://support.office.com/zh-cn/article/COUNTIF-%E5%87%BD%E6%95%B0-E0DE10C6-F885-4E71-ABB4-1F464816DF34)、[SUMIF 函数](https://support.office.com/zh-cn/article/SUMIF-%E5%87%BD%E6%95%B0-169B8C99-C05C-4483-A712-1697A653039B)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 390451,
+          "key": "3839ea96-d133-4c36-83e4-e7713c72bc11",
+          "title": "练习：COUNTIF、SUMIF 函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3839ea96-d133-4c36-83e4-e7713c72bc11",
+            "completed_at": "2019-01-29T08:47:02.962Z",
+            "last_viewed_at": "2019-07-31T12:35:59.482Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "ALbb_salaries_2003.csv",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/599f4dc4_albb-salaries-2003/albb-salaries-2003.csv"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390268,
+              "key": "c4839f6b-98a1-40a4-9364-e9f0edb49fff",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：COUNTIF、SUMIF 函数\t\t\n          \n在此练习中，你将使用演示中的聚合函数进行实践：[COUNTIF](https://support.office.com/en-us/article/COUNTIF-function-e0de10c6-f885-4e71-abb4-1f464816df34) 和 [SUMIF](https://support.office.com/en-US/article/SUMIF-function-169B8C99-C05C-4483-A712-1697A653039B)。数据集也是相似的，只是人名和球队不同，因为你的练习数据集 `ALbb_salaries_2003.csv` 是 2003 年的美国棒球联盟的薪资数据。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390269,
+              "key": "68c8e215-0a6e-4bbc-b379-e8f08a2b2c7b",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "68c8e215-0a6e-4bbc-b379-e8f08a2b2c7b",
+                "completed_at": "2019-02-05T04:14:01.232Z",
+                "last_viewed_at": "2019-02-16T13:22:31.451Z",
+                "unstructured": "{\"selected_ids\":[1,0,2]}"
+              },
+              "tasks": [
+                "下载并打开 `ALbb_salaries_2003.csv`（见页面底部）",
+                "使用 **COUNTIF ** 函数回答问题：*名单上有多少个 Pitcher（投手）？*",
+                "练习：COUNTIF 分类（见下文）",
+                "使用 **COUNTIF** 函数回答问题：*有多少球员的薪资超过 1000 万美元？*",
+                "练习：COUNTIF 数值（见下文）",
+                "使用 **SUMIF** 函数回答问题：*联盟中花费超过 1000 万美元的薪资总数额是多少？*",
+                "练习: SUMIF（见下文）"
+              ],
+              "positive_feedback": "恭喜！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390270,
+              "key": "645898c6-57a1-44ea-a151-049bdf50c884",
+              "title": "COUNTIF 分类",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "645898c6-57a1-44ea-a151-049bdf50c884",
+                "completed_at": "2019-02-16T13:22:24.647Z",
+                "last_viewed_at": "2019-02-16T13:22:24.647Z",
+                "unstructured": "{\"answer\":\"180\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "名单上有多少个 Pitchers（投手）？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*180\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*215\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390271,
+              "key": "faf05989-e3ae-4ee1-a3c1-5d2c8fe693a6",
+              "title": "COUNTIF 数值",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "faf05989-e3ae-4ee1-a3c1-5d2c8fe693a6",
+                "completed_at": "2019-02-16T13:24:35.826Z",
+                "last_viewed_at": "2019-02-16T13:24:35.826Z",
+                "unstructured": "{\"answer\":\"20\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "名单中有多少球员的薪资超过 1000 万美元？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*20\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*23\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390272,
+              "key": "805977d6-ae8a-47c3-bf0d-297dabe77b20",
+              "title": "SUMIF",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "805977d6-ae8a-47c3-bf0d-297dabe77b20",
+                "completed_at": "2019-02-16T13:29:52.333Z",
+                "last_viewed_at": "2019-02-16T13:29:52.333Z",
+                "unstructured": "{\"answer\":\"268702381\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "联盟中花费超过 1000 万美元的薪资总数额是多少？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*\\$?268,?702,?381\\.?0*\\s*$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390452,
+          "key": "33f791f6-de2c-4b58-aca8-89030e634caa",
+          "title": "数据透视表",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "33f791f6-de2c-4b58-aca8-89030e634caa",
+            "completed_at": "2019-01-29T08:47:48.115Z",
+            "last_viewed_at": "2019-07-31T12:37:02.837Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390273,
+              "key": "0592bf9b-2b44-4730-90c0-1f2783479282",
+              "title": "数据透视表",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "在 **Google 表格**中，数据透视表位于`数据`菜单下。我发现[此视频](https://www.youtube.com/watch?v=eUa1LuOjea8) 有助于在 Google 表格中建立数据透视表。",
+              "video": {
+                "youtube_id": "zP9vlJ9xPKA",
+                "china_cdn_id": "zP9vlJ9xPKA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390453,
+          "key": "a4cc3451-970b-477d-9d47-da6115fd0278",
+          "title": "练习：数据透视表",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a4cc3451-970b-477d-9d47-da6115fd0278",
+            "completed_at": "2019-01-29T08:59:33.060Z",
+            "last_viewed_at": "2019-07-31T12:37:03.765Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390274,
+              "key": "510b7bb2-f4b3-4d5e-b680-09dc9a9c51c4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：数据透视表\t\t\n          \n在此练习中，你要按演示视频中的相同步骤，使用数据创建数据透视表并回答问题。唯一的区别是这次你要使用已经熟悉的 `ALbb_salaries_2003.csv` 数据集。\n\n\"ALbb_salaries_2003.csv\" 数据集请从[这里](https://raw.githubusercontent.com/udacity/Business_Analyst_China/master/%E5%95%86%E4%B8%9A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88%E5%85%A5%E9%97%A8%EF%BC%89/%E9%A1%B9%E7%9B%AE%E4%B8%80%EF%BC%9A%E8%B0%83%E6%9F%A5%E9%97%AE%E5%8D%B7%E6%95%B0%E6%8D%AE/albb-salaries-2003.csv)下载，单击打开页面，右键点击进行另存为。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390275,
+              "key": "f2495c87-d769-4a12-975f-191a02c07c9e",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f2495c87-d769-4a12-975f-191a02c07c9e",
+                "completed_at": "2019-02-05T04:16:41.095Z",
+                "last_viewed_at": "2019-02-16T13:19:22.785Z",
+                "unstructured": "{\"selected_ids\":[1,2,3,4,5,6,7,0]}"
+              },
+              "tasks": [
+                "下载并打开 `ALbb_salaries_2003.csv`",
+                "选择数据集并点击**插入（Insert）->数据透视表（Pivot Table）**",
+                "将 Team 字段移动到行，将 Position 字段移动到列",
+                "使用 Count 函数汇总“值”（Values）下的 Player 字段",
+                "练习：Player 计数（见下文）",
+                "从值下删除 Player 字段（取消选中 Player 框）",
+                "统计值下的 Salary 字段的总和",
+                "练习：Salary 总和（见下文）"
+              ],
+              "positive_feedback": "恭喜！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390276,
+              "key": "15f91c4e-73c6-4c30-b655-8917e1410452",
+              "title": "Player 计数",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "15f91c4e-73c6-4c30-b655-8917e1410452",
+                "completed_at": "2019-02-16T14:18:23.679Z",
+                "last_viewed_at": "2019-02-16T14:18:29.707Z",
+                "unstructured": "{\"answer\":\"5\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "New York Yankees（纽约洋基队）有多少名 Outfielders（外场手）？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*5\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390277,
+              "key": "fd554d4a-789a-459c-b724-866627d45023",
+              "title": "Salary 总和",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "fd554d4a-789a-459c-b724-866627d45023",
+                "completed_at": "2019-02-16T14:21:37.135Z",
+                "last_viewed_at": "2019-02-16T14:21:37.135Z",
+                "unstructured": "{\"answer\":\"11625000\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "Boston Red Sox team（波士顿红袜队）2003 年在 Shortstop（游击手）的 Salary 上总花费多少？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*\\$?11,?625,?000\\.?0*\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*\\$?2\\.?0*\\s*$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390455,
+          "key": "ccb596ff-d609-4cfe-bad1-c8e3a1e1c580",
+          "title": "命名区域",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ccb596ff-d609-4cfe-bad1-c8e3a1e1c580",
+            "completed_at": "2019-01-29T09:05:54.687Z",
+            "last_viewed_at": "2019-07-31T12:37:53.039Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390278,
+              "key": "7be398c4-7d59-4533-9802-bcfa1aefa026",
+              "title": "命名区域",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fZar2z0L0kY",
+                "china_cdn_id": "fZar2z0L0kY.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 390456,
+          "key": "a3b1013f-8281-494c-8729-784d6ed6505e",
+          "title": "命名区域",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a3b1013f-8281-494c-8729-784d6ed6505e",
+            "completed_at": "2019-01-29T09:09:56.403Z",
+            "last_viewed_at": "2019-07-31T12:37:53.816Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390279,
+              "key": "14319543-e96e-45ec-b6dd-b5aa14c161f6",
+              "title": "命名区域",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "14319543-e96e-45ec-b6dd-b5aa14c161f6",
+                "completed_at": "2019-01-29T09:10:06.471Z",
+                "last_viewed_at": "2019-02-05T04:21:27.693Z",
+                "unstructured": "{\"selected_ids\":[\"a1503590010812\",\"a1503590050155\",\"a1503590058199\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "关于命名区域，以下哪些说法是正确的？",
+                "answers": [
+                  {
+                    "id": "a1503590010812",
+                    "text": "地址默认为绝对的",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503590042817",
+                    "text": "地址默认为相对的",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1503590050155",
+                    "text": "使用命名区域的公式更容易创建",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1503590058199",
+                    "text": "使用命名区域的公式更容易阅读和维护",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 681317,
+              "key": "9ffb2947-2817-4c7d-b17d-18cb3363cbe7",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9ffb2947-2817-4c7d-b17d-18cb3363cbe7",
+                "completed_at": "2019-02-05T04:21:23.043Z",
+                "last_viewed_at": "2019-02-16T14:25:54.342Z",
+                "unstructured": "{\"selected_ids\":[]}"
+              },
+              "tasks": [
+                "勾选查看正确答案"
+              ],
+              "positive_feedback": "正确选项为：1，3，4",
+              "video_feedback": null,
+              "description": "如果你未能正确回答上方练习题，可以勾选下方Checkbox查看正确答案。"
+            }
+          ]
+        },
+        {
+          "id": 390454,
+          "key": "5a5a56b8-9efa-48bb-9cf2-d973da1830a5",
+          "title": "Lookup 函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5a5a56b8-9efa-48bb-9cf2-d973da1830a5",
+            "completed_at": "2019-01-29T09:10:49.049Z",
+            "last_viewed_at": "2019-07-31T12:38:52.798Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390280,
+              "key": "3d651c9f-7813-4878-9143-ecec09cde0d6",
+              "title": "Lookup 函数",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "AA6dZign8rc",
+                "china_cdn_id": "AA6dZign8rc.mp4"
+              }
+            },
+            {
+              "id": 562588,
+              "key": "e8e66797-c2f8-4172-9abb-e900b6f928a9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "参考链接：[LOOKUP 函数](https://support.office.com/zh-cn/article/LOOKUP-%E5%87%BD%E6%95%B0-446D94AF-663B-451D-8251-369D5E3864CB)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 390457,
+          "key": "2e693ab4-efd6-4d46-809e-70a342beb5b8",
+          "title": "练习：VLOOKUP 函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2e693ab4-efd6-4d46-809e-70a342beb5b8",
+            "completed_at": "2019-01-29T09:20:11.092Z",
+            "last_viewed_at": "2019-09-24T10:02:24.541Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "air_routes_SFO.xlsx",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/August/59a0943a_air-routes-sfo/air-routes-sfo.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390281,
+              "key": "58a36b88-1362-4fa7-9f3d-1b3ea90f18ee",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 练习：VLOOKUP 函数\t\t\n          \n在此练习中，你会从包含旧金山机场所有航空公司航线的电子表格 `air_routes_SFO.xlsx` 开始。这些航线按航空公司和机场代码列出，因此对于不了解机场代码的用户来说，这些航线并不是很好选。你的任务是使用\n[命名区域](https://support.office.com/en-us/article/Define-and-use-names-in-formulas-4d0f13ac-53b7-422e-afd2-abd7ff379c64#bmcreate_a_name_by_using_the_create_nam) 和 \n[VLOOKUP 函数](https://support.office.com/en-us/article/VLOOKUP-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1) 来添加列，用于提供航空公司和目的地机场全名。你的航空公司和机场查询代码在提供的工作簿的不同表中。\t\t\n          \n要回答练习中的问题，你可能希望使用已经学过的其他一些函数。有几种方法可以解决所提出的问题，但有些方法相对更容易。\t\t\n          \n例如，在插入正确的公式后，前几行看起来会是这样的：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390282,
+              "key": "39e9ea78-9b41-43d0-8452-bef591152316",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59a072cc_vlookup-sol-example/vlookup-sol-example.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/39e9ea78-9b41-43d0-8452-bef591152316",
+              "caption": "",
+              "alt": null,
+              "width": 1439,
+              "height": 375,
+              "instructor_notes": null
+            },
+            {
+              "id": 390283,
+              "key": "6c9ce5ea-c1e4-404b-9f8b-b86d1a3966f3",
+              "title": "",
+              "semantic_type": "TaskListAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6c9ce5ea-c1e4-404b-9f8b-b86d1a3966f3",
+                "completed_at": "2019-02-05T04:23:51.077Z",
+                "last_viewed_at": "2019-02-05T04:23:54.579Z",
+                "unstructured": "{\"selected_ids\":[0,1,2,3,4,5]}"
+              },
+              "tasks": [
+                "下载 `air_routes_SFO.xlsx` 文件（见页面底部）并在你的电子表格应用中打开",
+                "为每个查询表命名区域：`airline_lookup` 和 `airport_lookup`。这些表格分别位于 **Airlines** 和 **Airports** 表",
+                "使用 **VLOOKUP** 向**航空公司名称（Airline Name）** 和**目的地机场（Destination Airport）** 列添加查找",
+                "练习：伦敦（见下文）",
+                "练习：唯一的航空公司（见下文）",
+                "练习：航线第二多的航空公司（见下文）"
+              ],
+              "positive_feedback": "恭喜！",
+              "video_feedback": null,
+              "description": "下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。"
+            },
+            {
+              "id": 390284,
+              "key": "d66ffe1b-a181-4124-b70e-3de61060888c",
+              "title": "伦敦",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d66ffe1b-a181-4124-b70e-3de61060888c",
+                "completed_at": "2019-02-16T14:40:18.392Z",
+                "last_viewed_at": "2019-02-16T14:40:18.392Z",
+                "unstructured": "{\"answer\":\"10\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "列表中有多少条通往 London Heathrow （伦敦希思罗机场）的航线？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*10\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390285,
+              "key": "9a7ffaa8-533c-4d62-a188-105e4a15828c",
+              "title": "唯一的航空公司",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9a7ffaa8-533c-4d62-a188-105e4a15828c",
+                "completed_at": "2019-02-16T14:41:22.899Z",
+                "last_viewed_at": "2019-02-16T14:42:45.370Z",
+                "unstructured": "{\"answer\":\"42\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "列表中有多少家不同的航空公司？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*42\\s*$"
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390286,
+              "key": "441f1033-d8b1-42e9-b951-4e005597dc51",
+              "title": "航线第二多的航空公司",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "441f1033-d8b1-42e9-b951-4e005597dc51",
+                "completed_at": "2019-02-16T14:45:24.927Z",
+                "last_viewed_at": "2019-02-16T14:46:10.387Z",
+                "unstructured": "{\"answer\":\"Virgin America\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "United Airlines （联合航空）在列表中拥有最多的航线，但哪家航空公司是第二多？",
+                "matchers": [
+                  {
+                    "expression": "^\\s*Virgin \\s*America\\s*$"
+                  },
+                  {
+                    "expression": "^\\s*vx\\x*$"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390458,
+          "key": "867e2be5-e512-4900-ab6f-868dd6ebb927",
+          "title": " 概括",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "867e2be5-e512-4900-ab6f-868dd6ebb927",
+            "completed_at": "2019-01-29T09:20:20.605Z",
+            "last_viewed_at": "2019-04-01T13:05:41.171Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390287,
+              "key": "bf65eae5-7d5d-44c8-9ca6-b8fea38aed11",
+              "title": "分析数据概括",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "frp5O8vIZV0",
+                "china_cdn_id": "frp5O8vIZV0.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "id": 2272,
+  "project_id": 317,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(css|docx|gradle|htm|html|java|js|markdown|md|pdf|py|rmd|rst|sql|swift|txt|xml|yaml|yml)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "- 可视化图表易懂有趣，吸引眼球，信息量丰富\n- 问题有趣，深入探索了回答问卷的这些学员，并得出了一些有趣结论或深刻见解\n- 在呈现或讨论结果时，考虑了数据收集过程中的潜在问题\n",
+  "hide_criteria": false,
+  "created_at": "2018-08-28T07:34:22.604Z",
+  "updated_at": "2020-02-20T10:55:39.423Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "available_for_cert_project": false,
+  "language": "zh-cn",
+  "ndkeys": [
+    "nd100-cn",
+    "nd002-cn-svip",
+    "nd100-cn-vip"
+  ],
+  "coursekeys": [],
+  "is_career": false,
+  "sections": [
+    {
+      "id": 5992,
+      "name": "提交要求",
+      "created_at": "2020-02-18T10:03:57.815Z",
+      "updated_at": "2020-02-20T09:05:03.571Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2272,
+      "rubric_items": [
+        {
+          "id": 17189,
+          "section_id": 5992,
+          "passed_description": "学员上传了一个压缩文件夹，包括 PDF 格式的报告和 Excel 工作簿。",
+          "exceeded_description": null,
+          "created_at": "2020-02-18T10:05:22.968Z",
+          "updated_at": "2020-02-20T09:05:03.579Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "学员上传了所有文件以供审阅",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4789,
+      "name": "探索数据",
+      "created_at": "2018-08-28T07:39:16.663Z",
+      "updated_at": "2020-02-20T09:05:03.592Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2272,
+      "rubric_items": [
+        {
+          "id": 13890,
+          "section_id": 4789,
+          "passed_description": "学员应该要清晰地提出四个或四个以上的问题，然后恰当地使用数据分析来回答这些问题，而且问题应该由简到难，从利用一列数据来回答问题到利用多列数据来回答问题。所有问题里至少要有一个问题的答案是需要用到多列数据来回答的。",
+          "exceeded_description": null,
+          "created_at": "2018-08-28T07:39:26.961Z",
+          "updated_at": "2020-02-20T10:11:17.671Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "学员能够提出问题，并使用数据回答问题。\n",
+          "exceedable": false
+        },
+        {
+          "id": 13891,
+          "section_id": 4789,
+          "passed_description": "学员能够使用均值，中位数和众数来探索数据。要注意，仅计算出这些值是不够的，需要用文字简短地阐述这些值分别说明了什么可能的结论。例如，举个中位数的例子。\n\n已就业的（“employed”）的学员，他们的睡眠小时数的中位数是 4 小时。未就业的（“unemployed”）的学员，他们的睡眠小时数的中位数是 12 小时。这么看起来，未就业人群的睡眠时间更充足。注意，这个例子中的数据是虚拟的。",
+          "exceeded_description": null,
+          "created_at": "2018-08-28T07:39:46.234Z",
+          "updated_at": "2020-02-20T10:55:39.430Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "学员能够计算数值数据的集中趋势测量值。",
+          "exceedable": false
+        },
+        {
+          "id": 13892,
+          "section_id": 4789,
+          "passed_description": "学员能够使用标准差和极差来探索数据。要注意，仅计算出这些值不是够的，需要用文字简单地说明每一个值代表的意义。比如，你可以参照课程页面“探索数据III”里的可视化例子。",
+          "exceeded_description": null,
+          "created_at": "2018-08-28T07:39:58.753Z",
+          "updated_at": "2020-02-21T02:41:00.755Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "学员能够计算数值数据的离散程度测量值。",
+          "exceedable": false
+        },
+        {
+          "id": 17190,
+          "section_id": 4789,
+          "passed_description": "学员至少使用了两种不同的图表来探索数据，比如直方图、箱线图、散点图和柱状图，并从数据探索中得出结论。注意，每一页演示文稿里必须要包括可视化图表，电子表格里的数据截图不算是可视化图表。",
+          "exceeded_description": null,
+          "created_at": "2020-02-18T10:07:25.265Z",
+          "updated_at": "2020-02-20T11:28:46.620Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "学员能够为数值数据和分类数据构建图表。",
+          "exceedable": false
+        },
+        {
+          "id": 17191,
+          "section_id": 4789,
+          "passed_description": "要注意对不同的数据选用恰当的图表。任何图表标签都要清晰、可读。任何图表都要有恰当的坐标轴标签。\n\n每个可视化图表都应该包括如下内容：\n- 图表标题\n- x 轴标题\n- x 轴标签\n- y 轴标题\n- y 轴标签\n\n可以参照教室里的例子。",
+          "exceeded_description": null,
+          "created_at": "2020-02-18T10:07:35.681Z",
+          "updated_at": "2020-02-20T10:55:39.440Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 4,
+          "criteria": "学员能够以易懂的方式呈现洞察或结论。",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4788,
+      "name": "沟通阶段",
+      "created_at": "2018-08-28T07:37:43.799Z",
+      "updated_at": "2020-02-20T10:55:39.443Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2272,
+      "rubric_items": [
+        {
+          "id": 13886,
+          "section_id": 4788,
+          "passed_description": "呈现数据分析的结果时，如有任何限制，需要讲清楚。不应该只依据简单的相关性，来做出或引导“A引起了B”的论断。\n\n呈现数据分析的结果时，应该要注意这些结果只适用于提供的那些数据。学员不应该将同一结论推导至其他范围更广的人群。除非，学员使用了课外资料并做出了正确的分析，来证明他的结论也可以放大使用。\n\n注意，数据仅来源于回答了调查问卷的学员，不是优达学城的所有学员。学员应该在项目提交里指出这一点——至少一次。",
+          "exceeded_description": null,
+          "created_at": "2018-08-28T07:37:52.647Z",
+          "updated_at": "2020-02-20T10:55:39.448Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "学员在做描述性统计时，能够避免使用推论性或随便地下结论。",
+          "exceedable": false
+        },
+        {
+          "id": 13887,
+          "section_id": 4788,
+          "passed_description": "在回答自己提出的问题时，学员要能够做出合理的数据分析，使用恰当的变量、汇总统计、图表，从而得出结论。",
+          "exceeded_description": null,
+          "created_at": "2018-08-28T07:38:09.388Z",
+          "updated_at": "2020-02-20T10:55:39.452Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "学员能够依据给定的数据类型，选用正确的分析方式或图表类型。",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 317,
+    "name": "Analyze Survey Results",
+    "nanodegree_key": "nd100",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": 2899,
+    "entitlement_required": null,
+    "is_career": null,
+    "recruitment_family_id": 5,
+    "created_at": "2017-06-21T20:38:14.311Z",
+    "updated_at": "2021-03-26T15:49:14.557Z",
+    "price": "9.0",
+    "ungradeable_price": "3.0",
+    "audit_price": "0.0"
+  }
+}

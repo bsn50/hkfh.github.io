@@ -1,0 +1,660 @@
+{
+  "data": {
+    "lesson": {
+      "id": 702814,
+      "key": "821b82f9-e7cb-48ad-85a7-775e272bad4d",
+      "title": "分析问卷数据",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "你将分析一份关于优达学城学生的真实数据。你需要设法处理缺失的数据以及错误输入的数据，以便可以正确地展现出优达学城学生的用户特征。 你将通过 Excel 来计算统计参量并绘制可视化，进而分析和总结该数据集。你也将使用专业的方式向他人解读你的主要发现。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Band-Surveydata 2",
+            "uri": "https://video.udacity-data.com/topher/2018/September/5baee8af_band-surveydata-2/band-surveydata-2.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "49cb17b7-f54a-436a-a9fa-0b65d46a06c2",
+        "version": "1.0.0",
+        "locale": "zh-cn",
+        "duration": 30240,
+        "semantic_type": "Project",
+        "title": "分析问卷数据",
+        "description": "对于最后一个项目，你将自己进行数据分析并创建一个可分享的文件来记录你的发现结果。完成数据分析流程，从提出问题开始，到最终分享你的发现结果。\n\n## 评估\n\n使用[**审阅标准**](https://review.udacity.com/#!/rubrics/2272/view)检查你的项目。如果你对自己的提交内容满意，那么就可以提交了！如果你觉得在任何方面尚不满足规范，还有待改进，请继续加油！ \n\n优达的专业审阅者将根据同一[**审阅标准**](https://review.udacity.com/#!/rubrics/2272/view)评估你的项目。你的项目必须满足每个类别的标准，提交的项目才能通过评估。\n\n## 提交\n\n### 提交项目中应该包含的文件###\n\n1. 一个演示文稿文件，该文件应该包括：\n    * 关于你提出的问题的陈述\n    * 记录你通过电子表格工作簿进行的任何数据清理工作\n    * 呈现最终结果的总结性统计信息和图表\n    * 利用我们的模板\n\n2. 列出你在创建提交内容的过程中参考或使用的网站、图书、论坛、博客等（如果没有用到任何此类资料，则填上 N/A）。\n\n\n### 准备好提交项目了?###\n\n点击“提交项目”按钮并按照说明提交项目！\n\n我们需要最多一周的时间来为项目打分，但是大部分情况下都会更快。当你提交的项目被审阅后，你会收到电子邮件。\n",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2272",
+        "terminal_project_id": null,
+        "resources": {
+          "files": [],
+          "google_plus_link": null,
+          "career_resource_center_link": null,
+          "coaching_appointments_link": null,
+          "office_hours_link": null,
+          "aws_provisioning_link": null
+        },
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 390474,
+          "key": "764907fe-137d-4738-b691-b55474837624",
+          "title": "项目概述",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "764907fe-137d-4738-b691-b55474837624",
+            "completed_at": "2019-01-27T05:08:44.349Z",
+            "last_viewed_at": "2019-12-08T17:27:34.898Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390327,
+              "key": "afeb4a36-36ad-47a6-b6d2-0dd059ce3d92",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 项目概述\n\n在此项目中，你将分析一个**真实**数据集，数据是关于当前优达学城学生参加的一些课程，它并不完美，甚至有些凌乱（有些信息输入不正确，还有些信息缺失）。你需要决定如何分析此数据，如何展示你的发现。你将使用电子表格更轻松地进行分析（请勿手动分析 —— 可能会永远分析不完！）。\n          \n你可以巩固学习描述统计学和电子表格课程，为该项目做好准备。\n         \n## 我需要安装什么？\n          \n你可以使用你喜欢的任何电子表格应用程序，这包括 Google 表格、Microsoft Excel 等。\n          \n## 此项目的用意？\n          \n此项目将向你展示数据分析过程，你将会在接下来的课程学习中继续使用数据分析。在此项目中，你将计算概括统计和构建电子表格数据的可视化展现方法，来找出有关优达学城学生的有趣信息 —— **他们是和你一样的学员**。课程的目标是让你不仅能够执行分析，还能以清晰有力的方式传达结果。\n  \t\t          \n## 我需要使用什么技能？\n          \n在完成课程和项目后，你将能够自信地：\t\n          \n* 识别不同的数据类型，以确定应该采用什么分析方法。\n* 计算集中趋势测量和离散程度测量，来描述度量数据。\n* 使用各种电子表格功能，来从数据中获得信息。 \n* 构建图表来展示分析的结果。\n* 能够提出可以用特定数据集解答的问题，并回答这些问题。\n* 使用 Excel 分析未来使用的数据。\n\n## 项目详情\n\n此项目使用的数据收集于对优达开展的某项调查做出回应的学员。此项目由**两**部分组成。你将在这两部分使用相同的数据集。你可以在 [这里](https://s3.amazonaws.com/video.udacity-data.com/topher/2018/September/5baee8af_band-surveydata-2/band-surveydata-2.zip) 下载项目所需的文件。\t\t\n          \n1. 此项目的第一部分是一组练习，你会在紧接后面的课程内容中找到。这些内容旨在帮助你熟悉数据集并测试你掌握了之前课程中的核心概念。正确回答每个测试问题将确保你顺利进入项目的第二部分。**此部分项目不会提交评审。**\n         \n2. 项目第二部分将是你提交以供评审的部分。你将需要**创建一个演示文稿**以供评审。提交详情在本课程的最后一部分进行详细说明。注意项目[审阅标准](https://review.udacity.com/#!/rubrics/2272/view) 的详细说明，以确保你准备好的项目作业符合审阅标准。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 390476,
+          "key": "8533f53b-8a48-4937-b95c-cd1c644dbc14",
+          "title": "探索数据 I",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8533f53b-8a48-4937-b95c-cd1c644dbc14",
+            "completed_at": "2019-01-30T01:55:25.635Z",
+            "last_viewed_at": "2019-12-08T17:30:35.099Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390328,
+              "key": "5d54d95c-972a-4dfa-bb99-4f4fad721988",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 清理数据\t\t\n          \n虽然你不需要按照这些步骤设置数据集，但以下信息可以作为建议：\t\t\n          \n1. 对于所有问题，如果答案位于多个列中，则合并为单个列并删除原始列。只保留合并过的列。\n2. 更改所有列名，使其不包含空格，但需要提供足够的信息。这并非必要的，而是一个建议。根据数据将来的用途，列名中包含空格或特殊字符可能会影响使用。\n3. 将 birthdate （出生日期）列改为 age（年龄）列，方法是算出从出生日期到今天日期的天数，然后除以 365。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390329,
+              "key": "5bdd9f37-53ff-406e-a502-8b57e0c97ee0",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5bdd9f37-53ff-406e-a502-8b57e0c97ee0",
+                "completed_at": "2019-01-30T02:11:56.513Z",
+                "last_viewed_at": "2019-02-12T14:10:05.263Z",
+                "unstructured": "{\"selected_ids\":[\"a1500055335762\"],\"is_correct\":false}"
+              },
+              "question": {
+                "prompt": "分析数据的另一个重要部分是了解我们数据的哪些部分是合理的，然后适当地使用数据来回答我们感兴趣的问题。在观察数据之前，以下哪项陈述似乎是合理的？",
+                "answers": [
+                  {
+                    "id": "a1500055335762",
+                    "text": "最常见的“Highest Degree Earned（取得的最高学位）”是纳米学位。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500055565187",
+                    "text": "学员的 “average number of hours of sleep（平均睡眠小时数）”超过了24小时。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500055586983",
+                    "text": "“number of hours commuting（每天通勤时间-小时数）”的最大值超过了24。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500055603423",
+                    "text": "“number of hours spent sitting（每天坐着的小时数）”的最大值超过了24。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500055617617",
+                    "text": "”years of experience（工作年限）”的最大值比历史上有记录的活得最久的人的年龄都大",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500056007977",
+                    "text": "学员在实战项目上花费的 “average hours worked（平均时间）”超过了24小时",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500056039189",
+                    "text": "超过 50% 学员的 ”average for projects（平均在项目上花费的时间）”超过 24 小时。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500056064124",
+                    "text": "“number of books read or listened to in a year（一年内阅读或收听的书籍量）”的最大值超过了365。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500056880761",
+                    "text": "最年轻的学员不到一岁。",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390330,
+              "key": "86f2416f-363d-42f8-89b6-18039d213e3b",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "86f2416f-363d-42f8-89b6-18039d213e3b",
+                "completed_at": "2019-01-30T02:13:02.427Z",
+                "last_viewed_at": "2019-02-12T14:10:37.818Z",
+                "unstructured": "{\"selected_id\":\"a1500052593672\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "最常见的\"Highest Degree Earned（取得的最高学位）\"是什么？",
+                "answers": [
+                  {
+                    "id": "a1500052506861",
+                    "text": "High school or below （高中或以下）",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500052561271",
+                    "text": "Associates （副学士）",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500052590131",
+                    "text": "Bachelors （学士）",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500052593672",
+                    "text": "Masters （硕士）",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500052599008",
+                    "text": " PhD （博士）",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500052603871",
+                    "text": "Nanodegree Program （纳米学位）",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390331,
+              "key": "b8dbf72e-d6e8-493e-a4fb-90b0f5d5983c",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b8dbf72e-d6e8-493e-a4fb-90b0f5d5983c",
+                "completed_at": "2019-01-30T03:09:42.462Z",
+                "last_viewed_at": "2019-02-05T04:53:48.503Z",
+                "unstructured": "{\"selected_ids\":[\"a1500054883675\",\"a1500053036597\",\"a1500053866416\",\"a1500053969214\",\"a1500052831700\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "分析数据的一个最重要的方面是搞清楚你**可以**和**不可以**得出什么结论。对于下面的每项陈述，分析数据来确定说法是否为真。根据调查数据选择下文中所有为真的陈述。",
+                "answers": [
+                  {
+                    "id": "a1500052831700",
+                    "text": "学员的 “average number of hours of sleep（平均睡眠小时数）”超过了一天中的小时数，即24小时。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500052930708",
+                    "text": "“number of hours commuting（每天通勤时间）”的最大值超过了一天中的小时数，即24小时。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500053036597",
+                    "text": "“number of hours spent sitting（每天坐着的小时数）”的最大值超过了一天中的小时数，即24小时。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500053866416",
+                    "text": "最年轻的学员超过一岁。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500053922139",
+                    "text": "”years of experience（工作年限）”的最大值比历史上有记录的活得最久的人的年龄都大",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500053969214",
+                    "text": "学员在实战项目上花费的 “average hours worked（平均时间）”超过了一天中的小时数，即24小时。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500054572525",
+                    "text": "超过 50% 的学生 ”average for projects（平均在项目上）”花费的时间超过 24 小时。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500054883675",
+                    "text": "“number of books read or listened to in a year（一年内阅读或收听的书籍量）”的最大值超过了一年中的天数，即 365 天。",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390332,
+              "key": "508a8b3a-3053-43a8-8ad0-45e3c5fd812c",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "508a8b3a-3053-43a8-8ad0-45e3c5fd812c",
+                "completed_at": "2019-01-30T03:35:34.963Z",
+                "last_viewed_at": "2019-02-05T04:53:56.352Z",
+                "unstructured": "{\"selected_id\":\"a1500058004209\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "参与调查的学员中最常参加的 Nanodegree Program（纳米学位课程）是什么？",
+                "answers": [
+                  {
+                    "id": "a1500057810465",
+                    "text": "Artificial Intelligence （人工智能）",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500057982616",
+                    "text": "Data Analyst  （数据分析）",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500057988002",
+                    "text": "Machine Learning Engineer （机器学习）",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500057995330",
+                    "text": " Introduction to Programming （编程入门）",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500058004209",
+                    "text": "Deep Learning Foundations （深度学习基础）",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390477,
+          "key": "7337376f-0ef3-45b3-a2af-35b357837cff",
+          "title": "探索数据 II",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7337376f-0ef3-45b3-a2af-35b357837cff",
+            "completed_at": "2019-01-28T03:13:09.699Z",
+            "last_viewed_at": "2019-08-09T11:48:23.063Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 390333,
+              "key": "8e95234e-8bfd-4d45-8ec6-6edd846e37ff",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "8e95234e-8bfd-4d45-8ec6-6edd846e37ff",
+                "completed_at": "2019-01-30T03:40:39.504Z",
+                "last_viewed_at": "2019-02-12T14:16:04.196Z",
+                "unstructured": "{\"answer\":\"0.82\",\"is_correct\":true}"
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "prompt": "完成调查的学生中 employed（就业）的比例是多少？注意''1''代表 employed（就业），''0''代表 not employed（未就业）。将答案输入为小数（18% 应写为 0.18）。",
+                "semantic_type": "CodeGradedQuestion",
+                "evaluation_id": "5519951816425472"
+              },
+              "answer": null
+            },
+            {
+              "id": 390334,
+              "key": "09a39b5c-ce34-4441-9c47-0b22306c0a38",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "09a39b5c-ce34-4441-9c47-0b22306c0a38",
+                "completed_at": "2019-01-30T03:43:39.453Z",
+                "last_viewed_at": "2019-01-30T03:46:32.515Z",
+                "unstructured": "{\"answer\":\"0.1362\",\"is_correct\":true}"
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "prompt": "在获得 Master（硕士）或 PHD（博士）学位的学生中，回复 **not employed（未就业）**的比例是多少。将答案输入为小数（18% 应写为 0.18）。",
+                "semantic_type": "CodeGradedQuestion",
+                "evaluation_id": "6105957716328448"
+              },
+              "answer": null
+            },
+            {
+              "id": 390335,
+              "key": "4ae94579-30a8-434e-919f-9160ce28e805",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "4ae94579-30a8-434e-919f-9160ce28e805",
+                "completed_at": "2019-01-30T06:26:30.924Z",
+                "last_viewed_at": "2019-01-30T06:26:30.924Z",
+                "unstructured": "{\"answer\":\"35\",\"is_correct\":true}"
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "prompt": "使一半学生比另一半学生路途更远的 daily commute time（ 每日通勤时间）（以分钟为单位）是多少（换句话说，每日通勤时间的中位数是多少）？（四舍五入到最接近的分钟整数）",
+                "semantic_type": "CodeGradedQuestion",
+                "evaluation_id": "5015929376342016"
+              },
+              "answer": null
+            },
+            {
+              "id": 390336,
+              "key": "9f25ca57-f81b-41f4-9980-b74f75ac5b6a",
+              "title": "",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "9f25ca57-f81b-41f4-9980-b74f75ac5b6a",
+                "completed_at": "2019-01-30T06:29:05.849Z",
+                "last_viewed_at": "2019-01-30T06:29:07.298Z",
+                "unstructured": "{\"answer\":\"12180\",\"is_correct\":true}"
+              },
+              "instruction": null,
+              "question": {
+                "title": "",
+                "prompt": "报告的平均 number of hours of sleep（睡眠小时数）是多少？四舍五入到最接近的小时整数。",
+                "semantic_type": "CodeGradedQuestion",
+                "evaluation_id": "6669756705931264"
+              },
+              "answer": null
+            },
+            {
+              "id": 390337,
+              "key": "c54e162d-b82b-4875-80f2-f7aff0cecd07",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c54e162d-b82b-4875-80f2-f7aff0cecd07",
+                "completed_at": "2019-01-30T06:29:21.328Z",
+                "last_viewed_at": "2019-02-05T04:54:09.135Z",
+                "unstructured": "{\"selected_id\":\"a1500068063949\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "在前面的部分，我们看到了学生的平均睡眠小时数，你觉得我们应该如何报告此值？",
+                "answers": [
+                  {
+                    "id": "a1500067910966",
+                    "text": "直接报告值 —— 毕竟它是均值。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500068063949",
+                    "text": "调查我们为什么得到这个荒谬的值。显然它是不对的。",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500068098029",
+                    "text": "我们无法分析与睡眠有关的任何东西。显然这些数据全都是错的。",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 390478,
+          "key": "9f8164f5-c7d6-42c6-a4f1-ca83ecef949d",
+          "title": "探索数据 III",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9f8164f5-c7d6-42c6-a4f1-ca83ecef949d",
+            "completed_at": "2019-01-27T05:08:41.299Z",
+            "last_viewed_at": "2019-08-09T12:45:44.309Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 390338,
+              "key": "3000f141-175b-430d-bef8-25744eb4a330",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 可视化展示\t\t\n          \n要真正很好地理解任何变量，我们应该创建可视化展示。当我们的变量可以取很多不同的值时，可视化展示非常有助于解释数据。我们展示**分类**变量的主要方法是使用**柱状图**，展示**数值**变量的主要方法是使用**直方图**。\t\t\n          \n你需要使用软件创建自己的可视化展示，但在本小节中，我们将介绍我为此数据集创建的一些可视化展示。以下是用于我们很多变量的直方图。其中一些图可能包含了无用信息，因为我还未处理异常值（这是你要在此项目的第二部分做的事）。\t\t\n          \n你可以点击图片，放大再观察。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 390339,
+              "key": "3a5c6bc3-d011-4891-81b7-2e33a8ee8492",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/July/596943a1_screen-shot-2017-07-14-at-3.19.25-pm/screen-shot-2017-07-14-at-3.19.25-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3a5c6bc3-d011-4891-81b7-2e33a8ee8492",
+              "caption": "用于数值变量的直方图",
+              "alt": "",
+              "width": 1651,
+              "height": 1007,
+              "instructor_notes": null
+            },
+            {
+              "id": 390342,
+              "key": "d5fc094e-330f-4bff-b448-c13b82527b1c",
+              "title": "",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d5fc094e-330f-4bff-b448-c13b82527b1c",
+                "completed_at": "2019-01-30T06:31:30.713Z",
+                "last_viewed_at": "2019-02-05T04:57:18.413Z",
+                "unstructured": "{\"selected_ids\":[\"a1500071191823\",\"a1500071193151\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "从上面的直方图中，可以得出哪些变量是右偏态的？",
+                "answers": [
+                  {
+                    "id": "a1500071012269",
+                    "text": "Recommendations of Udacity（优达学城的建议）",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500071166004",
+                    "text": "Participant Age（参与者年龄）",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500071191823",
+                    "text": "Commute Time（通勤时间）",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1500071193151",
+                    "text": "Years of Experience（工作年限）",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390343,
+              "key": "69f3cbd4-c92a-4985-8ca9-78c5cb6409e0",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "69f3cbd4-c92a-4985-8ca9-78c5cb6409e0",
+                "completed_at": "2019-01-30T06:32:36.326Z",
+                "last_viewed_at": "2019-02-05T04:57:44.824Z",
+                "unstructured": "{\"selected_id\":\"a1500072785717\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "直方图上的 the amount of sleep（睡眠量）全部变成一个为 0 的竖条。这是怎么回事？（注意：可参考问题下方的两个直方图以及提示1&2）",
+                "answers": [
+                  {
+                    "id": "a1500072303396",
+                    "text": "数据集中的每个人的睡眠时间都为 0 小时。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500072337261",
+                    "text": "数据集中的每个人的睡眠时间接近 0 小时，于是我们四舍五入了。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500072766232",
+                    "text": "图中有错误，其他数据都没出现。",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1500072785717",
+                    "text": "数据集中有一个 outlier（异常值），将大部分数据挤压到了一个竖条中。",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 390344,
+              "key": "613dcd08-370c-4a3b-89d8-cbc19465cf42",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/July/5969572b_screen-shot-2017-07-14-at-4.43.05-pm/screen-shot-2017-07-14-at-4.43.05-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/613dcd08-370c-4a3b-89d8-cbc19465cf42",
+              "caption": "具有和不具有异常值的睡眠数据",
+              "alt": "",
+              "width": 1655,
+              "height": 1036,
+              "instructor_notes": null
+            },
+            {
+              "id": 390345,
+              "key": "5b3818b9-9c8f-479b-9cb8-4e0051bf6b92",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**有用提示 1：** 上面是相同睡眠数据的两个直方图。左边的直方图包括了收集到的所有睡眠数据，可以看到其中有一个异常的数据点，即 1e7，这个值远远大于24小时，是不正常的、不合理的。右边的直方图是我们删除了超过12个小时的数据后的图像。显然，右边的直方图更能代表实际情况，它的信息更为准确。在创建演示文稿时应确保构建具有充分信息的图表。左边的图表是**不应构建用于提交**的图表的例子。\t\n\n**有用提示 2：** \n1. 既然 1e7 是异常数据点，为什么不只删除 1e7 这个数据点呢，而是要删除所有超过12个小时的回答？因为排除了 1e7，数据中可能也还有其他的异常值，从本图上我们并无法看出，所以按照现实常理来判断异常值的范围更加合适。\n2. 为什么选择删除回答超过 12 小时的回答呢？因为每天只有 24 小时，睡眠超过 12 小时按常理来看并不够合理，我们判定为异常值。\n\t\n综上，我们应该选择最能传达你的信息的概括统计。在之前下载的文档中我们提供了演示文稿幻灯片的例子。 你应该选择不同的变量，以清楚准确地向受众传达你的问题和发现。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 395564,
+          "key": "0b1b17cb-dd7e-4ca3-acc6-ed6ef3307e19",
+          "title": "项目详情",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0b1b17cb-dd7e-4ca3-acc6-ed6ef3307e19",
+            "completed_at": "2019-01-27T05:08:35.394Z",
+            "last_viewed_at": "2019-12-08T17:30:07.544Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Surveydata",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/October/59db199c_surveydata/surveydata.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 395563,
+              "key": "474c8228-1001-483c-9804-fe95ccbaaef4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": " ## 你如何完成该项目？ \t\t\n         \n ### 简介\t\t\n          \n在最终项目中，你需要完成自己的数据分析，并创建一个演示文稿来展示你的成果。 首先你应该浏览一下数据集，思考一下你可以利用该数据集回答哪些问题 —— 该页面中的一些问题可以帮你完成头脑风暴！然后，你需要使用电子表格应用程序来回答你在数据集中最感兴趣的问题，并撰写报告来展示你的发现。这是开放式项目，没有唯一正确的答案。 \t\t\n         \n ### 第一步 - 了解数据\t\t\n          \n问卷调查是市场营销中的一种常见方式，以了解你的受众，生产出满足受众需求的产品。 这一问卷调查的目的是帮助优达学城了解在众多纳米学位项目中的学员。你可以在**资源**处下载问卷回答的数据集，到你的计算机本地中。\t\n\n\t\n          \n### 第二步 - 做好准备\t\t\n          \n当你完成数据分析和演示文稿后，你一定希望提交你的项目（并和你的朋友、家人或同事分享）。在你开始之前，你要做好准备，我推荐你创建一个自己的文件夹，内容包含：\t\t\n          \n * 用**报告**来展示你的成果\t\t\n          \n * 原始的**数据集** （你不需要提交）\t\t\n          \n * 你用来完成报告的电子表格工作簿副本一份 （你需要提交） \t\t\n         \n### 第三步 - 分析你的数据\t\t\n          \n浏览一下问卷问题，并思考你可以回答的一些问题，然后使用`.csv`文件来回答你提出的问题。以下是一些问题提示，帮助你开始分析： \t\t\n          \n* 人们对优达学城最普遍的看法是什么？ \t\t\n          \n* 大多数学员已获得的最高学历是什么？ \t\t\n         \n* 在问卷调查结果中最常见的纳米学位项目是哪个？\t\t\n          \n* 纳米学位证书和工作头衔之间有没有某种联系？ \t\t\n          \n* 学员所在国家／城市中最常见的有哪几个？ \t\t\n        \n* 学员每周花在项目／内容学习上的时长是多少？时长会在不同的项目中表现不同吗？\t\t\n          \n* 在睡眠、通勤时间、每天坐下来的时长等方面有什么有趣的发现吗？不同地区的学员在这些方面会表现不同吗？不同纳米学位项目或工作头衔的学员在这些方面会表现不同么？ \t\t\n          \n尝试从发现不同变量之间的关系的角度提出问题，也可以提出关于个人列的问题。 \t\t\n          \n### 第四步 - 展示你的成果\t\t\n          \n当你完成数据分析，你需要创建一个演示文档来展示你找到的最有趣的发现。你需要展示你发现到的结论，并提供视觉或数值图表来支持你的结论。  \t\t\n          \n** 你的演示文稿应该包含：**\t\t\n          \n* 4 张幻灯片\t\t\n          \n* 每一张幻灯片上的发现需要一个可视化图表或至少一个数值概括统计表。 恰当的可视化图表可以是**柱状图、直方图、散点图、箱线图**或者其他能够在电子表格中制作的图表。\n          \n* 每张幻灯片上包含 1-2 句话的陈述\n          \n提交的模版是一个幻灯片文件。复制这份模版来完成你的项目。我们建议你使用模版中的布局，但这不是强制要求。\t\t\n         \n **将你完成的演示文稿和电子表格工作簿副本放进一个文件夹中并进行压缩。然后提交你的压缩文件夹。我们推荐你将演示文稿导出成 PDF 格式提交，以确保我们的审阅者可以正确打开。**\t\t\n          \n<center><a href=\"https://s3.cn-north-1.amazonaws.com.cn/static-documents/nd100-cn/Survey+Project+Submission+Template.pptx\" target=\"_blank\"><button style=\"box-sizing: border-box; border-radius: 4px; background: #02B3E4; border: none; height: 44px; padding: 0 25px; color: white; cursor: pointer; font-family: Open Sans,sans-serif; display: inline-block; border: none; font-size: 12px; letter-spacing: 1px; font-weight: 600; text-transform: uppercase;\">Submission Template</button></a></center>\t\t\n         \n ### 第五步 - 检查\t\t\n          \n使用项目 [审阅标准](https://review.udacity.com/#!/rubrics/2272/view) 来检查你的项目。 如果你已经检查好并做好准备，可以选择提交你的项目。如果你发现还有改进的空间，请继续优化你的项目。 ",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}
