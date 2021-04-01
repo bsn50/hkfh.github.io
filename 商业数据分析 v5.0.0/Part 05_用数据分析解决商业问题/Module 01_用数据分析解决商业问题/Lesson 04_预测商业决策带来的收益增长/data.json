@@ -1,0 +1,197 @@
+{
+  "data": {
+    "lesson": {
+      "id": 702816,
+      "key": "69611016-0e23-4c4d-a68b-c64329f24240",
+      "title": "预测商业决策带来的收益增长",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "在这个项目中，你将应用所学的商业分析模型，预测向新顾客投递产品目录后带来的收益增长，从而帮助管理层做出正确决策。你将使用 Excel 来搭建简单的机器学习模型支持你的分析。该项目在真实的工作环境中有非常多的应用场景，比如基于历史数据预测某种推广方式在新用户群体上的增长情况。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": {
+        "key": "63474556-05c4-4711-a02b-6bf174362786",
+        "version": "1.0.0",
+        "locale": "zh-cn",
+        "duration": 30240,
+        "semantic_type": "Project",
+        "title": "预测商业决策带来的收益增长",
+        "description": "在你查看[项目评审标准](https://review.udacity.com/#!/rubrics/615/view)，并填写提交样板完成项目后，点击下方的提交项目按键来上传你的提交文档。\n\n<div style=\"display: none;\">预测向新顾客邮寄产品目录带来的收入</div>",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "615",
+        "terminal_project_id": "",
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 215215,
+          "key": "96c8d7b1-9725-4870-8498-243a89fdcbd3",
+          "title": "项目总览",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "96c8d7b1-9725-4870-8498-243a89fdcbd3",
+            "completed_at": "2019-01-29T06:52:38.901Z",
+            "last_viewed_at": "2020-01-03T08:18:57.192Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214096,
+              "key": "2745d7a6-19e4-4704-a81e-370eb273c549",
+              "title": "项目总览",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 项目总览\n\n在这个项目中，你会分析一个关于邮寄产品目录的商业问题。你被要求预测公司向新顾客邮寄目录单能带来的收入。任务包含创建模型并将结果向管理层提出建议。\n\n#### 我该如何完成这个项目？\n这个项目需要使用我们在“解决问题的进阶分析”课程中学习的技能。要完成这个项目你需要：\n* 重温整个课程。\n* 将课程中学习到的技能运用起来，以解决项目详情章节中的商业问题。\n* 使用我们的指南和标准来帮助你创建的项目。\n* 当你准备好时，请使用辅助材料章节中的提交样板来递交审核申请。\n\n注意: 依据你的经验，你不一定需要学习整个课程来完成这个项目。\n<br></br>\n\n#### 技能要求\n为了完成这个项目，你需要:\n* 创建一个 **线性回归模型** 并将其结果应用到商业问题上。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 391587,
+          "key": "340c6317-9b46-4959-b222-a1cf85a9ad48",
+          "title": "项目详情",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "340c6317-9b46-4959-b222-a1cf85a9ad48",
+            "completed_at": "2019-01-29T06:53:22.032Z",
+            "last_viewed_at": "2020-01-03T08:17:54.476Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 391581,
+              "key": "2b94fca8-cfc4-4836-918d-2af31e4d3773",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 业务问题\n你最近加入了一家制造和出售高端家居商品的公司。去年，公司向客户寄送了第一批产品目录册（catalog），今年准备在接下来的几个月内再向外寄送一批产品目录册。公司今年的邮寄名单中新增了 250 名客户，他们希望向这 250 个客户寄送产品目录册。\n\n你的经理请你计算下通过向这些客户寄送产品目录册公司预期盈利多少。作为业务分析师，你需要帮助经理得出这些数据。经理虽然对数据分析有所了解，但是不太熟悉预测模型。\n\n经理请你预测这 250 个新客户预期会带来的利润。如果这些新客户带来的预期利润超过一万美元，那么管理层就会向他们寄送产品目录册。\n\n## 详细信息\n\n* 印刷和寄送每本产品目录册的成本是 6.5 美元。\n* 通过产品目录册出售的所有产品的平均毛利率（价格减去成本）是 50%。\n* 在计算利润时，确保先将收入乘以毛利率，然后再减去 6.5 美元的成本。\n\n写一个简短的建议报告，向经理阐明为何公司要采纳你的建议。\n\n### 成功完成项目的步骤\n\n#### 第 1 步：理解业务和数据\n\n你的项目应该包括：\n\n* 对需要作出的关键业务决策的描述\n\n**注意：**我们已经为此项目提供了整洁的数据，因此可以跳过问题解决框架中的数据准备步骤。\n\n\n#### 第 2 步：分析、建模和验证\n\n构建一个线性回归模型，然后使用该模型预测这 250 个客户带来的预测销量。我们建议你使用 Excel 处理数据。\n\n**注意：**如果你决定将 Customer Segment 当做你的一个预测器变量，请将基础条件（base case）设为 Credit Card Only。但是，你可以随意使用你喜欢的工具。你应该创建线性回归模型，并得出线性回归方程。\n\n在构建线性回归模型的过程中，你可能会发现数据中用到了分类变量。如果你不知道该如何进行处理，可以回顾一下“线性回归”课程中的“线性回归与分类变量”、“虚拟变量练习”等小节。\n\n得出线性回归方程后，应该使用该方程预测邮寄名单中的每个人预计带来的销量。\n\n\n#### 第 3 步：撰写报告\n\n得出预测或预期利润后，撰写一个简短的报告，并建议公司是否应该寄送产品目录册。\n\n**提示：**我们希望计算这 250 个客户带来的预期收入，以便计算预期利润。意味着我们还需要乘以客户购买宣传册中产品的概率。例如，如果客户要购买我们的产品，我们预计该客户将购买价值 450 美元的产品。此人有 30% 的概率将实际地购买我们的产品，因此预计收入为 450 美元 x 30% = 135 美元。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215219,
+          "key": "62157d87-53a4-42e9-8132-3b6cc7bfe7f2",
+          "title": "辅助材料",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "62157d87-53a4-42e9-8132-3b6cc7bfe7f2",
+            "completed_at": "2019-02-04T16:29:57.639Z",
+            "last_viewed_at": "2019-11-19T06:23:46.204Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "项目二：预测邮寄产品目录带来的收入增长",
+                "uri": "https://video.udacity-data.com/topher/2019/October/5db7b708_/.zip"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 214101,
+              "key": "9f7f715c-4184-4cb5-a204-94245878f613",
+              "title": "辅助材料",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 审查\n\n使用 [审阅标准](https://review.udacity.com/#!/rubrics/615/view) 来检查你的项目。如果你对提交感到满意，那么你就做好了提交项目的准备。如果你据此发现还有可改进的空间，就继续完善你的项目。\n\n## 提交样板\n\n使用本章节下方的提交样板来提交你的项目。填写完毕后，将它保存为 PDF 文件并在下个章节提交。\n\n## 数据\n*p1-customers.xlsx* - 这个数据集包含关于 2,300 位顾客的信息。 **重要**：你应该根据这个数据集来创建模型，而非 *p1-mailinglist.xlsx*。 \n\n*p1-mailinglist.xlsx* - 这个数据集包含有你想要预测销售情况的 250 位顾客。这是公司想要邮寄生产目录的顾客清单。使用这个数据组来预测公司寄出生产目录能产生多少收入。它与 p1_customers.xlsx 的数据种类几乎一致，但包含了两个额外的变量。\t\n* Score_No：顾客不会对生产目录有所反应且不会购买产品的概率。\n* Score_Yes：顾客会对生产目录有所反应且进行购买的概率。\n\n**提示1：** 我们想计算 250 位顾客的预计销售额以得出预计利润。这意味着要乘以顾客购买产品的概率。例如，一位顾客想向我们订购价值为 $450 的货品。这位顾客有 30% 的概率（即Score_Yes变量所代表的概率）会真的从我们这里购买，我们可以预测销售额为 $450 x 30% = $135。\n\n**提示2：** 在项目模版（template）第一步的第2问中，你需要列出所有做出决策所需要的数据。学生普遍出现的情况是列出的数据不完整，因此，我们建议你在完成计算之后，回顾这个问题，看看是否计算过程中使用的数据没有列在其中。你只需要包括原始数据，并不需要包括计算中间数据（所有对原始数据进行二次或多次计算和处理后得出的新数据，都算作是中间数据）。我们建议你使用列标符号来呈现你所需的数据，如：\n\n* 数据1\n* 数据2\n* ...\n\n你可以在下方下载项目所需的文件。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 391588,
+          "key": "771d1f65-15de-4727-b102-e9290b9a98a0",
+          "title": "项目验证",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "771d1f65-15de-4727-b102-e9290b9a98a0",
+            "completed_at": "2019-02-04T16:29:58.891Z",
+            "last_viewed_at": "2020-01-03T08:17:47.436Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 391583,
+              "key": "1a3191d9-7ac4-4009-8247-2e1b586703ce",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "我们准备了这道测验，是为了帮助解决我们发现同学们在进行这个项目时，遇到的常见问题。**在提交前**，请检查是否能给出以下问题的正确答案，用以初步验证你计算整体利润的流程是否正确。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 391584,
+              "key": "cf6c6686-2350-499f-b9c3-b8a8813c16b5",
+              "title": "Score * Score_Yes",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cf6c6686-2350-499f-b9c3-b8a8813c16b5",
+                "completed_at": "2019-02-05T07:01:33.873Z",
+                "last_viewed_at": "2019-02-05T07:02:46.494Z",
+                "unstructured": "{\"selected_id\":\"a1491943254520\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "使用 Score 工具向新数据集应用回归公式后，当你将预测的销量（Score）乘以购买概率（Score_Yes）后，第一条数据记录的值是多少？\n\n这是第一条未对数据进行任何排序操作的记录，应该为“A Giametti”",
+                "answers": [
+                  {
+                    "id": "a1491943254520",
+                    "text": "108.30",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1491943279788",
+                    "text": "120.95",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1491943315606",
+                    "text": "30237.39",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1491943323772",
+                    "text": "47111.72",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1491943335852",
+                    "text": "11777930.01",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1491943342908",
+                    "text": "其它",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

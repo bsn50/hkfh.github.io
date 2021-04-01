@@ -1,0 +1,322 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>分析问卷数据</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>分析问卷数据</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 项目概述.html">01. 项目概述</a>
+    </li>
+    <li class="">
+      <a href="02. 探索数据 I.html">02. 探索数据 I</a>
+    </li>
+    <li class="">
+      <a href="03. 探索数据 II.html">03. 探索数据 II</a>
+    </li>
+    <li class="">
+      <a href="04. 探索数据 III.html">04. 探索数据 III</a>
+    </li>
+    <li class="">
+      <a href="05. 项目详情.html">05. 项目详情</a>
+    </li>
+    <li class="">
+      <a href="Project Description - 分析问卷数据.html">Project Description - 分析问卷数据</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - 分析问卷数据.html">Project Rubric - 分析问卷数据</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">分析问卷数据</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            
+      <div>
+        <h2><p>提交要求</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>学员上传了所有文件以供审阅</p>
+        </td>
+        <td>
+          <p>学员上传了一个压缩文件夹，包括 PDF 格式的报告和 Excel 工作簿。</p>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div>
+        <h2><p>探索数据</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>学员能够提出问题，并使用数据回答问题。</p>
+        </td>
+        <td>
+          <p>学员应该要清晰地提出四个或四个以上的问题，然后恰当地使用数据分析来回答这些问题，而且问题应该由简到难，从利用一列数据来回答问题到利用多列数据来回答问题。所有问题里至少要有一个问题的答案是需要用到多列数据来回答的。</p>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>学员能够计算数值数据的集中趋势测量值。</p>
+        </td>
+        <td>
+          <p>学员能够使用均值，中位数和众数来探索数据。要注意，仅计算出这些值是不够的，需要用文字简短地阐述这些值分别说明了什么可能的结论。例如，举个中位数的例子。</p>
+<p>已就业的（“employed”）的学员，他们的睡眠小时数的中位数是 4 小时。未就业的（“unemployed”）的学员，他们的睡眠小时数的中位数是 12 小时。这么看起来，未就业人群的睡眠时间更充足。注意，这个例子中的数据是虚拟的。</p>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>学员能够计算数值数据的离散程度测量值。</p>
+        </td>
+        <td>
+          <p>学员能够使用标准差和极差来探索数据。要注意，仅计算出这些值不是够的，需要用文字简单地说明每一个值代表的意义。比如，你可以参照课程页面“探索数据III”里的可视化例子。</p>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>学员能够为数值数据和分类数据构建图表。</p>
+        </td>
+        <td>
+          <p>学员至少使用了两种不同的图表来探索数据，比如直方图、箱线图、散点图和柱状图，并从数据探索中得出结论。注意，每一页演示文稿里必须要包括可视化图表，电子表格里的数据截图不算是可视化图表。</p>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>学员能够以易懂的方式呈现洞察或结论。</p>
+        </td>
+        <td>
+          <p>要注意对不同的数据选用恰当的图表。任何图表标签都要清晰、可读。任何图表都要有恰当的坐标轴标签。</p>
+<p>每个可视化图表都应该包括如下内容：</p>
+<ul>
+<li>图表标题</li>
+<li>x 轴标题</li>
+<li>x 轴标签</li>
+<li>y 轴标题</li>
+<li>y 轴标签</li>
+</ul>
+<p>可以参照教室里的例子。</p>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div>
+        <h2><p>沟通阶段</p></h2>
+        <table class="table table-bordered table-hover">
+          <thead>
+            <tr class="thead-dark">
+              <th>Criteria</th>
+              <th>Meet Specification</th>
+            </tr>
+          </thead>
+          
+    <tbody>
+      
+      <tr scope="row">
+        <td>
+          <p>学员在做描述性统计时，能够避免使用推论性或随便地下结论。</p>
+        </td>
+        <td>
+          <p>呈现数据分析的结果时，如有任何限制，需要讲清楚。不应该只依据简单的相关性，来做出或引导“A引起了B”的论断。</p>
+<p>呈现数据分析的结果时，应该要注意这些结果只适用于提供的那些数据。学员不应该将同一结论推导至其他范围更广的人群。除非，学员使用了课外资料并做出了正确的分析，来证明他的结论也可以放大使用。</p>
+<p>注意，数据仅来源于回答了调查问卷的学员，不是优达学城的所有学员。学员应该在项目提交里指出这一点——至少一次。</p>
+        </td>
+      </tr>
+    
+      <tr scope="row">
+        <td>
+          <p>学员能够依据给定的数据类型，选用正确的分析方式或图表类型。</p>
+        </td>
+        <td>
+          <p>在回答自己提出的问题时，学员要能够做出合理的数据分析，使用恰当的变量、汇总统计、图表，从而得出结论。</p>
+        </td>
+      </tr>
+    
+    </tbody>
+  
+        </table>
+
+      </div>
+    
+      <div class="jumbotron">
+        <h3>Tips to make your project standout:</h3>
+        <p><ul>
+<li>可视化图表易懂有趣，吸引眼球，信息量丰富</li>
+<li>问题有趣，深入探索了回答问卷的这些学员，并得出了一些有趣结论或深刻见解</li>
+<li>在呈现或讨论结果时，考虑了数据收集过程中的潜在问题</li>
+</ul></p>
+      </div>
+    
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('分析问卷数据')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

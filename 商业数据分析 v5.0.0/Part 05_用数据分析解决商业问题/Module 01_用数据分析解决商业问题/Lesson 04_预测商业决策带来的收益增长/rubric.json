@@ -1,0 +1,196 @@
+{
+  "id": 615,
+  "project_id": 186,
+  "upload_types": [
+    "file"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(css|docx|gradle|htm|html|java|js|markdown|md|pdf|py|rmd|rst|sql|swift|txt|xml|yaml|yml)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "1. Show the distributions for each variable in the Customer List dataset. How would these distributions affect your analysis? Would you need to go back to your manager and try to get more data?\n\n你可以[在这里查看此评审标准的英文版本](https://review.udacity.com/#!/rubrics/186/view)。\n",
+  "hide_criteria": false,
+  "created_at": "2016-12-08T03:56:28.157Z",
+  "updated_at": "2019-03-27T14:49:19.973Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "available_for_cert_project": false,
+  "language": "zh-cn",
+  "ndkeys": [
+    "nd100-cn",
+    "nd002-cn-svip",
+    "nd008",
+    "nd100-cn-vip"
+  ],
+  "coursekeys": [],
+  "is_career": false,
+  "sections": [
+    {
+      "id": 1646,
+      "name": "理解业务和数据",
+      "created_at": "2016-12-21T02:07:55.204Z",
+      "updated_at": "2018-08-28T12:00:03.800Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 615,
+      "rubric_items": [
+        {
+          "id": 5073,
+          "section_id": 1646,
+          "passed_description": "这一部分内容清晰简洁，并且不超过 500 字。",
+          "exceeded_description": null,
+          "created_at": "2016-12-21T02:16:09.278Z",
+          "updated_at": "2018-08-28T12:00:47.232Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "分段格式",
+          "exceedable": false
+        },
+        {
+          "id": 5074,
+          "section_id": 1646,
+          "passed_description": "回答了以下所有问题：\n需要作出什么样的决策？\n作出这些决策需要获取哪些数据？\n分析、建模和验证",
+          "exceeded_description": null,
+          "created_at": "2016-12-21T02:17:44.690Z",
+          "updated_at": "2018-08-28T12:00:47.244Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "关键决策",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 1647,
+      "name": "分析、建模和验证",
+      "created_at": "2016-12-21T02:08:03.551Z",
+      "updated_at": "2018-08-28T12:03:31.386Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 615,
+      "rubric_items": [
+        {
+          "id": 5075,
+          "section_id": 1647,
+          "passed_description": "这一部分内容清晰简洁，并且不超过 500 字。",
+          "exceeded_description": null,
+          "created_at": "2016-12-21T02:17:57.843Z",
+          "updated_at": "2018-08-28T12:03:31.399Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "分段格式",
+          "exceedable": false
+        },
+        {
+          "id": 5076,
+          "section_id": 1647,
+          "passed_description": "每个预测变量都显示在合适时与目标变量有线性关系。\n每个预测变量都应该具有统计显著意义（p 值 <= 0.05）。",
+          "exceeded_description": null,
+          "created_at": "2016-12-21T02:18:13.187Z",
+          "updated_at": "2018-08-28T12:03:31.410Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "预测变量",
+          "exceedable": false
+        },
+        {
+          "id": 5077,
+          "section_id": 1647,
+          "passed_description": "使用了 p 值 R 平方值来解释线性模型的效果。",
+          "exceeded_description": null,
+          "created_at": "2016-12-21T02:18:24.768Z",
+          "updated_at": "2018-08-28T12:03:31.418Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "统计学解释",
+          "exceedable": false
+        },
+        {
+          "id": 5078,
+          "section_id": 1647,
+          "passed_description": "给出的回归方程正确。每个系数在小数点后都应最多保留 2 位（例如 1.28）。",
+          "exceeded_description": null,
+          "created_at": "2016-12-21T02:18:40.530Z",
+          "updated_at": "2018-08-28T12:03:31.426Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "回归方程",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 1648,
+      "name": "演示/可视化图表",
+      "created_at": "2016-12-21T02:15:53.209Z",
+      "updated_at": "2018-08-28T12:03:31.435Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 615,
+      "rubric_items": [
+        {
+          "id": 5079,
+          "section_id": 1648,
+          "passed_description": "这一部分内容清晰简洁，并且不超过 500 字。",
+          "exceeded_description": null,
+          "created_at": "2016-12-21T02:19:01.363Z",
+          "updated_at": "2018-08-28T12:03:31.446Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "分段格式",
+          "exceedable": false
+        },
+        {
+          "id": 5080,
+          "section_id": 1648,
+          "passed_description": "回答了所有问题并且建议合理。\n你的建议是什么？\n你是如何得出你的建议的？\n新的宣传册带来的利润预计是多少？（假设向这 250 个客户发送了宣传册）\n准确性\n利润计算结果正确。\t",
+          "exceeded_description": null,
+          "created_at": "2016-12-21T02:19:02.658Z",
+          "updated_at": "2018-08-28T12:03:31.455Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "完成",
+          "exceedable": false
+        },
+        {
+          "id": 5081,
+          "section_id": 1648,
+          "passed_description": "正确地计算了利润。",
+          "exceeded_description": null,
+          "created_at": "2016-12-21T02:19:04.381Z",
+          "updated_at": "2018-08-28T12:03:31.463Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "准确性",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 186,
+    "name": "Predicting Catalog Demand",
+    "nanodegree_key": "nd008",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": 2899,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": 8,
+    "created_at": "2016-07-04T03:34:34.697Z",
+    "updated_at": "2021-03-27T09:21:23.481Z",
+    "price": "5.5",
+    "ungradeable_price": "3.0",
+    "audit_price": "0.0"
+  }
+}

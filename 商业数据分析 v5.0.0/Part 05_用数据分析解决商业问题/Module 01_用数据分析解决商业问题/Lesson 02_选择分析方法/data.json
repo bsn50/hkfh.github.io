@@ -1,0 +1,1700 @@
+{
+  "data": {
+    "lesson": {
+      "id": 391823,
+      "key": "74e0bf7f-8607-4e14-bad2-ba5dfe64bd5c",
+      "title": "选择分析方法",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "根据商业问题的具体情境，选择最合适的分析方法。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/74e0bf7f-8607-4e14-bad2-ba5dfe64bd5c/391823/1544209003642/%E9%80%89%E6%8B%A9%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/74e0bf7f-8607-4e14-bad2-ba5dfe64bd5c/391823/1544208999946/%E9%80%89%E6%8B%A9%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 215038,
+          "key": "c1a91555-1da3-418d-8a2f-6ea1e17575a6",
+          "title": "选择分析方法",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c1a91555-1da3-418d-8a2f-6ea1e17575a6",
+            "completed_at": "2019-01-29T06:51:28.312Z",
+            "last_viewed_at": "2019-12-10T22:57:21.287Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213668,
+              "key": "8ab388dd-41b6-4b1f-88b6-7bbbee437f84",
+              "title": "选择分析方法",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "bdHtEIHKfAo",
+                "china_cdn_id": "bdHtEIHKfAo.mp4"
+              }
+            },
+            {
+              "id": 213669,
+              "key": "8a5af0bc-4476-4d0f-a4bb-5b550bac214c",
+              "title": "MM",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 方法图（Methodology Map）\n\n问题解决框架有助于系统地解决商业问题，但是它无法帮助我们了解具体该使用哪种方法。\n\n方法图有助于我们决定应当使用哪种方法来解决一个商业问题，可将其与问题解决框架共同使用。\n\n",
+              "instructor_notes": null
+            },
+            {
+              "id": 213670,
+              "key": "a4204931-9540-4a1a-8218-536e72d06448",
+              "title": "MM",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/June/576e0d7b_methodology-map/methodology-map.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/a4204931-9540-4a1a-8218-536e72d06448",
+              "caption": null,
+              "alt": null,
+              "width": 1275,
+              "height": 717,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215039,
+          "key": "b1698935-f8c3-426c-8778-203710be276b",
+          "title": "非预测性商业问题",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b1698935-f8c3-426c-8778-203710be276b",
+            "completed_at": "2019-02-03T13:50:56.668Z",
+            "last_viewed_at": "2019-11-19T06:40:08.867Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213671,
+              "key": "9dce4ac1-2aed-4550-be3d-16c8739a7fd6",
+              "title": "地理空间",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 非预测性分析（Non-Predictive Analysis）\n\n非预测性分析可划分成四种类型：地理空间（Geospatial）、细分（Segmentation）、聚合（Aggregation）以及描述性（Descriptive）。我们将逐一讨论。\n\n#### 地理空间分析（Geospatial Analysis）\n这种类型的分析使用基于地理位置的数据来推导结论。例子有：通过地理区域识别客户，计算店铺之间的距离以及根据客户位置创建交易区域。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213672,
+              "key": "578dcee0-1ab0-408f-b0d0-e42c956e4593",
+              "title": "非预测性商业问题",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "S-rnJ5BChAQ",
+                "china_cdn_id": "S-rnJ5BChAQ.mp4"
+              }
+            },
+            {
+              "id": 213673,
+              "key": "3eb680d0-e418-4018-9f6f-97c3d3c3594e",
+              "title": "Segmentation Analysis",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 细分分析（Segmentation Analysis）\n\n细分是将数据分组的过程。分组可以是简单的，比如购买不同东西的客户，也可以是复杂的，比如根据客户的人口特征统计来识别相似的店铺。\n",
+              "instructor_notes": null
+            },
+            {
+              "id": 213674,
+              "key": "f3196c2f-2167-45b1-bfd1-856281186e6d",
+              "title": "细分商业问题",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "QDg048qSR-k",
+                "china_cdn_id": "QDg048qSR-k.mp4"
+              }
+            },
+            {
+              "id": 213675,
+              "key": "feda6d48-c158-408e-8d72-1eddf6a5d4b9",
+              "title": "聚合",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 聚合分析（Aggregation Analysis）\n\n此方法用于计算跨组或跨维度的数据，在数据分析中很常用。举例来说，你可能想要某个销售员的月度销售汇总，将其每个月的销售额相加即可。然后，你可能需要跨维度进行汇总，比如各销售领域的月度销售汇总。聚合通常用于报告，以达到划分和区别信息的作用，有助于管理层制定决策和观察表现。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213676,
+              "key": "0f1e208c-4719-4e07-9d4c-f248d89551da",
+              "title": "聚合",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "TUQgSOoYIjk",
+                "china_cdn_id": "TUQgSOoYIjk.mp4"
+              }
+            },
+            {
+              "id": 213677,
+              "key": "a92bd58b-6023-4c77-8c98-2caafa3c102d",
+              "title": "描述性",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 描述性分析（Descriptive Analysis）\n\n描述性统计可提供一个数据样本的简单概括。比如说计算一所学校申请者的平均 GPA，或者计算一个职业棒球员的击球平均水平。在我们的电力供应案例中，我们可以使用描述性统计来计算每小时、每天或某一天的平均温度。\n\n一些常用的描述性统计包括平均值、中位数、众数、标准方差和四分位差。\n",
+              "instructor_notes": null
+            },
+            {
+              "id": 213678,
+              "key": "75b48d5c-2623-49bc-a2cf-667d925f58fe",
+              "title": "描述性",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "-d2We-HAx-g",
+                "china_cdn_id": "-d2We-HAx-g.mp4"
+              }
+            },
+            {
+              "id": 213679,
+              "key": "3622970d-f40e-4b10-92d8-1aec2099a657",
+              "title": "描述性统计",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 描述性统计（Descriptive Statistics）\n\n你可以观看优达学城的[描述统计学入门](https://cn.udacity.com/course/intro-to-descriptive-statistics--ud827)课程来帮助自己重温 Patrick 刚刚提到的统计学概念。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215040,
+          "key": "756ec3a7-c966-485d-88f1-f90b9d75a4f8",
+          "title": "练习：将商业问题分类",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "756ec3a7-c966-485d-88f1-f90b9d75a4f8",
+            "completed_at": "2019-02-03T14:04:10.385Z",
+            "last_viewed_at": "2019-11-19T07:08:40.444Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213680,
+              "key": "9f63ee1e-0e64-4f07-ad9f-b5770c4143c4",
+              "title": "练习",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "让我们来练习将商业问题分类上节课介绍的几类。请将下面的每个商业问题标记为以下几种类型之一：\n\n- 预测性\n- 地理空间\n- 细分\n- 聚合\n- 描述性\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213681,
+              "key": "7442ff00-bdb4-4402-b15c-502d8655fe5c",
+              "title": "1",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 案例 1:\n\nQwiki Mart 想要另建一个店铺地点。它想要选择一个可能拥有最多业务的地址，同时想要确保该地址没有在另一家分店的 4 英里范围内。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213682,
+              "key": "6b46ea73-af49-4f75-a88e-74ae3f7ff9be",
+              "title": "#1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6b46ea73-af49-4f75-a88e-74ae3f7ff9be",
+                "completed_at": "2019-02-03T14:04:26.306Z",
+                "last_viewed_at": "2019-02-23T04:01:19.810Z",
+                "unstructured": "{\"selected_id\":\"a1466466954096\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "哪种类型的数据分析方法最适用于回答这个问题？",
+                "answers": [
+                  {
+                    "id": "a1466466953400",
+                    "text": "预测性",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466466954096",
+                    "text": "地理空间",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466466954584",
+                    "text": "细分",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466466955072",
+                    "text": "聚合",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466466955607",
+                    "text": "描述性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213683,
+              "key": "16879525-2509-431c-92b2-a42cdab1ed01",
+              "title": "2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 案例 2:\n\nTShirts.com 收到关于他们网页加载缓慢的投诉。为了确保有足够的服务器能力来应对拥堵，他们想要预测未来的网页拥堵状况。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213684,
+              "key": "34143d09-ebd1-49ee-9e4a-da0ca10009b8",
+              "title": "2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "34143d09-ebd1-49ee-9e4a-da0ca10009b8",
+                "completed_at": "2019-02-03T14:04:46.078Z",
+                "last_viewed_at": "2019-02-23T04:01:35.230Z",
+                "unstructured": "{\"selected_id\":\"a1466467119097\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "哪种类型的数据分析方法最适用于回答这个问题？ ",
+                "answers": [
+                  {
+                    "id": "a1466467119097",
+                    "text": "预测性",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466467119655",
+                    "text": "地理空间",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466467120160",
+                    "text": "细分",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466467120688",
+                    "text": "聚合",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466467127207",
+                    "text": "描述性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213685,
+              "key": "6dffe059-4b21-455c-b0f2-f0fab66bbb39",
+              "title": "3",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 案例 3:\n\nShipYourStuff.com 想要知道他们运送了多少货物到每个邮编位置、省份和区域，因为他们的管理层想要不同地区的汇总。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213686,
+              "key": "0be94c8c-a73f-407d-a883-720195e74d57",
+              "title": "3",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "0be94c8c-a73f-407d-a883-720195e74d57",
+                "completed_at": "2019-02-03T14:04:55.764Z",
+                "last_viewed_at": "2019-02-23T04:01:48.941Z",
+                "unstructured": "{\"selected_id\":\"a1466468127904\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "哪种类型的数据分析方法最适用于回答这个问题？",
+                "answers": [
+                  {
+                    "id": "a1466468126536",
+                    "text": "预测性",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466468127080",
+                    "text": "地理空间",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466468127504",
+                    "text": "细分",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466468127904",
+                    "text": "聚合",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466468128512",
+                    "text": "描述性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213687,
+              "key": "717ab733-75ac-4daa-94ff-385cdb8bd15f",
+              "title": "4",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 案例 4:\n\nPretty Faces Cosmetics 想要面向他们的 3 个最大的客户群体做市场营销。他们需要创建不同的客户群体，计算每个客户群体有多少人，然后确定哪个群体拥有最多的客户数量。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213688,
+              "key": "3d28b81f-02e0-49e1-8bb9-cbd6173f43a5",
+              "title": "4",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3d28b81f-02e0-49e1-8bb9-cbd6173f43a5",
+                "completed_at": "2019-02-03T14:05:18.260Z",
+                "last_viewed_at": "2019-02-23T04:02:32.557Z",
+                "unstructured": "{\"selected_ids\":[\"a1466468328984\",\"a1466468328488\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "哪种类型的数据分析方法最适用于回答这个问题？答案可能不止一个。",
+                "answers": [
+                  {
+                    "id": "a1466468327488",
+                    "text": "预测性",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466468328032",
+                    "text": "地理空间",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466468328488",
+                    "text": "细分",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466468328984",
+                    "text": "聚合",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466468329472",
+                    "text": "描述性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213689,
+              "key": "4e5d3d68-8ffb-4ade-b106-4fd36430d962",
+              "title": "定义",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 预测性（Predictive）\n\n预测性分析用现有的数据来预测将来会发生的结果。比如，一个公司通过预测分析来预测需求或者预测客户是否会对广告有所反应。\n\n#### 地理空间（Geospatial）\n\n这类型的分析利用地理位置数据推导结论。例子有：\n\n- 通过地理位置如邮编区域、省份或乡镇来区分客户； \n- 计算你的店铺与各种地点间的距离；\n- 根据你的客户地址创建一个交易区域用作后续分析。\n\n有些地理空间分析需要使用特殊软件 —— 比如可以将地址转换成经度和纬度、或者能够计算地图上两个不同地点间驾驶时间的软件。\n\n#### 细分（Segmentation）\n\n细分是将数据分组的过程。分组可以是简单的，比如购买不同东西的客户，也可以是复杂的，比如根据客户的人口特征统计来识别相似的店铺。\n\n#### 聚合（Aggregation）\n\n这种方法用于计算跨组或跨维度的数据，在数据分析中很常用。举例来说，你想要某个销售员的月度销售汇总，将其每个月的销售额相加即可。然后，你可能需要跨维度进行汇总，比如各销售领域的月度销售汇总。在这个案例中，你可以计算出每个销售员的月度销售情况，然后将一个地区的所有销售员的月度销售额相加。\n\n聚合通常用于报告，以达到划分和区别信息的作用，有助于管理层制定决策和观察表现。\n\n#### 描述性（Descriptive）\n\n描述性统计可提供一个数据样本的简单概括。比如说计算一所学校申请者的平均 GPA，或者计算一个职业棒球员的击球平均水平。在我们的电力供应案例中，我们可以使用描述性统计计算每小时、每天或每个日期的平均温度。\n\n一些常用的描述性统计包括平均值、中位数、众数、标准方差和四分位差。",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215041,
+          "key": "bf0b44f6-50c9-4033-af25-ea604acd2ab0",
+          "title": "预测性商业问题",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bf0b44f6-50c9-4033-af25-ea604acd2ab0",
+            "completed_at": "2019-02-03T14:09:25.793Z",
+            "last_viewed_at": "2019-11-19T07:08:53.555Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213691,
+              "key": "2bca0877-ad26-48fd-88f3-3ad0bb2aa4d5",
+              "title": "预测性商业问题介绍",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "vwmTj4goI30",
+                "china_cdn_id": "vwmTj4goI30.mp4"
+              }
+            },
+            {
+              "id": 213692,
+              "key": "fb180bb7-3910-4e39-b8b6-008b3a40322e",
+              "title": "数据丰富 vs 数据不足",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 数据丰富（Data Rich） vs 数据不足（Data Poor）\n\n你是否拥有想要预测的问题所需要的数据？如果有，你可以进入数据丰富路径，否则，你只能选择数据不足路径。下面是一个数据不足的案例。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213693,
+              "key": "4c83543c-cbdc-42d6-8261-59518129ce78",
+              "title": "预测性问题",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "r8EOv8M0-x4",
+                "china_cdn_id": "r8EOv8M0-x4.mp4"
+              }
+            },
+            {
+              "id": 213694,
+              "key": "095c1d01-119b-4136-b10c-371f340adbd9",
+              "title": "DR vs DP Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 数据丰富 vs 数据不足 练习\n\n你认为我们讨论的电力供应问题是一个数据丰富还是数据不足的案例，为什么？花一些时间思考这个问题 —— 你可能需要对公司已有的数据类型做一些假设。",
+              "instructor_notes": null
+            },
+            {
+              "id": 213695,
+              "key": "fa6812be-aec9-4a35-b3ee-1399ef4f07a1",
+              "title": "DR vs DP",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "fa6812be-aec9-4a35-b3ee-1399ef4f07a1",
+                "completed_at": "2019-02-03T14:19:16.305Z",
+                "last_viewed_at": "2019-02-23T04:05:39.600Z",
+                "unstructured": "{\"selected_id\":\"a1466554941816\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "你认为我们讨论的电力供应问题是一个数据丰富还是数据不足的案例？ ",
+                "answers": [
+                  {
+                    "id": "a1466554941816",
+                    "text": "数据丰富",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466554942583",
+                    "text": "数据不足",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215042,
+          "key": "e001a212-a4e3-4cff-a852-2800a74566ff",
+          "title": "数据不足的商业问题",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e001a212-a4e3-4cff-a852-2800a74566ff",
+            "completed_at": "2019-02-03T14:19:29.261Z",
+            "last_viewed_at": "2019-11-19T07:55:25.660Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213696,
+              "key": "1f4442c6-d535-4903-8f4c-75838cc456b1",
+              "title": "数据不足的商业问题",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "ftNtrbQgFpM",
+                "china_cdn_id": "ftNtrbQgFpM.mp4"
+              }
+            },
+            {
+              "id": 213698,
+              "key": "9b40b19c-9355-4498-826d-510d460b2f13",
+              "title": "A/B 测试",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### A/B 测试\n如果没有足够的可用数据来解决问题，就需要设置一个实验来帮助我们得到想要的数据。给出特定商业情景的实验通常指的是 A/B 测试。",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215044,
+          "key": "f265f076-c033-4bd4-b807-067ab493bdea",
+          "title": "数据丰富的商业问题",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f265f076-c033-4bd4-b807-067ab493bdea",
+            "completed_at": "2019-02-03T14:23:52.698Z",
+            "last_viewed_at": "2019-11-19T08:00:43.044Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213699,
+              "key": "920d2975-db76-4b4a-9fa6-115986a0528c",
+              "title": "数据丰富的商业问题",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "LkpkL7KmGLA",
+                "china_cdn_id": "LkpkL7KmGLA.mp4"
+              }
+            },
+            {
+              "id": 213700,
+              "key": "b93b7c42-e347-48b0-a7a3-f2bf415b63c8",
+              "title": "数据丰富",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 数值型（Numeric） vs 非数值型（Non-Numeric）预测分析\n假设我们有足够的数据进行分析，下一步就是确定我们要预测的结果是数值型结果还是非数值型结果。\n\n##### 回归模型（Regression Models）\n数值型结果是那些用数字表示的结果。预测供电量或者每小时温度都属于数值型结果。预测数值型数据的模型被称为回归模型。\n\n##### 分类模型（Classification Models）\n非数值型结果是那些我们要预测案例或客户所属类型的结果，比如客户是按时付款、延期付款还是拖欠贷款。另一个例子是：某电子设备是否会在 1000 个小时内出故障。预测非数值型数据的模型被称为分类模型。",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215043,
+          "key": "8f68a3a1-8785-4f1b-aa82-718f9eee11d0",
+          "title": "数值型和非数值型结果",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "8f68a3a1-8785-4f1b-aa82-718f9eee11d0",
+            "completed_at": "2019-02-03T14:28:14.241Z",
+            "last_viewed_at": "2019-11-19T08:08:18.954Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213701,
+              "key": "9b96c060-3c66-46d7-b0b3-abc46228f53f",
+              "title": "数值型和非数值型结果",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "cAIPn6YRPc0",
+                "china_cdn_id": "cAIPn6YRPc0.mp4"
+              }
+            },
+            {
+              "id": 213697,
+              "key": "f209fcbe-c9a0-4f16-9a5e-f51e79cec06d",
+              "title": "数值型/非数值型",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 数值型和非数值型结果的例子\n在接下来的课程中我们将一直使用这些例子。\n\n##### 三轮车制造商的生产部门\n在第一个例子中，假设制造商想要利用历史生产数据来预测，在未来六个月内，他们需要生产多少三轮车来满足市场需求。因为制造商想要预测的结果是一个数字，目标变量是数值型。因此，他们需要用数值型或回归模型来解决这个问题。\n\n##### Hot & Fresh Pizza 的市场部门\n第二个例子中，Hot & Fresh Pizza 想用他们现有店铺的销售数据和这些店铺相应的周边人口统计数据来预测他们位于某地的新店能卖多少披萨。因为 Hot & Fresh Pizza 想要预测的是披萨的数量，目标变量是数值型。因此，他们需要用数值型或回归模型来解决这个问题。\n\n##### 银行的风险管理部门\n第三个例子中，银行想要用他们客户的历史数据来预测一个新客户会拖欠贷款、总是按时还贷还是有时按时还贷。因为银行想要的结论是预测新客户的类型，所以他们需要用非数值型或分类模型来解决这个问题。\n",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215046,
+          "key": "6229a4b4-4a54-471a-b96e-9228d2e03225",
+          "title": "练习：区分数值或分类",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6229a4b4-4a54-471a-b96e-9228d2e03225",
+            "completed_at": "2019-02-03T14:29:23.685Z",
+            "last_viewed_at": "2019-10-29T13:26:28.555Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213702,
+              "key": "354e8f98-b617-45d0-85dc-86fb8b281dc9",
+              "title": "数值型 vs 分类模型",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "让我们来练习如何区分数据丰富的商业问题。请辨别以下的每个商业问题应该使用数值型模型还是分类模型来解答。\n\n#### 案例 1：\n某冰淇淋供应商每周销售不同数量的冰淇淋。她每周三要订购冰淇淋容器，想要知道应该订购多少，才能既有足够的冰淇淋卖，又不至于在多余的冷冻库存上花费太多的成本。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213703,
+              "key": "da1f2863-fe07-4284-8271-3aa62480e342",
+              "title": "1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "da1f2863-fe07-4284-8271-3aa62480e342",
+                "completed_at": "2019-02-03T14:29:31.359Z",
+                "last_viewed_at": "2019-02-23T11:53:48.748Z",
+                "unstructured": "{\"selected_id\":\"a1466469051768\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "这个问题应该使用数值型模型还是分类模型来解答？",
+                "answers": [
+                  {
+                    "id": "a1466469051768",
+                    "text": "数值型模型",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466469052408",
+                    "text": "分类模型",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213704,
+              "key": "63b635ab-92a4-4087-ab70-6e3b3aac1b42",
+              "title": "2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 案例 2：\n某金融机构向小企业提供贷款。一旦贷款申请获得批准，申请者有 90 天的时间申请实际贷款。金融机构希望预测他们能从已获批准的贷款申请人那里实际收到多少贷款申请。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213705,
+              "key": "65798eab-606f-412a-b58e-833b40d58fa2",
+              "title": "2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "65798eab-606f-412a-b58e-833b40d58fa2",
+                "completed_at": "2019-02-03T14:29:45.345Z",
+                "last_viewed_at": "2019-02-23T11:54:28.575Z",
+                "unstructured": "{\"selected_id\":\"a1466469180825\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "这个问题应该使用数值型模型还是分类模型来解答？",
+                "answers": [
+                  {
+                    "id": "a1466469180825",
+                    "text": "数值型模型",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466469181385",
+                    "text": "分类模型",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213706,
+              "key": "df764bde-ba6c-4768-aa68-4b07bda67f90",
+              "title": "3",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 案例 3：\n某营销组织想要预测某人是否有可能使用优惠券，因为他们希望尽可能降低成本，并只向可能使用优惠券的人发送优惠券。",
+              "instructor_notes": null
+            },
+            {
+              "id": 213711,
+              "key": "57805808-c8b6-4203-9516-ee29edf61ab1",
+              "title": "3",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "57805808-c8b6-4203-9516-ee29edf61ab1",
+                "completed_at": "2019-02-03T14:29:52.750Z",
+                "last_viewed_at": "2019-02-23T11:54:49.312Z",
+                "unstructured": "{\"selected_id\":\"a1466469250104\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "这个问题应该使用数值型模型还是分类模型来解答？",
+                "answers": [
+                  {
+                    "id": "a1466469249560",
+                    "text": "数值型模型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466469250104",
+                    "text": "分类模型",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215047,
+          "key": "bd820603-be98-463f-a15d-f72fe452ac85",
+          "title": "数值型模型介绍",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bd820603-be98-463f-a15d-f72fe452ac85",
+            "completed_at": "2019-02-03T14:29:55.325Z",
+            "last_viewed_at": "2019-11-20T01:55:29.441Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213712,
+              "key": "bf81ece7-d5b7-431d-ab95-df8b34c974d5",
+              "title": "数值型模型介绍",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Mqdn4lHyvrI",
+                "china_cdn_id": "Mqdn4lHyvrI.mp4"
+              }
+            },
+            {
+              "id": 213713,
+              "key": "3cff0df7-40c2-4785-824c-15dbaad7dafc",
+              "title": "数值型变量",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 目标变量（Target Variables）\n目标变量代表需要预测的结果。为了选择正确的预测模型，我们首先要确定目标变量是数值型还是非数值型。让我们先从数值型变量开始。\n#### 数值型变量（Numeric Variables）的种类\n三种最常见的数值型变量是连续型、基于时间型以及计数型。\n#### 连续型（Continuous）\n连续型变量能包含一个范围内的所有数值。打个比方，你的身高能测量到多个小数位的精度，我们不会以每英寸的间隔成长。\n#### 基于时间型（Time-Based）\n基于时间的数值型变量是预测在某一段时间内会发生什么的一种变量，常常与“预报”有关。\n#### 计数型（Count）\n计数型变量是[离散](https://www.mathsisfun.com/data/data-discrete-continuous.html)的正整数。它们被称为计数数字是因为被用来分析能够计数的变量。在商业中这类型的变量并不常见，我们不会在课程中涵盖这部分的内容。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215045,
+          "key": "5c4ec296-340a-49e4-882f-ac58a7494257",
+          "title": "非数值型模型介绍",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "5c4ec296-340a-49e4-882f-ac58a7494257",
+            "completed_at": "2019-02-03T14:42:40.670Z",
+            "last_viewed_at": "2019-11-20T01:55:26.972Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213707,
+              "key": "ab55e993-b2b6-45d6-b124-abec17420ec4",
+              "title": "非数值型模型介绍",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "lC7mxzS4L24",
+                "china_cdn_id": "lC7mxzS4L24.mp4"
+              }
+            },
+            {
+              "id": 213708,
+              "key": "de127402-fda4-488a-a62a-dd16d9661c46",
+              "title": "非数值型",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 非数值型变量（Non-Numeric Variables）\n\n非数值型变量常常被称为分类（categorical）变量，因为变量的值用离散数字来表现可能的数值和类别。比如电子设备是否会在 1000 个小时内出故障；或者一个客户将会按时付款、拖延付款还是拖欠付款；或者某店铺被划分为大、中、小三种类型之一。\n\n#### 分类模型：二元和非二元（Binary and Non-Binary）\n当给分类变量建模时，可能的结果数量是一个重要参数。如果只有两种可能的分类结果，比如是和否，或者对和错，那么这个变量就被称为二元变量。\n\n如果有多于两种的分类结果，比如小、中、大或者按时付款、拖延付款、拖欠付款，那么该变量就被称为是非二元变量。这节课的重要内容是要能够决定是否使用分类模型以及是否应该使用二元模型或非二元模型。\n\nBen Burkholder 有一门讲解分类模型的课程，将深入探讨这些不同种类的模型。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215048,
+          "key": "aab482a1-aea5-469c-9a94-76f90a2c77dd",
+          "title": "练习：选择合适模型",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "aab482a1-aea5-469c-9a94-76f90a2c77dd",
+            "completed_at": "2019-02-03T14:48:12.245Z",
+            "last_viewed_at": "2019-11-19T08:21:19.608Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213709,
+              "key": "0f7c0afb-31b4-4a25-b073-21fc213ee5f2",
+              "title": "模型",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "我们来练习分类数据丰富的商业问题，在接下来的问题里辨别：\n\n- 这个问题应该使用数值型模型还是分类模型来解答？ \n- 如果是数值型模型，应该使用连续型还是基于时间型模型？\n- 如果是分类模型，应该用二元还是非二元模型？",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213710,
+              "key": "9165ac8f-4b49-415e-9ebe-29e118efa04b",
+              "title": "数据类型",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "9165ac8f-4b49-415e-9ebe-29e118efa04b",
+                "completed_at": "2019-02-03T14:48:24.183Z",
+                "last_viewed_at": "2019-02-23T11:59:14.008Z",
+                "unstructured": "{\"selected_id\":\"a1466613264564\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某三轮车制造商想要通过历史生产数据得知在接下来的 6 个月，他们每个月需要生产多少三轮车。 ",
+                "answers": [
+                  {
+                    "id": "a1466613263538",
+                    "text": "连续型数值型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466613264564",
+                    "text": "基于时间的数值型",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466613265689",
+                    "text": "二元分类",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466613274728",
+                    "text": "非二元分类",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213714,
+              "key": "7ceae3aa-c1c5-4581-983e-f5b123eaaa65",
+              "title": "Hot&Fresh",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "7ceae3aa-c1c5-4581-983e-f5b123eaaa65",
+                "completed_at": "2019-02-03T14:48:45.448Z",
+                "last_viewed_at": "2019-02-23T11:58:53.009Z",
+                "unstructured": "{\"selected_id\":\"a1466613654384\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "使用店铺的销售数据以及店铺周边地区的人口统计数据，Hot & Fresh Pizza 想预测他们的新店铺地点将卖出多少披萨。",
+                "answers": [
+                  {
+                    "id": "a1466613654384",
+                    "text": "连续型数值型",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466613655390",
+                    "text": "基于时间的数值型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466613656186",
+                    "text": "二元分类",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466613657029",
+                    "text": "非二元分类",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213715,
+              "key": "6c26f870-9e23-4ab1-bf5c-8dcbe68dde6d",
+              "title": "银行",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6c26f870-9e23-4ab1-bf5c-8dcbe68dde6d",
+                "completed_at": "2019-02-03T14:49:03.511Z",
+                "last_viewed_at": "2019-02-23T11:59:52.648Z",
+                "unstructured": "{\"selected_id\":\"a1466613977861\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某银行想通过历史客户数据预测一个新客户将会拖欠贷款、总是按时付款还是有时按时付款。",
+                "answers": [
+                  {
+                    "id": "a1466613975421",
+                    "text": "连续型数值型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466613976350",
+                    "text": "基于时间的数值型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466613977194",
+                    "text": "二元分类",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466613977861",
+                    "text": "非二元分类",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213716,
+              "key": "b9266822-2bfa-4d70-a12f-d7bb3612e40d",
+              "title": "Don't Forcet!",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b9266822-2bfa-4d70-a12f-d7bb3612e40d",
+                "completed_at": "2019-02-03T14:49:16.384Z",
+                "last_viewed_at": "2019-02-23T12:00:11.049Z",
+                "unstructured": "{\"selected_id\":\"a1466614093060\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某营销组织想预测某人是否会使用优惠券，他们想节约成本，只将优惠券寄给那些有可能会使用它们的人。",
+                "answers": [
+                  {
+                    "id": "a1466614090713",
+                    "text": "连续型数值型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466614091680",
+                    "text": "基于时间的数值型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466614093060",
+                    "text": "二元分类",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466614094219",
+                    "text": "非二元分类",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215049,
+          "key": "039fa5d5-ccc4-43bb-b5b0-3ee6fa6b1206",
+          "title": "模型选择评估",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "039fa5d5-ccc4-43bb-b5b0-3ee6fa6b1206",
+            "completed_at": "2019-02-03T14:49:21.377Z",
+            "last_viewed_at": "2019-11-19T08:21:15.713Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213717,
+              "key": "9c697ef6-6b08-4138-9d9b-a552bf8c5248",
+              "title": "介绍",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 方法图评估\n现在我们经历了几个情景，让我们做更多的练习来寻找解决不同商业问题的正确方法。为以下的每个描述选择正确的方法。使用方法图来帮助做决定。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213718,
+              "key": "02a628fd-9112-42fe-9a7a-86b15c52eda2",
+              "title": "方法图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d31456_methodology-map/methodology-map.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/02a628fd-9112-42fe-9a7a-86b15c52eda2",
+              "caption": "",
+              "alt": null,
+              "width": 1275,
+              "height": 717,
+              "instructor_notes": null
+            },
+            {
+              "id": 213719,
+              "key": "3e5020f1-7c2a-4e74-b491-a130d262f0bd",
+              "title": "Q10",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "3e5020f1-7c2a-4e74-b491-a130d262f0bd",
+                "completed_at": "2019-02-03T14:50:21.623Z",
+                "last_viewed_at": "2019-02-23T12:02:03.316Z",
+                "unstructured": "{\"selected_id\":\"a1473453935855\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某家大银行正在考虑更改所有分行的营业时间。在向所有分行全面实施这个方案之前，他们想用一个数据驱动的方法来预估更改营业时间的影响。",
+                "answers": [
+                  {
+                    "id": "a1473453933855",
+                    "text": "连续型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453934191",
+                    "text": "基于时间型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453934751",
+                    "text": "二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453935390",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453935855",
+                    "text": "A/B 测试",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473453936535",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213720,
+              "key": "e44b692b-d760-46d2-852c-222dd1c98ac7",
+              "title": "Q1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e44b692b-d760-46d2-852c-222dd1c98ac7",
+                "completed_at": "2019-02-03T14:50:52.470Z",
+                "last_viewed_at": "2019-02-23T12:02:34.717Z",
+                "unstructured": "{\"selected_id\":\"a1473451165930\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某家高端家具制造商想知道如果他们寄出商品目录的话，邮寄清单上的哪些顾客最有可能进行采购。",
+                "answers": [
+                  {
+                    "id": "a1473451165046",
+                    "text": "连续型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473451165528",
+                    "text": "基于时间型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473451165930",
+                    "text": "二元",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473451166265",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473451166913",
+                    "text": "A/B 测试",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473451167401",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213721,
+              "key": "5d1d3b99-cef6-4fe6-99c5-ed2c465d94c0",
+              "title": "Q2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "5d1d3b99-cef6-4fe6-99c5-ed2c465d94c0",
+                "completed_at": "2019-02-03T14:51:17.561Z",
+                "last_viewed_at": "2019-02-23T12:02:51.736Z",
+                "unstructured": "{\"selected_id\":\"a1473452983346\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "同一家高端家具制造商现在想要知道如果他们向邮寄清单上的所有客户寄出商品目录，能获得多少收入。",
+                "answers": [
+                  {
+                    "id": "a1473452983346",
+                    "text": "连续型",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473452983730",
+                    "text": "基于时间型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473452984115",
+                    "text": "二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473452984491",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473452984907",
+                    "text": "A/B 测试",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453010465",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213722,
+              "key": "6db40779-89fc-4e48-9ca3-85fda761537d",
+              "title": "Q3",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6db40779-89fc-4e48-9ca3-85fda761537d",
+                "completed_at": "2019-02-03T14:51:31.689Z",
+                "last_viewed_at": "2019-02-05T08:07:47.561Z",
+                "unstructured": "{\"selected_id\":\"a1473453085738\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某宠物店已有 13 家店铺，现在想要开第 14 家店铺。为了确定最佳店铺地址，它想要预测每个潜在地址的销售额。",
+                "answers": [
+                  {
+                    "id": "a1473453085738",
+                    "text": "连续型",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473453086234",
+                    "text": "基于时间型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453086626",
+                    "text": "二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453087386",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453087850",
+                    "text": "A/B 测试",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453088570",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213723,
+              "key": "c9569433-6c5b-4bcb-8724-a766acbe05c5",
+              "title": "Q5",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c9569433-6c5b-4bcb-8724-a766acbe05c5",
+                "completed_at": "2019-02-03T14:52:50.548Z",
+                "last_viewed_at": "2019-02-23T12:03:25.460Z",
+                "unstructured": "{\"selected_id\":\"a1473453148833\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "一家小银行突然涌入了一批新用户申请贷款。它想通过预测每个贷款申请人是否可能拖欠贷款，来确定哪些贷款申请人值得信任。",
+                "answers": [
+                  {
+                    "id": "a1473453147305",
+                    "text": "连续型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453147651",
+                    "text": "基于时间型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453148833",
+                    "text": "二元",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473453149369",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453149817",
+                    "text": "A/B 测试",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453151297",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213724,
+              "key": "2bb6a806-f75b-4f80-b81e-74808fa9cd83",
+              "title": "Q6",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2bb6a806-f75b-4f80-b81e-74808fa9cd83",
+                "completed_at": "2019-02-03T14:53:08.635Z",
+                "last_viewed_at": "2019-02-23T12:03:43.248Z",
+                "unstructured": "{\"selected_id\":\"a1473453233945\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某高端咖啡连锁店想知道，关于他们最新推出的美食三明治，电视广告是否能带来良好的投资回报。",
+                "answers": [
+                  {
+                    "id": "a1473453232401",
+                    "text": "连续型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453232825",
+                    "text": "基于时间型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453233169",
+                    "text": "二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453233585",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453233945",
+                    "text": "A/B 测试",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473453234344",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213725,
+              "key": "ef6eca47-9a69-49e8-b07d-fcd278a2a833",
+              "title": "非预测性",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ef6eca47-9a69-49e8-b07d-fcd278a2a833",
+                "completed_at": "2019-02-03T14:53:37.719Z",
+                "last_viewed_at": "2019-02-05T08:08:34.081Z",
+                "unstructured": "{\"selected_id\":\"a1473454725532\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某餐饮连锁店想知道去年每家店铺的销售额。",
+                "answers": [
+                  {
+                    "id": "a1473454722789",
+                    "text": "连续型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454723230",
+                    "text": "基于时间型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454724252",
+                    "text": "二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454724628",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454725053",
+                    "text": "A/B 测试",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454725532",
+                    "text": "非预测性",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213726,
+              "key": "991f833c-ec5b-4e7d-abe4-9e87a21d9bf9",
+              "title": "Q7",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "991f833c-ec5b-4e7d-abe4-9e87a21d9bf9",
+                "completed_at": "2019-02-03T14:56:50.173Z",
+                "last_viewed_at": "2019-02-05T08:09:18.702Z",
+                "unstructured": "{\"selected_id\":\"a1473453311882\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某家生产销售电子游戏的公司想预告每月销售数据，以平衡供需关系，帮助决策，从而构建有竞争力的基础架构并更好地衡量公司业绩。",
+                "answers": [
+                  {
+                    "id": "a1473453311419",
+                    "text": "连续型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453311882",
+                    "text": "基于时间型",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473453312217",
+                    "text": "二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453312833",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453313266",
+                    "text": "A/B 测试",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453314185",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213727,
+              "key": "14b73901-4e42-4fdf-b61b-c6d9b824de89",
+              "title": "Q8",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "14b73901-4e42-4fdf-b61b-c6d9b824de89",
+                "completed_at": "2019-02-03T14:56:28.075Z",
+                "last_viewed_at": "2019-02-23T12:04:38.835Z",
+                "unstructured": "{\"selected_id\":\"a1473453386256\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "你的一个朋友正在挑选钻石，因为他马上就要订婚了。他有一个有关钻石的大型数据集，想通过钻石的物理属性来预测价格。",
+                "answers": [
+                  {
+                    "id": "a1473453386256",
+                    "text": "连续型",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473453387193",
+                    "text": "基于时间型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453387632",
+                    "text": "二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453388064",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453389192",
+                    "text": "A/B 测试",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453389600",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213728,
+              "key": "df9d388e-b040-41dc-adbf-77847d3cff77",
+              "title": "Q9",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "df9d388e-b040-41dc-adbf-77847d3cff77",
+                "completed_at": "2019-02-03T14:56:09.344Z",
+                "last_viewed_at": "2019-02-05T08:09:46.474Z",
+                "unstructured": "{\"selected_id\":\"a1473453528199\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某大学担心辍学问题。他们想预测每个学生是否可能辍学，从而提前进行干预以帮助他们顺利完成学业。",
+                "answers": [
+                  {
+                    "id": "a1473453527506",
+                    "text": "连续型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453527903",
+                    "text": "基于时间型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453528199",
+                    "text": "二元",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473453528751",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453529072",
+                    "text": "A/B 测试",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473453530055",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213729,
+              "key": "ee3366e2-2388-47b2-adec-f6f10130f8c6",
+              "title": "Q11",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "ee3366e2-2388-47b2-adec-f6f10130f8c6",
+                "completed_at": "2019-02-03T14:55:54.407Z",
+                "last_viewed_at": "2019-02-23T12:05:02.603Z",
+                "unstructured": "{\"selected_id\":\"a1473454006055\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某大型超市连锁店想知道，将网站上的链接换成图片是否能增加移动 app 的下载量。",
+                "answers": [
+                  {
+                    "id": "a1473454004407",
+                    "text": "连续型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454004847",
+                    "text": "基于时间型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454005230",
+                    "text": "二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454005511",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454006055",
+                    "text": "A/B 测试",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473454006457",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213730,
+              "key": "4c785cc8-9917-450c-b686-1b8a4c356420",
+              "title": "Q12",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4c785cc8-9917-450c-b686-1b8a4c356420",
+                "completed_at": "2019-02-03T14:55:39.457Z",
+                "last_viewed_at": "2019-02-05T08:10:18.108Z",
+                "unstructured": "{\"selected_id\":\"a1473454071071\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "某高山度假村想预测明年的每月房间预定数量以帮助他们决定是否进行扩张。",
+                "answers": [
+                  {
+                    "id": "a1473454070754",
+                    "text": "连续型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454071071",
+                    "text": "基于时间型",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1473454071591",
+                    "text": "二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454071991",
+                    "text": "非二元",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454072382",
+                    "text": "A/B 测试",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1473454072734",
+                    "text": "非预测性",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213731,
+              "key": "e2ab24ac-81ca-4ca1-8b16-e67cbe5fd4fb",
+              "title": "恭喜",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "做得好！你已经迈出了重要的第一步，可以能够为上述问题提供有用的结果和建议了。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215050,
+          "key": "3aa9bb8d-1b6a-4fda-bdb0-495f36ffb099",
+          "title": "课程总结",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3aa9bb8d-1b6a-4fda-bdb0-495f36ffb099",
+            "completed_at": "2019-02-03T14:50:00.065Z",
+            "last_viewed_at": "2019-11-19T08:21:11.002Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213732,
+              "key": "1637baba-632a-4a9b-a957-bcad4cdbe66d",
+              "title": "课程总结",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RrcV-axGxvA",
+                "china_cdn_id": "RrcV-axGxvA.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

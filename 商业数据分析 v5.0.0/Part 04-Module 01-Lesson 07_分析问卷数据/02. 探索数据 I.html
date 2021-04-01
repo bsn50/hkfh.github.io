@@ -1,0 +1,380 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>探索数据 I</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>分析问卷数据</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 项目概述.html">01. 项目概述</a>
+    </li>
+    <li class="">
+      <a href="02. 探索数据 I.html">02. 探索数据 I</a>
+    </li>
+    <li class="">
+      <a href="03. 探索数据 II.html">03. 探索数据 II</a>
+    </li>
+    <li class="">
+      <a href="04. 探索数据 III.html">04. 探索数据 III</a>
+    </li>
+    <li class="">
+      <a href="05. 项目详情.html">05. 项目详情</a>
+    </li>
+    <li class="">
+      <a href="Project Description - 分析问卷数据.html">Project Description - 分析问卷数据</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - 分析问卷数据.html">Project Rubric - 分析问卷数据</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">02. 探索数据 I</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h4 id="清理数据">清理数据</h4>
+<p>虽然你不需要按照这些步骤设置数据集，但以下信息可以作为建议：        </p>
+<ol>
+<li>对于所有问题，如果答案位于多个列中，则合并为单个列并删除原始列。只保留合并过的列。</li>
+<li>更改所有列名，使其不包含空格，但需要提供足够的信息。这并非必要的，而是一个建议。根据数据将来的用途，列名中包含空格或特殊字符可能会影响使用。</li>
+<li>将 birthdate （出生日期）列改为 age（年龄）列，方法是算出从出生日期到今天日期的天数，然后除以 365。</li>
+</ol>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>分析数据的另一个重要部分是了解我们数据的哪些部分是合理的，然后适当地使用数据来回答我们感兴趣的问题。在观察数据之前，以下哪项陈述似乎是合理的？</p></legend>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" value="a1500055335762" name="390329" id="a1500055335762">
+      <label for="a1500055335762"><p>最常见的“Highest Degree Earned（取得的最高学位）”是纳米学位。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500055565187" name="390329" id="a1500055565187">
+      <label for="a1500055565187"><p>学员的 “average number of hours of sleep（平均睡眠小时数）”超过了24小时。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500055586983" name="390329" id="a1500055586983">
+      <label for="a1500055586983"><p>“number of hours commuting（每天通勤时间-小时数）”的最大值超过了24。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500055603423" name="390329" id="a1500055603423">
+      <label for="a1500055603423"><p>“number of hours spent sitting（每天坐着的小时数）”的最大值超过了24。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500055617617" name="390329" id="a1500055617617">
+      <label for="a1500055617617"><p>”years of experience（工作年限）”的最大值比历史上有记录的活得最久的人的年龄都大</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500056007977" name="390329" id="a1500056007977">
+      <label for="a1500056007977"><p>学员在实战项目上花费的 “average hours worked（平均时间）”超过了24小时</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500056039189" name="390329" id="a1500056039189">
+      <label for="a1500056039189"><p>超过 50% 学员的 ”average for projects（平均在项目上花费的时间）”超过 24 小时。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500056064124" name="390329" id="a1500056064124">
+      <label for="a1500056064124"><p>“number of books read or listened to in a year（一年内阅读或收听的书籍量）”的最大值超过了365。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500056880761" name="390329" id="a1500056880761">
+      <label for="a1500056880761"><p>最年轻的学员不到一岁。</p></label>
+    </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <ul>
+      <li>最常见的“Highest Degree Earned（取得的最高学位）”是纳米学位。</li>
+      <li>学员在实战项目上花费的 “average hours worked（平均时间）”超过了24小时</li>
+      <li>超过 50% 学员的 ”average for projects（平均在项目上花费的时间）”超过 24 小时。</li>
+      <li>“number of books read or listened to in a year（一年内阅读或收听的书籍量）”的最大值超过了365。</li>
+  </ul>
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>最常见的"Highest Degree Earned（取得的最高学位）"是什么？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1500052506861" name="390330" id="a1500052506861">
+        <label for="a1500052506861"><p>High school or below （高中或以下）</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1500052561271" name="390330" id="a1500052561271">
+        <label for="a1500052561271"><p>Associates （副学士）</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1500052590131" name="390330" id="a1500052590131">
+        <label for="a1500052590131"><p>Bachelors （学士）</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1500052593672" name="390330" id="a1500052593672">
+        <label for="a1500052593672"><p>Masters （硕士）</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1500052599008" name="390330" id="a1500052599008">
+        <label for="a1500052599008"><p>PhD （博士）</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1500052603871" name="390330" id="a1500052603871">
+        <label for="a1500052603871"><p>Nanodegree Program （纳米学位）</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Masters （硕士）
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>分析数据的一个最重要的方面是搞清楚你<strong>可以</strong>和<strong>不可以</strong>得出什么结论。对于下面的每项陈述，分析数据来确定说法是否为真。根据调查数据选择下文中所有为真的陈述。</p></legend>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" value="a1500052831700" name="390331" id="a1500052831700">
+      <label for="a1500052831700"><p>学员的 “average number of hours of sleep（平均睡眠小时数）”超过了一天中的小时数，即24小时。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500052930708" name="390331" id="a1500052930708">
+      <label for="a1500052930708"><p>“number of hours commuting（每天通勤时间）”的最大值超过了一天中的小时数，即24小时。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500053036597" name="390331" id="a1500053036597">
+      <label for="a1500053036597"><p>“number of hours spent sitting（每天坐着的小时数）”的最大值超过了一天中的小时数，即24小时。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500053866416" name="390331" id="a1500053866416">
+      <label for="a1500053866416"><p>最年轻的学员超过一岁。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500053922139" name="390331" id="a1500053922139">
+      <label for="a1500053922139"><p>”years of experience（工作年限）”的最大值比历史上有记录的活得最久的人的年龄都大</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500053969214" name="390331" id="a1500053969214">
+      <label for="a1500053969214"><p>学员在实战项目上花费的 “average hours worked（平均时间）”超过了一天中的小时数，即24小时。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500054572525" name="390331" id="a1500054572525">
+      <label for="a1500054572525"><p>超过 50% 的学生 ”average for projects（平均在项目上）”花费的时间超过 24 小时。</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1500054883675" name="390331" id="a1500054883675">
+      <label for="a1500054883675"><p>“number of books read or listened to in a year（一年内阅读或收听的书籍量）”的最大值超过了一年中的天数，即 365 天。</p></label>
+    </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <ul>
+      <li>学员的 “average number of hours of sleep（平均睡眠小时数）”超过了一天中的小时数，即24小时。</li>
+      <li>“number of hours spent sitting（每天坐着的小时数）”的最大值超过了一天中的小时数，即24小时。</li>
+      <li>最年轻的学员超过一岁。</li>
+      <li>学员在实战项目上花费的 “average hours worked（平均时间）”超过了一天中的小时数，即24小时。</li>
+      <li>“number of books read or listened to in a year（一年内阅读或收听的书籍量）”的最大值超过了一年中的天数，即 365 天。</li>
+  </ul>
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>参与调查的学员中最常参加的 Nanodegree Program（纳米学位课程）是什么？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1500057810465" name="390332" id="a1500057810465">
+        <label for="a1500057810465"><p>Artificial Intelligence （人工智能）</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1500057982616" name="390332" id="a1500057982616">
+        <label for="a1500057982616"><p>Data Analyst  （数据分析）</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1500057988002" name="390332" id="a1500057988002">
+        <label for="a1500057988002"><p>Machine Learning Engineer （机器学习）</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1500057995330" name="390332" id="a1500057995330">
+        <label for="a1500057995330"><p>Introduction to Programming （编程入门）</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1500058004209" name="390332" id="a1500058004209">
+        <label for="a1500058004209"><p>Deep Learning Foundations （深度学习基础）</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Deep Learning Foundations （深度学习基础）
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="03. 探索数据 II.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. 探索数据 I')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

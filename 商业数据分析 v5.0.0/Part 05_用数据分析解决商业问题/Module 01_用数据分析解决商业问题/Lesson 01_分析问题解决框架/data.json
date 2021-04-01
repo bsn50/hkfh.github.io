@@ -1,0 +1,351 @@
+{
+  "data": {
+    "lesson": {
+      "id": 391818,
+      "key": "dd7bf461-dfec-484c-b932-d09744913c98",
+      "title": "分析问题解决框架",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "你将学习商业分析的问题解决框架。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/dd7bf461-dfec-484c-b932-d09744913c98/391818/1544208990283/%E5%88%86%E6%9E%90%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%A1%86%E6%9E%B6+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/dd7bf461-dfec-484c-b932-d09744913c98/391818/1544208986782/%E5%88%86%E6%9E%90%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E6%A1%86%E6%9E%B6+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 215029,
+          "key": "e6fc0947-3119-4a9d-b78a-92be1ea6d8d6",
+          "title": "课程介绍",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e6fc0947-3119-4a9d-b78a-92be1ea6d8d6",
+            "completed_at": "2019-01-28T03:28:03.291Z",
+            "last_viewed_at": "2019-12-10T22:57:09.171Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213644,
+              "key": "86f5bb3c-1594-49a5-87b7-34b315f2cc5a",
+              "title": "课程介绍",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "BouY9scXCU4",
+                "china_cdn_id": "BouY9scXCU4.mp4"
+              }
+            },
+            {
+              "id": 213647,
+              "key": "366adb4d-9e9e-41e1-813f-3c8894e74081",
+              "title": "商业问题",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 课程大纲\n\n- 解决问题的策略\n- 非预测性数据分析\n- 预测分析\n- 线性回归\n\n#### 商业问题\n\n下个月我们将与一位新客户开展一项大型交易，我们要以优质的服务水平为他们提供支持。我需要知道每周平均会从此客户获得多少工单，以确保客服部门有足够的资源。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215028,
+          "key": "1eb8f83e-6803-4b1a-b5db-e07d89234633",
+          "title": "问题解决框架: CRISP-DM",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1eb8f83e-6803-4b1a-b5db-e07d89234633",
+            "completed_at": "2019-02-03T12:58:44.360Z",
+            "last_viewed_at": "2019-11-19T06:25:03.194Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213645,
+              "key": "20caca3b-74e0-4f61-bf9f-c4139df04761",
+              "title": "CRISP-DM 简介",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "CRKn-9gVNBw",
+                "china_cdn_id": "CRKn-9gVNBw.mp4"
+              }
+            },
+            {
+              "id": 213648,
+              "key": "082fc35b-5eb8-452d-ac14-5714a5831e8a",
+              "title": "Crisp-DM",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 跨行业数据挖掘标准流程（CRISP-DM）\n\n“一种数据挖掘过程模型，描述了数据挖掘专家用来解决问题的常用方法……是业内数据挖掘工程师使用的主要方法” —— 维基百科\n\n#### CRISP-DM 步骤\n\n- 业务理解 Business Issue Understanding\n- 数据理解 Data Understanding\n- 数据准备 Data Preparation\n- 分析/建模 Analysis/Modeling\n- 模型评估 Validation\n- 模型发布/可视化 Presentation/Visualization\n\n",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215030,
+          "key": "067e0257-691a-47d1-9f20-f8bea43f6955",
+          "title": "业务理解",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "067e0257-691a-47d1-9f20-f8bea43f6955",
+            "completed_at": "2019-02-03T13:03:41.107Z",
+            "last_viewed_at": "2019-11-19T06:18:03.969Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213649,
+              "key": "1a88aa6a-c16c-44f9-80a5-3f725789c201",
+              "title": "问题解决框架",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "z8zSnSSUeNs",
+                "china_cdn_id": "z8zSnSSUeNs.mp4"
+              }
+            },
+            {
+              "id": 213650,
+              "key": "1ce05316-fa30-4b8b-b93a-69a4358c4a2f",
+              "title": "PSF",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 业务理解\n\n“这个初步阶段着重于从业务角度了解项目目标和要求，然后将这些理解转化为数据挖掘问题的定义，拟定达成业务目标的初步方案。可以使用决策模型，特别是使用决策模型和符号标准构建的模型。” —— 维基百科\n\n- 需要做出哪些决策？\n- 需要获得哪些信息，来做出这些决策？\n- 什么类型的分析能够获取决策所需的信息？\n",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215032,
+          "key": "b032e6ce-b1c5-4694-9e0b-7c059dc11104",
+          "title": "数据理解",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b032e6ce-b1c5-4694-9e0b-7c059dc11104",
+            "completed_at": "2019-02-03T13:18:23.269Z",
+            "last_viewed_at": "2019-11-19T06:18:30.359Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213653,
+              "key": "30e0b6be-a045-4423-8e25-70411cb3f276",
+              "title": "数据理解",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "L7ZHh80wXJ4",
+                "china_cdn_id": "L7ZHh80wXJ4.mp4"
+              }
+            },
+            {
+              "id": 213654,
+              "key": "db6fc099-34ec-49e7-9870-db2678afa501",
+              "title": "注释",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 讲师注释\n\nPatrick 提到了“数据字段”（data field）一词。参考我们熟悉的电子表格模型，数据字段可以被视为电子表格中的数据列。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213655,
+              "key": "fb44f19d-56b0-44f6-ae99-693cd06c6229",
+              "title": "数据理解",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 数据理解\n“数据理解阶段从数据收集活动开始，然后借由一些活动来熟悉数据、检测数据质量问题、对数据进行初步理解，或探索数据中比较有趣的数据子集，进而形成对潜在信息的假设。” —— 维基百科\n\n- 需要什么数据？\n- 有什么数据可用？\n- 数据的重要特征是什么？",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215033,
+          "key": "1885d3d4-1052-41d3-b632-9c3eac5aea5f",
+          "title": "数据准备",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1885d3d4-1052-41d3-b632-9c3eac5aea5f",
+            "completed_at": "2019-02-03T13:21:52.825Z",
+            "last_viewed_at": "2019-11-19T06:18:40.584Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213656,
+              "key": "57233cf2-1589-46f8-9a73-a2a85f32a152",
+              "title": "数据准备",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "WOPz1oFqHe4",
+                "china_cdn_id": "WOPz1oFqHe4.mp4"
+              }
+            },
+            {
+              "id": 213657,
+              "key": "ad19b178-a5f5-47b0-8e26-9b9eeb5fa0b2",
+              "title": "数据准备",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 数据准备\n\n“数据准备阶段涵盖了从原始粗糙数据中构建最终数据集（将作为建模工具的分析对象）的全部工作。数据准备工作有可能被实施多次，而且其实施顺序并不是预先规定好的。这一阶段的任务主要包括：制表、记录、数据变量的选择和转换，以及为适应建模工具而进行的数据清理等等。” —— 维基百科\n\n##### 数据准备的常用步骤\n\n- 收集：收集数据时，你可能需要从组织内的多个来源收集数据。\n- 清理：你使用的数据集可能有一些问题需要在分析之前解决。这可能包括数据不正确或丢失。\n- 格式化：你可能需要通过更改日期字段的显示方式，重命名字段，甚至旋转数据来格式化数据，类似于使用数据透视表。\n- 混合：你可能希望将数据与其他数据集进行混合或组合，以增加其他变量，类似于在 Excel 中使用 VLOOKUP 函数。\n- 数据抽样：最后，你可能需要对数据集进行取样，并使用更易于管理的记录数。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215034,
+          "key": "6b45c53a-baef-495f-a71f-d77c665e4e91",
+          "title": "分析与建模",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6b45c53a-baef-495f-a71f-d77c665e4e91",
+            "completed_at": "2019-02-03T13:31:10.839Z",
+            "last_viewed_at": "2019-11-19T06:18:43.029Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213658,
+              "key": "7cfc58e3-8e9a-4a8c-aca2-b53f1653c63d",
+              "title": "分析与建模",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "DnbDV3XG6no",
+                "china_cdn_id": "DnbDV3XG6no.mp4"
+              }
+            },
+            {
+              "id": 394492,
+              "key": "6f85f6f0-7f9d-4375-a7fb-f871433b9a8d",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 讲师注释\n\n在这一阶段，最好直观地画出你的分析流程，类似于 Patrick 在这里所做的。概述你分析中的步骤，找出每一步需要的东西，用以获得最终所需数据。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213659,
+              "key": "304549e5-6b78-4742-84d5-b6af427cb84b",
+              "title": "注释",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 分析/建模\n“在这一阶段，你要选择和应用各种各样的建模方法，并将模型的参数校准为最佳值。通常情况下，同一种数据挖掘问题类型有多种适用的方法。一些建模方法对数据形式有具体的要求。因此，往往需要返回数据准备阶段。” —— 维基百科\n\n##### 重要步骤\n- 确定用什么方法来解决问题\n- 确定有助于解决问题的重要因素或变量\n- 构建解决问题的模型\n- 运行模型并移至模型评估阶段",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215035,
+          "key": "893e9e53-f4ec-4b3b-b1ce-62136753e9b8",
+          "title": "模型验证",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "893e9e53-f4ec-4b3b-b1ce-62136753e9b8",
+            "completed_at": "2019-02-03T13:37:45.596Z",
+            "last_viewed_at": "2019-11-19T06:18:46.507Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213661,
+              "key": "c2c74001-1d63-4171-9984-6532f1831c38",
+              "title": "模型评估",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "pVyaPBO7sR0",
+                "china_cdn_id": "pVyaPBO7sR0.mp4"
+              }
+            },
+            {
+              "id": 213662,
+              "key": "ec0b4440-eba1-4007-8216-66293e1fa69a",
+              "title": "模型评估",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 模型验证\n“在项目的这一阶段，你已经有一个或多个，从数据分析角度看，具有较高质量的模型。在进行模型的最终部署之前，务必要更全面地评估模型，并检查构建模型所执行的步骤，确保其能正确实现业务目标。一个关键目标是确定是否存在一些尚未充分考虑的重要业务问题。在此阶段结束时，应对数据挖掘结果的使用做出决定。” —— 维基百科\n\n##### 重要步骤\n- 观察模型上的关键结果\n- 确保结果在业务问题的情境中有意义\n- 确定是否继续下面的步骤还是返回上一阶段\n- 必要时重复多次",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215036,
+          "key": "788b266a-4125-4956-b834-b451b27dc428",
+          "title": "模型发布和可视化",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "788b266a-4125-4956-b834-b451b27dc428",
+            "completed_at": "2019-02-03T13:40:49.060Z",
+            "last_viewed_at": "2019-11-19T06:24:21.159Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213663,
+              "key": "fa06d9fa-cce5-4216-b01c-1c503dcfd345",
+              "title": "模型发布和可视化",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "iottZF2MVfI",
+                "china_cdn_id": "iottZF2MVfI.mp4"
+              }
+            },
+            {
+              "id": 213664,
+              "key": "85379e67-dee7-4404-8f00-1561978d6b35",
+              "title": "模型发布和可视化",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 模型发布和可视化\n“创建好模型并不意味着项目结束。即使模型的目的是提高对数据的理解，所获得的理解仍然需要以一种对客户有用的方式来组织和呈现。根据需求的不同，部署阶段可以简单到只是生成一份报告，也可以非常复杂，像实现可重复的数据存储（例如分段分配 segment allocation）或者数据挖掘过程。在许多情况下，往往是客户而非数据分析师执行部署步骤。即使由分析师部署了模型，客户也必须了解需要执行的操作，以便实际利用已构建的模型。” —— 维基百科\n\n##### 主要注意事项\n- 根据分析，确定呈现见解的最佳方式\n- 根据观众，确定呈现见解的最佳方式\n- 确保共享的信息不要过量\n- 使用结果向观众讲述故事\n- 对于更复杂的分析，你可能需要向观众演示分析问题解决过程\n- 始终注明使用的数据源出处\n- 确保你的分析支持需要做出的决策",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

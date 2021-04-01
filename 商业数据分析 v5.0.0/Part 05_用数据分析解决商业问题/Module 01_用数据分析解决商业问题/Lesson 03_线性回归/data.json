@@ -1,0 +1,1564 @@
+{
+  "data": {
+    "lesson": {
+      "id": 391824,
+      "key": "316c6f13-a660-456e-86a6-bbae79f8c577",
+      "title": "线性回归",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "构建、验证和应用线性回归模型来解决业务问题。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/316c6f13-a660-456e-86a6-bbae79f8c577/391824/1544209066343/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/316c6f13-a660-456e-86a6-bbae79f8c577/391824/1544209061616/%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 215051,
+          "key": "dc105e00-66a9-4cc3-af26-d5ff2fcfd813",
+          "title": "商业问题",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dc105e00-66a9-4cc3-af26-d5ff2fcfd813",
+            "completed_at": "2018-11-14T12:20:05.413Z",
+            "last_viewed_at": "2020-01-14T13:01:32.789Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213733,
+              "key": "a760bda7-002e-4305-9c75-1e6e14370e58",
+              "title": "应用所学解决商业问题",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "MUkPuID54BI",
+                "china_cdn_id": "MUkPuID54BI.mp4"
+              }
+            },
+            {
+              "id": 213734,
+              "key": "5b2440b0-49e5-4776-89ed-f56b9cb9f98a",
+              "title": "商业问题",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>商业问题</h4> “下个月我们将与一位新客户开展一项大型交易，我们要以优质的服务水平为他们提供支持。我需要知道每周平均会从此客户获得多少工单，以确保帮助台有足够的资源。”",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213735,
+              "key": "a09c6aee-5269-427d-bf64-e49a6b32c8eb",
+              "title": "提醒",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>提醒</h4>\n\n提醒一下，我们位于“商业问题解决”框架中图表的顶部，我们只是想了解手头上的业务问题。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213736,
+              "key": "6a44c475-faa6-4c5d-9a85-853613883d47",
+              "title": "问题解决框架",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/June/57754572_crisp-dm-framework/crisp-dm-framework.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6a44c475-faa6-4c5d-9a85-853613883d47",
+              "caption": "",
+              "alt": null,
+              "width": 1920,
+              "height": 1080,
+              "instructor_notes": null
+            },
+            {
+              "id": 213737,
+              "key": "ac276c91-9013-4e02-97ef-33a96363d65a",
+              "title": "练习说明",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>练习</h4>\n我们从分析问题解决框架的开头开始，先充分地理解业务问题。例如，回答以下 3 个问题。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213738,
+              "key": "561861e4-1322-40a4-9dfb-93ece2804bf1",
+              "title": "练习",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "561861e4-1322-40a4-9dfb-93ece2804bf1",
+                "completed_at": "2019-02-04T10:22:38.108Z",
+                "last_viewed_at": "2019-02-04T10:22:39.444Z",
+                "unstructured": "{\"answer\":\"需要做出的决策: 每周平均会从此客户获得多少工单;\\n需要获得信息: 之前每周获得工单的数量;\\n连续数据的分析;\"}"
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "<li>需要做出哪些决策？<li>需要获得哪些信息，来做出这些决策？<li>什么类型的分析能够获取决策所需的信息？"
+              },
+              "answer": {
+                "text": "感谢你的回答。点击“下一项”查看解决方案视频。",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 215052,
+          "key": "4f6ce1f5-dd95-4ea3-b7f5-5d3a3d4ad792",
+          "title": "解决商业问题",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4f6ce1f5-dd95-4ea3-b7f5-5d3a3d4ad792",
+            "completed_at": "2019-02-04T10:22:42.644Z",
+            "last_viewed_at": "2020-01-14T13:01:46.381Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213739,
+              "key": "8de3e706-a922-4195-9a88-e2f212bb77c6",
+              "title": "解决商业问题",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "TanVsPDXTAo",
+                "china_cdn_id": "TanVsPDXTAo.mp4"
+              }
+            },
+            {
+              "id": 213740,
+              "key": "1d630ace-bd56-4a0a-9c82-1d0786f4632a",
+              "title": "答案",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<br>\n<br>\n<h5>需要做出哪些决策？</h5>\n\n销售经理需要做出的决策是：“我们的支持团队是否有足够的能力来处理新客户的支持工单？”以及“如果没有，我们需要向支持团队添加多少人员，来处理新客户的支持工单？”\n\n<h5>需要获得哪些信息，来做出这些决策？</h5>\n\n我们需要计算每个客户每周的平均工单。然后，我们可以合计每个客户的平均工单数，以获得预期的每周提交的平均支持工单数。有了此信息后，我们需要将预计的平均工单数与支持团队的当前能力进行比较，特别是确定每位团队成员可处理的平均工单数。\n\n<h5>什么类型的分析能够获取决策所需的信息？</h5>\n\n我们使用方法图（Methodology Map）流程图来帮助我们确定应该执行的分析类型，以提供做出决策所需的信息。我们想要预测一个新客户每周将提交的平均工单数。因此，我们想要的是预测结果，这很简单。\n",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215053,
+          "key": "a50523b1-292f-4a76-b23b-4a1544650cf8",
+          "title": "练习：数据理解",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a50523b1-292f-4a76-b23b-4a1544650cf8",
+            "completed_at": "2019-02-04T10:24:37.018Z",
+            "last_viewed_at": "2019-10-30T09:40:52.216Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Linear Example Data",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2016/June/576ae0a5_linear-example-data/linear-example-data.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 213741,
+              "key": "3b95ab63-cfd7-44cc-b795-b7a3fa32f36c",
+              "title": "quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 数据理解练习\n查看页面底部的 Linear Example Data.xlsx 文件中提供的数据，确定解决此问题的最佳方法是：A/B 测试、连续型或基于时间的数值型模型，还是二元或非二元分类模型。记住，我们在尝试预测新客户的工单数。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213742,
+              "key": "20279b96-eabd-4f9c-bee0-7c970530e331",
+              "title": "Quiz",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "20279b96-eabd-4f9c-bee0-7c970530e331",
+                "completed_at": "2019-02-04T10:25:22.598Z",
+                "last_viewed_at": "2019-02-05T10:12:05.954Z",
+                "unstructured": "{\"selected_id\":\"a1466621878340\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "哪种方法最有助于解决此业务问题？",
+                "answers": [
+                  {
+                    "id": "a1466621877644",
+                    "text": "A/B Testing",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466621878340",
+                    "text": "连续型数值型模型",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466621878804",
+                    "text": "基于时间的数值型模型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466621879403",
+                    "text": "二元分类模型",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466621910364",
+                    "text": "非二元分类模型",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213743,
+              "key": "2702fb70-e137-4eed-9d1f-931215e32411",
+              "title": "描述你的过程",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2702fb70-e137-4eed-9d1f-931215e32411",
+                "completed_at": "2019-02-04T10:26:14.885Z",
+                "last_viewed_at": "2019-02-04T10:26:14.885Z",
+                "unstructured": "{\"answer\":\"收集之前的数据,客户平均每周的订单.来预测之后每周的订单.\"}"
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "描述你确定合适模型的步骤。"
+              },
+              "answer": {
+                "text": "感谢你的回答，请点击“下一项”查看解决方案视频。",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 215054,
+          "key": "03beacd2-cb72-42c9-b6a6-899209a2bcc6",
+          "title": "数据理解解决方案",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "03beacd2-cb72-42c9-b6a6-899209a2bcc6",
+            "completed_at": "2019-02-04T10:26:20.893Z",
+            "last_viewed_at": "2019-10-29T13:36:32.560Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213744,
+              "key": "c63aedcf-9618-4b76-b38c-0bb41b058010",
+              "title": "数据理解",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "UVM_2SvF-hM",
+                "china_cdn_id": "UVM_2SvF-hM.mp4"
+              }
+            },
+            {
+              "id": 213745,
+              "key": "e98ecd87-ffd3-4e2a-a11f-4d5ae96f11a2",
+              "title": "数据理解",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<br>\n<h4>选择适当的方法</h4>\n\n<h5>第 1 步：这是一个数据丰富还是数据不足的问题？</h5>\n\n我们来回忆一下数据丰富与数据不足之间的差别。如果我们拥有关于所要预测的变量的以往数据，则是数据丰富，否则是数据不足。\n要确定我们是数据丰富还是不足，需要对数据有更好地理解。看看我们的数据集，可以看到我们有每位客户的以下信息：\n\n<li>每位客户每周提交的平均工单数</li>\n<li>每位客户的员工数</li>\n<li>与每位客户的合同价值</li>\n<li>每位客户所处的行业</li>\n\n由于我们有每位客户的工单数，所以说我们是数据丰富的。\n\n<h5>第 2 步：我们应该使用数值型还是分类模型？</h5>\n我们尝试预测的目标结果是一个数字，代表每位客户预期的平均工单数，因此我们应该使用数值型模型。\n\n<h5>第 3 步：我们的目标变量是连续型还是基于时间型？</h5>\n我们要获得的是每周的平均工单数。因此乍一看，我们可能会认为这是一个基于时间的问题，如果我们希望预测几周时间内每个日历周的特定数量，则确实是这样。但是在这个问题中，我们只想要每周的平均数，对特定的日历周不感兴趣。因此，我们将使用连续型模型来解决我们的问题。\n",
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215055,
+          "key": "54db2ca2-4f26-4b1f-97a1-3149606e8290",
+          "title": "问题解决框架",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "54db2ca2-4f26-4b1f-97a1-3149606e8290",
+            "completed_at": "2019-02-04T10:28:59.149Z",
+            "last_viewed_at": "2019-11-19T08:28:40.812Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213746,
+              "key": "50b01f4d-da9f-49e7-80bd-61ec73fa77b1",
+              "title": "将我们所学应用到业务问题",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "BSvvZ9C05-s",
+                "china_cdn_id": "BSvvZ9C05-s.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215056,
+          "key": "50223fb9-0a0a-4672-ba4c-deef74ebcc19",
+          "title": "线性回归简介",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "50223fb9-0a0a-4672-ba4c-deef74ebcc19",
+            "completed_at": "2019-02-04T10:29:39.110Z",
+            "last_viewed_at": "2020-01-14T13:01:33.652Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213747,
+              "key": "b380aa26-6113-4283-8fd7-f3c15007cee6",
+              "title": "线性回归简介",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "ctoCtba2BDY",
+                "china_cdn_id": "ctoCtba2BDY.mp4"
+              }
+            },
+            {
+              "id": 213748,
+              "key": "390721e9-a166-46a3-9c43-49e20b6e032d",
+              "title": "讲师注释",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>讲师注释</h4>\n\n如果你需要温习斜截式 (y = mx + b)，请阅读[此篇短文](http://www.mathplanet.com/education/algebra-1/formulating-linear-equations/writing-linear-equations-using-the-slope-intercept-form)。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213749,
+              "key": "220c210e-1701-4729-ae7c-b0598174b936",
+              "title": "线性回归",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<br>\n<h4>线性回归（Linear Regression）</h4>\n假设我们有散点图（scatter plot）中显示的数据。看起来员工数量与工单数之间存在线性关系。这种关系是线性的，因为我们似乎可以画一条穿过数据的直线。\n\n如果我们知道该直线的方程，便可以在给定员工数量的情况下预测工单数。这个直线的简单方程是：\n<center><h4> y = mx + b</h4></center>\n<center>Y = 目标变量</center>\n<center>X = 预测变量</center>\n<center>m = 直线斜率</center>\n<center>b = Y 轴截距</center>\n\n<h5>目标变量</h5>\n目标变量是我们尝试理解和预测的变量，也称为因变量。在我们的例子中，我们在尝试预测 Y 值或平均工单数。\n\n<h5>预测变量</h5>\n预测变量用于尝试预测目标变量，也称为自变量。在此示例中只有一个预测变量 X 或者说员工数量。它用于预测工单数。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215057,
+          "key": "4ee5cae6-f49d-4e86-8aa8-d1ee48477345",
+          "title": "Google 表格中的线性方程",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4ee5cae6-f49d-4e86-8aa8-d1ee48477345",
+            "completed_at": "2019-02-04T10:31:15.147Z",
+            "last_viewed_at": "2020-01-14T13:01:44.421Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Linear Equation Example Google Sheet",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d8d7e2_linear-equation-example-google-sheets/linear-equation-example-google-sheets.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 213750,
+              "key": "ffd77498-92be-4c46-80c6-2e3f67ecb2d1",
+              "title": "使用 Google 表格计算线性方程",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "voCJX6VpFvE",
+                "china_cdn_id": "voCJX6VpFvE.mp4"
+              }
+            },
+            {
+              "id": 213751,
+              "key": "44f3cc55-4e0e-4c1b-ba03-973a6742e4f2",
+              "title": "回归表",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>计算线性回归的步骤</h4>\n<li>第 1 步：打开数据表 **Linear Equation Example Google Sheets**（Google 表中的线性回归示例）Google Sheets 的界面与 Excel 非常类似，你完全可以使用 Excel 来完成练习。\n<li>第 2 步：使用斜率（Slope）函数 SLOPE(data_y, data_x)。在名为 `data_y`的第一个字段中包含目标变量的值，并在名为 `data_x` 的第二个字段中包含预测变量的值。结果应该为 0.1833。</li>\n<li>第 3 步：使用截距（Intercept）函数 INTERCEPT(data_y, data_x)，对相同的字段使用相同的值。结果应该为 -11.055。</li>\n现在，我们得出此直线的方程为：\n<center><h5> y = 0.1833x - 11.055 </h5></center>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215058,
+          "key": "dc61b11a-df8c-4a10-af6f-94838ea95e57",
+          "title": "线性回归验证",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dc61b11a-df8c-4a10-af6f-94838ea95e57",
+            "completed_at": "2019-02-04T10:35:39.771Z",
+            "last_viewed_at": "2019-11-11T08:14:01.925Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213752,
+              "key": "c367364b-846f-4c3a-844d-3f98f6a6db8a",
+              "title": "线性回归验证",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "如想了解更多相关信息，可访问以下链接：[相关性](https://www.mathsisfun.com/data/correlation.html) 和 [R 平方](http://blog.minitab.com/blog/adventures-in-statistics/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit)",
+              "video": {
+                "youtube_id": "TCtDXmvXDUc",
+                "china_cdn_id": "TCtDXmvXDUc.mp4"
+              }
+            },
+            {
+              "id": 213753,
+              "key": "ea9b46ff-5583-4892-8602-95d332f0794c",
+              "title": "验证",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n<h4>验证</h4>\n\n现在我们已经执行了分析并运行了线性回归模型，我们需要验证模型的结果。换句话说，我们有办法衡量模型的好坏吗？或者在这个例子中，我们计算出的线性表达式是否能很好地拟合我们的数据？\n\n<h5>第 1 步：相关性</h5> 使用相关函数 CORREL(data_y, data_x)，我们可以计算目标变量和预测变量之间的相关性。该值通常称为 r。r 的范围为 -1 到 +1。r 越接近 +1 或 -1，x 和 y 之间的相关性越高。在我们的例子中，r 的值为 0.987，表示强相关。\n<h5>第 2 步：计算 R 平方</h5>\n虽然强相关很好，但我们真正想知道的是，数据在直线上的拟合表现如何。好在，我们可以通过计算决定系数（coefficient of determination）或 R 平方（记为 R² 或 r²），来了解此公式在逼近数据方面的表现有多好。R 平方是取值在 0 和 1 之间的一个系数。R 平方可以解读为，模型解释的观察值变差的百分比，或模型的解释力。R 平方接近 1 意味着模型解释了目标变量的几乎所有变差。R 平方接近 0 意味着模型几乎未解释目标变量的任何变差。（注：目标变量 y 的取值波动称为“变差”）\n\n<h5>解读 R 平方的注意事项</h5>\n你如何解读 R 平方在很大程度上取决于你要建模的问题和你使用的数据。对于棘手的问题，R 平方很低可能是可以接受的。而且，较高的 R 平方也有可能由于模型不佳导致的。但是一般来说，R 平方越高越好，特别是当你添加和删除预测变量来决定最强的预测模型时。要了解有关解读 R 平方的更多信息，请参阅[此处](http://blog.minitab.com/blog/adventures-in-statistics/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit)。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213754,
+              "key": "4f3e8769-4247-4a3a-847a-ad27a94ab1cd",
+              "title": "R 平方",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>在 Google 表中进行验证</h4>\n\n观看下面的视频，了解如何在 Google 表中计算和解读 R 平方。",
+              "instructor_notes": null
+            },
+            {
+              "id": 213757,
+              "key": "b665021c-b046-4d92-8edf-6680ea516195",
+              "title": "在 Google 表中进行验证",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "RGti0FEK76U",
+                "china_cdn_id": "RGti0FEK76U.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215060,
+          "key": "db1428cd-1ee0-4e11-b839-a841524936ab",
+          "title": "练习：简单线性回归",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "db1428cd-1ee0-4e11-b839-a841524936ab",
+            "completed_at": "2019-02-04T10:43:20.153Z",
+            "last_viewed_at": "2020-01-14T13:01:34.787Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Simple Linear Regression",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d8d813_simple-linear-regression/simple-linear-regression.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 213755,
+              "key": "6f5855c7-0c37-4fd5-bdde-e3dfd7db59b8",
+              "title": "回归练习",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "现在，我们来考虑另一个不同的数据集。下载页面底部名为 **'Simple Linear Regression.xlsx'** 的数据集。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213756,
+              "key": "4eeb5024-a85b-42d3-b071-b49e778d2c71",
+              "title": "Next",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "如下所示，这些数据比我们刚刚看到的数据集中的更加分散。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213758,
+              "key": "366327bf-eb80-49e5-9fbc-4fd29bbbf8f8",
+              "title": "线性练习",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/June/576c0ce5_capture/capture.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/366327bf-eb80-49e5-9fbc-4fd29bbbf8f8",
+              "caption": null,
+              "alt": null,
+              "width": 881,
+              "height": 539,
+              "instructor_notes": null
+            },
+            {
+              "id": 213759,
+              "key": "7b0ab0e8-6807-4503-bf82-bb05978d2426",
+              "title": "Quiz",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "使用 Google 表格或 Microsoft Excel 计算：\n\n* 数据集的线性回归产生的直线的斜率。\n* 数据集的线性回归产生的直线与 y 轴相交（x = 0）的 y 值。\n* R 平方 —— 决定系数\n* 使用回归结果，我们预期会从拥有 525 名员工的新客户那里每周获得多少工单？",
+              "instructor_notes": null
+            },
+            {
+              "id": 213760,
+              "key": "57a14574-f85e-4998-beee-ca8c2b0e6477",
+              "title": "R 平方",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "57a14574-f85e-4998-beee-ca8c2b0e6477",
+                "completed_at": "2019-02-04T10:47:21.770Z",
+                "last_viewed_at": "2019-02-24T02:01:55.774Z",
+                "unstructured": "{\"selected_id\":\"a1466700952108\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "根据 R 平方的值，这个模型有多强？\n（一般来说 R 平方在 0.7 以上则视为模型较强，在 0.3 以下则视为较弱。）",
+                "answers": [
+                  {
+                    "id": "a1466700952108",
+                    "text": "强",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466700952920",
+                    "text": "中",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466700985352",
+                    "text": "弱",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213762,
+              "key": "16093119-54bc-4a9f-835e-30b373338b5c",
+              "title": "回归练习",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "16093119-54bc-4a9f-835e-30b373338b5c",
+                "completed_at": "2019-02-04T10:49:14.143Z",
+                "last_viewed_at": "2019-02-24T02:03:15.910Z",
+                "unstructured": "{\"selected_id\":\"a1466700663339\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "使用回归结果，我们预期会从拥有 525 名员工的新客户那里每周获得多少工单？",
+                "answers": [
+                  {
+                    "id": "a1466700660798",
+                    "text": "44",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466700662294",
+                    "text": "67",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466700663339",
+                    "text": "88",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466700664225",
+                    "text": "95",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215059,
+          "key": "32935ef9-b14b-43ef-b1ab-64365219faa1",
+          "title": "简单线性回归解决方案",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "32935ef9-b14b-43ef-b1ab-64365219faa1",
+            "completed_at": "2019-02-04T10:49:17.053Z",
+            "last_viewed_at": "2019-10-30T08:31:50.983Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213761,
+              "key": "653aaa04-80bd-4921-91ac-4962d6f11864",
+              "title": "Steps",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 计算预计工单数的步骤\n\n<h5>第 1 步</h5>\n计算直线的斜率，使用 ['slope'](https://support.office.com/zh-cn/article/SLOPE-%E5%87%BD%E6%95%B0-11fb8f97-3117-4813-98aa-61d7e01276b9) 函数。这个例子中的斜率为 0.1817，意味着客户每增加一名员工，我们将收到 0.1817 张额外工单。\n<h5>第 2 步</h5>\n计算 y 轴截距点，使用 ['intercept'](https://support.office.com/zh-cn/article/INTERCEPT-%E5%87%BD%E6%95%B0-2a9b74e2-9d47-4772-b663-3bca70bf63ef?CorrelationId=6393ef2b-1033-44ee-ae07-5160cce77a5f&ui=zh-CN&rs=zh-CN&ad=CN&ocmsassetID=HP010342626) 函数，获得值为 -7.546。\n<h5>第 3 步</h5>\n计算决定系数或 R 平方，使用 ['rsq'](https://support.office.com/zh-cn/article/RSQ-%E5%87%BD%E6%95%B0-d7161715-250d-4a01-b80d-a8364f2be08f?ui=zh-CN&rs=zh-CN&ad=CN) 函数，得到 R 平方 0.7862。\n<h5>第 4 步</h5>\n将模型结果代入线性方程。Y = mX + b 变为 Y = 0.1817*X - 7.546，并且 R 平方为 0.7862。\n<h5>第 5 步</h5>\n将 525 替换为 X，然后计算预期工单数。方程变为 0.1817*(525) - 7.546 = 87.86，即每周约 88 张工单。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213763,
+              "key": "26695d32-ef4a-4bb6-add7-2ddfe18ad04e",
+              "title": "简单线性回归",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1cqgBRB3r_k",
+                "china_cdn_id": "1cqgBRB3r_k.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215061,
+          "key": "9f6ce43a-fe8e-417e-a627-bcabbfd407e3",
+          "title": "多元线性回归简介",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9f6ce43a-fe8e-417e-a627-bcabbfd407e3",
+            "completed_at": "2019-02-04T11:01:26.540Z",
+            "last_viewed_at": "2019-11-11T08:18:46.442Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Introduction To Multiple Linear Regression",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2016/July/57842b5e_introduction-to-multiple-linear-regression/introduction-to-multiple-linear-regression.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 213764,
+              "key": "c9f245d2-203b-4255-990f-6c41c9880c5d",
+              "title": "多元线性回归简介",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "如果想一起练习，请使用下列数据。",
+              "video": {
+                "youtube_id": "0c8ngwQuZpg",
+                "china_cdn_id": "0c8ngwQuZpg.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215062,
+          "key": "a98b210a-6f0d-47f7-9a29-9c2820d891bd",
+          "title": "多元线性回归概念",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a98b210a-6f0d-47f7-9a29-9c2820d891bd",
+            "completed_at": "2019-02-04T11:26:30.835Z",
+            "last_viewed_at": "2019-11-11T08:29:17.730Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213766,
+              "key": "7099b9f9-dc2c-4933-b131-e916be399968",
+              "title": "多元线性回归（Multiple Linear Regression）",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "aW4rB0Intd0",
+                "china_cdn_id": "aW4rB0Intd0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215063,
+          "key": "631d190c-8626-4dd7-92df-f5bd96913c48",
+          "title": "Excel 的多元线性回归",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "631d190c-8626-4dd7-92df-f5bd96913c48",
+            "completed_at": "2019-02-04T11:29:07.404Z",
+            "last_viewed_at": "2019-11-13T07:54:48.330Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Linear Example Data",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2016/September/57d8d84c_linear-example-data/linear-example-data.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 213765,
+              "key": "e10c2d88-8510-4e99-b21f-ed0b83417fd0",
+              "title": "数据准备",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>初始步骤：准备和了解你的数据</h4>\n\n给定任何数据集，我们必须确保数据是干净的，没有偏差（bias）。在此演示中，我们假设数据是清理过的，并且对我们任意变量都没有任何偏差。你可以在[创建分析数据集](https://classroom.udacity.com/courses/ud977/lessons/62614c2d-0e8c-45e6-a225-cdc34495e911/concepts/d200ff73-f9fa-4a16-b09b-4f1d1671984f) 课程中学习有关清理数据的更多信息。\n\n一旦有了干净的数据集，为多元线性回归做准备的下一项是理解每个预测变量和目标变量之间的关系。我们可以通过绘制每个预测变量和目标变量之间的散点图来直观地做到这一点。\n\n在开始前，请下载文件 **Linear Example Data.xlsx** 并探索此数据是什么样的。你可以在页面底部访问该文件。\n\n**注**：如果你要绘制平均工单数直方图，你会看到大部分数据介于 0 和 100 之间，且并非正态分布。让我们假设这个数据集代表了我们在此部分课程中继续这个示例所需的所有数据。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213768,
+              "key": "4e2f5a11-b72d-46e0-93b3-71536ff023a4",
+              "title": "员工数量",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>员工数量</h4>\n\n我们先来创建一个表示员工数量和平均工单数变量关系的散点图。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213769,
+              "key": "c5883b77-2de1-4400-b444-c23750714794",
+              "title": "员工数量与平均工单数",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/July/578435a4_tickets-employees-plot/tickets-employees-plot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c5883b77-2de1-4400-b444-c23750714794",
+              "caption": "",
+              "alt": null,
+              "width": 752,
+              "height": 451,
+              "instructor_notes": null
+            },
+            {
+              "id": 213767,
+              "key": "5dfdc49e-4d55-48fd-9da9-9425d95a5ec7",
+              "title": "合同价值",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "可以看到，随着员工数量的增加，平均工单数也以近似线性的趋势增长。此图中的趋势线显示预测变量“员工数量”是用于创建多元线性回归模型的良好潜在预测变量。\n\n**重要**：这一点很重要，因为线性回归模型假定我们的数值预测变量与预测变量之间存在线性关系。好的实践方法是，在使变量通过线性回归模型之前，先分析单个变量。\n\n<h4>合同价值</h4>\n\n现在我们来创建一个描述变量“合同价值”和“平均工单数”之间关系的散点图。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213770,
+              "key": "cedbbe7c-94c0-403e-ab5e-8841a2a62141",
+              "title": "合同价值与平均工单数",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/July/578435da_tickets-value-plot/tickets-value-plot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/cedbbe7c-94c0-403e-ab5e-8841a2a62141",
+              "caption": "",
+              "alt": null,
+              "width": 750,
+              "height": 451,
+              "instructor_notes": null
+            },
+            {
+              "id": 213771,
+              "key": "b3c552e1-593b-41a0-84b4-44950a12753d",
+              "title": "合同价值（伪造的）",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "尽管合同价值由离散数字组成，我们仍然可以看到合同价值与工单数之间存在线性关系。随着合同价值的增加，工单数也会增加。\n\n<h4>反例</h4>\n\n假设合同价值与平均工单数之间没有关系。那么，在散点图上会是怎样的？",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213774,
+              "key": "8b9e82a7-10ef-4d6c-bf8c-406207dd325e",
+              "title": "合同价值与平均工单数（反例）",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/July/57786d50_value-contract-no-linear-relationship/value-contract-no-linear-relationship.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8b9e82a7-10ef-4d6c-bf8c-406207dd325e",
+              "caption": "",
+              "alt": null,
+              "width": 793,
+              "height": 540,
+              "instructor_notes": null
+            },
+            {
+              "id": 213772,
+              "key": "b21b2297-76bc-457a-89cc-c6a61edc097c",
+              "title": "多重共线性",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "在这个反例中，随着合同价值的增加，我们不会看到平均工单数增加（或减少）的趋势。该图中的趋势线是平坦的，我们可以得出结论，合同价值不是初步探索多元线性回归模型的一个很好的变量。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213773,
+              "key": "40597bc7-c22b-479b-a6a4-ce24ad856d39",
+              "title": "分类变量",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 分类变量如何？\n\n由于分类变量的性质，我们不能使用散点图或任何其他图来查看分类变量是否存在线性关系。\n\n检验线性关系的最好方法是通过回归模型来运行分类变量，然后查看相关系数是否显著，且具有较高的多重 R 平方（multiple-R-squared）。如果存在线性关系，则相关系数应该是显著的，且多重 R 平方应该相应较高（.70）",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213775,
+              "key": "0d38907a-75c9-438c-b53b-a28518c8c020",
+              "title": "完成准备步骤",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>完成准备</h4>\n\n因此对于我们的初始建模练习，我们应使用员工数量和合同价值来初步构建我们的多元线性回归模型。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213776,
+              "key": "41ad6d92-b95e-4bdf-9c70-ebeff5f7a7ed",
+              "title": "步骤",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>Excel 中的多元线性回归步骤</h4>\n\n<h5>第 1 步</h5> 确保在 Microsoft Excel 中激活 Analysis ToolPak 加载项。你可以[在此](https://support.office.com/zh-cn/article/%E5%8A%A0%E8%BD%BD%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E5%BA%93-6a63e598-cd6d-42e3-9317-6b40ba1a66b4?ui=zh-CN&rs=zh-CN&ad=CN)找到说明。\n\n<h5>第 2 步</h5>\n在 Excel 中，选择“数据分析”（Data Analysis）。在弹出窗口中选择“回归”（Regression），然后选择确定。\n\n<h5>第 3 步</h5>\n输入 Y 范围应该为目标变量的范围，在这个例子中即平均工单数。输入 X 范围应为预测变量的数据范围，在这个例子中即员工人数和合同价值，因为它们都表现出与平均工单数存在线性关系的可能。\n\n<h5>第 4 步</h5>\n点击确定运行模型并查看结果。我们可以快速看到线性方程的系数，结果为：\n<h5><center>Y = -24.2667 + 0.1019 X1 + 0.00067 X2</center></h5>\n\n其中 X1 为员工数量，X2 为合同价值。\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213777,
+              "key": "46e38367-e965-46bf-828c-a415a2455de9",
+              "title": "Excel 中的多元线性回归",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "kShe0b-sK4o",
+                "china_cdn_id": "kShe0b-sK4o.mp4"
+              }
+            },
+            {
+              "id": 213778,
+              "key": "e92c16a9-12ed-4b15-beea-e93ae257a2c2",
+              "title": "调整的 R 平方",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>R 平方与调整的 R 平方（Adjusted R-Squared）</h4>\n调整的 R 平方应该被用于多元线性回归，因为在模型中添加额外变量时出现了一种现象。简而言之，包含的变量越多，R 平方越高 —— 即使附加变量和目标变量之间没有关系。因此，我们使用调整的 R 平方。\n\n你可以[在此](https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2) 找到有关调整的 R 平方的更多信息。注意，链接文章中的“解释变量”（explanatory variables） = “预测变量”（predictor variables）。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213779,
+              "key": "42a3ac39-a1ac-4dae-bf32-f42fe2933c30",
+              "title": "R 平方",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RiKojRP54vs",
+                "china_cdn_id": "RiKojRP54vs.mp4"
+              }
+            },
+            {
+              "id": 213780,
+              "key": "75ebd84a-7cbb-4f24-8389-4eab5dd8f8a5",
+              "title": "应用回归结果",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "75ebd84a-7cbb-4f24-8389-4eab5dd8f8a5",
+                "completed_at": "2019-02-04T12:46:41.103Z",
+                "last_viewed_at": "2019-02-05T12:11:31.984Z",
+                "unstructured": "{\"selected_id\":\"a1477539539825\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "上面的模型给出了以下公式：工单数 = -24.267 + 0.1019 * 员工人数 + 0.0007 * 合同价值。对于拥有 750 名员工且合同价值为 13,000 美元的客户，模型预测的结果将是怎样？",
+                "answers": [
+                  {
+                    "id": "a1477539539825",
+                    "text": "61",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1477539892968",
+                    "text": "93",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1477539893481",
+                    "text": "112",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215064,
+          "key": "9955d7a5-8d4b-490a-949d-bf8e5ab5b355",
+          "title": "多元线性回归验证",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9955d7a5-8d4b-490a-949d-bf8e5ab5b355",
+            "completed_at": "2019-02-04T15:35:08.563Z",
+            "last_viewed_at": "2019-11-13T07:56:15.248Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213782,
+              "key": "6dbfb1c2-9e44-4d7e-ae72-5c27b4fa83a9",
+              "title": "多元线性回归验证",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "n_F9oWVDF4I",
+                "china_cdn_id": "n_F9oWVDF4I.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215066,
+          "key": "e4ce950e-b079-4e7b-9898-62b1f4ec14cf",
+          "title": "线性回归与分类变量",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e4ce950e-b079-4e7b-9898-62b1f4ec14cf",
+            "completed_at": "2019-02-04T15:37:40.931Z",
+            "last_viewed_at": "2019-11-13T07:56:17.041Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213783,
+              "key": "ff208937-57de-48e9-aa6d-e0c6232ae595",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 使用非数值型预测变量的线性回归\n\n我们来聊聊当你将分类变量添加到预测变量的组合中时，线性回归中会发生什么。这是具有两个预测变量的一般回归方程。\n\n**<center> Y = &beta;<sub>0</sub> + &beta;<sub>1</sub>X<sub>1</sub> + &beta;<sub>2</sub>X<sub>2</sub> </center>**\n\n像我们讨论过的，X 代表每个变量的值。这些直接来自数据，而 &beta;'s 来自线性回归模型。&beta;<sub>0</sub> 为截距。另一个 &beta;'s 代表预测变量 X 和目标变量 Y 之间的关系。\n\n#### 添加分类预测变量\n假设你添加了一个非数值型或分类变量，作为第三个变量。现在将类别的实际值放入方差中将不起作用，因为你不能使用字符串变量来做数学运算，因此我们必须以某种方式转换变量。没有经验的分析师可以会简单地为每个类别分配一个数字并将其插入模型中。\n\n**<center> Y = &beta;<sub>0</sub> + &beta;<sub>1</sub>X<sub>1</sub> + &beta;<sub>2</sub>X<sub>2</sub> + &beta;<sub>3</sub>X<sub>3</sub></center>**\n\n我们花点时间探索这个问题。在线性回归中，每个预测变量的系数或斜率代表它与目标变量之间的关系。因此，如果将类别转换为数值型变量，则假定目标变量和类别数字之间存在线性关系。由于类别数字通常是任意分配的，所以没有意义。\n\n#### 转换分类变量 —— 错误示例\n\n我们来看一个例子。我们有一个数据集，其中包含美国 50 个州每一个州的一些信息。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213784,
+              "key": "6a841a78-3794-400c-a243-1bd6175a697b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/58117a2a_data-pre/data-pre.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6a841a78-3794-400c-a243-1bd6175a697b",
+              "caption": "",
+              "alt": null,
+              "width": 653,
+              "height": 316,
+              "instructor_notes": null
+            },
+            {
+              "id": 213785,
+              "key": "51c3819c-7f4c-4b34-9161-6eb5c7327a50",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "我们想预测每个州对每名未成年学生的开支。为此，我们将使用三个预测变量：该州的平均收入、18 岁以下人口的百分比，以及该州所属的区域。下面是构建模型后将得到的回归方程。区域是具有四个值的分类变量：西部、中西部、东北部、东南部。你分别为它们分配编号 1、2、3 和 4，并运行模型。结果将给出以下等式：\n\n**<center> Expenditures = -530 + 0.073 Avg_Income + 1406.36 Pct_Under_18 + 6.53 region</center>**\n\n现在我们简单地来了解一下系数：\n* 平均收入系数意味着每增加 1 美元的平均收入，该州对每名未成年学生将多 7.3 美分的开支。\n* 18 岁以下人口的百分比系数意味着 18 岁以下人口每增加一个百分点，该州对每名未成年学生将多 14 美元的开支。\n* 区域系数意味着对于一个区域的每一次增加，该州对每名未成年学生将多 6.52 美元的开支。这个逻辑不太对，数字中没有逻辑顺序，并且此格式无法让我们考虑到区域之间的差异。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213786,
+              "key": "23ae8f2b-2650-4861-b932-21c748d95a77",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 转换分类变量 —— 正确示例\n\n在回归中使用分类变量的一个更好的方式，是使用所谓的虚拟变量（dummy variables）。虚拟变量只能取两个值，一般是 0 或 1。你可以添加比分类变量中唯一值数量少一个的虚拟变量数。所以，如果变量是二元的，则添加一个虚拟变量。如果有四个类别，则添加三个虚拟变量。\n\n回到我们的例子，现在我们使用虚拟变量来表示分类变量 region（区域）。要表示西部、中西部、东北和东南部四个类别，你需要添加三个虚拟变量。我们为中西部、东南部和西部各创建一个。\n\n**<center> Expenditures = &beta;<sub>0</sub> + &beta;<sub>1</sub> Avg_Income + &beta;<sub>2</sub> Pct_Under_18 + &beta;<sub>3</sub> midwest + &beta;<sub>4</sub> southeast + &beta;<sub>5</sub> west </center>**  </center>\n\n每个虚拟变量取值 1 或 0。如果一个州位于东南部，则东南（southeast）变量的值为 1，而其他两个变量为 0。\n\n我们没有为东北创建变量。这是因为方程需要一个没有编码成虚拟变量的基准值。如果一个州位于东北部，则所有三个虚拟变量的值都将为 0。**你创建的虚拟变量数要始终比类别数量少一个**，以确保一个类别表示为虚拟变量全部为 0。在此例子中这一个类别是东北部，成为其他类的对比类别。\n\n注意：许多软件工具，如 Alteryx，会自动将分类变量转换为虚拟变量。如果你要手动执行，可以通过 Excel 配套 `if` 或其它函数来模拟，也很方便。数据现在看起来会是下面这样的：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213787,
+              "key": "65e9def4-d762-4685-9639-5605001fd8c9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/58117a44_data-post/data-post.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/65e9def4-d762-4685-9639-5605001fd8c9",
+              "caption": "",
+              "alt": null,
+              "width": 898,
+              "height": 316,
+              "instructor_notes": null
+            },
+            {
+              "id": 590625,
+              "key": "aab22022-bdb0-4e9f-ab0e-d515006eb1cd",
+              "title": "分类变量的线性回归",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aab22022-bdb0-4e9f-ab0e-d515006eb1cd",
+                "completed_at": "2019-02-04T16:05:34.378Z",
+                "last_viewed_at": "2019-02-05T13:22:12.182Z",
+                "unstructured": "{\"selected_id\":\"a1522832350668\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "在将分类变量转换成虚拟变量之后，我们该如何执行线性回归呢？是否应当确认这些虚拟变量与被预测变量的相关性呢？",
+                "answers": [
+                  {
+                    "id": "a1522832350668",
+                    "text": "是",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1522832378554",
+                    "text": "否",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213788,
+              "key": "1907fedc-a537-4944-bde7-9a6dfa19d6d5",
+              "title": "虚拟变量数量练习",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1907fedc-a537-4944-bde7-9a6dfa19d6d5",
+                "completed_at": "2019-02-04T16:07:32.758Z",
+                "last_viewed_at": "2019-02-05T13:23:35.221Z",
+                "unstructured": "{\"selected_id\":\"a1477534159854\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "如果分类变量 *Industry*（行业）用于回归，且它有三个唯一的值：制造业、服务业和零售业，你应该在回归中使用多少个虚拟变量？",
+                "answers": [
+                  {
+                    "id": "a1477534053811",
+                    "text": "1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1477534159854",
+                    "text": "2",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1477534160495",
+                    "text": "3",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215067,
+          "key": "2ed99dd4-de90-48ad-8024-62742f2a62d9",
+          "title": "虚拟变量练习",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2ed99dd4-de90-48ad-8024-62742f2a62d9",
+            "completed_at": "2019-02-04T16:07:45.984Z",
+            "last_viewed_at": "2020-01-14T13:01:37.627Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213789,
+              "key": "ed04d97e-418e-4d03-a7c4-74f1ca16ca80",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 评估方程\n\n我们来通过一个手动计算来演示它是如何工作的。我们从以下回归方程开始。\n\n**<center> 学校开支 = -468 + (0.067 *x* 平均收入) + (1349 *x* 18 岁以下人口百分比) -14.4(if type: 中西部) - 9.3(if type: 东南部) + 16.5(if type: 西部) </center>**\n\n假如说有一个州的平均收入为 4011 美元，18 岁以下的人口百分比为 32.5%，位于东北部区域。计算步骤如下。\n\n1. **学校开支 = -468 + (0.067 *x* 平均收入) + (1349 *x* 18 岁以下人口百分比) - (14.4 *x* 中西部) - (9.3 *x* 东南部) + (16.5 *x* 西部)**\n2. **学校开支 = -468 + (0.067 *x* 4011) + (1349 *x* 0.325) - (14.4 *x* 0) - (9.3 *x* 0) + (16.5 *x* 0)**\n3. **学校开支 = -468 + 268.737 + 438.425 - 0 - 0 + 0**\n4. **学校开支 = 239.162 **\n\n我们将插入数值，并像这样给它们乘以各自的系数。然后对于区域虚拟变量，由于该州在东北部，我们将为每一个插入 0 值。求解此方程会得到预测的学校支出约为 239 美元。\n\n### 解读虚拟系数\n\n上述虚拟变量之系数的一种解读方式是，其代表假设所有其他变量保持不变，一个区域内的州开支与东北部的州开支之间的平均差额。如果中西部的一个州其 18 岁以下人口的百分比和平均收入与东北部的一个州相同，那么我们预计每个学生的开支将少 14.4 美元。\n\n现在轮到你来自己进行预测了。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213790,
+              "key": "c31cbcc4-e39b-465c-8da3-1ecb5fd545ae",
+              "title": "问题 1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c31cbcc4-e39b-465c-8da3-1ecb5fd545ae",
+                "completed_at": "2019-02-04T16:13:17.190Z",
+                "last_viewed_at": "2019-02-05T13:27:06.171Z",
+                "unstructured": "{\"selected_id\":\"a1477535853140\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "一个位于西部区域，平均收入为 5132 美元，18 岁以下人口百分比为 33.4% 的州，其预测的支出是多少？",
+                "answers": [
+                  {
+                    "id": "a1477535561119",
+                    "text": "317.11",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1477535767662",
+                    "text": "319.21",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1477535768126",
+                    "text": "326.41",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1477535853140",
+                    "text": "342.91",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 213791,
+              "key": "af8510bd-8f1a-410b-9bdb-f8083cb37ae6",
+              "title": "问题 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "af8510bd-8f1a-410b-9bdb-f8083cb37ae6",
+                "completed_at": "2019-02-04T16:20:36.413Z",
+                "last_viewed_at": "2019-02-05T13:27:45.595Z",
+                "unstructured": "{\"selected_id\":\"a1477535984893\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "一个位于东北部，平均收入为 5889 美元，18 岁以下人口百分比为 31.8% 的州，其预测的支出是多少？",
+                "answers": [
+                  {
+                    "id": "a1477535971997",
+                    "text": "341.145",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1477535984445",
+                    "text": "346.245",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1477535984893",
+                    "text": "355.545",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1477535985478",
+                    "text": "372.045",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215073,
+          "key": "82bfe969-921b-4175-adb5-797e84ba6107",
+          "title": "解释线性回归结果",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "82bfe969-921b-4175-adb5-797e84ba6107",
+            "completed_at": "2019-02-04T16:20:38.758Z",
+            "last_viewed_at": "2019-11-13T07:53:48.752Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213816,
+              "key": "661bd2c3-6d1f-4bdc-a0cc-5bb111b16346",
+              "title": "Staart",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>解释回归结果</h4>\n以下是线性回归结果。几乎任何回归工具都会类似地报告结果。不要被数字的量级吓到；我们将演示最重要的值以及如何解释和应用它们。有三个值尤其重要：系数估计值（coefficient estimates）、p 值（p-values）和 R 平方。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213817,
+              "key": "d63112dc-989b-46b4-a25f-fd24811b2e50",
+              "title": "结果",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/June/576d70d0_results/results.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d63112dc-989b-46b4-a25f-fd24811b2e50",
+              "caption": "",
+              "alt": null,
+              "width": 814,
+              "height": 765,
+              "instructor_notes": null
+            },
+            {
+              "id": 213818,
+              "key": "5c0847e4-2e89-4a21-8f7e-4bde1b2a15b6",
+              "title": "系数",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>系数估计值（coefficient estimates）</h4>\n还记得我们的回归方程 Y = B0+B1X1+B2X2…吗？这些系数是 B 的估计值。它们代表每个预测变量与目标变量之间的关系的大小。例如，**员工人数**的系数指<em>在其他所有变量保持不变</em>的情况下，每增加一名员工，将增加约 0.1 工单。一个更简单的思考方式是，我们可以预期，每 10 名员工将产生 1 张工单。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213819,
+              "key": "ca7e0ffe-e54a-42af-9f75-1c8072e079b7",
+              "title": "系数",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/June/576d70fe_pic4/pic4.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ca7e0ffe-e54a-42af-9f75-1c8072e079b7",
+              "caption": "",
+              "alt": null,
+              "width": 404,
+              "height": 244,
+              "instructor_notes": null
+            },
+            {
+              "id": 213820,
+              "key": "0fb2e221-5b4d-4c72-90bd-6af2ea6015a8",
+              "title": "P 值",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>P 值（P Value）</h4>\nThe <em>p 值</em>是观察结果（系数估计值）偶然发生的概率，并且预测变量与目标变量之间没有实际关系。换句话说，p 值是系数为零的概率。p 值越低，预测变量和目标变量之间存在关系的概率就越高。当 p 值较高时，则不应该依赖于系数估计。当预测变量的 p 值低于 0.05 时，其与目标变量之间的关系被认为具有统计学意义。\n<br>\n<br>\n<h5>统计显著性（Statistical Significance）</h5>\n“统计显著性是一种不可能随机发生的结果，而是很可能归因于某个具体原因。” —— <em>[投资百科](http://www.investopedia.com/terms/s/statistical-significance.asp#ixzz4FkclTfSz )</em>。\n\n除 p 值外，右边的星也表示具有统计显著性。星 (*) 越多表示显著性越高。在我们的例子中，我们看到预测变量是显著的，其中员工人数和合同价值是最显著的。通常，我们要从模型中删除不能统计显著地预测目标变量的变量。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213821,
+              "key": "ba62b369-bd10-4806-b364-d7a082f70eab",
+              "title": "P",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/June/576d718c_pic1/pic1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ba62b369-bd10-4806-b364-d7a082f70eab",
+              "caption": "",
+              "alt": null,
+              "width": 818,
+              "height": 251,
+              "instructor_notes": null
+            },
+            {
+              "id": 213822,
+              "key": "53fd99dd-7ef8-46e3-9911-a612b54dd83f",
+              "title": "rsq",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>R 平方</h4>\n在我们的例子中，R 平方为 0.9651，调整的 R 平方为 0.9558。因此，我们通过增加类别改进了模型。在现实问题中，我们可能会使用不同的预测变量运行模型，或者看看我们是否有额外的信息添加到模型。\n\n记住，R 平方的取值范围为 0 到 1，表示由预测变量变化解释的目标变量的变化量。R 平方越高，模型的解释力就越高。\n\n既然我们有一个较强的模型，便可以进行分析了。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 291819,
+              "key": "04596c0f-7b11-4694-bcb5-5586ccb28178",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/April/58e8191b_r2/r2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/04596c0f-7b11-4694-bcb5-5586ccb28178",
+              "caption": "",
+              "alt": null,
+              "width": 629,
+              "height": 262,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215075,
+          "key": "94f760b1-c69f-49bc-ab8a-bdc629305225",
+          "title": "评估方程",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "94f760b1-c69f-49bc-ab8a-bdc629305225",
+            "completed_at": "2019-02-04T16:23:00.199Z",
+            "last_viewed_at": "2019-11-13T07:53:47.168Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213824,
+              "key": "36985e71-04dd-4faf-bbc6-5fc620b1dc4e",
+              "title": "练习",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "回到我们的问题 —— 以下是我们拥有的额外信息：\n* 新客户有 732 名员工，合同价值为 82.5 万美元，属于服务行业。\n* 你的公司目前拥有 23 名服务台员工资源，每位员工每周可处理 125 张工单。\n* 服务台目前接收的平均工单数为每周 2800 张。\n\n为了便于参考，这里是来自我们最后一页线性方程的系数：\n\n* 截距：-18.45\n* 员工数：0.1116\n* 合同价值：0.0004858\n* 行业 - 制造业：0\n* 行业 - 零售业：-8.725\n* 行业 - 服务业：12.49",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213825,
+              "key": "c41b44cb-46aa-4d12-a437-54e25e2b46a1",
+              "title": "练习",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "c41b44cb-46aa-4d12-a437-54e25e2b46a1",
+                "completed_at": "2019-02-04T16:25:55.937Z",
+                "last_viewed_at": "2019-02-05T13:43:42.741Z",
+                "unstructured": "{\"selected_id\":\"a1466748352956\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "鉴于当前的服务台处理能力，服务台还需要雇佣多少人员才能处理预期的支持工单增加量？",
+                "answers": [
+                  {
+                    "id": "a1466748352046",
+                    "text": "0",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466748352956",
+                    "text": "4",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1466748353722",
+                    "text": "7",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1466748354467",
+                    "text": "11",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215076,
+          "key": "7df7f021-26b0-41d4-ad92-4715219217e7",
+          "title": "评估方程解决方案",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7df7f021-26b0-41d4-ad92-4715219217e7",
+            "completed_at": "2019-02-04T16:26:08.385Z",
+            "last_viewed_at": "2020-01-14T13:01:40.557Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213826,
+              "key": "d537423a-2058-4b23-8d14-82819f38babe",
+              "title": "解决方案",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>评估方程的步骤</h4>\n1. 使用线性回归模型的系数来确定新客户的预期工单数。\n    * 平均工单数 = 732*(0.1116) + 825000*(0.0004858) +12.49 - 18.45\n    * 平均工单数 = 476.52 所以我们可以假定将从新客户收到额外 477 张工单。\n\n2. 接下来，确定公司的处理能力。\n    * 拥有 23 名员工，每名员工每周可处理 125 张工单\n    * 可处理的总工单数为 23*125 = 2875。\n    * 因此，服务台每周可处理 2875 张工单。\n3. 现在，我们需要确定我们是否有足够的处理能力，或者是否需要增加员工资源。\n    * 我们目前每周收到 2800 张工单。\n    * 我们目前每周的过剩能力为每周 75 张工单。\n    * 新客户每周需要 477 张工单的支持，所以我们没有足够的能力支持新客户。\n    * 我们需要足够处理每周 402 张额外工单的员工资源，或者 402/125 = 3.216 个员工资源。\n\n<em><center><h5>因此，我们还应增加 4 个额外员工资源。</h5><center><em>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215074,
+          "key": "bbb8703e-52d4-4755-8a1b-1df0f83266c6",
+          "title": "分析总结",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "bbb8703e-52d4-4755-8a1b-1df0f83266c6",
+            "completed_at": "2019-02-04T16:26:39.964Z",
+            "last_viewed_at": "2019-11-13T07:53:42.468Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213827,
+              "key": "e6e859c6-d2d8-4bcb-a424-ab7acfa88ef9",
+              "title": "分析总结",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "tzF7GALld04",
+                "china_cdn_id": "tzF7GALld04.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215077,
+          "key": "6679539c-a376-45d5-a69f-599d50a72a0a",
+          "title": "课程概括",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6679539c-a376-45d5-a69f-599d50a72a0a",
+            "completed_at": "2019-02-04T16:27:06.408Z",
+            "last_viewed_at": "2020-01-14T13:01:39.605Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 213828,
+              "key": "d169c21f-d7ff-4af1-a193-165be877dfea",
+              "title": "总结",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "video": {
+                "youtube_id": "1zLN1Hr85UY",
+                "china_cdn_id": "1zLN1Hr85UY.mp4"
+              }
+            },
+            {
+              "id": 213829,
+              "key": "49e8c630-ce9a-4cfb-a41e-16b238568a5a",
+              "title": "商业问题框架",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>问题解决框架</h4>\n\n这是供你复习的问题解决框架。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213830,
+              "key": "126f9ac8-a868-4bc0-bfcf-9c93c8345f5d",
+              "title": "问题解决框架",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/June/57754572_crisp-dm-framework/crisp-dm-framework.jpeg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/126f9ac8-a868-4bc0-bfcf-9c93c8345f5d",
+              "caption": "",
+              "alt": null,
+              "width": 1920,
+              "height": 1080,
+              "instructor_notes": null
+            },
+            {
+              "id": 213832,
+              "key": "935812ad-0d00-4a38-9a13-577383ffe059",
+              "title": "MM",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<h4>分析方法</h4>\n\n这是我们用来确定需要进行哪种分析的分析方法。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 213831,
+              "key": "1ca40e65-2801-404d-a8e4-a4a7ac78f373",
+              "title": "MM-pic",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/June/576e0d7b_methodology-map/methodology-map.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1ca40e65-2801-404d-a8e4-a4a7ac78f373",
+              "caption": "",
+              "alt": null,
+              "width": 1275,
+              "height": 717,
+              "instructor_notes": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

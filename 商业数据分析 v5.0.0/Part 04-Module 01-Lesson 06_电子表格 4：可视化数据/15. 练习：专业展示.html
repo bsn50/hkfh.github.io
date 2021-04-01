@@ -1,0 +1,409 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>练习：专业展示</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>电子表格 4：可视化数据</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 简介.html">01. 简介</a>
+    </li>
+    <li class="">
+      <a href="02. 饼图.html">02. 饼图</a>
+    </li>
+    <li class="">
+      <a href="03. 练习：饼图.html">03. 练习：饼图</a>
+    </li>
+    <li class="">
+      <a href="04. 柱形图.html">04. 柱形图</a>
+    </li>
+    <li class="">
+      <a href="05. 散点图和折线图.html">05. 散点图和折线图</a>
+    </li>
+    <li class="">
+      <a href="06. 练习：图表类型.html">06. 练习：图表类型</a>
+    </li>
+    <li class="">
+      <a href="07. 练习：散点图.html">07. 练习：散点图</a>
+    </li>
+    <li class="">
+      <a href="08. 图表布局工具.html">08. 图表布局工具</a>
+    </li>
+    <li class="">
+      <a href="09. 练习：图表布局.html">09. 练习：图表布局</a>
+    </li>
+    <li class="">
+      <a href="10. 直方图.html">10. 直方图</a>
+    </li>
+    <li class="">
+      <a href="11. 练习：直方图.html">11. 练习：直方图</a>
+    </li>
+    <li class="">
+      <a href="12. 箱线图.html">12. 箱线图</a>
+    </li>
+    <li class="">
+      <a href="13. 练习：箱线图.html">13. 练习：箱线图</a>
+    </li>
+    <li class="">
+      <a href="14. 专业展示.html">14. 专业展示</a>
+    </li>
+    <li class="">
+      <a href="15. 练习：专业展示.html">15. 练习：专业展示</a>
+    </li>
+    <li class="">
+      <a href="16. 概括.html">16. 概括</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">15. 练习：专业展示</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="练习：专业展示">练习：专业展示</h1>
+<p>在下面的练习中，你将获得有关美国大学的信息数据集。此数据集可在页面底部的资源中找到，名称为<br />
+ <code>american_colleges.xlsx</code>，也可从 <a href="http://mathforum.org/workshops/sum96/data.collections/datalibrary/data.set6.html" rel="noopener noreferrer" target="_blank">mathforum.org</a> 下载，你会在此找到多个可用于练习的数据集。</p>
+<p>假设你接到一个任务，那就是为高中学校辅导员制作一个图表，向学生和家长展示大学选择。这些家庭开始了解他们的大学选择，而此图表只是谈话的一部分。它的目的是向受众展示不同地点的大学费用会有所差异。辅导员想比较美国几个（6 个）示例州的费用。</p>
+<p>你将创建一个堆叠柱状图，比较六个州的 <strong>Public（公立）</strong>大学的平均费用：加利福尼亚州（<strong>CA</strong>）、德克萨斯州（<strong>TX</strong>）、纽约州（<strong>NY</strong>）、密歇根州（<strong>MI</strong>）、佐治亚州（<strong>GA</strong>）和伊利诺伊州（<strong>IL</strong>）。假定我们要看的费用仅包含 <strong>out-of-state tuition（外州学生学费）</strong>、<strong>room（住宿费）</strong>和 ** board（伙食费）**。制作图表时，记得回顾来自课堂的以下问题：        </p>
+<ul>
+<li>你想回答什么问题？</li>
+<li>你想展现什么样的规律？</li>
+<li>受众是谁？</li>
+<li>概述还是深入讲解？</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="a2a71e0f-a343-4d73-8171-98841921fd8b--0">
+        <label for="a2a71e0f-a343-4d73-8171-98841921fd8b--0"><p>下载并打开 <code>american_colleges.xlsx</code>（见页面底部）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="a2a71e0f-a343-4d73-8171-98841921fd8b--1">
+        <label for="a2a71e0f-a343-4d73-8171-98841921fd8b--1"><p>筛选数据集，使其仅包含加利福尼亚州（<strong>CA</strong>）、德克萨斯州（<strong>TX</strong>）、纽约州（<strong>NY</strong>）、密歇根州（<strong>MI</strong>）、佐治亚州（<strong>GA</strong>）和伊利诺伊州（<strong>IL</strong>）的公立学校（Public）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="a2a71e0f-a343-4d73-8171-98841921fd8b--2">
+        <label for="a2a71e0f-a343-4d73-8171-98841921fd8b--2"><p>将筛选过的数据集复制到新选项卡，并给新的工作表选项卡命名：Public Selected（选定的公立学校）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="a2a71e0f-a343-4d73-8171-98841921fd8b--3">
+        <label for="a2a71e0f-a343-4d73-8171-98841921fd8b--3"><p>练习：Public Selected（见下文）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="a2a71e0f-a343-4d73-8171-98841921fd8b--4">
+        <label for="a2a71e0f-a343-4d73-8171-98841921fd8b--4"><p>将新的“Public Selected”数据集转换到一个新表，命名为：数据透视表</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="a2a71e0f-a343-4d73-8171-98841921fd8b--5">
+        <label for="a2a71e0f-a343-4d73-8171-98841921fd8b--5"><p>设置你的数据透视表，设置“行”为 State，设置 out-of-state tuition、room 及 board 为均值汇总方式</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="a2a71e0f-a343-4d73-8171-98841921fd8b--6">
+        <label for="a2a71e0f-a343-4d73-8171-98841921fd8b--6"><p>练习：数据透视表（见下文）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="a2a71e0f-a343-4d73-8171-98841921fd8b--7">
+        <label for="a2a71e0f-a343-4d73-8171-98841921fd8b--7"><p>选择数据透视表中的州、平均学费、平均住宿费、平均伙食费，创建一个堆叠柱状图</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="a2a71e0f-a343-4d73-8171-98841921fd8b--8">
+        <label for="a2a71e0f-a343-4d73-8171-98841921fd8b--8"><p>练习：堆叠柱状图（见下文）</p></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>恭喜！</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Public Selected</p></h3>
+  <div>
+  <div>
+    <p><strong>QUESTION:</strong> <p>Public Selected 数据集中有多少条记录？不要在计数中包含标题行。</p></p>
+    <div class="" form-group">
+      <label for="answer"><strong>ANSWER:</strong></label>
+      <textarea class="form-control" id="answer"></textarea>
+    </div>
+  </div>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <p><i>These answers need to be solved by yourself, I believe you can do it</i></p>
+
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数字透视表</p></h3>
+  <div>
+  <div>
+    <p><strong>QUESTION:</strong> <p>Illinois public colleges（伊利诺伊州公立大学）的 average room cost（平均住宿费）近似到美元整数是多少？（不含小数点或美分）</p></p>
+    <div class="" form-group">
+      <label for="answer"><strong>ANSWER:</strong></label>
+      <textarea class="form-control" id="answer"></textarea>
+    </div>
+  </div>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <p><i>These answers need to be solved by yourself, I believe you can do it</i></p>
+
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/stacked-bad.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>堆叠柱状图</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>上图为堆叠柱状图，包含要求的所有信息，但看起来并不正确。以下哪个更改会使它变为更好的图表，使辅导员进行更好的概述展示？</p></legend>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" value="a1504281902543" name="390323" id="a1504281902543">
+      <label for="a1504281902543"><p>将背景颜色更改为桃红色之类的明亮而清爽的颜色</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1504282496037" name="390323" id="a1504282496037">
+      <label for="a1504282496037"><p>将背景颜色更改为使图形易于阅读的颜色，例如白色</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1504282528098" name="390323" id="a1504282528098">
+      <label for="a1504282528098"><p>将数字改为不含小数位数的美元</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1504282592602" name="390323" id="a1504282592602">
+      <label for="a1504282592602"><p>重新对类别排序，使最高总数位于左侧，最低总数位于右侧</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1504282663303" name="390323" id="a1504282663303">
+      <label for="a1504282663303"><p>隐藏所有字段按钮（<strong>数据透视图工具（PivotChart Tools）->分析（Analyze）->字段按钮（Field Buttons）</strong>)</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1504282719133" name="390323" id="a1504282719133">
+      <label for="a1504282719133"><p>添加标题</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1504282735867" name="390323" id="a1504282735867">
+      <label for="a1504282735867"><p>删除堆叠柱状图中的单个值，但在左侧添加带标注的轴</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1504282906603" name="390323" id="a1504282906603">
+      <label for="a1504282906603"><p>将所有标签和数字调大，以便受众可以看清它们</p></label>
+    </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <ul>
+      <li>将背景颜色更改为使图形易于阅读的颜色，例如白色</li>
+      <li>将数字改为不含小数位数的美元</li>
+      <li>重新对类别排序，使最高总数位于左侧，最低总数位于右侧</li>
+      <li>隐藏所有字段按钮（**数据透视图工具（PivotChart Tools）->分析（Analyze）->字段按钮（Field Buttons）**)</li>
+      <li>添加标题</li>
+      <li>删除堆叠柱状图中的单个值，但在左侧添加带标注的轴</li>
+      <li>将所有标签和数字调大，以便受众可以看清它们</li>
+  </ul>
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>演示中的选择要你根据自己的判断决定，你可以在图表上进行各种颜色和设计元素的置换。或许你在这个例子中不需要将图表分解为学费、住宿费和伙食费，而只是展示整体平均费用就可以。下面是对堆叠柱状图的重新配置。你的图看起来可能略有不同，不过没关系。此练习的重点是在每次做出选择时，记得思考一下你想展示什么，以及展示给谁看。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/stacked-good.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="16. 概括.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('15. 练习：专业展示')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
