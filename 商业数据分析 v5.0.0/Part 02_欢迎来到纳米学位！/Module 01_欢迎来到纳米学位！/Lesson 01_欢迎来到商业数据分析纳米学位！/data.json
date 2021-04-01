@@ -1,0 +1,234 @@
+{
+  "data": {
+    "lesson": {
+      "id": 704855,
+      "key": "d103ad10-46ef-4936-beaa-2cb724f731d7",
+      "title": "欢迎来到商业数据分析纳米学位！",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "欢迎你来到商业数据分析纳米学位！在这一章，你将了解课程概述，并在第一时间加入课程学员交流群，了解本纳米学位提供的服务内容，更高效地完成课程。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 848373,
+          "key": "d254bb74-8437-4032-ae07-2ff4c2412814",
+          "title": "加入学习交流群",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d254bb74-8437-4032-ae07-2ff4c2412814",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 848374,
+              "key": "6fb77197-0e1b-45fc-90c6-1270bf2f9c0f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 如何加入学习交流社群\n\n在Udacity，我们提倡 ” 探索、自律、互助 ” 的社群精神，所以加入学习交流群，不仅能让你体验这样的氛围，同时也鼓励你“以教学相长”的理念去更多的帮助和你一起前行的同学，相信通过这样的方式，既能够加深你对知识技能的理解，同时也能收获一份友谊。\n\n`如果你希望加入本班交流群`，请认真填写 [ 以下申请表 ](https://udacity.jinshuju.com/pf/sJmpsc?x_field_1=classroom) 获取入群二维码。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 959784,
+              "key": "26ac49a7-b524-4e78-a283-51034703ec20",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<iframe id=\"goldendata_form_NJqvAY\" src=\"https://udacity.jinshuju.com/pf/sJmpsc?x_field_1=classroom&background=white&banner=show&embedded=true\" width=\"100%\" frameborder=0 allowTransparency=\"true\" height=\"800\"><",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 394944,
+          "key": "3f597c53-bbe4-4e2e-be9a-3406d658af17",
+          "title": "掌握商业数据分析技能为何如此重要？",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "3f597c53-bbe4-4e2e-be9a-3406d658af17",
+            "completed_at": "2018-11-14T02:12:23.694Z",
+            "last_viewed_at": "2019-10-29T12:43:16.915Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 395203,
+              "key": "f616d6d8-4123-4724-bb92-4a0fba3594e7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 数据分析已成为驱动企业增长的”新能源”\n\n数据分析的目的是把隐没在一大批看来杂乱无章的数据中的信息集中、萃取和提炼出来，以找出所研究对象的内在规律。在竞争更激烈、对创新要求更高的现代商业环境中，企业需要更敏捷、更快、更有效、投入产出更高的运营。 **无论是战略层面还是策略层面，充分利用数据分析，都能够帮助企业找到新的增长机会，做出更好、更快的决策和更有反馈的创新，甚至颠覆自己在行业中的定位。**\n\n> **麦肯锡（Mckinsey & Company）**：大公司通过数据分析，不仅提高了核心业务运作效率，而且推出了新的商业模式。在数据上领先的公司已经拥有了资深的分析人才来处理各种问题，并且他们正在积极寻找进入其他行业的途径。这些公司可以利用他们的体量和数据深度来增加新业务，这些扩张正在逐步侵蚀行业分隔的界限。\n\n从数据中挖掘的洞察，可以帮助企业构建新的商业模式、梳理关键增长模式、指数型地提高效率、创新突破性的增长方法。在数据分析战略中，非常关键的成功要素是什么呢？<span style=\"color:#02b3e4; font-weight:bold\">没错，是具备分析、解释数据能力的高水平人才。</span> \n\n如果你选择了数据分析能力作为职场提升技能的目标，那么恭喜你，你已经迈出了成为企业核心人才的第一步！继续预览课程，点击【下一项】，**了解数据分析是如何帮助你洞察商业机会、提升职场竞争力。**",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 847388,
+          "key": "30398ad1-bbc6-4094-9500-9c63f54dd4b7",
+          "title": "课程概述：3步让你具备数据分析能力",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "30398ad1-bbc6-4094-9500-9c63f54dd4b7",
+            "completed_at": null,
+            "last_viewed_at": null,
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 847389,
+              "key": "01a64752-89b5-42d8-8701-2d180450483f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**「商业数据分析」纳米学位** 课程的设计初衷， <span style=\"color:#02b3e4; font-weight:bold\">**是为了帮助商业领域想要提升数据分析能力的你，在短时间内，高效和系统地掌握数据分析的基础技能。** \n\n毕业后，你将可以：\n\n- 解读数据报表，通过观察数据面板得到数据分析报告\n- 理解并掌握商业数据分析的框架，具备提出问题并通过数据来回答的能力，有能力针对不同的商业问题选择不同的数据分析方法\n- 学会使用 Excel 计算统计参量、绘制可视化图表、搭建简单的机器学习模型进行趋势预测\n- 针对分析对象的不同选择合适的数据可视化类型、评估数据可视化的有效性\n- 使用 SQL 语言查询数据，挖掘业务信息 \n- 有能力处理真实世界的数据，即对各种缺失值以及错误输入数据的处理\n- 为成为数据分析师或数据科学家打下坚实基础\n\nLearning by doing 是 Udacity 的教学理念，硅谷教室通过 3 步帮你零基础掌握商业数据分析：\n- **Step 1：**通过视频学习基础知识\n- **Step 2：**通过及时的互动练习巩固视频所学知识\n- **Step 3：**通过实战项目挑战，以及针对实战项目导师答疑、学习辅导，把知识转化成应用能力\n\n通过视频课程的学习，结合 Udacity 独家的模拟真实商业挑战的项目， <span style=\"color:#02b3e4; font-weight:bold\">**你可以在 3 个月内快速从零基础起**，学习基本的数据分析技能，掌握高效的分析工具并应用于商业分析领域，实现职业发展的提升。Udacity 在数据科学领域的积累，来自硅谷的教学内容，能够让你掌握强大的数据分析的独门秘方。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 696198,
+          "key": "2999e2ae-1a2e-4575-ba93-124d5cfc1419",
+          "title": "认识来自硅谷的课程导师",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2999e2ae-1a2e-4575-ba93-124d5cfc1419",
+            "completed_at": "2018-11-14T05:50:22.170Z",
+            "last_viewed_at": "2019-10-29T12:43:43.343Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 696199,
+              "key": "5571c41d-ef95-4402-b673-9b5e58e07871",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "来自硅谷的，在数据分析、数据可视化领域有非常丰富经验的课程导师，将带你完成课程学习。下面是他们的简历：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 704104,
+              "key": "029f0952-9c88-40e7-8f76-4be318f014dc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div align=\"center\"><img src=\"https://s3.amazonaws.com/video.udacity-data.com/topher/2018/August/5b873bee_screenshot-2018-08-30-08.35.23/screenshot-2018-08-30-08.35.23.png\"></div> ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 704105,
+              "key": "23307ab3-4708-42f0-9e07-8dbbad619665",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<div align=\"center\"><img src=\"https://s3.amazonaws.com/video.udacity-data.com/topher/2018/August/5b873bfd_screenshot-2018-08-30-08.35.37/screenshot-2018-08-30-08.35.37.png\"></div>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 843448,
+          "key": "343ea928-687a-473b-9491-27acb56ea969",
+          "title": "本课程服务概览",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "343ea928-687a-473b-9491-27acb56ea969",
+            "completed_at": "2019-06-01T14:10:34.123Z",
+            "last_viewed_at": "2019-06-01T14:10:34.044Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843449,
+              "key": "7f2f31d7-defa-4c74-8fad-73618523a5fa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "是不是已经迫不及待要开始新课程的学习了呢？\n为了帮助你能更好地展开学习，请在开始前，仔细阅读「学前必知」的有关内容哦~\n\n<span style=\"color:#DD3131\">本部分不包含核心课程内容，**你仍需逐一仔细阅读**的原因是：当你学习新技术时一定会遇到困难/问题，那么，你应该提前了解在 Udacity 更高效解决这些问题的方法和渠道。这些内容无疑最适合在一开始就准确了解，让我们开始吧！</span>\n\n---\n\n在本课程的学习过程中，我们将主要通过 `项目审阅`，`中文论坛` 等服务来帮助你**在课程有效期内**完成本纳米学位。\n\n下面我们就来简单了解一下这些服务：\n\n<h3 class=\"vds-heading--h3 vds-spacing--stack-2x\"><i class=\"vds-icon vds-icon--md vds-color--blue\" role=\"img\" aria-hidden=\"true\"><svg viewBox=\"0 0 32 32\"><path d=\"M8 19v4h4v-4H8zm0-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2zm9-5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2h-8zm-4.857-5.514a1 1 0 1 1 1.714 1.028l-3.6 6a1 1 0 0 1-1.564.193l-2.4-2.4a1 1 0 0 1 1.414-1.414l1.494 1.494 2.942-4.901zM17 22a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2h-8z\"></path></svg></i>  项目审阅  --  Learning by doing</h3>\n\n在你提交项目后，我们将有**技术行家**来帮助你审阅提交的项目，为你提供细致到每行代码的审阅。 收到评审师反馈后，如果没有达到项目要求，你可以多次提交项目，让项目评审师提供指导，直到你达到项目要求。过程中，你需要注意：\n- **项目审阅标准**：每一个项目都会有明确的审阅标准，提交前务必仔细阅读，这样可以提高通过效率。\n- **项目提交时间**：为了帮助你规划时间，我们为每一个项目设定了「建议完成时间」，非常建议你按照这个时间通过项目，这样可以帮助你及时毕业；如果超过了这个时间，你也不用太担心，只要课程仍在有效期内，这并不会导致你不能提交项目，你只需要在接下来的时间里多努力一些就可以重新赶上建议进度，同样可以在有效期内顺利毕业。\n- **提交渠道与方式**：所有项目均需要在教室内提交项。提交的形式会有所不同，根据项目要求会略有不同。具体为提交本地文件，通过Github提交，或者直接在Workspace中提交，请以各项目具体要求为准。\n\n_你可以在「教室使用指南」-「项目提交指引」查看更多关于项目提交的信息。_\n\n<h3 class=\"vds-heading--h3 vds-spacing--stack-2x\"><i class=\"vds-icon vds-icon--md vds-color--blue\" role=\"img\" aria-hidden=\"true\"><svg viewBox=\"0 0 32 32\"><path d=\"M6.278 16.308l9.584-10A1 1 0 0 1 16.584 6H25a1 1 0 0 1 1 1v8a1 1 0 0 1-.293.707l-10 10a1 1 0 0 1-1.414 0l-8-8a1 1 0 0 1-.015-1.399zM15 23.586l9-9V8h-6.99L8.4 16.985l6.6 6.6zM20.5 13a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z\"></path></svg></i> 中文论坛  --  探索并解决问题</h3>\n\n在优达学城，你**不是独自一人**学习。优达学城导师、Mentor都活跃在论坛，他们无比乐意为你提供帮助。我们也鼓励大家都可以把学习中遇到的技术问题、学习感想沉淀在论坛，不仅有迹可循，亦能帮助他人。你可以前往优达论坛找到你的同学们，**有效地提问和参与讨论**，将这个知识库打造成能使你和其他同学都能反复获益的平台。\n\n- **注意收藏网址**：论坛地址是：[https://discussions.youdaxue.com/](https://discussions.youdaxue.com/)。**登陆优达账号**，该账号需有当前纳米学位的购买记录，即可看到相应板块。\n- **先搜索再提问**：当你在学习过程中遇到问题，请**随时**前往论坛，看看是否已经有人提出过类似问题，或提出你自己的问题，或是回答其他同学的问题。在正式发帖提问前，我们更建议你使用 Google、Stack overflow 或者论坛先进行搜索，这样不仅可以更高效地解决具体问题，并且可以不断增强你的解决问题的能力。 [这个指南](http://discussions.youdaxue.com/t/topic/58)可以帮助你熟悉如何使用论坛！\n\n\n_你可以在「教室使用指南」-「优达论坛」查看更多关于论坛使用的技巧。_\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 859638,
+              "key": "426bb35b-4021-49de-b8cc-0100271c40ea",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "----\n#### 学习支持\n\n当你遇到问题时，如果它是学习上的问题，我们推荐你充分使用 Google、 Stack Overflow 、优达论坛（上述）等搜索引擎或垂直社区；也鼓励你前往相应课程的微信学习社群，与同学、助教等一起交流。\n\n对于其他问题，如果是与账号、课程加入、发票相关的常见问题，你可以先查看我们的[常见问题中心](https://udacity.kf5.com/hc/)，或许可以更快获得答案，也可随时[点击此处](https://udacity.kf5.com/hc/request/new/) 提交工单,与我们服务支持团队取得联系。\n### 期待拥有卓群自学能力和自律能力的你，从本课程中顺利毕业。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 843450,
+              "key": "fef89eec-e922-4824-b8bc-4bbe48708873",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "\n在「学前必知」的后面两个部分，你可以继续了解到：\n\n- 「课程注意事项」包含了其他同学会频繁问到的问题，可能也会有你好奇的问题；\n- 「教室使用指南」则详细介绍了教室有关的使用技巧，可以帮助你提高学习效率。\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 843451,
+          "key": "6e7b7cd3-0096-43e3-904f-e4e2812e71a2",
+          "title": "值得关注的教室新功能",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6e7b7cd3-0096-43e3-904f-e4e2812e71a2",
+            "completed_at": "2019-06-01T14:10:35.127Z",
+            "last_viewed_at": "2019-06-01T14:10:35.020Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 843452,
+              "key": "9329a8bd-ed00-417f-9c8f-bcb8d2a6305a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "随着教室产品的快速迭代，你也许已经发现了教室的一些小变化，比如，\n- 在课程页面左侧导航栏的`搜索键`，已经可以直接进行全课程搜索关键词来找到你需要的内容，\n- 还增加了`项目日历`（需要返回至教室上一层），来帮助你更快更全面地了解学期的总时长，每个项目的截止时间，让你可以在开始课程前就做好时间规划。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 843454,
+              "key": "7fe804b6-bec0-48b4-8a54-4e2d717e6dd3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 搜索更新\n\n你可能留意到三个按钮布局已经发生了变化，同时搜索功能获得了大幅更新。现在搜索功能可以搜索字幕、文本，以及部分从图中识别的文本内容，如下图所示。退出搜索页面的按钮依然在右上角。\n\n\n<center><img src=\"https://s3.amazonaws.com/video.udacity-data.com/topher/2019/May/5cd3dbe7_classroom-search-samples/classroom-search-samples.png\" alt=\"img\"></center>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 843456,
+              "key": "e61e5d22-ce55-4faf-95ab-500a9b69bf73",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 项目日历\n\n此页面会重点展示本课程中你需要通过几个项目、相对应的建议完成时间，以及非常重要的学期结束时间。如果，\n- 你按时通过了该项目，项目节点会显示为绿色的对号；\n- 你超时未完成，那么项目节点会变成橙色，此时，你需要更加努力来跟上建议节奏哦。\n\n<center><img src=\"https://s3.amazonaws.com/video.udacity-data.com/topher/2019/May/5cd3dc4a_nd-home-sample/nd-home-sample.png\" alt=\"img\"></center>",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

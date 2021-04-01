@@ -1,0 +1,463 @@
+{
+  "data": {
+    "lesson": {
+      "id": 680291,
+      "key": "07b383df-b9dd-4e67-9baa-cbe1a4107bbf",
+      "title": "数据处理",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "你将学习到一些工具及它们的应用领域。 首先，你会了解到几个故事，通过简短的介绍来了解这些工具。 ",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/07b383df-b9dd-4e67-9baa-cbe1a4107bbf/680291/1544198919958/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/07b383df-b9dd-4e67-9baa-cbe1a4107bbf/680291/1544198915482/%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 680146,
+          "key": "1b6629c1-764a-4f70-9a9a-842d2f78007f",
+          "title": "简介",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1b6629c1-764a-4f70-9a9a-842d2f78007f",
+            "completed_at": "2018-11-14T11:02:35.219Z",
+            "last_viewed_at": "2020-01-14T12:59:26.456Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 680142,
+              "key": "998a51c1-0cf6-418a-a78f-c890b019016b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 数据应用案例解析\n\n在本课中，你将听到在本课程中听到来自不同行业的三个人的讲述。通过它们的讲述，你将了解现实场景中数据可被应用的广泛性，以及多个行业中是如何应用数据的。\n\n听到 Mitch、Emily 与 Phil 讲述的时候，你就要开始为你的第一个实战项目做准备了。每次讲述结束后，都会有一个简短的活动。这些活动只是为了向你介绍一些你将在整个纳米学位中需要了解的工具，并**不**需要作为项目的一部分提交！  \n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 680143,
+          "key": "f99d39a8-48b5-4356-9259-c530e5e99dd4",
+          "title": "访谈故事 1: Sparta Science",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f99d39a8-48b5-4356-9259-c530e5e99dd4",
+            "completed_at": "2018-11-14T11:03:13.070Z",
+            "last_viewed_at": "2020-01-14T13:01:05.366Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 680139,
+              "key": "248416da-5d39-4abe-b501-7ac871a620cf",
+              "title": "Sparta Science",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "7r4b1hlo-ic",
+                "china_cdn_id": "7r4b1hlo-ic.mp4"
+              }
+            },
+            {
+              "id": 801548,
+              "key": "d1b3f225-1917-4098-894b-8836e450ecab",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Phil Wagner 问：如何减少运动中可能发生的伤病呢？**\n\n每个运动员的动作记号与不同的伤病风险和不同的表现能力息息相关。良好的数据与真正的纵向数据的价值在于，你可以用来发现趋势和预测哪些练习会帮助个人有效减少和恢复伤病。\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 680144,
+          "key": "f59bf159-110c-4d2a-90f9-8c039858ea6a",
+          "title": "Excel 中的运动数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f59bf159-110c-4d2a-90f9-8c039858ea6a",
+            "completed_at": "2018-11-14T11:06:13.255Z",
+            "last_viewed_at": "2020-01-14T13:01:01.968Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 680137,
+              "key": "60979342-f0de-40aa-a8f9-3d67e16db87e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### NFL 球队预测排名\n\n以下是根据电子表格应用程序中显示的 [球队排名](https://www.teamrankings.com/ncf/stats/) 的 NFL 球队排名数据标头。在第一个实战项目中，你将要面对大量的电子表格。现在，看看你是否能够理解关于这些数据的基础知识。\n\n同样，在项目的这一部分，你不需要交付任何内容，这里只是显示了一个电子表格的应用。\n\n电子表格用于**存储**、**分析**与**呈现**数据，适用于多个行业。下面是在电子表格中存储数据的一个示例。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 680140,
+              "key": "6ac9a0b8-25ba-44a5-9e54-7ae527373b64",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/September/59a8ae33_screen-shot-2017-08-31-at-5.43.20-pm/screen-shot-2017-08-31-at-5.43.20-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6ac9a0b8-25ba-44a5-9e54-7ae527373b64",
+              "caption": "",
+              "alt": "",
+              "width": 1144,
+              "height": 738,
+              "instructor_notes": null
+            },
+            {
+              "id": 680138,
+              "key": "4fa2190b-d6d3-4b4c-85b7-f742325d8f46",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4fa2190b-d6d3-4b4c-85b7-f742325d8f46",
+                "completed_at": "2018-11-14T11:07:49.436Z",
+                "last_viewed_at": "2019-02-09T16:08:07.401Z",
+                "unstructured": "{\"selected_id\":\"a1504227274392\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "在每个 **Team** 名称旁边，你可以看到球队比赛记录。那么，哪支球队的比赛记录最好呢？",
+                "answers": [
+                  {
+                    "id": "a1504227205663",
+                    "text": "Arizona",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1504227258606",
+                    "text": "Minnesota",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1504227264096",
+                    "text": "Carolina",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1504227269230",
+                    "text": "Detroit",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1504227274392",
+                    "text": "None of the Above",
+                    "is_correct": true
+                  }
+                ]
+              }
+            },
+            {
+              "id": 680141,
+              "key": "f7b5b860-6377-496e-9805-350b347324a1",
+              "title": "",
+              "semantic_type": "MatchingQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f7b5b860-6377-496e-9805-350b347324a1",
+                "completed_at": "2018-11-14T11:08:50.489Z",
+                "last_viewed_at": "2019-02-12T14:42:23.160Z",
+                "unstructured": "{\"answer_ids\":[\"a1504227701433\",\"a1504227766283\",\"a1504227767577\",\"a1504227768423\"],\"is_correct\":true}"
+              },
+              "question": {
+                "complex_prompt": {
+                  "text": "为每支球队匹配描述该球队的恰当数据。"
+                },
+                "concepts_label": "数据",
+                "answers_label": "球队",
+                "concepts": [
+                  {
+                    "text": "Projected 12 Wins  （预计 12 胜）",
+                    "correct_answer": {
+                      "id": "a1504227701433",
+                      "text": "New England"
+                    }
+                  },
+                  {
+                    "text": "Playoff Win (季后赛胜率) 为 49.5％",
+                    "correct_answer": {
+                      "id": "a1504227766283",
+                      "text": "Kansas City"
+                    }
+                  },
+                  {
+                    "text": "Rank 13",
+                    "correct_answer": {
+                      "id": "a1504227767577",
+                      "text": "Carolina"
+                    }
+                  },
+                  {
+                    "text": "0-0 记录",
+                    "correct_answer": {
+                      "id": "a1504227768423",
+                      "text": "All of them."
+                    }
+                  }
+                ],
+                "answers": [
+                  {
+                    "id": "a1504227784585",
+                    "text": "Cincinnati"
+                  },
+                  {
+                    "id": "a1504227701433",
+                    "text": "New England"
+                  },
+                  {
+                    "id": "a1504227778922",
+                    "text": "没有一支队赢。"
+                  },
+                  {
+                    "id": "a1504227766283",
+                    "text": "Kansas City"
+                  },
+                  {
+                    "id": "a1504227767577",
+                    "text": "Carolina"
+                  },
+                  {
+                    "id": "a1504227768423",
+                    "text": "All of them."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 680150,
+          "key": "9af21aec-a6a0-447a-b2d8-320889b3ccce",
+          "title": "访谈故事 2: Farmer Mitch",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9af21aec-a6a0-447a-b2d8-320889b3ccce",
+            "completed_at": "2018-11-14T11:09:00.116Z",
+            "last_viewed_at": "2020-01-14T12:59:27.977Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 680145,
+              "key": "1e51f2f4-7c1c-48bb-a3e9-79a75d2cdc3a",
+              "title": "Farmer Mitch",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "liGQ2LknBmY",
+                "china_cdn_id": "liGQ2LknBmY.mp4"
+              }
+            },
+            {
+              "id": 801549,
+              "key": "0964b073-f4dc-462c-baa4-7d7473927405",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Mitch Yerxa 问：在一个人人需要食物的市场，如何才能规避生产过剩和资源浪费？**\n\n数据的使用在这方面非常有用，它能够帮助我们解决如何才能更快地将食物传递到终端消费者手中。对于农民和消费者之间的食品杂货商、经销商或任何中间人来说，任何时间损失，任何一分钟的损失，都意味着价值的损失。通过数据我们知道每块田地每个部分的生产状况，提高每平方英寸田地的生产率，这就是我们称之为的“精准农业”。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 680157,
+          "key": "4d399059-7d19-4194-b2c2-3b00e39371ec",
+          "title": "SQL 中的天气数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4d399059-7d19-4194-b2c2-3b00e39371ec",
+            "completed_at": "2018-11-14T11:11:11.168Z",
+            "last_viewed_at": "2020-01-14T13:01:06.553Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 680151,
+              "key": "5f40e076-5d41-4ea5-9f13-33b648376b7a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 天气数据\n\n天气对农民的收成影响巨大。为了了解在本项目后面深入学习的工具，你将使用 SQL 与下面的环境从最接近你的城​​市中提取数据。\n\n处理多个电子表格中的大量数据时，最好将数据移动到 SQL 数据库中。 SQL 代表**结构化查询语言**，它可以快速执行 Excel 的多个任务。此外，SQL 可以同时处理多个电子表格。大部分公司主要依靠数据库来存储与组织他们的数据。能够通过熟练编写 SQL 查询命令来访问与分析数据库中的数据，这是数据分析师的基本技能。根据 Apple 分析经理的说法，在专业技能方面，“ SQL 技能是所有技能中最重要的一项技能”。\n\n单击屏幕右下角的** EVALUATE **，运行下面的代码。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 680152,
+              "key": "d01db3ad-6b3b-4681-b1ea-7f21c27d0b27",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view5d09725b",
+              "pool_id": "sqlwidget",
+              "view_id": "5d09725b-2480-4b99-ac56-7e77e616ac3c",
+              "gpu_capable": null,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "allowSubmit": false,
+                    "frameBorder": "0"
+                  },
+                  "kind": "sql-evaluator"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 680155,
+              "key": "a0d277cb-3cba-46d8-80a0-8fa2d811d90b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "点击 **EVALUATE** 时，你应该会看到下面列出的城市与国家/地区列表。 **你刚刚运行了第一个 SQL 查询！**目前的列表中，城市是按城市字母顺序排列的，但如果按国家/地区排序，则可能更容易找到距离你最近的城市。 \n\n尝试运行以下环境中的代码，从而实现更改你的查询命令要更改的列。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 680156,
+              "key": "ae19d85e-508f-4b8e-9675-b860e24b311c",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view5d09725b",
+              "pool_id": "sqlwidget",
+              "view_id": "ae2d5986-c267-49cf-90c6-bd75e54712b6",
+              "gpu_capable": null,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "allowSubmit": false,
+                    "frameBorder": "0"
+                  },
+                  "kind": "sql-evaluator"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 680149,
+              "key": "147b922a-2ecb-42d6-8e96-9205dfdf4dd8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "找到距离你最近的城市后，请尝试更改以下代码，从而获取你所在城市和国家/地区的天气数据。下面是我自己的代码，你可以将`San Jose`与`United States`改为另一个城市，或者离你最近的城市！请注意，在SQL中，引号是非常重要的符号，你需要在城市和国家/地区名称前后加上引号。 ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 680148,
+              "key": "a61e3133-def8-46e5-92de-c10da2ea8bd5",
+              "title": null,
+              "semantic_type": "WorkspaceAtom",
+              "is_public": true,
+              "workspace_id": "view5d09725b",
+              "pool_id": "sqlwidget",
+              "view_id": "8604e570-0633-46cb-9691-756dcfa2e87f",
+              "gpu_capable": null,
+              "configuration": {
+                "id": "reserved",
+                "blueprint": {
+                  "conf": {
+                    "disk": null,
+                    "allowSubmit": false,
+                    "frameBorder": "0"
+                  },
+                  "kind": "sql-evaluator"
+                },
+                "workspaceId": "reserved"
+              },
+              "starter_files": null
+            },
+            {
+              "id": 680154,
+              "key": "1a029567-a67f-4006-85f6-4a70290ac742",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "在上述环境的末尾，你会发现你可以将数据下载为`.csv`。这是处理 Excel 文件时常用的一种文件格式，稍后你将在本课程中展开学习。如果你已经拥有Excel或SQL方面的经验，请随意使用数据，并看一看你可以找到什么内容。 \n\n同样，在项目的这一部分，你不需要交付任何内容，这里只是为了向你介绍一些将在整个项目中需要了解的工具！ \n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 680153,
+          "key": "f5bcf82f-042b-4ab0-af6a-af02dc7cfffd",
+          "title": "访谈故事 3: 不同寻常",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f5bcf82f-042b-4ab0-af6a-af02dc7cfffd",
+            "completed_at": "2018-11-14T11:15:02.526Z",
+            "last_viewed_at": "2020-01-14T13:01:12.261Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 680147,
+              "key": "07d7084e-33f3-4b1c-b860-ec041841f621",
+              "title": "Uncommon Bold",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "4Yen3Tj6J1c",
+                "china_cdn_id": "4Yen3Tj6J1c.mp4"
+              }
+            },
+            {
+              "id": 801550,
+              "key": "4ae24a87-2541-428c-ae8d-7cf484662296",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**Emily Peters 问：如何更好地了解你的用户？**\n\nUnicommon Bold 通过对 Linkedin 上的真实用户进行分析，帮助客户了解它们所投放的媒体覆盖到的用户质量，而不仅仅是数量。用户质量可以通过一个按月测算的分数来直观体现。\n\n\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

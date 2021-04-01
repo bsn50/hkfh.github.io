@@ -1,0 +1,205 @@
+{
+  "data": {
+    "lesson": {
+      "id": 419975,
+      "key": "c85bc30e-0f44-4c96-9263-136629e48155",
+      "title": "纳米学位简介",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "在欢迎中，你将了解你的导师及其所学到的课程。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/c85bc30e-0f44-4c96-9263-136629e48155/419975/1544208982132/%E7%BA%B3%E7%B1%B3%E5%AD%A6%E4%BD%8D%E7%AE%80%E4%BB%8B+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/c85bc30e-0f44-4c96-9263-136629e48155/419975/1544208978449/%E7%BA%B3%E7%B1%B3%E5%AD%A6%E4%BD%8D%E7%AE%80%E4%BB%8B+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 195521,
+          "key": "aac0d5cc-43b9-4683-94bc-ce3e91e9f314",
+          "title": "纳米学位简介",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "aac0d5cc-43b9-4683-94bc-ce3e91e9f314",
+            "completed_at": "2018-11-14T10:44:50.934Z",
+            "last_viewed_at": "2020-01-14T12:59:19.271Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195522,
+              "key": "98422a93-9e16-46ad-a35e-dcd4deed3a70",
+              "title": "简介",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "fxNSn63xFvA",
+                "china_cdn_id": "fxNSn63xFvA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 419977,
+          "key": "11e8748c-c925-4fb4-be35-79e7fde60a5a",
+          "title": "项目和进度",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "11e8748c-c925-4fb4-be35-79e7fde60a5a",
+            "completed_at": "2018-11-14T10:45:21.161Z",
+            "last_viewed_at": "2019-10-29T12:44:29.157Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 419980,
+              "key": "879203eb-765e-4788-89f6-fc3cb4d74c07",
+              "title": "Learning by doing 能为你培养哪些能力？",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "为帮助你快速实现目标，我们根据你的报名时间为你的每个实战项目设置了截止日期。此时间线的设计标准为每周大约投入 10 小时。请在任何可能的时候回到教室继续学习，即使只是 5 分钟，也能确保不断取得进步。\n\n截止日期显示在你的优达学城主页上所列相关项目旁边。你可以点击页面左侧的“主页图标”转至你的教室主页。",
+              "video": {
+                "youtube_id": "Z9ZLMQWsbsk",
+                "china_cdn_id": "Z9ZLMQWsbsk.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 195525,
+          "key": "ebd1d4f3-8996-46c7-9356-d115ef49c0c2",
+          "title": "如何提交项目",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ebd1d4f3-8996-46c7-9356-d115ef49c0c2",
+            "completed_at": "2018-11-14T10:46:17.838Z",
+            "last_viewed_at": "2019-02-03T07:50:08.885Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195526,
+              "key": "cb9cbe98-91da-43f8-83b3-e649fbf35868",
+              "title": "如何提交项目",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "jCJa_VP6qgg",
+                "china_cdn_id": "jCJa_VP6qgg.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 195527,
+          "key": "74a7575e-fc81-4312-b340-21a677dae7ff",
+          "title": "诚信和决心",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "74a7575e-fc81-4312-b340-21a677dae7ff",
+            "completed_at": "2018-11-14T10:46:49.802Z",
+            "last_viewed_at": "2020-01-14T12:59:21.032Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195528,
+              "key": "6b464882-ac4c-4efc-962b-b774ce26815b",
+              "title": "荣誉准则",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "### 要在纳米学位课程中保持良好信誉，你必须遵守以下荣誉准则：\n\n**我在此确认**我提交的所有项目作业均由我个人完成。相应地，我将记录和引述我提交的项目中来自网站、书籍、论坛、博文、Github 库或任何其他来源的部分的出处，并解释使用它们的原因。",
+              "video": {
+                "youtube_id": "zCOr3O50gQM",
+                "china_cdn_id": "zCOr3O50gQM.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 195529,
+          "key": "c63fb10d-52ad-41c6-9b03-2c84ee58c794",
+          "title": "如何才能抽出时间学习",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "c63fb10d-52ad-41c6-9b03-2c84ee58c794",
+            "completed_at": "2018-11-14T10:46:55.589Z",
+            "last_viewed_at": "2020-01-14T12:59:21.588Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195530,
+              "key": "81f48614-3a23-435d-99f7-4567dc328d79",
+              "title": "如何才能抽出时间学习",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "d-VfUw7wNEQ",
+                "china_cdn_id": "d-VfUw7wNEQ.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 195531,
+          "key": "ec8ec89f-b5d2-44ce-bba1-12a77922751e",
+          "title": "最后的提示",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ec8ec89f-b5d2-44ce-bba1-12a77922751e",
+            "completed_at": "2018-11-14T10:48:04.341Z",
+            "last_viewed_at": "2020-01-14T12:59:22.033Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 195532,
+              "key": "a65a0a69-c17a-44dc-998c-5317a302c224",
+              "title": "最后的提示",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "1ZVBvM54hQw",
+                "china_cdn_id": "1ZVBvM54hQw.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

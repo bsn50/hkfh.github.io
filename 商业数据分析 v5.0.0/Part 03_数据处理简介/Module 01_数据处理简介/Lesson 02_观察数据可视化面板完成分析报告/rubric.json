@@ -1,0 +1,145 @@
+{
+  "id": 2100,
+  "project_id": 324,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(css|docx|gradle|htm|html|java|js|markdown|md|pdf|py|rmd|rst|sql|swift|txt|xml|yaml|yml)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "",
+  "hide_criteria": false,
+  "created_at": "2018-07-21T04:52:59.094Z",
+  "updated_at": "2019-03-27T06:40:33.986Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "available_for_cert_project": false,
+  "language": "zh-cn",
+  "ndkeys": [
+    "nd100-cn",
+    "nd002-cn-svip",
+    "nd100-cn-vip",
+    "nd002-cn-advanced"
+  ],
+  "coursekeys": [],
+  "is_career": false,
+  "sections": [
+    {
+      "id": 4402,
+      "name": "完整性",
+      "created_at": "2018-08-03T01:45:39.264Z",
+      "updated_at": "2018-08-03T01:51:42.709Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2100,
+      "rubric_items": [
+        {
+          "id": 12832,
+          "section_id": 4402,
+          "passed_description": "你的报告中需要包含三条见解。",
+          "exceeded_description": null,
+          "created_at": "2018-08-03T01:51:43.318Z",
+          "updated_at": "2018-08-03T01:55:08.746Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "对见解数量的要求",
+          "exceedable": false
+        },
+        {
+          "id": 12833,
+          "section_id": 4402,
+          "passed_description": "每条见解后面都要有一个详述，描述如何从数据中获得了该见解。\n\n对于每条见解，请提供一个屏幕截图，显示你在报表中观察到的相关信息。\n",
+          "exceeded_description": null,
+          "created_at": "2018-08-03T01:55:09.302Z",
+          "updated_at": "2018-08-03T01:56:59.918Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "见解详述",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4403,
+      "name": "正确性",
+      "created_at": "2018-08-03T01:57:00.541Z",
+      "updated_at": "2018-08-03T01:57:13.168Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2100,
+      "rubric_items": [
+        {
+          "id": 12834,
+          "section_id": 4403,
+          "passed_description": "根据数据，学员的结论正确，严谨，没有逻辑性错误。",
+          "exceeded_description": null,
+          "created_at": "2018-08-03T01:57:13.763Z",
+          "updated_at": "2018-09-30T04:38:02.164Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "结论正确",
+          "exceedable": false
+        },
+        {
+          "id": 12835,
+          "section_id": 4403,
+          "passed_description": "恰当地使用仪表板来查找信息。",
+          "exceeded_description": null,
+          "created_at": "2018-08-03T01:57:30.519Z",
+          "updated_at": "2018-08-03T01:58:38.478Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "使用恰当",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4981,
+      "name": "合理性",
+      "created_at": "2018-09-30T04:38:03.321Z",
+      "updated_at": "2018-09-30T04:38:31.275Z",
+      "deleted_at": null,
+      "position": 2,
+      "rubric_id": 2100,
+      "rubric_items": [
+        {
+          "id": 14445,
+          "section_id": 4981,
+          "passed_description": "能够体现出三条见解之间的逻辑顺序，用讲故事的方式有条理地阐述你的见解。",
+          "exceeded_description": null,
+          "created_at": "2018-09-30T04:38:31.592Z",
+          "updated_at": "2018-09-30T04:42:27.206Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "叙事结构",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 324,
+    "name": "Insights from Data",
+    "nanodegree_key": "nd100",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": 2899,
+    "entitlement_required": false,
+    "is_career": false,
+    "recruitment_family_id": 5,
+    "created_at": "2017-07-19T23:13:40.844Z",
+    "updated_at": "2021-03-27T06:48:23.920Z",
+    "price": "5.0",
+    "ungradeable_price": "3.0",
+    "audit_price": "0.0"
+  }
+}

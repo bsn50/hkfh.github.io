@@ -1,0 +1,152 @@
+{
+  "data": {
+    "lesson": {
+      "id": 714673,
+      "key": "336e9d9f-3252-4af8-9d47-bd0410a56ad5",
+      "title": "观察数据可视化面板完成分析报告",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "在本课中，你将要完成你的第一个实战项目！",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/336e9d9f-3252-4af8-9d47-bd0410a56ad5/714673/1536896850477/%E8%A7%82%E5%AF%9F%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E9%9D%A2%E6%9D%BF%E5%AE%8C%E6%88%90%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/336e9d9f-3252-4af8-9d47-bd0410a56ad5/714673/1536896847345/%E8%A7%82%E5%AF%9F%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E9%9D%A2%E6%9D%BF%E5%AE%8C%E6%88%90%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": {
+        "key": "9acef719-fdd8-4a3c-9930-8b58c4443080",
+        "version": "1.0.0",
+        "locale": "zh-cn",
+        "duration": 7200,
+        "semantic_type": "Project",
+        "title": "观察数据可视化面板完成分析报告",
+        "description": "### 项目目标\n<br><br>\n你需要完成第一个实战项目了！下面是**该实战项目的三个目标**：\n\n1.通过查看数据报表培养你的数据直觉，并形成自己的见解。  <br><br>\n\n2.了解优达学城审阅系统的工作原理。项目提交和审阅是作为优达学城学员**必不可少**的必修课之一，也是顺利从纳米学位毕业的关键。而且，你必须要通过所有的实战项目哦！<br><br>\n\n3.了解你最终的学习成果。本纳米学位结束时，你不仅能够学会如何从这些报表中得出结论，而且能够构建自己的报表，就像你在第一个实战项目中看到的报表那样！<br>\n\n本节课程的主要目的是让你了解本纳米学位的学习目标和优达学城项目审阅的工作流程，但这也是必需的哦！\n\n\n### 项目提交\n\n如果你对自己的报告很满意，请仔细检查是否符合所有[审阅标准规范](https://review.udacity.com/#!/rubrics/2100/view)，然后在下面与我们分享吧！ ",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2100",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 680165,
+          "key": "0d8e8912-baeb-490c-b944-cbb91808a6f5",
+          "title": "项目介绍",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "0d8e8912-baeb-490c-b944-cbb91808a6f5",
+            "completed_at": "2018-11-14T11:17:24.461Z",
+            "last_viewed_at": "2019-12-11T07:22:40.699Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 680163,
+              "key": "725a9c29-a8e8-4849-bb1d-c2606eee04f1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 项目介绍\n\n你将对我们提供的 Tableau 中的数据可视化进行观察，并从中发现洞察。Tableau 与数据分析师的关系也非常密切。观看此处的视频，了解本实战项目的全部内容！\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 680164,
+              "key": "d64fa4ea-7a3d-419e-a954-df0212b5465d",
+              "title": "Project Introduction",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "VP8zNxRF-t0",
+                "china_cdn_id": "VP8zNxRF-t0.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 680162,
+          "key": "cfe8c3aa-b5c3-4d99-bbbc-4a8c751debf3",
+          "title": "项目描述",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "cfe8c3aa-b5c3-4d99-bbbc-4a8c751debf3",
+            "completed_at": "2018-11-14T11:20:07.911Z",
+            "last_viewed_at": "2019-12-11T07:23:23.269Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 680158,
+              "key": "3be39270-a9e9-4735-a083-81db13c7a41b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 项目描述\n\n数据分析工作的很大一部内容是能够向别人解释数据可视化，并阐述你的见解。为了让你做一些练习，我们选择了一些 Tableau 仪表板供你练手，具体链接如下。要完成本项目，你需要：\n\n1. 请选择 **其中一个** 你最感兴趣的仪表盘 (dashboard)。\n2. 在对应仪表盘中的可视化中找出 **三条见解**。\n3. 对于每条见解，请**提供静态图像**，分享你的观察发现。写一份简短的报告，解释你的每次发现以及你是如何在报表中找到能够得出你的结论的信息。\n4. 包括图像，你的报告长度应该为1-2页。\n\n### 项目审阅标准\n该项目的审阅标准链接： [https://review.udacity.com/#!/rubrics/2100/view](https://review.udacity.com/#!/rubrics/2100/view)\n\n### 屏幕截图\n\n如果你之前没有做过屏幕截图，请参考下列说明： [Mac](https://support.apple.com/en-us/HT201361) 或 [PC](https://zh.wikihow.com/%E5%9C%A8%E5%BE%AE%E8%BD%AFWindows%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE)。 之后，你可以将图像复制并粘贴到你的报告中。\n\n### 示例\n\n你的见解或结论可以是类似这样的：\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 680160,
+              "key": "d0ff32f2-1b50-4a98-949a-7bec006f1b4f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/August/59874ebc_screen-shot-2017-08-06-at-10.14.56-am/screen-shot-2017-08-06-at-10.14.56-am.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d0ff32f2-1b50-4a98-949a-7bec006f1b4f",
+              "caption": "",
+              "alt": null,
+              "width": 1804,
+              "height": 1084,
+              "instructor_notes": null
+            },
+            {
+              "id": 680159,
+              "key": "5ba09e00-96a0-4948-8e27-f84cd63863dd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "“自2007年以来，塞内加尔每年因疟疾导致的死亡人数减少了一半。在该报表上，我点击了地图上的塞内加尔，上面的数字显示了2000年至2014年每年因疟疾而死亡的人数。2007年之前，每年大约有1400-1500人死亡。2007年之后，也就是从2008年开始，每年的死亡人数减少到了约600-700人。”\n\n以PDF格式提交此报告。所有图像和结论都应该在**一个** PDF中，每个结论后面必须有一个关于该结论的图像。\n\n## 从下列仪表板中选择一个你最感兴趣的仪表板\n\n[Madrid in Detail](https://public.tableau.com/views/MadridInDetail/MadridinDetail?%3Aembed=y&%3Atoolbar=yes&%3AloadOrderID=0&%3Adisplay_count=y%3F%3Aembed&%3AshowVizHome=no)\n\n\n\n[Malaria in Africa](https://public.tableau.com/views/MakeoverMonday34Malaria_0/MalariainAfrica?:embed=y&:showVizHome=no&:display_count=y&:display_static_image=y&:bootstrapWhenNotified=true)\n\n[LinkedIn Top Skills](https://public.tableau.com/profile/matt.chambers#!/vizhome/LinkedInTopSkills2016-MakeoverMonday/LinkedInTopSkills2016-MakeoverMonday) \n\n[中国葡萄酒故事](https://public.tableau.com/profile/dragonfruit2017#!/vizhome/42012-2016_0/42012-2016)\n\n优达学城更推荐你在做项目的时候选用前三个英文链接。如果你的英文阅读障碍无法克服，我们也在最后提供了中文数据面板的选项。\n\n如果你选择使用LinkedIn 数据，可以阅读 [这篇文章](https://blog.linkedin.com/2016/10/20/top-skills-2016-week-of-learning-linkedin) ，它对你形成见解或结论很有帮助。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 680161,
+              "key": "5ae4215b-5faf-4791-afe2-f9157c8937e8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 常见问题与解答:\nhttp://discussions.youdaxue.com/c/band/330-category\n",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}
