@@ -1,0 +1,75 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.334 --> 00:00:01.968
+Oi, bem-vindo de volta.
+
+00:00:02.000 --> 00:00:05.634
+Bom, estávamos discutindo
+conjuntos e grupos no Tableau,
+
+00:00:05.667 --> 00:00:09.100
+e eles têm várias coisas em comum,
+mas também têm muitas diferenças.
+
+00:00:09.133 --> 00:00:13.300
+Gostaria que explicasse a diferença
+entre conjuntos e grupos.
+
+00:00:13.334 --> 00:00:14.868
+Claro. É uma ótima pergunta
+
+00:00:14.901 --> 00:00:17.501
+e algo que muitas pessoas
+confundem.
+
+00:00:17.534 --> 00:00:21.367
+Bom, um conjunto
+é um subconjunto de dados
+
+00:00:21.400 --> 00:00:26.567
+que responde a certas condições ou
+critérios com base em uma dimensão.
+
+00:00:26.601 --> 00:00:28.501
+Então, por exemplo,
+ele pode ser formado
+
+00:00:28.534 --> 00:00:32.467
+pelos cinco itens alimentícios
+que mais geram lucro.
+
+00:00:32.501 --> 00:00:37.067
+Já um grupo são
+integrantes de dimensões
+
+00:00:37.100 --> 00:00:40.601
+que se juntam para formar
+uma categoria de nível mais alto.
+
+00:00:40.634 --> 00:00:44.434
+Então um grupo poderia ser composto
+por itens para café da manhã,
+
+00:00:44.467 --> 00:00:47.701
+e seus itens seriam
+café, bagels e donuts.
+
+00:00:47.734 --> 00:00:50.734
+Obrigado. Isso é algo
+com o qual tive muitos problemas.
+
+00:00:50.767 --> 00:00:52.901
+Mas agora que você explicou,
+
+00:00:52.934 --> 00:00:55.366
+-entendi melhor.
+-Ótimo.
+
+00:00:55.399 --> 00:00:56.634
+*END*
+
+00:00:56.667 --> 00:00:57.968
+*CODE*
+

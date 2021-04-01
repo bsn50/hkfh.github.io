@@ -1,0 +1,271 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>一般设计技巧</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>设计原则</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 课程概述.html">01. 课程概述</a>
+    </li>
+    <li class="">
+      <a href="02. 常见图表类型.html">02. 常见图表类型</a>
+    </li>
+    <li class="">
+      <a href="03. 基本图表.html">03. 基本图表</a>
+    </li>
+    <li class="">
+      <a href="04. 可视化分布.html">04. 可视化分布</a>
+    </li>
+    <li class="">
+      <a href="05. 选择合适的图表.html">05. 选择合适的图表</a>
+    </li>
+    <li class="">
+      <a href="06. 其他很棒的图表.html">06. 其他很棒的图表</a>
+    </li>
+    <li class="">
+      <a href="07. 使用颜色.html">07. 使用颜色</a>
+    </li>
+    <li class="">
+      <a href="08. 选择合适的色调.html">08. 选择合适的色调</a>
+    </li>
+    <li class="">
+      <a href="09. 冗余编码.html">09. 冗余编码</a>
+    </li>
+    <li class="">
+      <a href="10. 形状、大小和其他工具.html">10. 形状、大小和其他工具</a>
+    </li>
+    <li class="">
+      <a href="11. 少即是多.html">11. 少即是多</a>
+    </li>
+    <li class="">
+      <a href="12. 诚信原则.html">12. 诚信原则</a>
+    </li>
+    <li class="">
+      <a href="13. 一般设计技巧.html">13. 一般设计技巧</a>
+    </li>
+    <li class="">
+      <a href="14. 继续学习！.html">14. 继续学习！</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">13. 一般设计技巧</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>设计技巧</p></h3>
+  <div>
+  <h2 id="设计技巧">设计技巧</h2>
+<p>我能给出的最好建议是在制作可视化图表时，第一次尝试不要过于投入。通常，你需要进行多次设计以强调要表达的意思。例如，我将逐步讲解我是如何设计你之前看到的失业率图表的。</p>
+<p>我想知道失业率随着时间推移如何变化，所以我从<a href="https://data.oecd.org/" rel="noopener noreferrer" target="_blank">公共 OECD 数据网站</a>上获取了一些数据。这些数据包含经济合作与发展组织 (OECD) 国家/地区的失业率（民用劳动力的百分比）。我第一次尝试时创建了一组直方图来显示每年的失业率分布情况。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>失业率</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/unemployment-hists.png" alt="第一次尝试！" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>第一次尝试！</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>第二次尝试</p></h3>
+  <div>
+  <p>可以看出在 2003 年和 2007 年之间有两次峰值。在 2008 年失业率非常低，然后在萧条时期上升了。虽然我喜欢小多组图组（我真的喜欢），但是我发现很难按照不同年份对比直方图。我还需要将这些数据压缩到一个图表中。</p>
+<p>要解决这些问题，我觉得我可以用点表示直方图（点大小表示直方图直条里的国家/地区数量）。然后，我可以沿着 x 轴绘出每年，沿着 y 轴绘出每个直方图，数量用标记大小表示。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>用点表示的失业率</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/leonard-plot-no-color.png" alt="用点表示的失业率（第二次尝试）。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>用点表示的失业率（第二次尝试）。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>第三次尝试</p></h3>
+  <div>
+  <p>看起来好多了！可以看出失业率随着时间推移的变化分布图。有两个下降峰值，然后有一个急剧上升。但是 x 轴上的标签都挤到一起了，所以需要重新调整。</p>
+<p>我想到，如果添加一些颜色来表示直条数量（冗余编码！），我可以突出显示失业率在不同年份的变化情况。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>最终版本</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/leonard-plot.png" alt="最终版本！变化的峰值用颜色和点大小进行强调。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>最终版本！变化的峰值用颜色和点大小进行强调。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>结束</p></h3>
+  <div>
+  <p>你还可以与朋友或同事分享你的可视化图表，确保他人能够理解中心意思。现代设计的一个原则是不断对产品进行用户测试。这种方法也非常适合设计可视化图表。</p>
+<h3 id="讲述正确的故事">讲述正确的故事</h3>
+<p>正如在这节课中学到的那样，我们可以采用各种不同的技巧用视觉元素表示数据。即使是同一数据，不同的表示方法也会讲述不同的故事。<br />
+<a href="http://www.storytellingwithdata.com/blog/2014/01/multifaceted-data-and-story" rel="noopener noreferrer" target="_blank">这篇文章</a>很好地讲解了通过如何强调不同的视觉元素来改变故事。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="14. 继续学习！.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('13. 一般设计技巧')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

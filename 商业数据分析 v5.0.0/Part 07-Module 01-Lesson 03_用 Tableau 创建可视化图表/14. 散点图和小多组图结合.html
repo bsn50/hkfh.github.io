@@ -1,0 +1,293 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>散点图和小多组图结合</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>用 Tableau 创建可视化图表</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 什么是 Tableau？.html">01. 什么是 Tableau？</a>
+    </li>
+    <li class="">
+      <a href="02. 安装 Tableau.html">02. 安装 Tableau</a>
+    </li>
+    <li class="">
+      <a href="03. 连接数据.html">03. 连接数据</a>
+    </li>
+    <li class="">
+      <a href="04. 合并数据.html">04. 合并数据</a>
+    </li>
+    <li class="">
+      <a href="05. 工作表界面.html">05. 工作表界面</a>
+    </li>
+    <li class="">
+      <a href="06. 汇总和粒度.html">06. 汇总和粒度</a>
+    </li>
+    <li class="">
+      <a href="07. Show Me 功能.html">07. Show Me 功能</a>
+    </li>
+    <li class="">
+      <a href="08. 层级.html">08. 层级</a>
+    </li>
+    <li class="">
+      <a href="09. 标记选项.html">09. 标记选项</a>
+    </li>
+    <li class="">
+      <a href="10. 标记练习.html">10. 标记练习</a>
+    </li>
+    <li class="">
+      <a href="11. 组图（small multiples）.html">11. 组图（small multiples）</a>
+    </li>
+    <li class="">
+      <a href="12. 双坐标轴.html">12. 双坐标轴</a>
+    </li>
+    <li class="">
+      <a href="13. 过滤器.html">13. 过滤器</a>
+    </li>
+    <li class="">
+      <a href="14. 散点图和小多组图结合.html">14. 散点图和小多组图结合</a>
+    </li>
+    <li class="">
+      <a href="15. 组和集合.html">15. 组和集合</a>
+    </li>
+    <li class="">
+      <a href="16. 为世界杯数据绘制可视化地图.html">16. 为世界杯数据绘制可视化地图</a>
+    </li>
+    <li class="">
+      <a href="17. 计算字段.html">17. 计算字段</a>
+    </li>
+    <li class="">
+      <a href="18. 表格计算.html">18. 表格计算</a>
+    </li>
+    <li class="">
+      <a href="19. 更多Tableau数据.html">19. 更多Tableau数据</a>
+    </li>
+    <li class="">
+      <a href="20. 可视化练习：最热技能.html">20. 可视化练习：最热技能</a>
+    </li>
+    <li class="">
+      <a href="21. 可视化练习：最热技能箱线图.html">21. 可视化练习：最热技能箱线图</a>
+    </li>
+    <li class="">
+      <a href="22. 可视化练习：最热技能分布图.html">22. 可视化练习：最热技能分布图</a>
+    </li>
+    <li class="">
+      <a href="23. 小结.html">23. 小结</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">14. 散点图和小多组图结合</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="让我们来练习一下吧！">让我们来练习一下吧！</h1>
+<p>现在你已经学完了基础知识，请自行尝试一下吧。你将使用一个叫做<a href="https://github.com/udacity/new-dand-advanced-china/blob/master/Tableau%20%E5%8F%AF%E8%A7%86%E5%8C%96/superherodata-tableau.xlsx?raw=true" rel="noopener noreferrer" target="_blank">Marvel superhero and supervillain statistics</a>的小型数据集，来完成这个图表。以下是给你的提示：</p>
+<ul>
+<li>创建散点图，x 轴为 speed，y 轴为 intelligence</li>
+<li>用颜色表示 alignment</li>
+<li>用大小表示 power</li>
+<li>将形状改为实心填充圆</li>
+<li>添加标签以在旁边显示每个数据点的名称</li>
+</ul>
+<p>你的图表应该类似于下面的图表：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/superheroplot.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>既然你已经建好了可视化图表，请重新排列，以确定谁拥有最强的综合 strength, speed 和 combat 三者的实力。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1499143254319" name="341887" id="a1499143254319">
+        <label for="a1499143254319"><p>Hulk</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1499143265483" name="341887" id="a1499143265483">
+        <label for="a1499143265483"><p>Thor</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1499143278267" name="341887" id="a1499143278267">
+        <label for="a1499143278267"><p>Spiderman</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1499143280122" name="341887" id="a1499143280122">
+        <label for="a1499143280122"><p>Iron Man</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Thor
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p><a href="https://public.tableau.com/views/SuperHeroPlot/Sheet1?:embed=y&:display_count=yes" rel="noopener noreferrer" target="_blank">在这里</a>，你可以找到 Tableau Public 版本.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="15. 组和集合.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('14. 散点图和小多组图结合')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

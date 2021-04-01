@@ -1,0 +1,356 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>练习：视觉编码</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>数据可视化基础知识</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 数据可视化简介.html">01. 数据可视化简介</a>
+    </li>
+    <li class="">
+      <a href="02. 为何使用数据可视化？.html">02. 为何使用数据可视化？</a>
+    </li>
+    <li class="">
+      <a href="03. 数据类型.html">03. 数据类型</a>
+    </li>
+    <li class="">
+      <a href="04. 视觉编码.html">04. 视觉编码</a>
+    </li>
+    <li class="">
+      <a href="05. 练习：视觉编码.html">05. 练习：视觉编码</a>
+    </li>
+    <li class="">
+      <a href="06. 视觉编码的排序.html">06. 视觉编码的排序</a>
+    </li>
+    <li class="">
+      <a href="07. 探索与解释.html">07. 探索与解释</a>
+    </li>
+    <li class="">
+      <a href="08. 数据可视化工具.html">08. 数据可视化工具</a>
+    </li>
+    <li class="">
+      <a href="09. 可视化设计.html">09. 可视化设计</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">05. 练习：视觉编码</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>通过观看下方的视频来进一步学习视觉编码的方法，然后通过拖放不同的方块来判别 <strong>世界杯</strong> 可视化图中不同的编码类型。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Visual Encodings - Data Visualization and D3.js</p></h3>
+  <video controls>
+  <source src="05. Visual Encodings - Data Visualization and D3.js-14FJU1kP6-M.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="05. Visual Encodings - Data Visualization and D3.js-14FJU1kP6-M.zh-CN.vtt" label="zh-CN">
+  <track default="false" kind="subtitles" srclang="ar" src="05. Visual Encodings - Data Visualization and D3.js-14FJU1kP6-M.ar.vtt" label="ar">
+  <track default="false" kind="subtitles" srclang="pt-BR" src="05. Visual Encodings - Data Visualization and D3.js-14FJU1kP6-M.pt-BR.vtt" label="pt-BR">
+  <track default="true" kind="subtitles" srclang="en" src="05. Visual Encodings - Data Visualization and D3.js-14FJU1kP6-M.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p><a href="http://www.gapminder.org/tools/#_locale_id=en;&state_time_value=2007&delay:100;;&chart-type=bubbles" rel="noopener noreferrer" target="_blank">Gapminder World Visualization</a></p>
+<p>Stephen Few' 关于<a href="http://www.perceptualedge.com/articles/b-eye/encoding_values_in_graph.pdf" rel="noopener noreferrer" target="_blank">视觉编码的原则</a>的文章。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="有关世界杯的可视化图">有关世界杯的可视化图</h2>
+<p>观察下方世界杯射手进球榜并回答问题，你也可以在<a href="https://d17h27t6h515a5.cloudfront.net/topher/2016/September/57e9a59d_l1-worldcuptopscorers/l1-worldcuptopscorers.png" rel="noopener noreferrer" target="_blank">这里</a>查看原图。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/l1-worldcuptopscorers.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>视觉编码</p></h3>
+  <div>
+  <p><strong>QUIZ QUESTION:</strong>: <p>请判断下方每个变量的视觉编码方式。</p></p>
+  <p><strong>ANSWER CHOICES:</strong></p>
+  <button class="btn btn-primary"><p>大小</p></button>
+  <button class="btn btn-primary"><p>X 轴的位置</p></button>
+  <button class="btn btn-primary"><p>颜色色调（Color Hue）</p></button>
+  <button class="btn btn-primary"><p>方向</p></button>
+  <button class="btn btn-primary"><p>颜色饱和度（Color Saturation）</p></button>
+  <button class="btn btn-primary"><p>Y 轴的位置</p></button>
+  <button class="btn btn-primary"><p>长度</p></button>
+  <button class="btn btn-primary"><p>角度</p></button>
+  <button class="btn btn-primary"><p>形状</p></button>
+  <button class="btn btn-primary"><p>X 轴的位置</p></button>
+
+  <br><br>
+
+  <table class="table">
+    <tr class="thead-dark table-hover">
+      <th>
+        <p>变量</p>
+      </th>
+      <th>
+        <p>视觉编码方式</p>
+      </th>
+    </tr>
+
+    <tr>
+      <td><p>国家（Country）</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>进球数（Goals Scored）</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>球员（Player）</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>时间（Time）</p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><p>最佳射手（Top Scorer）</p></td>
+      <td></td>
+    </tr>
+  </table>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+
+    <table class="table">
+      <tr class="thead-dark table-hover">
+        <th>
+          <p>变量</p>
+        </th>
+        <th>
+          <p>视觉编码方式</p>
+        </th>
+      </tr>
+
+      <tr>
+        <td>
+          <p>进球数（Goals Scored）</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>大小</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>国家（Country）</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>X 轴的位置</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>球员（Player）</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>X 轴的位置</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>最佳射手（Top Scorer）</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>颜色色调（Color Hue）</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>时间（Time）</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>Y 轴的位置</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>国家（Country）</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>X 轴的位置</p></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>球员（Player）</p>
+        </td>
+        <td>
+            <button class="btn btn-primary"><p>X 轴的位置</p></button>
+        </td>
+      </tr>
+    </table>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="06. 视觉编码的排序.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. 练习：视觉编码')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

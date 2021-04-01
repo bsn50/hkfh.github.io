@@ -1,0 +1,438 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>过滤器</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>用 Tableau 创建可视化图表</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 什么是 Tableau？.html">01. 什么是 Tableau？</a>
+    </li>
+    <li class="">
+      <a href="02. 安装 Tableau.html">02. 安装 Tableau</a>
+    </li>
+    <li class="">
+      <a href="03. 连接数据.html">03. 连接数据</a>
+    </li>
+    <li class="">
+      <a href="04. 合并数据.html">04. 合并数据</a>
+    </li>
+    <li class="">
+      <a href="05. 工作表界面.html">05. 工作表界面</a>
+    </li>
+    <li class="">
+      <a href="06. 汇总和粒度.html">06. 汇总和粒度</a>
+    </li>
+    <li class="">
+      <a href="07. Show Me 功能.html">07. Show Me 功能</a>
+    </li>
+    <li class="">
+      <a href="08. 层级.html">08. 层级</a>
+    </li>
+    <li class="">
+      <a href="09. 标记选项.html">09. 标记选项</a>
+    </li>
+    <li class="">
+      <a href="10. 标记练习.html">10. 标记练习</a>
+    </li>
+    <li class="">
+      <a href="11. 组图（small multiples）.html">11. 组图（small multiples）</a>
+    </li>
+    <li class="">
+      <a href="12. 双坐标轴.html">12. 双坐标轴</a>
+    </li>
+    <li class="">
+      <a href="13. 过滤器.html">13. 过滤器</a>
+    </li>
+    <li class="">
+      <a href="14. 散点图和小多组图结合.html">14. 散点图和小多组图结合</a>
+    </li>
+    <li class="">
+      <a href="15. 组和集合.html">15. 组和集合</a>
+    </li>
+    <li class="">
+      <a href="16. 为世界杯数据绘制可视化地图.html">16. 为世界杯数据绘制可视化地图</a>
+    </li>
+    <li class="">
+      <a href="17. 计算字段.html">17. 计算字段</a>
+    </li>
+    <li class="">
+      <a href="18. 表格计算.html">18. 表格计算</a>
+    </li>
+    <li class="">
+      <a href="19. 更多Tableau数据.html">19. 更多Tableau数据</a>
+    </li>
+    <li class="">
+      <a href="20. 可视化练习：最热技能.html">20. 可视化练习：最热技能</a>
+    </li>
+    <li class="">
+      <a href="21. 可视化练习：最热技能箱线图.html">21. 可视化练习：最热技能箱线图</a>
+    </li>
+    <li class="">
+      <a href="22. 可视化练习：最热技能分布图.html">22. 可视化练习：最热技能分布图</a>
+    </li>
+    <li class="">
+      <a href="23. 小结.html">23. 小结</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">13. 过滤器</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>过滤器简介</p></h3>
+  <div>
+  <h1 id="过滤器">过滤器</h1>
+<p>我最喜欢的一个 Tableau 功能是能够快速制作交互式过滤器。这样，你就可以仅查看感兴趣的数据，使用户也能这么做。</p>
+<h2 id="过滤器基础知识">过滤器基础知识</h2>
+<p>你可以采用几种不同的方式来创建过滤器。首先，可以直接在视图中创建过滤器。假设有下面这个图表，上面有很多的视觉元素，你想简化下。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>过滤之前</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/filter-before.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>从视图中过滤</p></h3>
+  <div>
+  <p>你可以直接从该视图中过滤，方法是选择数据，右击点开上下文菜单，然后创建过滤器。我选择了几个想要保留的类别。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>从上下文菜单中过滤</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/filter-from-view.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>从上下文菜单中过滤</p></h3>
+  <div>
+  <p>从上图中可以看出我可以选择"Keep only”，这样会过滤掉所选值之外的所有值。我还可以选择排除所选值。我将选择"Keep only”。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>过滤子类别之后</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/filter-after-sub-categories.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Filter 功能区</p></h3>
+  <div>
+  <p>Filters 功能区上现在有个子类别药丸了，因为我是根据该字段进行过滤。还有很多区域，所以我将选择仅查看几种区域。还可以通过将字段拖到 Filters 功能区上创建过滤器。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>通过拖动字段创建过滤器</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/filter-drag-region-cropped.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Filter 功能区</p></h3>
+  <div>
+  <p>如果你也这么操作的话，应该会弹出菜单。有四种不同的标签页，使你能够按照不同的方式过滤。我将选择四个区域。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>过滤器菜单</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/filter-select-regions.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>已过滤</p></h3>
+  <div>
+  <p>最后，这是所有内容都过滤后的效果。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>过滤所有内容后</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/filter-after.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>交互式过滤器</p></h3>
+  <div>
+  <h2 id="交互式过滤器">交互式过滤器</h2>
+<p>这是在菜单中设置的静态过滤器，如果你想更改的话，需要回到菜单。Tableau 有个很棒的功能，使你能够让过滤器变成交互式，并在视图中进行控制。</p>
+<p>为此，在 Filters 功能区的 Region 药丸上打开菜单。效果应该如下所示：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>过滤器显示菜单</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/filter-show.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Show Filter</p></h3>
+  <div>
+  <p>点击”Show Filter”会显示过滤器控件（可以在下图的右侧看到）。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>过滤器控件</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/filter-interactive.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>过滤器选项</p></h3>
+  <div>
+  <p>你可以更改过滤器的控制方式，方法是打开控件上的菜单，并点击小三角形。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>过滤器选项菜单</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/filter-interactive-menu.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>过滤器选项</p></h3>
+  <div>
+  <p>试试不同的选项，看看效果如何。我选择 Multiple Values（下拉菜单）以节省屏幕空间。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>区域过滤器下拉菜单</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/filter-interactive-changed.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>过滤器下拉菜单</p></h3>
+  <div>
+  <p>现在是个下拉菜单，我可以从中选择要在视图中查看的区域。</p>
+<h2 id="关于过滤器的更多知识">关于过滤器的更多知识</h2>
+<p>这种交互式过滤器是 Tableau 最强大的功能之一。Tableau 提供了大量的很棒的教程视频，你可以在<a href="http://www.tableau.com/learn/tutorials/on-demand/using-filter-shelf" rel="noopener noreferrer" target="_blank">此处</a>找到这些视频。你可能需要创建一个帐号，当然你后面肯定要用到的，并且该网站上提供了大量实用的教程视频。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="14. 散点图和小多组图结合.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('13. 过滤器')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

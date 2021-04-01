@@ -1,0 +1,46 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.605
+Now, let's take a look at the data.
+
+00:00:01.605 --> 00:00:05.925
+To begin, let's join our returns table to the orders table.
+
+00:00:05.924 --> 00:00:08.775
+The icon here, indicates that Tableux has
+
+00:00:08.775 --> 00:00:12.150
+automatically joined these tables as an inner join.
+
+00:00:12.150 --> 00:00:13.650
+If you click on the icon,
+
+00:00:13.650 --> 00:00:16.440
+it will show the other join options.
+
+00:00:16.440 --> 00:00:18.435
+You could edit the join to be a left join,
+
+00:00:18.434 --> 00:00:21.589
+or a right join, or a full outer join.
+
+00:00:21.589 --> 00:00:26.629
+Right now, let's select left join and close the dialog.
+
+00:00:26.629 --> 00:00:29.445
+Now let's click over onto the sheet.
+
+00:00:29.445 --> 00:00:32.759
+We now have columns from both orders and returns in our datasource.
+
+00:00:32.759 --> 00:00:36.460
+And we can see which column headers are showing up under which table.
+
+00:00:36.460 --> 00:00:40.859
+Here, you see orders and down below you see returns.
+
+00:00:40.859 --> 00:00:45.000
+Using the fields from a join table is as easy as using any other field.
+

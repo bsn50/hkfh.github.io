@@ -1,0 +1,397 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>层级</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>用 Tableau 创建可视化图表</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 什么是 Tableau？.html">01. 什么是 Tableau？</a>
+    </li>
+    <li class="">
+      <a href="02. 安装 Tableau.html">02. 安装 Tableau</a>
+    </li>
+    <li class="">
+      <a href="03. 连接数据.html">03. 连接数据</a>
+    </li>
+    <li class="">
+      <a href="04. 合并数据.html">04. 合并数据</a>
+    </li>
+    <li class="">
+      <a href="05. 工作表界面.html">05. 工作表界面</a>
+    </li>
+    <li class="">
+      <a href="06. 汇总和粒度.html">06. 汇总和粒度</a>
+    </li>
+    <li class="">
+      <a href="07. Show Me 功能.html">07. Show Me 功能</a>
+    </li>
+    <li class="">
+      <a href="08. 层级.html">08. 层级</a>
+    </li>
+    <li class="">
+      <a href="09. 标记选项.html">09. 标记选项</a>
+    </li>
+    <li class="">
+      <a href="10. 标记练习.html">10. 标记练习</a>
+    </li>
+    <li class="">
+      <a href="11. 组图（small multiples）.html">11. 组图（small multiples）</a>
+    </li>
+    <li class="">
+      <a href="12. 双坐标轴.html">12. 双坐标轴</a>
+    </li>
+    <li class="">
+      <a href="13. 过滤器.html">13. 过滤器</a>
+    </li>
+    <li class="">
+      <a href="14. 散点图和小多组图结合.html">14. 散点图和小多组图结合</a>
+    </li>
+    <li class="">
+      <a href="15. 组和集合.html">15. 组和集合</a>
+    </li>
+    <li class="">
+      <a href="16. 为世界杯数据绘制可视化地图.html">16. 为世界杯数据绘制可视化地图</a>
+    </li>
+    <li class="">
+      <a href="17. 计算字段.html">17. 计算字段</a>
+    </li>
+    <li class="">
+      <a href="18. 表格计算.html">18. 表格计算</a>
+    </li>
+    <li class="">
+      <a href="19. 更多Tableau数据.html">19. 更多Tableau数据</a>
+    </li>
+    <li class="">
+      <a href="20. 可视化练习：最热技能.html">20. 可视化练习：最热技能</a>
+    </li>
+    <li class="">
+      <a href="21. 可视化练习：最热技能箱线图.html">21. 可视化练习：最热技能箱线图</a>
+    </li>
+    <li class="">
+      <a href="22. 可视化练习：最热技能分布图.html">22. 可视化练习：最热技能分布图</a>
+    </li>
+    <li class="">
+      <a href="23. 小结.html">23. 小结</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">08. 层级</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>05 Hierarchies</p></h3>
+  <video controls>
+  <source src="08. 05 Hierarchies-vkHeQcI08yc.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="08. 05 Hierarchies-vkHeQcI08yc.zh-CN.vtt" label="zh-CN">
+  <track default="true" kind="subtitles" srclang="en" src="08. 05 Hierarchies-vkHeQcI08yc.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>层级</p></h3>
+  <div>
+  <h1 id="层级">层级</h1>
+<p>试着操作下：新建一个工作表，将 <strong>Order Date</strong> 拖到 Columns 上，将 <strong>Profit</strong> 拖到 Rows 上。 你应该能看到一个折线图，这是 Tableau 的默认时间数据图表。Order Date 药丸上现在有一个小的加号，点击该加号，看看会发生什么。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Order Date 层级</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/order-date-hierarchy.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>继续细分测验</p></h3>
+  <div>
+  <p><strong>QUESTION: </strong></p>
+  <p>Quarters 药丸也有一个加号。如果点击该加号，你认为会发生什么？</p>
+
+  <details>
+    <summary><strong>ANSWER:</strong></summary>
+    <p><p>日期现在拆分为月份了！</p></p>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>继续细分</p></h3>
+  <div>
+  <p>刚才的操作是细分层级，从年份数据开始，然后按季度分组。Tableau 自动按日期和时间日期字段创建时间期限层级。当你继续细分时，就会获得更精细的划分，从年份到季度，到月份，再到一天。</p>
+<p>现在你将注意到药丸中出现小的减号了。点击该减号将回到上一层级。</p>
+<p>你可以通过将药丸从功能区中拖走，从图表中删除层级。例如，如果细分到月份，然后删除 Year 和 Quarter，你将看到如下图所示的效果：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>层级月份</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/hierarchy-month.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>更多层级</p></h3>
+  <div>
+  <p>可能与你预期的不一样，我以为会显示 4 年的每月利润。但是，每个月只有一个值。出现这种情况是因为 Tableau 将 <strong>Order Date</strong> 设成了离散数据类型，所以对每个月的 Profit 值进行汇总。即每个值是该月的 Profit 在四年内值的和。</p>
+<p>但是，通常我希望看到所有 4 年的长线条分布情况。要更改这一绘制方法，你需要一个<em>连续</em>坐标轴，并将 <strong>Order Date</strong> 转换为连续数据。一种做法是打开 <strong>Order Date</strong> 字段菜单（右击，或点击三角形），选择“Convert to Continuous”。</p>
+<p>你还可以打开 Month 药丸上的菜单，然后将其转换为连续数据： </p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Month 药丸菜单</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/month-pill-menu-labeled.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>具有时间的层级</p></h3>
+  <div>
+  <p>如果在连续部分选择"Month”，它将切换为整个时间范围的月度利润视图。自己试试看。</p>
+<p>你应该在药丸中看到一个加号，使你能够继续细分，从而查看每周利润。但是，现在没有减号了，所以无法回到上一层级。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>月度连续数据</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/hierarchy-continuous.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>手动创建层级</p></h3>
+  <div>
+  <h2 id="手动创建层级">手动创建层级</h2>
+<p>Tableau 根据数据自动创建了层级，但是你也可以自己创建层级。例如，<strong>Sub-Category</strong> 中的每个值都属于 <strong>Category</strong> 中的某项。比如，对于 <strong>Sub-Category</strong> 值为"Bookcases”的记录，<strong>Category</strong> 值始终为"Furniture”。这里有一个层级，<strong>Sub-Category</strong> 值从 <strong>Category</strong> 值中分支出来。</p>
+<p>你可以创建一个层级，方法是选择 <strong>Category</strong> 和 <strong>Sub-Category</strong>（同时按下 control+command，然后点这两个字段），然后打开菜单并选择 <em>Hierarchy</em> &gt; <em>Create Hierarchy…</em></p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>创建层级</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/create-hierarchy.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>手动创建层级</p></h3>
+  <div>
+  <p>现在你可以创建新的层级并设定名称。我设为"Categories”。它出现在左侧，你可以将其拖到功能区上，就像普通字段那样。但是现在以"Category”开头，并具有一个加号，你可以细分到"Sub-Categories”。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Category 层级</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/hierarchy-categories-labeled.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>最后，我们听听 Trina 是如何使用层级的。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Trina 对层级的介绍</p></h3>
+  <video controls>
+  <source src="08. Trina 对层级的介绍-ys8Cn0o5gNI.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="08. Trina 对层级的介绍-ys8Cn0o5gNI.zh-CN.vtt" label="zh-CN">
+  <track default="false" kind="subtitles" srclang="ar" src="08. Trina 对层级的介绍-ys8Cn0o5gNI.ar.vtt" label="ar">
+  <track default="false" kind="subtitles" srclang="pt-BR" src="08. Trina 对层级的介绍-ys8Cn0o5gNI.pt-BR.vtt" label="pt-BR">
+  <track default="true" kind="subtitles" srclang="en" src="08. Trina 对层级的介绍-ys8Cn0o5gNI.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="09. 标记选项.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. 层级')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>汇总和粒度</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>用 Tableau 创建可视化图表</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 什么是 Tableau？.html">01. 什么是 Tableau？</a>
+    </li>
+    <li class="">
+      <a href="02. 安装 Tableau.html">02. 安装 Tableau</a>
+    </li>
+    <li class="">
+      <a href="03. 连接数据.html">03. 连接数据</a>
+    </li>
+    <li class="">
+      <a href="04. 合并数据.html">04. 合并数据</a>
+    </li>
+    <li class="">
+      <a href="05. 工作表界面.html">05. 工作表界面</a>
+    </li>
+    <li class="">
+      <a href="06. 汇总和粒度.html">06. 汇总和粒度</a>
+    </li>
+    <li class="">
+      <a href="07. Show Me 功能.html">07. Show Me 功能</a>
+    </li>
+    <li class="">
+      <a href="08. 层级.html">08. 层级</a>
+    </li>
+    <li class="">
+      <a href="09. 标记选项.html">09. 标记选项</a>
+    </li>
+    <li class="">
+      <a href="10. 标记练习.html">10. 标记练习</a>
+    </li>
+    <li class="">
+      <a href="11. 组图（small multiples）.html">11. 组图（small multiples）</a>
+    </li>
+    <li class="">
+      <a href="12. 双坐标轴.html">12. 双坐标轴</a>
+    </li>
+    <li class="">
+      <a href="13. 过滤器.html">13. 过滤器</a>
+    </li>
+    <li class="">
+      <a href="14. 散点图和小多组图结合.html">14. 散点图和小多组图结合</a>
+    </li>
+    <li class="">
+      <a href="15. 组和集合.html">15. 组和集合</a>
+    </li>
+    <li class="">
+      <a href="16. 为世界杯数据绘制可视化地图.html">16. 为世界杯数据绘制可视化地图</a>
+    </li>
+    <li class="">
+      <a href="17. 计算字段.html">17. 计算字段</a>
+    </li>
+    <li class="">
+      <a href="18. 表格计算.html">18. 表格计算</a>
+    </li>
+    <li class="">
+      <a href="19. 更多Tableau数据.html">19. 更多Tableau数据</a>
+    </li>
+    <li class="">
+      <a href="20. 可视化练习：最热技能.html">20. 可视化练习：最热技能</a>
+    </li>
+    <li class="">
+      <a href="21. 可视化练习：最热技能箱线图.html">21. 可视化练习：最热技能箱线图</a>
+    </li>
+    <li class="">
+      <a href="22. 可视化练习：最热技能分布图.html">22. 可视化练习：最热技能分布图</a>
+    </li>
+    <li class="">
+      <a href="23. 小结.html">23. 小结</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">06. 汇总和粒度</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>04 Aggregation &amp; Granularity</p></h3>
+  <video controls>
+  <source src="06. 04 Aggregation &amp; Granularity-GuOytlkqdrQ.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="06. 04 Aggregation &amp; Granularity-GuOytlkqdrQ.zh-CN.vtt" label="zh-CN">
+  <track default="true" kind="subtitles" srclang="en" src="06. 04 Aggregation &amp; Granularity-GuOytlkqdrQ.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>汇总和粒度</p></h3>
+  <div>
+  <h1 id="汇总和粒度">汇总和粒度</h1>
+<p>我们开始创建更复杂的图表。首先是创建简单的散布图，看看一些度量是如何相关的。我认为商品销售的越多，利润就越高，我们来看看利润与数量的对比情况。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>你的预期是什么？</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>在操作之前，你认为当你将 Quantity 拖到 Columns 上，将 Profit 拖到 Rows 上时，会出现什么情况？</p></legend>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" value="a1474756129621" name="214597" id="a1474756129621">
+      <label for="a1474756129621"><p>数据中的每个记录有一个数据点</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1474756132073" name="214597" id="a1474756132073">
+      <label for="a1474756132073"><p>只有一个数据点</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1474756132716" name="214597" id="a1474756132716">
+      <label for="a1474756132716"><p>有一些数据点，呈上升趋势</p></label>
+    </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <ul>
+      <li>只有一个数据点</li>
+  </ul>
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>汇总</p></h3>
+  <div>
+  <p>自己尝试一下。你只看到一个数据点！什么情况？为何不是数据集中的每个记录都有一个数据点？ </p>
+<h2 id="汇总">汇总</h2>
+<p>当我第一次学习 Tableau 时，我不明白为何当我认为会看到多个点时，只看到了一个点。答案在于 Tableau 对数据进行汇总的方式。你应该在药丸中看到 Tableau 对 Quantity 和 Profit 进行了求和。这叫做汇总。它会对数据集中所有记录的 Quantity 和 Profit 进行汇总，因此你只看到了一个点。Quantity 的所有记录有一个和，Profit 的所有记录有一个和。</p>
+<p>你可以通过右击药丸或点击三角形选择汇总类型。要更改汇总方法，选择 Measure (Sum)，然后选择Average、Median 等选项。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>汇总菜单</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/aggregation-menu.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>粒度</p></h3>
+  <div>
+  <h2 id="粒度">粒度</h2>
+<p>要获得更多的数据点，你需要增加粒度。也就是不针对所有记录汇总，而是针对类别汇总。例如，你可以将 Market 拖到标记卡中的“Detail”上。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>你的预期结果是什么？</p></h3>
+  <div>
+  <p><strong>QUESTION: </strong></p>
+  <p>在操作之前，你认为当你将 Market 拖到“detail”上时会出现什么情况？</p>
+
+  <details>
+    <summary><strong>ANSWER:</strong></summary>
+    <p><p>自己尝试一下，如果结果与你的预期不一样，思考下为何不同。</p></p>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>粒度 2</p></h3>
+  <div>
+  <p>你应该看到 7 个点，<strong>Market</strong> 中的每个值一个点。你增加了粒度，Tableau 现在按照每个市场汇总数据了。你获得了每个市场的数量和利润之和。汇总结果没变，依然是数量和利润的和，只是按照不同的粒度进行计算。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>市场粒度</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/market-granularity.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>粒度 3</p></h3>
+  <div>
+  <p>你可以将光标悬停在某个点上，看看它属于哪个组，数据值是多少。</p>
+<p>你可以通过将维度拖到标记卡上的方框中，更改粒度级别。粒度级别根据维度中组的总数量进行设置。<strong>Category</strong> 字段有三项，将其拖到“Color”上。现在应该能看到 21 个点。每个记录都可能会在 3 个类别中的某个类别里，并在 7 个市场中的某个市场内，所以总的组数为 7 x 3 = 21。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Market 和 Category 粒度</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/market-and-colors.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>粒度 4</p></h3>
+  <div>
+  <p>现在删除 Market，你应该能看到 3 个点，<strong>Category</strong> 中的每项一个点。你已经再次更改了粒度级别，现在 Profit 和 Quantity 之和根据 <strong>Category</strong> 中的值进行汇总。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Region 和 Category 有多少个点？</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>如果将 Region 添加到“detail”中，你应该能够看到多少个点？Region 字段中有 13 个唯一值。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1474763559835" name="214607" id="a1474763559835">
+        <label for="a1474763559835"><p>1</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474763623445" name="214607" id="a1474763623445">
+        <label for="a1474763623445"><p>39</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474763624069" name="214607" id="a1474763624069">
+        <label for="a1474763624069"><p>13</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474763624803" name="214607" id="a1474763624803">
+        <label for="a1474763624803"><p>3</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    39
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="07. Show Me 功能.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('06. 汇总和粒度')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

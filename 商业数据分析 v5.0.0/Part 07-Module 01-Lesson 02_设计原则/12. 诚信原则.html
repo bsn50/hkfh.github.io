@@ -1,0 +1,354 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>诚信原则</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>设计原则</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 课程概述.html">01. 课程概述</a>
+    </li>
+    <li class="">
+      <a href="02. 常见图表类型.html">02. 常见图表类型</a>
+    </li>
+    <li class="">
+      <a href="03. 基本图表.html">03. 基本图表</a>
+    </li>
+    <li class="">
+      <a href="04. 可视化分布.html">04. 可视化分布</a>
+    </li>
+    <li class="">
+      <a href="05. 选择合适的图表.html">05. 选择合适的图表</a>
+    </li>
+    <li class="">
+      <a href="06. 其他很棒的图表.html">06. 其他很棒的图表</a>
+    </li>
+    <li class="">
+      <a href="07. 使用颜色.html">07. 使用颜色</a>
+    </li>
+    <li class="">
+      <a href="08. 选择合适的色调.html">08. 选择合适的色调</a>
+    </li>
+    <li class="">
+      <a href="09. 冗余编码.html">09. 冗余编码</a>
+    </li>
+    <li class="">
+      <a href="10. 形状、大小和其他工具.html">10. 形状、大小和其他工具</a>
+    </li>
+    <li class="">
+      <a href="11. 少即是多.html">11. 少即是多</a>
+    </li>
+    <li class="">
+      <a href="12. 诚信原则.html">12. 诚信原则</a>
+    </li>
+    <li class="">
+      <a href="13. 一般设计技巧.html">13. 一般设计技巧</a>
+    </li>
+    <li class="">
+      <a href="14. 继续学习！.html">14. 继续学习！</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">12. 诚信原则</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>请勿歪曲数据</p></h3>
+  <div>
+  <h2 id="请勿歪曲数据">请勿歪曲数据</h2>
+<p>你有责任用最真实的方式展示数据。可视化图表是可以被故意歪曲，用来欺骗他人，比如用各种方式歪曲条形图。</p>
+<p>下面是福克斯新闻在 2012 年展示的一个具有欺骗性的图表示例（反面例子，不要学习！）。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>条形图反面示例</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/bad-viz-2.png" alt="如何通过条形图撒谎。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>如何通过条形图撒谎。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>条形图反面示例</p></h3>
+  <div>
+  <p>上图展示了税率的变化。乍一看上去，变化好像特别大（5 倍增长）。但是，如果再去看实际数字，就会发现仅从 35% 增长到了 39.6%，只有 13% 的增长（ (百分之 4.6 的增长点）。人们容易认为条形图的基线是 0，但是此图的基线为 34%，超出了我们的设想范围。因此，我们有理由猜测，该图的创建者可能想故意欺骗观众，使他们认为税率出现了很大的变化，实际上并非如此。</p>
+<p>如果要重新创建该图表，准确地显示各个值，那么变化几乎可以忽略。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>重新创建减税图表</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/tax-rate-scale-start-at-zero.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>撒谎因素</p></h3>
+  <div>
+  <h3 id="畸变因子">畸变因子</h3>
+<p>这就要提到 Edward Tufte 在《Visual Display》中提出的一个概念，即<strong>畸变因子</strong>。没错，又是他，强烈建议你阅读这本图书。畸变因子会将图表的效果大小与数据的效果大小进行对比。效果是指要对比的差异。例如，在税率图表中对比的是直条的高度，所以效果是右侧直条比左侧直条高多少。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>畸变因子等式</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/lie-factor.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>畸变因子 2</p></h3>
+  <div>
+  <p>要计算畸变因子，需要将图表的效果大小与数据的效果大小相除。下面又是一个反面例子。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>医生</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/liefactor-doctor.jpg" alt="来自 Tufte 的《Visual Display of Quantitative Information》（《洛杉矶时报》，1979 年 8 月 5 日）中的示例）" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>来自 Tufte 的《Visual Display of Quantitative Information》（《洛杉矶时报》，1979 年 8 月 5 日）中的示例）</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>医生畸变因子</p></h3>
+  <div>
+  <p>猜猜上述图片中的哪个方面是与数据对应、关联的？医生的高度？医生图像的面积？第一感觉是医生高度与百分比成比例，但是我们实际上将视觉面积看做数据编码。因此，我将使用这一面积来计算图形效果。在最大的医生图片周围画个长方形，高 437 像素，宽 181 像素，所以面积约为 79000 平方像素。中间的医生图片面积约为 30500 平方像素，小的医生图片的面积约为 16500 平方像素。</p>
+<p>我们算算 1964 和 1990 之间的对比畸变因子。视觉效果是 1964 年的医生大了多少。即 (79000 - 16500)/16500 = 3.79，所以医生大小之间的差别是小医生图片大小的 379%。实际数据的效果是 (27-12)/12 = 1.25，或者数据差别是比 1990 年数据点大 125%。除以这些值，畸变因子是 3.79/1.25 = <strong>3.03</strong>。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>畸变因子</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>上面的福克斯新闻条形图的畸变因子是多少？以下是一些实用数据：小的直条高 27 像素，大的直条高 146 像素。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1474036450908" name="214539" id="a1474036450908">
+        <label for="a1474036450908"><p>4.57</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474036594015" name="214539" id="a1474036594015">
+        <label for="a1474036594015"><p>33.54</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474036597272" name="214539" id="a1474036597272">
+        <label for="a1474036597272"><p>0.030</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474036635389" name="214539" id="a1474036635389">
+        <label for="a1474036635389"><p>1</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    33.54
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>不规则区间</p></h3>
+  <div>
+  <h3 id="折线图和不规则的区间">折线图和不规则的区间</h3>
+<p>条形图并非是唯一可以被歪曲的常见图表。折线图也经常以不规则区间连接线条。例如，下图跳过了 1999 年和 2002 年，但是图形元素按照正常区间放置，歪曲了数据。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>不规则的区间</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/line-bad-intervals.png" alt="具有不规则区间的折线图（Mike Alexander，
+Excel 2007 Dashboard and Reports for Dummies）" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>具有不规则区间的折线图（Mike Alexander，<br />
+Excel 2007 Dashboard and Reports for Dummies）</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>不规则的区间 2</p></h3>
+  <div>
+  <p>折线图显示了数据点之间的变化速率。如果区间像上图一样不规则，展示的变化就会不准确了，很可能会变得更加夸张。</p>
+<p>1998 年和 2000 年之间的变化似乎很大，但是如果在二者之间填上 1999 年的数据，并适当增加空间，增加幅度就可能和其他年份一样了。2001 年和 2003 年之间的变化比其他区间的要小，但是实际上是两年间隔，而不是一年，随着时间推移的变化幅度比实际的看起来要大。 </p>
+<p><a href="http://www.perceptualedge.com/articles/visual_business_intelligence/line_graphs_and_irregular_intervals.pdf" rel="noopener noreferrer" target="_blank">这篇文章</a>（作者：Stephen Few）很好地解释了如何使用具有不规则区间的折线图。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="13. 一般设计技巧.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. 诚信原则')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

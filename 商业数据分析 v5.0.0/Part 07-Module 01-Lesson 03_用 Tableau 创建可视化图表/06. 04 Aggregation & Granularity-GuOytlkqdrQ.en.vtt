@@ -1,0 +1,115 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.984
+There are two ways to start analyzing data in Tableau.
+
+00:00:02.984 --> 00:00:05.279
+You can either jump in and start exploring or you
+
+00:00:05.280 --> 00:00:08.240
+can ask questions of your data and attempt to answer them.
+
+00:00:08.240 --> 00:00:10.905
+We'll start by asking of this dataset, superstore.
+
+00:00:10.904 --> 00:00:12.399
+What are our sales like over time?
+
+00:00:12.400 --> 00:00:15.675
+If we simply double click sales and order date,
+
+00:00:15.675 --> 00:00:17.295
+Tableau creates a timeline.
+
+00:00:17.295 --> 00:00:21.060
+And we can see our sales are increasing over time.
+
+00:00:21.059 --> 00:00:23.414
+Note, that the mark type here says, automatic.
+
+00:00:23.414 --> 00:00:26.824
+We can change this to be another mark type if we wanted to.
+
+00:00:26.824 --> 00:00:29.369
+There's a bunch of mark types available to work with.
+
+00:00:29.370 --> 00:00:32.850
+One thing to note is, if the mark type is automatic,
+
+00:00:32.850 --> 00:00:36.000
+it can change as you make changes to the view.
+
+00:00:36.000 --> 00:00:37.424
+Let's ask another question.
+
+00:00:37.424 --> 00:00:40.949
+What is the relationship between shipping costs and profit?
+
+00:00:40.950 --> 00:00:44.609
+This time, we're given what looks like the start of a scatter plot.
+
+00:00:44.609 --> 00:00:47.219
+However, Tableau's aggregating our data,
+
+00:00:47.219 --> 00:00:50.304
+the overall sum of shipping costs and the sum of profit.
+
+00:00:50.304 --> 00:00:51.674
+So, we only have one mark.
+
+00:00:51.674 --> 00:00:54.779
+We can bring in another field into the view
+
+00:00:54.780 --> 00:00:57.780
+to change our breakdown of marks such as category.
+
+00:00:57.780 --> 00:01:00.765
+If we encode category as color,
+
+00:01:00.765 --> 00:01:03.060
+we see one mark for each category.
+
+00:01:03.060 --> 00:01:05.775
+If we bring in another field like market to shape,
+
+00:01:05.775 --> 00:01:08.900
+we get a mark per category per market.
+
+00:01:08.900 --> 00:01:10.530
+The dimensions we add to the view,
+
+00:01:10.530 --> 00:01:11.894
+like category and market,
+
+00:01:11.894 --> 00:01:16.890
+define the number of marks that we see or the granularity at which we see the data.
+
+00:01:16.890 --> 00:01:21.090
+It's easy to change your mind about any variable that we encode.
+
+00:01:21.090 --> 00:01:25.409
+For example, if we want to change color from category to order priority,
+
+00:01:25.409 --> 00:01:29.569
+we simply drag order priority into the color shelf.
+
+00:01:29.569 --> 00:01:33.479
+Now we see a mark per order priority per market.
+
+00:01:33.480 --> 00:01:38.234
+If we want to make marks at a certain granularity but without encoding by color or shape,
+
+00:01:38.234 --> 00:01:42.299
+we can bring the field to the level of detail shelf.
+
+00:01:42.299 --> 00:01:46.094
+It's important to know how adding dimensions to the marks card impacts the visual.
+
+00:01:46.094 --> 00:01:47.894
+And, the better you understand this,
+
+00:01:47.894 --> 00:01:51.000
+the more precisely you can build data visualizations.
+

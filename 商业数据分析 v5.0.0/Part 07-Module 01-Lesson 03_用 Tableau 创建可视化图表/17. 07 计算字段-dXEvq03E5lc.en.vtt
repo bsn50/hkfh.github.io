@@ -1,0 +1,106 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:03.980
+Calculated fields create new fields from the underlying data,
+
+00:00:03.980 --> 00:00:08.090
+such as creating a revenue field by multiplying price times quantity.
+
+00:00:08.090 --> 00:00:10.540
+Let's create a calculated field.
+
+00:00:10.540 --> 00:00:12.300
+Maybe you want to know the profit,
+
+00:00:12.300 --> 00:00:14.730
+per item, for each quarter.
+
+00:00:14.730 --> 00:00:16.880
+To create a calculated field,
+
+00:00:16.880 --> 00:00:19.810
+open the menu on a field such as profit.
+
+00:00:19.810 --> 00:00:22.860
+Then click, create calculated field.
+
+00:00:22.860 --> 00:00:24.570
+You'll see the editor. On the left,
+
+00:00:24.570 --> 00:00:27.580
+you can type in the formula you'd like to use to create the field.
+
+00:00:27.580 --> 00:00:30.630
+And, on the right, you'll see different formulas that you can choose from.
+
+00:00:30.630 --> 00:00:34.330
+Fields in the editor show up in brackets, like profit.
+
+00:00:34.330 --> 00:00:40.095
+You can do simple arithmetic here by adding a constant or multiplying by field.
+
+00:00:40.095 --> 00:00:42.570
+You can also use functions such as absolute value,
+
+00:00:42.570 --> 00:00:44.530
+sine, square root, et cetera.
+
+00:00:44.530 --> 00:00:46.350
+There is a list of functions on the right and
+
+00:00:46.350 --> 00:00:49.530
+some short documentation is shown when you select one.
+
+00:00:49.530 --> 00:00:52.920
+Here, we want to create a new field that calculates the profit,
+
+00:00:52.920 --> 00:00:54.780
+per item, for each record.
+
+00:00:54.780 --> 00:00:58.560
+It's pretty simple, just profit divided by quantity.
+
+00:00:58.560 --> 00:01:03.780
+You can name the calculated field here and I'll name it, profit per item.
+
+00:01:03.780 --> 00:01:05.080
+Once you hit OK and create it,
+
+00:01:05.080 --> 00:01:07.590
+a new field shows up in the data pane.
+
+00:01:07.590 --> 00:01:09.855
+You can use it like any other field.
+
+00:01:09.855 --> 00:01:15.155
+For example, I can make a plot of the average profit per item for each subcategory.
+
+00:01:15.155 --> 00:01:18.390
+You can see where profit per item shows up in the data pane.
+
+00:01:18.390 --> 00:01:21.605
+And next to the number symbol is a little equal sign.
+
+00:01:21.605 --> 00:01:24.690
+This indicates that it's a calculated field.
+
+00:01:24.690 --> 00:01:26.340
+Going back to our original question,
+
+00:01:26.340 --> 00:01:29.085
+we wanted to know the average profit per item.
+
+00:01:29.085 --> 00:01:31.910
+To change from sum to average,
+
+00:01:31.910 --> 00:01:33.150
+we click the dropdown,
+
+00:01:33.150 --> 00:01:36.200
+go down to measure, change it to average.
+
+00:01:36.200 --> 00:01:43.380
+Here you see that profit for copiers is the highest and is lowest for tables.
+

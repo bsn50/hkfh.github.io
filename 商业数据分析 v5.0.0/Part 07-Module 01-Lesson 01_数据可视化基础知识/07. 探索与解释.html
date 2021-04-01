@@ -1,0 +1,340 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>探索与解释</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>数据可视化基础知识</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 数据可视化简介.html">01. 数据可视化简介</a>
+    </li>
+    <li class="">
+      <a href="02. 为何使用数据可视化？.html">02. 为何使用数据可视化？</a>
+    </li>
+    <li class="">
+      <a href="03. 数据类型.html">03. 数据类型</a>
+    </li>
+    <li class="">
+      <a href="04. 视觉编码.html">04. 视觉编码</a>
+    </li>
+    <li class="">
+      <a href="05. 练习：视觉编码.html">05. 练习：视觉编码</a>
+    </li>
+    <li class="">
+      <a href="06. 视觉编码的排序.html">06. 视觉编码的排序</a>
+    </li>
+    <li class="">
+      <a href="07. 探索与解释.html">07. 探索与解释</a>
+    </li>
+    <li class="">
+      <a href="08. 数据可视化工具.html">08. 数据可视化工具</a>
+    </li>
+    <li class="">
+      <a href="09. 可视化设计.html">09. 可视化设计</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">07. 探索与解释</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>Part 1</p></h3>
+  <div>
+  <h1 id="数据分析流程">数据分析流程</h1>
+<p>可视化数据在分析过程中包括两点：探索数据和解释数据。探索数据涉及研究数据，找到有趣的关系并提出问题。解释数据是指表示这些关系并回答问题。我在下面绘出了处理数据的典型流程。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据分析流程</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/data-analysis-process.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>第二部分</p></h3>
+  <div>
+  <h2 id="提取和清理">提取和清理</h2>
+<p>首先是从数据库中<strong>提取</strong>数据或从其他记录中解析数据。通常，这时候你需要使用 SQL 或从网页上收集数据，这一流程叫做网页数据抽取。</p>
+<p>你的大部分时间都会花费在<strong>清理</strong>这些数据上。通常，记录会缺失，格式不对，或者就是不合理。在这门课程中我不会介绍数据清理，但是我会提供一些资源。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>探索</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/explore.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>第三部分</p></h3>
+  <div>
+  <h2 id="探索可视化">探索可视化</h2>
+<p>数据整理好后，你需要再次探索该数据，以便理解数据。你需要查看数据的分布方式，某些变量是否有关联，记录是如何分类的。这一流程通常称为探索性数据分析，简称 EDA。</p>
+<p>这时候数据可视化就派上用场了，因为你可以绘制数据分布情况，并创建散布图来表示关系。有助于你从数据中发现有趣的规律，以及其他特征，帮助你做出决策。</p>
+<h3 id="柱状图">柱状图</h3>
+<p>对于分类变量来说，你需要查看数据是如何在各个类别之间分布的。这时候适合使用柱状图：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>条形图</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/bar-chart.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>柱状图</p></h3>
+  <div>
+  <h3 id="直方图">直方图</h3>
+<p>对于连续变量来说，你可以用直方图来表示分布情况。直方图与柱状图类似，但它的变量划分至不同的范围，然后在不同的范围中统计计数。在直方图中，连续的柱子暗示数值上的连续。直方图在大多数可视化工具中都可以非常方便地作出。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>柱状图</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/histogram.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>非正态分布和柱状图</p></h3>
+  <div>
+  <p>直方图适合显示异常值及数据是如何分布的。此外，并非收集的所有变量都是正态分布的！如果假设是<a href="http://oureverydaylife.com/normality-mean-statistics-31977.html" rel="noopener noreferrer" target="_blank">正态</a>的话，可能会得出错误的结论。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>非正态柱状图</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/histogram-nonnormal.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>散布图</p></h3>
+  <div>
+  <h3 id="散点图">散点图</h3>
+<p>你可以用散点图查看变量之间的关系。可以帮助你确定相互关联的变量，或其他有趣的关系。你之前就见过下面的这个图表，但是我将再次提到该图表。 </p>
+<p>这个散点图显示了一组男性的身高和体重之间的关系。很明显一般情况下，身高升高的话，体重也会增加。当然实际也是这种情况，越高的人体重通常越重！</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>散布图示例</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/dot-example.png" alt="一组男性的身高与体重散布图。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>一组男性的身高与体重散布图。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>解释性可视化</p></h3>
+  <div>
+  <h3 id="解释性可视化">解释性可视化</h3>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>分享</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/share.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>第四部分</p></h3>
+  <div>
+  <p>最后一部分是深入研究在 EDA 流程中发现的规律，并与他人分享这些规律。这就是解释性部分。就像用数据讲故事一样。通过叙述性内容引导观看者查看你的分析结果。你的职责是让读者与你的数据产生对话。</p>
+<p>互动性非常重要，使读者能够自己探索数据。请参阅此<a href="https://public.tableau.com/en-us/s/gallery/tale-100" rel="noopener noreferrer" target="_blank">互动显示面板</a>！到处研究一下，思考下为何互动性可以增强可视化功能。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="08. 数据可视化工具.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('07. 探索与解释')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

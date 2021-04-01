@@ -1,0 +1,404 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>工作表界面</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>用 Tableau 创建可视化图表</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 什么是 Tableau？.html">01. 什么是 Tableau？</a>
+    </li>
+    <li class="">
+      <a href="02. 安装 Tableau.html">02. 安装 Tableau</a>
+    </li>
+    <li class="">
+      <a href="03. 连接数据.html">03. 连接数据</a>
+    </li>
+    <li class="">
+      <a href="04. 合并数据.html">04. 合并数据</a>
+    </li>
+    <li class="">
+      <a href="05. 工作表界面.html">05. 工作表界面</a>
+    </li>
+    <li class="">
+      <a href="06. 汇总和粒度.html">06. 汇总和粒度</a>
+    </li>
+    <li class="">
+      <a href="07. Show Me 功能.html">07. Show Me 功能</a>
+    </li>
+    <li class="">
+      <a href="08. 层级.html">08. 层级</a>
+    </li>
+    <li class="">
+      <a href="09. 标记选项.html">09. 标记选项</a>
+    </li>
+    <li class="">
+      <a href="10. 标记练习.html">10. 标记练习</a>
+    </li>
+    <li class="">
+      <a href="11. 组图（small multiples）.html">11. 组图（small multiples）</a>
+    </li>
+    <li class="">
+      <a href="12. 双坐标轴.html">12. 双坐标轴</a>
+    </li>
+    <li class="">
+      <a href="13. 过滤器.html">13. 过滤器</a>
+    </li>
+    <li class="">
+      <a href="14. 散点图和小多组图结合.html">14. 散点图和小多组图结合</a>
+    </li>
+    <li class="">
+      <a href="15. 组和集合.html">15. 组和集合</a>
+    </li>
+    <li class="">
+      <a href="16. 为世界杯数据绘制可视化地图.html">16. 为世界杯数据绘制可视化地图</a>
+    </li>
+    <li class="">
+      <a href="17. 计算字段.html">17. 计算字段</a>
+    </li>
+    <li class="">
+      <a href="18. 表格计算.html">18. 表格计算</a>
+    </li>
+    <li class="">
+      <a href="19. 更多Tableau数据.html">19. 更多Tableau数据</a>
+    </li>
+    <li class="">
+      <a href="20. 可视化练习：最热技能.html">20. 可视化练习：最热技能</a>
+    </li>
+    <li class="">
+      <a href="21. 可视化练习：最热技能箱线图.html">21. 可视化练习：最热技能箱线图</a>
+    </li>
+    <li class="">
+      <a href="22. 可视化练习：最热技能分布图.html">22. 可视化练习：最热技能分布图</a>
+    </li>
+    <li class="">
+      <a href="23. 小结.html">23. 小结</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">05. 工作表界面</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>03 Tableau 界面</p></h3>
+  <video controls>
+  <source src="05. 03 Tableau 界面-q3E4CCYeIyM.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="05. 03 Tableau 界面-q3E4CCYeIyM.zh-CN.vtt" label="zh-CN">
+  <track default="true" kind="subtitles" srclang="en" src="05. 03 Tableau 界面-q3E4CCYeIyM.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>你也可以查看下方详细的步骤。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>工作表界面简介</p></h3>
+  <div>
+  <h2 id="工作表界面">工作表界面</h2>
+<p>现在你已经加载数据了，该制作图表了。点击底部工具栏中的“Sheet1”。首先我将介绍工作表界面。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>工作表用户界面</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/sheet-ui.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据侧栏</p></h3>
+  <div>
+  <p>你将在左侧看到数据列（也称为“字段”），并根据维度和度量划分。分类数据、定性数据和时间数据列为维度。定量数值数据列为度量。Tableau 会自动检查每列的数据类型，并相应地做出拆分。</p>
+<p>你将注意到维度用蓝色表示，度量用绿色表示。这和之前见到的颜色编码一样，蓝色表示离散数据，绿色表示连续数据。注意，离散数据只能为特定的值，例如整型或类别，而连续数据可以是任何值。 </p>
+<p>维度并非必须是离散的，度量并非必须是连续的。在某些情况下，你可以将离散数据转换为连续数据，例如时间。右击字段，或点击小三角形即可调出菜单。但是分类数据不能这么操作，因为分类数据不能是连续的。你还可以将连续数据转换为离散数据。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>字段菜单</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/field-menu.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>度量和维度</p></h3>
+  <div>
+  <p>Tableau 会自动将度量求总计，但是维度就不会。即它会执行求和和平均值等运算。维度用来对数据分组，并设置粒度。接下来你将学习汇总和粒度，所以暂时不知道这些概念也没关系。</p>
+<h2 id="制作第一个图表">制作第一个图表</h2>
+<p>你可以通过选择要绘制的数据，方法是将相关字段拖到"列"或"行"功能区上（如下图所示）。当你将离散字段拖到 Columns 功能区中时，系统会创建一个离散轴。当你使用连续字段时，系统会创建一个连续轴。你还可以直接将字段拖到工作表上。</p>
+<p>我们开始分析，首先你可以查看每个市场的记录条数。将 <strong>Market</strong> 字段拖到 Columns 功能区上。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>将 Market 字段拖到 Columns 功能区上</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/market-to-columns-arrow.png" alt="将 Market 字段拖到 Columns 功能区上" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>将 Market 字段拖到 Columns 功能区上</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>首个图表</p></h3>
+  <div>
+  <p>你可以在工作表面板上看到坐标轴，显示每个市场的标签。现在将 Measures 中的 <strong>Number of Records</strong> 拖到 Rows 功能区上。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>市场记录数量</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/market-number-of-records.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>记录求和</p></h3>
+  <div>
+  <p>你将在 Rows 功能区中看到 <strong>Number of Records</strong> 字段变成了小小的药丸图标，显示为 SUM(Number of Records)。这就叫做汇总，系统会汇总每个市场的数据，并对值求和。你可以将光标悬停在长条上方，看看每个市场的具体和是多少（自己试试看！）</p>
+<p>通常，你将通过这种方式充分利用你的图表，将维度和度量字段拖到功能区上。你还可以从图表中删除字段，方法是将药丸图标从功能区上拖走。</p>
+<p>接着，你还可以点击坐标轴上的排序图标，对长条排序。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>按照记录数量对市场排序</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/sorted-markets-with-arrow.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>哪个国家的记录最多？</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>现在该你自己来练习下了。哪个国家的记录最多？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1474755414971" name="214593" id="a1474755414971">
+        <label for="a1474755414971"><p>澳大利亚</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474755434715" name="214593" id="a1474755434715">
+        <label for="a1474755434715"><p>美国</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474755435828" name="214593" id="a1474755435828">
+        <label for="a1474755435828"><p>中国</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474755436454" name="214593" id="a1474755436454">
+        <label for="a1474755436454"><p>法国</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    美国
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>新建工作表</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/new-sheets.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>最终效果</p></h3>
+  <div>
+  <p>终于可以从上图中看出，底部有新建工作表、显示面板和故事的标签页。 </p>
+<p>接着，我将解释 Tableau 在后台是如何制作图表的。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="06. 汇总和粒度.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. 工作表界面')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

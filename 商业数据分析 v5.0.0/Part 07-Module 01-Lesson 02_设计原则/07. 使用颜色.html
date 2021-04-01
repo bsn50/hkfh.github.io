@@ -1,0 +1,473 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>使用颜色</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>设计原则</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 课程概述.html">01. 课程概述</a>
+    </li>
+    <li class="">
+      <a href="02. 常见图表类型.html">02. 常见图表类型</a>
+    </li>
+    <li class="">
+      <a href="03. 基本图表.html">03. 基本图表</a>
+    </li>
+    <li class="">
+      <a href="04. 可视化分布.html">04. 可视化分布</a>
+    </li>
+    <li class="">
+      <a href="05. 选择合适的图表.html">05. 选择合适的图表</a>
+    </li>
+    <li class="">
+      <a href="06. 其他很棒的图表.html">06. 其他很棒的图表</a>
+    </li>
+    <li class="">
+      <a href="07. 使用颜色.html">07. 使用颜色</a>
+    </li>
+    <li class="">
+      <a href="08. 选择合适的色调.html">08. 选择合适的色调</a>
+    </li>
+    <li class="">
+      <a href="09. 冗余编码.html">09. 冗余编码</a>
+    </li>
+    <li class="">
+      <a href="10. 形状、大小和其他工具.html">10. 形状、大小和其他工具</a>
+    </li>
+    <li class="">
+      <a href="11. 少即是多.html">11. 少即是多</a>
+    </li>
+    <li class="">
+      <a href="12. 诚信原则.html">12. 诚信原则</a>
+    </li>
+    <li class="">
+      <a href="13. 一般设计技巧.html">13. 一般设计技巧</a>
+    </li>
+    <li class="">
+      <a href="14. 继续学习！.html">14. 继续学习！</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">07. 使用颜色</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>颜色 1</p></h3>
+  <div>
+  <h2 id="使用颜色">使用颜色</h2>
+<p>颜色是设计可视化图表的重要工具，使你能够表示另一个变量或对数据分组。但是，在选择使用哪种颜色以及如何应用这些颜色时，需要考虑很多问题。首先，我将讨论如何为要处理的数据选择正确的调色板。然后，我将讨论如何考虑色盲人士。 </p>
+<p>请看看下面两个关于 GDP 和预期寿命的图表，了解下颜色的作用：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>GDP 与预期寿命（没有颜色）</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/gdp-life.png" alt="2010 年各国的人均 GDP 与预期寿命，可以看到基本上升趋势。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>2010 年各国的人均 GDP 与预期寿命，可以看到基本上升趋势。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>GDP 与预期寿命（有颜色）</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/gdp-life-color.png" alt="GDP 与预期寿命，现在用颜色标注区域。可以轻松地看到不同区域的国家是如何分组的。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>GDP 与预期寿命，现在用颜色标注区域。可以轻松地看到不同区域的国家是如何分组的。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>调色板</p></h3>
+  <div>
+  <p>看到添加颜色后提供了大量额外的信息。我们知道，GDP 越高，预期寿命就越长。但是，通过将各个国家所属的区域用颜色标注，我们可以从此图中看到不同类型的国家在全球的分布情况。GDP 很低的国家几乎都在撒哈拉以南非洲，很高的国家则是欧洲和北美。中间的橘色部分是<a href="https://en.wikipedia.org/wiki/Commonwealth_of_Independent_States" rel="noopener noreferrer" target="_blank">独立国家联合体</a>，即前苏联国家（如果你觉得该缩写一开始没明白的话，我也没明白）。</p>
+<p>颜色是可视化过程中的重要工具，我们必须正确使用颜色，才能产生最大的影响。</p>
+<h3 id="调色板">调色板</h3>
+<p>调色板是指用来表示数据值的颜色范围。对于定量和定性数据，你需要使用不同的调色板。选择正确的调色板非常重要。例如，我们来看一个使用非常广泛但是很糟糕的调色板。(在这里朝着 <a href="https://jakevdp.github.io/blog/2014/10/16/how-bad-is-your-colormap/" rel="noopener noreferrer" target="_blank">Jake VanderPlas</a> 吼叫吧）。</p>
+<p>在过去一段时间内，可视化工具（例如 MATLAB 和 Python 的 matplotlib 库）使用的默认调色板是 <strong>jet</strong>。（幸运的是，二者都更新为了新的调色板）。你可能还会听到<strong>彩虹</strong>调色板这一说法。jet 调色板的颜色从深蓝到深红，然后一直变成绿色和黄色。我在下方提供了该调色板的彩色版本和灰度模式，以显示色谱和亮度。</p>
+<p>jet/彩虹调色板存在缺点，因为亮度并没有从一端平滑地过渡到另一端。黄色比其余颜色要亮很多，使某些数据显的格外重要，实际上并非如此。与大片的绿色相比，黄色和蓝绿色异常突出。从图中可以看到 jet 调色板的亮度，并不是平滑的渐变</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Jet 1</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/jet.png" alt="Jet!" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>Jet!</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Color 2</p></h3>
+  <div>
+  <p>可以看出，从感官上来说，很短的蓝绿色和黄色区域比其他区域要色彩强烈很多。这些区域的数据将被过于强调。通过查看灰度版本，很明显蓝绿色和黄色区域比较突出是因为它们的亮度比其他部分要高。出现这种情况是因为<a href="https://en.wikipedia.org/wiki/Color_vision#Cone_cells_in_the_human_eye" rel="noopener noreferrer" target="_blank">我们的大脑对颜色的感知有所不同</a>。与红色相比，我们的眼睛对绿色更敏感，对红色的敏感性又要比蓝色高。所以在计算机屏幕上，255 的红色比 255 的蓝色看起来要亮。</p>
+<p>可以从下面的示例中看到 jet 扭曲了我们对重要性的感知。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Jet 和灰度</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/jet-gray.png" alt="黄色和蓝绿色区域的亮度达到峰值。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>黄色和蓝绿色区域的亮度达到峰值。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>颜色 3</p></h3>
+  <div>
+  <p>黄色和蓝绿色区域比红色和蓝色区域要亮很多，并引人注目，但红色和蓝色区域实际上才是需要关注的（极端）部分。我们的大脑认为亮度越高的区域越重要。可以从灰度版本中看出，在黄色和蓝绿色边缘部分，亮度出现峰值。</p>
+<p>相反，我们应该使用符合以下特征的调色板：亮度呈线性变化，并存在极端值，同时在颜色之间平滑过渡。下面我将使用一个从红色变成浅黄色然后变成绿色的发散性调色板。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>发散性 1</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/diverging1.png" alt="发散性调色板从红色变成黄色再变成绿色" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>发散性调色板从红色变成黄色再变成绿色</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>发散性 2</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/diverging2.png" alt="这个调色板的正面区域和负面区域之间存在平滑过渡。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>这个调色板的正面区域和负面区域之间存在平滑过渡。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连续性调色板</p></h3>
+  <div>
+  <p>对于这个调色板，色带之间的过渡很平滑，红色和绿色区域的亮度相等。通常，jet 调色板是个不太好的选择。我们应该选择线性调色板，如上所示。当前的大部分可视化软件都使我们能够选择调色板，所以在用颜色设计可视化图表时，记住这一点。</p>
+<h3 id="连续性调色板">连续性调色板</h3>
+<p>线性亮度调色板存在两种基本类型：连续性调色板和发散性调色板（我在上面使用了，并且稍后将再次提到）。连续性调色板的浅色到深色或深色到浅色之间的过渡很平滑。这种调色板适合连续性数据，所有颜色都是正面的，所以低值用浅色表示，高值用深色表示（或者相反的模式）。下面是一个从浅红色到深红色的连续性调色板示例。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连续性 1</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/sequential1.png" alt="从浅红色到深红色的连续性调色板" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>从浅红色到深红色的连续性调色板</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连续性 2</p></h3>
+  <div>
+  <p>你还可以使用色调和亮度都会变化的调色板：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>具有不同色调的连续性调色板</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/sequential2.png" alt="色调也变化的连续性调色板" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>色调也变化的连续性调色板</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Sequentials with Gaussians</p></h3>
+  <div>
+  <p>下图是几个高斯模型调色板。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>具有高斯模型的连续性调色板</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/sequential-gaussians.png" alt="两个高斯块的连续性调色板。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>两个高斯块的连续性调色板。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>发散性调色板</p></h3>
+  <div>
+  <h3 id="发散性调色板">发散性调色板</h3>
+<p>如果数据存在某些断点，例如值从负数变成正数，经常适合使用发散性调色板。发散性调色板从一个颜色过渡到另一个颜色，经过一个浅色（或深色），亮度呈线性变化。你已经见过一个发散性调色板，即从红色变成绿色的调色板。下面是更多的示例：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>发散性调色板</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/diverging3.png" alt="几个发散性调色板示例" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>几个发散性调色板示例</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>发散性调色板 2</p></h3>
+  <div>
+  <p>下图是对与之前相同的高斯模型应用颜色后的效果，但是一个是负数。我还提供了 jet 调色板，使你能够看到蓝绿色和黄色如何在水泡周围形成圆环，而在另一个调色板中，这些颜色之间的过渡很平滑。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>发散性高斯模型</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/diverging-gaussians.png" alt="应用到高斯块上的发散性调色板。注意 jet 调色板导致的缺陷。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>应用到高斯块上的发散性调色板。注意 jet 调色板导致的缺陷。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>定性调色板</p></h3>
+  <div>
+  <h4 id="定性数据的调色板">定性数据的调色板</h4>
+<p>对于定性数据，经常需要对比不同组或类别的数据。为此，你需要选择肉眼看去尽量不同的颜色。<a href="http://tools.medialab.sciences-po.fr/iwanthue/" rel="noopener noreferrer" target="_blank">I want hue</a> 是一款很棒的工具，可以最佳方式构建独特的调色板。我在下图中创建了一个散点图，表示鸢尾花样本的花瓣长度和宽度。通过用不同的颜色标注各个物种，可以清晰地看出数据分成三个不同的群体。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>用颜色标注的鸢尾花散点图</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/iris.png" alt="收集的鸢尾花数据，根据物种标注颜色。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>收集的鸢尾花数据，根据物种标注颜色。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>色盲</p></h3>
+  <div>
+  <h3 id="为色盲人士设计颜色">为色盲人士设计颜色</h3>
+<p>人类通过视网膜内的细胞（叫做<a href="https://en.wikipedia.org/wiki/Cone_cell" rel="noopener noreferrer" target="_blank">视锥细胞</a>）产生的信号来识别颜色。光线进入眼睛，到达视锥细胞，视锥细胞向大脑发送电子信号。通常有三类视锥细胞：S（短波）、M（中波）和 L（长波）。它们对不同波长的光敏感。短波视锥细胞对蓝色敏感，中波对绿色敏感，长波对红色敏感。 </p>
+<p>但是，大约有 10% 的男性和 1% 的女性存在基因突变，影响到这些视锥细胞，产生<a href="https://en.wikipedia.org/wiki/Color_blindness" rel="noopener noreferrer" target="_blank">色盲</a>。最常见的色盲形式是红绿色盲，通常是因为中波视锥细胞对光敏感性转移到了红色光线上，这种突变称为<em>绿色弱视</em>。绿色弱视人群无法区分红色和绿色，如下图的红色和绿色苹果所示：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>色盲苹果示例</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/braeburn-grannysmith-dichromat-sim.jpg" alt="如果你是绿色弱视，那么你看到的这两个苹果就是底下的两种色彩。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>如果你是绿色弱视，那么你看到的这两个苹果就是底下的两种色彩。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>其他资源</p></h3>
+  <div>
+  <p>实际上有很大一部分人群是色盲，所以在设计可视化图表时要考虑到这类人。避免使用红绿调色板，改为使用蓝橙调色板。</p>
+<h3 id="其他资源">其他资源</h3>
+<p>还有很多关于颜色的知识可以学习，此处是 Robert Simmon 的<a href="http://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/" rel="noopener noreferrer" target="_blank">一系列帖子</a>，可以帮助你开始学习。</p>
+<p>此外，还有很多免费在线工具可以帮助你构建调色板。</p>
+<ul>
+<li><a href="http://paletton.com" rel="noopener noreferrer" target="_blank">Paletton</a> </li>
+<li><a href="https://color.adobe.com/" rel="noopener noreferrer" target="_blank">Adobe color wheel</a></li>
+<li><a href="http://tools.medialab.sciences-po.fr/iwanthue/" rel="noopener noreferrer" target="_blank">I want hue</a>，用于构建定性数据调色板</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="08. 选择合适的色调.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('07. 使用颜色')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

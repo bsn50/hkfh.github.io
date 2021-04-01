@@ -1,0 +1,345 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>视觉编码</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>数据可视化基础知识</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 数据可视化简介.html">01. 数据可视化简介</a>
+    </li>
+    <li class="">
+      <a href="02. 为何使用数据可视化？.html">02. 为何使用数据可视化？</a>
+    </li>
+    <li class="">
+      <a href="03. 数据类型.html">03. 数据类型</a>
+    </li>
+    <li class="">
+      <a href="04. 视觉编码.html">04. 视觉编码</a>
+    </li>
+    <li class="">
+      <a href="05. 练习：视觉编码.html">05. 练习：视觉编码</a>
+    </li>
+    <li class="">
+      <a href="06. 视觉编码的排序.html">06. 视觉编码的排序</a>
+    </li>
+    <li class="">
+      <a href="07. 探索与解释.html">07. 探索与解释</a>
+    </li>
+    <li class="">
+      <a href="08. 数据可视化工具.html">08. 数据可视化工具</a>
+    </li>
+    <li class="">
+      <a href="09. 可视化设计.html">09. 可视化设计</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">04. 视觉编码</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>视觉编码</p></h3>
+  <div>
+  <h2 id="用视觉元素表示数据">用视觉元素表示数据</h2>
+<p>在可视化数据时，你会使用视觉元素（例如点、线、长条）<em>表示</em>数值。例如，如果查看多个人的身高和体重，可以用一个点表示每个人的身高和体重值。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>点示例</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/one-dot-example.png" alt="用点表示身高和体重" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>用点表示身高和体重</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>第二部分</p></h3>
+  <div>
+  <p>这里有两个点，表示两个人。体重和身高值在图中用<em>点的位置</em>（<em>相对于坐标轴上的刻度</em>）表示。左侧的点表示体重值 70.0 公斤，身高约为 1.72 米（根据点到坐标轴的虚线确定）。</p>
+<h3 id="点">点</h3>
+<p>对于定量数据，尤其是对比两个变量时，建议使用点。对于上述示例，你可以看出如何表示更多的数据。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>多个点示例</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/dot-example.png" alt="用点表示多个人。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>用点表示多个人。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>文本（第三部分）</p></h3>
+  <div>
+  <p>点是最准确的表示方法，即与其他视觉元素相比，人类更善于<em>确定用点表示的值</em>。从点到坐标轴画个直线很简单。点就像图片上的小空间，很容易看出所表示的值。用线条或长条表示此类数据的话，会很混乱。</p>
+<h3 id="线条">线条</h3>
+<p>线条适合将相关的数据相连，并帮助我们用肉眼观察。对于一段连续数据（例如时间）来说，适合用线条，这时候点就不合适了。看看下面这个只用点表示的时间数据图表，另一个用线条表示。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>用点表示的冰激凌销量</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/time-with-dots.png" alt="用点表示的冰激凌销量" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>用点表示的冰激凌销量</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>用线条表示的冰激凌销量</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/time-with-lines.png" alt="用线条表示的冰激凌销量！" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>用线条表示的冰激凌销量！</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>线条（第二部分）</p></h3>
+  <div>
+  <p>用线条表示冰激凌销量的季节性变化趋势。人们凭直觉就能从线条上看到趋势，而点则表示这些数据没有联系。</p>
+<p>线条还非常适合显示不同组之间的变化。Edward Tufte 发明了一种可视化图表，叫做<a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0003nk" rel="noopener noreferrer" target="_blank">“坡度图”</a>，这种图非常适合显示根据时间而变化的一系列群组。如果你感兴趣的话，请阅读<a href="http://charliepark.org/slopegraphs/" rel="noopener noreferrer" target="_blank">这篇文章</a>，其中很好地介绍了坡度图的发展历史和用途。</p>
+<p>因为人们可以从线条里看到趋势，所以如果某种趋势不合理的话，则不适合使用线条，例如下图：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>请勿用线条表示</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/bad-lines-example.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>条形图（第一部分）</p></h3>
+  <div>
+  <h3 id="条形图">条形图</h3>
+<p>对于上述图表，要对比的是几组数据，条形图非常合适。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>这样绘制</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/good-bars-example.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>条形图（第二部分）</p></h3>
+  <div>
+  <p>条形图只能表示一个数值（用左侧的 y 轴表示），适合对比几组数据（家居、电子产品、供应品、服务）。我们很快就能看出每组的利润对比情况。</p>
+<h3 id="颜色">颜色</h3>
+<p>颜色通常用来表示第三个维度，因为很难在二维平面（例如计算机屏幕）上表示三维数据。可以是连续数据 （例如热度图）或离散数据（将数据分成几个组）。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>热度图颜色示例</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/heatmap.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>折线图</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/line-plot-color-encoded.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>最后结果</p></h3>
+  <div>
+  <p>Stephen Few 写了一遍很棒的关于视觉编码的文章。共 8 页，里面有很多图表，只需 10 分钟左右的时间就能看完。<a href="https://www.perceptualedge.com/articles/b-eye/encoding_values_in_graph.pdf" rel="noopener noreferrer" target="_blank">不妨阅读一下</a>。如果你偏离折线表示方法，你的读者可能就无法理解你的意思，就好像你用错误的词汇与他人交流一样。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="05. 练习：视觉编码.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. 视觉编码')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

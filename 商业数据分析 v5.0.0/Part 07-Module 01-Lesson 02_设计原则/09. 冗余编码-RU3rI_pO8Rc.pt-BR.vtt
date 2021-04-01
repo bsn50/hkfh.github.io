@@ -1,0 +1,55 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.500 --> 00:00:03.800
+De forma geral, eu diria que essas cores distraem a leitura dos dados.
+
+00:00:04.920 --> 00:00:09.150
+As cores exibidas não parecem ser escolhidas por qualquer motivo em particular.
+
+00:00:09.150 --> 00:00:13.510
+Na verdade, elas formam um arco-íris de cores padrão para o pacote de ggplot2 para
+
+00:00:13.510 --> 00:00:14.721
+a linguagem de programação R.
+
+00:00:16.000 --> 00:00:20.590
+Estas cores também são muito vivas, o que cansa a vista, e acima de tudo,
+
+00:00:20.590 --> 00:00:24.550
+cada cor não oferece qualquer informação adicional sobre os dados.
+
+00:00:25.700 --> 00:00:28.490
+Os rótulos no lado esquerdo do gráfico de barra são suficientes para
+
+00:00:28.490 --> 00:00:31.700
+indicar qual barra pertence a qual tipo de corte de diamante.
+
+00:00:32.960 --> 00:00:36.900
+Ele na verdade torna o uso de cor redundante, pois ambos rótulos e
+
+00:00:36.900 --> 00:00:39.490
+a cor indicam o tipo de corte.
+
+00:00:39.490 --> 00:00:43.310
+Você também pode ter pensado que a legenda na direita aqui é desnecessária.
+
+00:00:44.320 --> 00:00:47.650
+Poderíamos simplesmente criar esta visualização com os rótulos na esquerda no
+
+00:00:47.650 --> 00:00:49.930
+gráfico, diminuindo o tempo do
+
+00:00:49.930 --> 00:00:54.220
+olho do leitor de saltar entre a legenda e a exibição principal de dados.
+
+00:00:54.220 --> 00:00:57.060
+Agora, sei que esta é uma breve exibição, mas faz sentido para
+
+00:00:57.060 --> 00:01:00.960
+visualizações maiores onde o olho examinaria a página inteira.
+
+00:01:00.960 --> 00:01:03.370
+Então, quando se trata de cores, o que deveríamos fazer?
+

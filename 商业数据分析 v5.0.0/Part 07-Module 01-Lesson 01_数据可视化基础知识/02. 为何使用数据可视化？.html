@@ -1,0 +1,481 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>为何使用数据可视化？</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>数据可视化基础知识</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 数据可视化简介.html">01. 数据可视化简介</a>
+    </li>
+    <li class="">
+      <a href="02. 为何使用数据可视化？.html">02. 为何使用数据可视化？</a>
+    </li>
+    <li class="">
+      <a href="03. 数据类型.html">03. 数据类型</a>
+    </li>
+    <li class="">
+      <a href="04. 视觉编码.html">04. 视觉编码</a>
+    </li>
+    <li class="">
+      <a href="05. 练习：视觉编码.html">05. 练习：视觉编码</a>
+    </li>
+    <li class="">
+      <a href="06. 视觉编码的排序.html">06. 视觉编码的排序</a>
+    </li>
+    <li class="">
+      <a href="07. 探索与解释.html">07. 探索与解释</a>
+    </li>
+    <li class="">
+      <a href="08. 数据可视化工具.html">08. 数据可视化工具</a>
+    </li>
+    <li class="">
+      <a href="09. 可视化设计.html">09. 可视化设计</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">02. 为何使用数据可视化？</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>第一节课</p></h3>
+  <div>
+  <h3 id="安斯库姆四重奏">安斯库姆四重奏</h3>
+<p>我们为何要使用数据可视化？当我们直接看到数据（而不是当做一组数据放到表格中）时，我们更容易看出数据之间的关系。下面这组数据叫做<a href="https://en.wikipedia.org/wiki/Anscombe%27s_quartet" rel="noopener noreferrer" target="_blank">安斯库姆四重奏</a>：</p>
+<table>
+<thead>
+<tr>
+<th id="i_(x)">I (x)</th>
+<th id="i_(y)">I (y)</th>
+<th id="ii_(x)">II (x)</th>
+<th id="ii_(y)">II (y)</th>
+<th id="iii_(x)">III (x)</th>
+<th id="iii_(y)">III (y)</th>
+<th id="iv_(x)">IV (x)</th>
+<th id="iv_(y)">IV (y)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10.0</td>
+<td>8.04</td>
+<td>10.0</td>
+<td>9.14</td>
+<td>10.0</td>
+<td>7.46</td>
+<td>8.0</td>
+<td>6.58</td>
+</tr>
+<tr>
+<td>8.0</td>
+<td>6.95</td>
+<td>8.0</td>
+<td>8.14</td>
+<td>8.0</td>
+<td>6.77</td>
+<td>8.0</td>
+<td>5.76</td>
+</tr>
+<tr>
+<td>13.0</td>
+<td>7.58</td>
+<td>13.0</td>
+<td>8.74</td>
+<td>13.0</td>
+<td>12.74</td>
+<td>8.0</td>
+<td>7.71</td>
+</tr>
+<tr>
+<td>9.0</td>
+<td>8.81</td>
+<td>9.0</td>
+<td>8.77</td>
+<td>9.0</td>
+<td>7.11</td>
+<td>8.0</td>
+<td>8.84</td>
+</tr>
+<tr>
+<td>11.0</td>
+<td>8.33</td>
+<td>11.0</td>
+<td>9.26</td>
+<td>11.0</td>
+<td>7.81</td>
+<td>8.0</td>
+<td>8.47</td>
+</tr>
+<tr>
+<td>14.0</td>
+<td>9.96</td>
+<td>14.0</td>
+<td>8.10</td>
+<td>14.0</td>
+<td>8.84</td>
+<td>8.0</td>
+<td>7.04</td>
+</tr>
+<tr>
+<td>6.0</td>
+<td>7.24</td>
+<td>6.0</td>
+<td>6.13</td>
+<td>6.0</td>
+<td>6.08</td>
+<td>8.0</td>
+<td>5.25</td>
+</tr>
+<tr>
+<td>4.0</td>
+<td>4.26</td>
+<td>4.0</td>
+<td>3.10</td>
+<td>4.0</td>
+<td>5.39</td>
+<td>19.0</td>
+<td>12.50</td>
+</tr>
+<tr>
+<td>12.0</td>
+<td>10.84</td>
+<td>12.0</td>
+<td>9.13</td>
+<td>12.0</td>
+<td>8.15</td>
+<td>8.0</td>
+<td>5.56</td>
+</tr>
+<tr>
+<td>7.0</td>
+<td>4.82</td>
+<td>7.0</td>
+<td>7.26</td>
+<td>7.0</td>
+<td>6.42</td>
+<td>8.0</td>
+<td>7.91</td>
+</tr>
+<tr>
+<td>5.0</td>
+<td>5.68</td>
+<td>5.0</td>
+<td>4.74</td>
+<td>5.0</td>
+<td>5.73</td>
+<td>8.0</td>
+<td>6.89</td>
+</tr>
+</tbody>
+</table>
+<p>这里有四组类似的数据集。一切看起来正常，只是一组数字。从 I 到 IV 的每个数据集都具有相同的统计特征：</p>
+<table>
+<thead>
+<tr>
+<th id="属性">属性</th>
+<th id="值">值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每组 <em>x</em> 的<strong>均值</strong></td>
+<td>9（精确值）</td>
+</tr>
+<tr>
+<td>每组 <em>x</em> 的样本<strong>方差</strong></td>
+<td>11（精确值）</td>
+</tr>
+<tr>
+<td>每组 <em>y</em> 的<strong>均值</strong></td>
+<td>7.5 (精确到小数点后两位）</td>
+</tr>
+<tr>
+<td>每组 <em>y</em> 的样本<strong>方差</strong></td>
+<td>4.122 或 4.127（精确到小数点后三位）</td>
+</tr>
+<tr>
+<td>每组 <em>x</em> 和 <em>y</em> 之间的<strong>关系</strong></td>
+<td>0.816 （精确到小数点后三位）</td>
+</tr>
+<tr>
+<td>每组的<strong>线性递归</strong>直线</td>
+<td>3.00 + 0.500*x（分别精确到小数点后两位和三位）</td>
+</tr>
+</tbody>
+</table>
+<p>线性递归的拟合优度测量结果（例如 R^2）也相同。只看数据的话，根本发现不了什么奇怪的地方, 但是对于 IV 组，除了一个地方之外，所有其他的 x 都相同。我们看看可视化之后的效果吧：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/screen-shot-2017-05-10-at-9.42.10-am.png" alt="安斯库姆四重奏可视化图表 (https://commons.wikimedia.org/w/index.php?curid&#x3D;9838454)" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>安斯库姆四重奏可视化图表 (<a href="https://commons.wikimedia.org/w/index.php?curid=9838454" rel="noopener noreferrer" target="_blank">https://commons.wikimedia.org/w/index.php?curid=9838454</a>)</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>第二部分</p></h3>
+  <div>
+  <p>将这些数据绘制成图表后，我们可以清晰地看到每组数据非常不同。不仅数据集不同，而且第 II、III 和 IV 组的线性趋势明显不对，虽然所有的统计信息似乎没问题。这就是可视化具有的作用，它们可以展示出仅通过查看数据本身无法看出的关系。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Anscombe’s Quartet</p></h3>
+  <video controls>
+  <source src="02. Anscombe’s Quartet-Ftp3mmItV-k.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="02. Anscombe’s Quartet-Ftp3mmItV-k.zh-CN.vtt" label="zh-CN">
+  <track default="false" kind="subtitles" srclang="ar" src="02. Anscombe’s Quartet-Ftp3mmItV-k.ar.vtt" label="ar">
+  <track default="false" kind="subtitles" srclang="pt-BR" src="02. Anscombe’s Quartet-Ftp3mmItV-k.pt-BR.vtt" label="pt-BR">
+  <track default="true" kind="subtitles" srclang="en" src="02. Anscombe’s Quartet-Ftp3mmItV-k.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>再看一个示例。你可能会在实际工作中看到下面的数据表格，表示的是总利润在细分群体“消费类、企业和总公司”之间的划分情况。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>利润表格</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/visual1.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>添加颜色</p></h3>
+  <div>
+  <p>这张图不太容易看出数据有何关系，每个值的相互对比情况（如果有任何规律或关系的话）。我们可以添加一些颜色让亏损的部分更加明显。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>添加颜色！</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/visual3.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>变成条形图！</p></h3>
+  <div>
+  <p>添加颜色有所帮助，但是依然难以看出每个类别的相互对比情况。如果值用横条长度表示，那么就很容易看出相互之间的关系了。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>用条形图表示的利润</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/visual4.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>最终效果</p></h3>
+  <div>
+  <p>现在可以轻松地看出各种规律了。复印机始终利润最高。在三大细分中，家庭办公的利润最低。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>可视化可以表示一千行的数据</p></h3>
+  <div>
+  <h3 id="可视化可以表示一千行的数据">可视化可以表示一千行的数据</h3>
+<p>可视化数据的另一个特征是你可以将大量的数据放入一个小小的物理区域。看看这个图表里包含了多少数据。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>小小图组</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/small-multiples-example.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>小小图组图表说明</p></h3>
+  <div>
+  <p>我在上图中绘制出从 2011 年 1 月到 2014 年 12 月每个月的总利润。我还包含了每组的每月平均利润。</p>
+<p>4 年里的每个月都有一个数据点，一共是 48 个。有 9 组，即 48x9 = 432 个数据点。再加上 9 个平均利润数据点，总共有 <strong>441</strong> 个数据。要看一个具有 441 个数字的表格，几乎是看不明白的，但是这个图表使我们能轻松地看出这几年时间的利润变化情况。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="03. 数据类型.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. 为何使用数据可视化？')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

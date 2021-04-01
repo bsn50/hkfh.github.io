@@ -1,0 +1,388 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>标记选项</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>用 Tableau 创建可视化图表</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 什么是 Tableau？.html">01. 什么是 Tableau？</a>
+    </li>
+    <li class="">
+      <a href="02. 安装 Tableau.html">02. 安装 Tableau</a>
+    </li>
+    <li class="">
+      <a href="03. 连接数据.html">03. 连接数据</a>
+    </li>
+    <li class="">
+      <a href="04. 合并数据.html">04. 合并数据</a>
+    </li>
+    <li class="">
+      <a href="05. 工作表界面.html">05. 工作表界面</a>
+    </li>
+    <li class="">
+      <a href="06. 汇总和粒度.html">06. 汇总和粒度</a>
+    </li>
+    <li class="">
+      <a href="07. Show Me 功能.html">07. Show Me 功能</a>
+    </li>
+    <li class="">
+      <a href="08. 层级.html">08. 层级</a>
+    </li>
+    <li class="">
+      <a href="09. 标记选项.html">09. 标记选项</a>
+    </li>
+    <li class="">
+      <a href="10. 标记练习.html">10. 标记练习</a>
+    </li>
+    <li class="">
+      <a href="11. 组图（small multiples）.html">11. 组图（small multiples）</a>
+    </li>
+    <li class="">
+      <a href="12. 双坐标轴.html">12. 双坐标轴</a>
+    </li>
+    <li class="">
+      <a href="13. 过滤器.html">13. 过滤器</a>
+    </li>
+    <li class="">
+      <a href="14. 散点图和小多组图结合.html">14. 散点图和小多组图结合</a>
+    </li>
+    <li class="">
+      <a href="15. 组和集合.html">15. 组和集合</a>
+    </li>
+    <li class="">
+      <a href="16. 为世界杯数据绘制可视化地图.html">16. 为世界杯数据绘制可视化地图</a>
+    </li>
+    <li class="">
+      <a href="17. 计算字段.html">17. 计算字段</a>
+    </li>
+    <li class="">
+      <a href="18. 表格计算.html">18. 表格计算</a>
+    </li>
+    <li class="">
+      <a href="19. 更多Tableau数据.html">19. 更多Tableau数据</a>
+    </li>
+    <li class="">
+      <a href="20. 可视化练习：最热技能.html">20. 可视化练习：最热技能</a>
+    </li>
+    <li class="">
+      <a href="21. 可视化练习：最热技能箱线图.html">21. 可视化练习：最热技能箱线图</a>
+    </li>
+    <li class="">
+      <a href="22. 可视化练习：最热技能分布图.html">22. 可视化练习：最热技能分布图</a>
+    </li>
+    <li class="">
+      <a href="23. 小结.html">23. 小结</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">09. 标记选项</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>06 Practice With Marks And Filters</p></h3>
+  <video controls>
+  <source src="09. 06 Practice With Marks And Filters-RPAv7WLkutk.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="09. 06 Practice With Marks And Filters-RPAv7WLkutk.zh-CN.vtt" label="zh-CN">
+  <track default="true" kind="subtitles" srclang="en" src="09. 06 Practice With Marks And Filters-RPAv7WLkutk.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>标记 1</p></h3>
+  <div>
+  <h1 id="标记选项">标记选项</h1>
+<p>通常，你需要向图表中添加更多的维度。你可以通过标记卡实现。它具有以下选项：颜色、大小和形状。你可以通过将维度或度量拖到 Marks 功能区上，向图表中添加维度（增大粒度）。</p>
+<h2 id="颜色">颜色</h2>
+<p>大多数情况下，你将用颜色标记数据。在 Tableau 中操作很简单，只需将相关字段拖到标记卡中的"Color”上。我在下方制作了月度利润折线图，按照 <strong>Segment</strong> 拆分。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>具有颜色的折线图</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/lines-with-color.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>颜色选项</p></h3>
+  <div>
+  <h3 id="颜色选项">颜色选项</h3>
+<p>点击标记卡中的"Color”就可以更改用来表示数据的调色板。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>调色板</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/colors-choose-palette.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>颜色 1</p></h3>
+  <div>
+  <p>你可以在菜单中选择调色板然后点击"Assign Palette”来更改颜色，然后点击“应用”或“确定”做出更改。你也可以更改单个颜色，点击数据项然后点击调色板中的某个颜色。</p>
+<p>颜色还适合在地图上表示数据。下面是几个示例。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>在地图上用颜色标注离散数据</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/color-map-discrete.png" alt="用相应的定性调色板表示离散数据。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>用相应的定性调色板表示离散数据。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>在地图上用颜色标注顺序数据</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/color-map-sequential.png" alt="用离散型调色板表示连续数据（利润）。" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>用离散型调色板表示连续数据（利润）。</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>设置颜色</p></h3>
+  <div>
+  <p>如果你没有用颜色标注数据，依然可以更改图形元素的颜色。点击"Color”就会出现颜色选择器，并设置标记颜色，如下所示。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>更改颜色</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/color-change.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Tableau 和颜色</p></h3>
+  <div>
+  <p>颜色是创建吸引人和易于理解的可视化图表的最重要因素之一。在最新的版本 10 中，Tableau（及其公司）花了大量时间来改进颜色设置。你可以在<a href="http://www.tableau.com/about/blog/2016/7/colors-upgrade-tableau-10-56782" rel="noopener noreferrer" target="_blank">此处</a>了解他们的改进之处。</p>
+<h2 id="大小">大小</h2>
+<p>将离散或连续字段拖到"Size”上将按照标记大小标注数据。你将经常在散布图（通常称为气泡图）中使用这种标注方法。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>气泡图</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/size-bubble-plot.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>气泡图</p></h3>
+  <div>
+  <p>我在上图中绘制了每个国家的平均数量与平均利润。我使用标记大小表示平均折扣，很明显折扣导致相关国家的利润出现负增长。</p>
+<p>和颜色一样，如果没有用大小标注数据，你可以点击标记卡并移动滑条来设置大小。</p>
+<h2 id="形状">形状</h2>
+<p>和颜色及形状一样，你可以用标记形状标注数据。对于形状，只能使用离散数据。此外，如果有太多类别，形状就很难识别。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>形状</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/shape-scatter.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Detail</p></h3>
+  <div>
+  <p>如果没有用形状标注任何数据，则可以设置形状。</p>
+<h2 id="其他卡片">其他卡片</h2>
+<p>借助 “Detail” 卡，你能够添加不含任何视觉标注的字段。这样就可以增进粒度，并且不用添加任何图形效果。</p>
+<p>"Label” 卡可以为所有标记添加标签。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="10. 标记练习.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('09. 标记选项')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

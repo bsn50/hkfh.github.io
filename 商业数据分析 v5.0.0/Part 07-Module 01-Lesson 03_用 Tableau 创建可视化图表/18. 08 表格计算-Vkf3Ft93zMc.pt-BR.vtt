@@ -1,0 +1,111 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.434 --> 00:00:03.300
+Cálculos de tabelas são feitos
+em função de uma visualização.
+
+00:00:03.334 --> 00:00:07.033
+Como ao mostrar a porcentagem total
+de vendas de uma determinada região.
+
+00:00:07.067 --> 00:00:11.801
+Vamos usar esse cálculo para mostrar
+a porcentagem de cada mercado.
+
+00:00:11.834 --> 00:00:14.567
+Primeiro vamos plotar
+o total dos lucros por mercado.
+
+00:00:15.000 --> 00:00:16.900
+Ao clicar nesse valor
+com o botão direito,
+
+00:00:16.934 --> 00:00:19.234
+você vai ver
+"add table calculation".
+
+00:00:20.133 --> 00:00:23.033
+Você pode configurar o cálculo
+manualmente nessa janela
+
+00:00:23.901 --> 00:00:26.801
+ou pode usar o "quick table
+calculation" do menu suspenso.
+
+00:00:26.834 --> 00:00:30.267
+Vamos adicionar um cálculo rápido
+para exibir a porcentagem do total.
+
+00:00:30.767 --> 00:00:32.000
+Ao fazer isso,
+
+00:00:32.033 --> 00:00:36.400
+podemos ver que APAC representa
+quase 30% do total de vendas.
+
+00:00:36.434 --> 00:00:40.901
+Vamos fazer outro exemplo:
+vejamos o crescimento trimestral.
+
+00:00:40.934 --> 00:00:46.734
+Primeiro, acrescentamos
+as vendas às colunas.
+
+00:00:47.036 --> 00:00:50.434
+Agora vamos separar por trimestres
+clicando no sinal de mais.
+
+00:00:51.167 --> 00:00:53.901
+Perceba que ele cria
+quatro gráficos diferentes.
+
+00:00:53.934 --> 00:00:56.968
+Isso ocorre porque a data de pedidos
+é uma variável discreta.
+
+00:00:57.001 --> 00:00:59.367
+Alteramos isso clicando
+em "order date",
+
+00:00:59.400 --> 00:01:01.267
+selecionando
+"convert to continuous"
+
+00:01:01.300 --> 00:01:03.834
+e colocando-a novamente
+na parte da coluna.
+
+00:01:08.167 --> 00:01:10.434
+Agora podemos fazer
+o cálculo de tabela.
+
+00:01:10.467 --> 00:01:12.400
+Clique com o botão direito
+em "SUM(Sales)",
+
+00:01:12.434 --> 00:01:15.701
+selecione "Quick Table Calculation"
+e clique em "Percent Difference".
+
+00:01:16.534 --> 00:01:19.367
+Agora vemos a diferença
+entre trimestres.
+
+00:01:19.400 --> 00:01:23.801
+Talvez você queira um detalhamento
+ainda maior, semanal.
+
+00:01:24.367 --> 00:01:28.067
+Como pode ver, os dados ficam
+bem confusos nesse nível.
+
+00:01:28.100 --> 00:01:30.001
+Podemos usar
+um cálculo de tabela
+
+00:01:30.033 --> 00:01:33.300
+e uma média móvel para deixar
+o gráfico mais inteligível.
+

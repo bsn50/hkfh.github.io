@@ -1,0 +1,561 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>连接数据</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>用 Tableau 创建可视化图表</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 什么是 Tableau？.html">01. 什么是 Tableau？</a>
+    </li>
+    <li class="">
+      <a href="02. 安装 Tableau.html">02. 安装 Tableau</a>
+    </li>
+    <li class="">
+      <a href="03. 连接数据.html">03. 连接数据</a>
+    </li>
+    <li class="">
+      <a href="04. 合并数据.html">04. 合并数据</a>
+    </li>
+    <li class="">
+      <a href="05. 工作表界面.html">05. 工作表界面</a>
+    </li>
+    <li class="">
+      <a href="06. 汇总和粒度.html">06. 汇总和粒度</a>
+    </li>
+    <li class="">
+      <a href="07. Show Me 功能.html">07. Show Me 功能</a>
+    </li>
+    <li class="">
+      <a href="08. 层级.html">08. 层级</a>
+    </li>
+    <li class="">
+      <a href="09. 标记选项.html">09. 标记选项</a>
+    </li>
+    <li class="">
+      <a href="10. 标记练习.html">10. 标记练习</a>
+    </li>
+    <li class="">
+      <a href="11. 组图（small multiples）.html">11. 组图（small multiples）</a>
+    </li>
+    <li class="">
+      <a href="12. 双坐标轴.html">12. 双坐标轴</a>
+    </li>
+    <li class="">
+      <a href="13. 过滤器.html">13. 过滤器</a>
+    </li>
+    <li class="">
+      <a href="14. 散点图和小多组图结合.html">14. 散点图和小多组图结合</a>
+    </li>
+    <li class="">
+      <a href="15. 组和集合.html">15. 组和集合</a>
+    </li>
+    <li class="">
+      <a href="16. 为世界杯数据绘制可视化地图.html">16. 为世界杯数据绘制可视化地图</a>
+    </li>
+    <li class="">
+      <a href="17. 计算字段.html">17. 计算字段</a>
+    </li>
+    <li class="">
+      <a href="18. 表格计算.html">18. 表格计算</a>
+    </li>
+    <li class="">
+      <a href="19. 更多Tableau数据.html">19. 更多Tableau数据</a>
+    </li>
+    <li class="">
+      <a href="20. 可视化练习：最热技能.html">20. 可视化练习：最热技能</a>
+    </li>
+    <li class="">
+      <a href="21. 可视化练习：最热技能箱线图.html">21. 可视化练习：最热技能箱线图</a>
+    </li>
+    <li class="">
+      <a href="22. 可视化练习：最热技能分布图.html">22. 可视化练习：最热技能分布图</a>
+    </li>
+    <li class="">
+      <a href="23. 小结.html">23. 小结</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">03. 连接数据</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>01 Connecting To Data</p></h3>
+  <video controls>
+  <source src="03. 01 Connecting To Data-zuJPPSlbW2c.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="03. 01 Connecting To Data-zuJPPSlbW2c.zh-CN.vtt" label="zh-CN">
+  <track default="true" kind="subtitles" srclang="en" src="03. 01 Connecting To Data-zuJPPSlbW2c.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>你也可以阅读以下详细的步骤了解如何连接数据。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连接数据</p></h3>
+  <div>
+  <h2 id="连接数据">连接数据</h2>
+<p>开始使用 Tableau。第一步是加载一些数据。</p>
+<p>我提供了一个数据集，你将在这节课的后续部分使用它。该数据集包含 Global Superstore 的交易记录，以及收益和销售团队成员列表。你可以在资源部分找到 Excel 文件，请下载该文件。</p>
+<p><center><a href="https://github.com/udacity/new-dand-advanced-china/blob/master/Tableau%20%E5%8F%AF%E8%A7%86%E5%8C%96/global-superstore.xlsx?raw=true" target="_blank"><button style="box-sizing: border-box; border-radius: 4px; background: #02B3E4; border: none; height: 44px; padding: 0 25px; color: white; cursor: pointer; font-family: Open Sans,sans-serif; display: inline-block; border: none; font-size: 12px; letter-spacing: 1px; font-weight: 600; text-transform: uppercase;">下载数据</button></a></center><br />
+<br></p>
+<p>如果尚未启动 Tableau 的话，请先启动。你应该看到如下所示的界面（如果版本是 10）：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Tableau 初始界面</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/tableau-initial-ui.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连接数据 2</p></h3>
+  <div>
+  <p>你将在左侧边栏中看到可以连接的数据源。对于文件资源，你可以连接到 Excel 文件、文本文件（例如 CSV）或统计文件（例如来自 SAS、SPSS 和 R 的文件）。</p>
+<p>你可以使用 OData 连接到一些远程资源（连接到服务器），还可以连接到 Google 表格（点击<strong>更多…</strong>）。</p>
+<p>开始加载 Global Superstore 数据。点击 “Excel”，然后选择 Global Superstore Excel 文件。 </p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连接到 Global Superstore</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/connect-to-global-superstore.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Global Superstore 数据</p></h3>
+  <div>
+  <p>当 Tableau 连接到该数据后，你应该能够在左侧边栏中看到该 Excel 文件中的工作表（<em>Orders</em>、<em>People</em> 和 <em>Returns</em>）。大的橘色字体告诉你将工作表拖到此处，所以将 <em>Orders</em> 工作表拖到顶部面板上。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据已加载</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/data-loaded.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据已加载</p></h3>
+  <div>
+  <p>你现在应该能够在面板下方看到 Order 表格的数据预览。我还使用了 <a href="https://onlinehelp.tableau.com/current/pro/desktop/en-us/qs_data_interpreter.html" rel="noopener noreferrer" target="_blank">Data Interpreter</a>（即左侧的复选框）。Data Interpreter 会尝试清理数据并添加格式，使数据更容易在 Tableau 中使用。</p>
+<p>Tableau 会自动在标题行中查找列标签。它还会尝试检测每列的数据类型。标题栏里的小图标表示列的数据类型。<strong>Row ID</strong> 是数值数据，<strong>Order ID</strong> 是文本，<strong>Order Date</strong> 是日期，等等。 </p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>标题栏</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/header-bar.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>地理数据</p></h3>
+  <div>
+  <p>Tableau 还会查找地理空间数据，如下所示。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>标题地理数值数据</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/header-geo-numerical.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据类型</p></h3>
+  <div>
+  <p>你可能注意到了，在第一幅图中，标题中的数值图标 (#) 是蓝色的，但是在上图中是绿色的。Tableau 会猜测数值数据是离散还是连续的，并用颜色表示，<strong>蓝色表示离散数据，绿色表示连续数据</strong> 。稍后你还会见到这类颜色编码。</p>
+<p>Tableau 并非始终都能猜对数据类型，所以你可以通过点击数据类型符号手动设置。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据类型菜单</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/data-type-menu.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据类型菜单</p></h3>
+  <div>
+  <p>例如，你可能需要将 Row ID 改成字符串（文本），因为你不会对其进行任何数学运算，只是一个标识符。你可以自己尝试如何进行设置。</p>
+<p>因为 Tableau 从猜测的标题行中获取列名称，所以有时候列名称会不准确。幸运的是，你可以重命名，方法是点击三角形并出现下拉菜单，或者直接双击列名称。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>重命名列名称</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/rename-columns.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>拆分列</p></h3>
+  <div>
+  <p>对于字符串列，你可以进行一些简单的变换，比如将数据拆分成多列。例如，Order ID 包含用连字符分隔的三个部分。你可能希望每个部分都成一列。要拆分列，点击列标题中的三角形。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>拆分列</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/split-string-column.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>自动拆分</p></h3>
+  <div>
+  <p>Tableau 根据分隔字符（此处是连字符）自动拆分。你还可以使用自定义拆分（选择 <em>Custom Split…</em>）选择按照不同的字符拆分。拆分过后，每个部分都自成一列。下面是拆分后的效果，你也可以自己试试。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>拆分后</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/post-splitting.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>计算字段</p></h3>
+  <div>
+  <p>在下拉菜单中，你还会看到 <em>Create Calculated Field…</em>。该选项使你能够根据现有列创建新的列。你可以在 Tableau 中体验该功能，或在<a href="https://onlinehelp.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields.html" rel="noopener noreferrer" target="_blank">相关文档</a>中了解详情，我稍后将详细介绍计算字段。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据预览</p></h3>
+  <div>
+  <h3 id="查看数据">查看数据</h3>
+<p>对我来说，经常很有用的功能是在工作表中快速预览数据。如果将光标悬停在某个工作表上方，就会在右侧出现一个图标。点击该图标即可查看数据。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>查看数据</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/view-data-with-arrow.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>查看数据</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p><strong>People</strong> 工作表列出了每个区域的销售人员。哪个销售人员负责加拿大地区？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1474650858611" name="214576" id="a1474650858611">
+        <label for="a1474650858611"><p>Chuck Magee</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474650933378" name="214576" id="a1474650933378">
+        <label for="a1474650933378"><p>Nicole Hansen</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474650934328" name="214576" id="a1474650934328">
+        <label for="a1474650934328"><p>Jack Lebron</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1474650935016" name="214576" id="a1474650935016">
+        <label for="a1474650935016"><p>Deborah Brumfield</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    Nicole Hansen
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连结</p></h3>
+  <div>
+  <h2 id="连结数据">连结数据</h2>
+<p>你经常需要将多个来源的数据整合到一起，例如数据库中的不同表格或 Excel 文件中的工作表。例如，你可能需要包含 <em>People</em> 工作表和 <em>Orders</em> 工作表中的数据，以便分析每名销售人员的业绩。</p>
+<p>在 Tableau 中，你可以将多个工作表拖到顶层面板上。根据你拖到的位置，会出现两种结果：<strong>联合模式</strong>或 <strong>连结模式</strong>。</p>
+<h3 id="联合">联合</h3>
+<p>如果将 <em>People</em> 拖到 <em>Orders</em> 下面，就出现联合效果。联合模式将数据相互堆叠，第二个工作表会附加到第一个工作表的结尾。如果多个工作表的列相同的话，这种方法就很不错，因为列将匹配。但是，如果列不同的话，就会出现很多 “null”，因为为两个工作表都创建了相关列，但是第一个工作表中没有第二个工作表中的某些列。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>联合</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/union.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连结</p></h3>
+  <div>
+  <h3 id="连结">连结</h3>
+<p>如果将第二个工作表或表格拖到顶部面板上，但是没有放在第一个工作表的上方，就会出现连结模式。连结模式不会将数据相互堆叠，而是根据共同值将每个工作表中的数据相结合。在这里，<em>Orders</em> 和 <em>People</em> 都具有列 <strong>Region</strong>，我们可以将其当做共同值。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连结</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/joins.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连结 2</p></h3>
+  <div>
+  <p>Tableau 默认情况下会进行“内连结”。只要有共同值，就会结合数据。所以当 <em>Orders</em> 中的 <strong>Region</strong> 是 “East” 时，就从 <strong>Region</strong> 为”East”的 <em>People</em> 中获取数据。从上图中可以看出，<em>People</em> 中的 <strong>Person</strong> 列添加到了 <em>Orders</em> 中的数据上。</p>
+<p>你可以点击连结符号来更改连结类型。此处，你还可以选择"左连结"("left inner join”)。正常的内连结仅结合共同的数据，但是左连结会返回原始工作表中行不是 <em>null</em> 的数据。</p>
+<p>请务必理解连结概念，因为你将经常组合数据。<a href="https://onlinehelp.tableau.com/current/pro/desktop/en-us/joining_tables.html" rel="noopener noreferrer" target="_blank">此处</a>是关于连结的 Tableau 文档，如果你之前没遇到过连结的话，建议阅读下这篇文章。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>连结测验</p></h3>
+  <div>
+  <p><strong>QUESTION: </strong></p>
+  <p>如果你想将 People 数据与 Orders 数据组合到一起，并且保留 Orders 中没有共同区域的所有记录，你会怎么操作？</p>
+
+  <details>
+    <summary><strong>ANSWER:</strong></summary>
+    <p><p>你会将 People 工作表拖到数据面板上，点击连结符合并选择左连结。</p></p>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="04. 合并数据.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. 连接数据')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

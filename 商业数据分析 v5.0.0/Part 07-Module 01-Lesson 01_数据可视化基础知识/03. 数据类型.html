@@ -1,0 +1,390 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数据类型</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>数据可视化基础知识</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 数据可视化简介.html">01. 数据可视化简介</a>
+    </li>
+    <li class="">
+      <a href="02. 为何使用数据可视化？.html">02. 为何使用数据可视化？</a>
+    </li>
+    <li class="">
+      <a href="03. 数据类型.html">03. 数据类型</a>
+    </li>
+    <li class="">
+      <a href="04. 视觉编码.html">04. 视觉编码</a>
+    </li>
+    <li class="">
+      <a href="05. 练习：视觉编码.html">05. 练习：视觉编码</a>
+    </li>
+    <li class="">
+      <a href="06. 视觉编码的排序.html">06. 视觉编码的排序</a>
+    </li>
+    <li class="">
+      <a href="07. 探索与解释.html">07. 探索与解释</a>
+    </li>
+    <li class="">
+      <a href="08. 数据可视化工具.html">08. 数据可视化工具</a>
+    </li>
+    <li class="">
+      <a href="09. 可视化设计.html">09. 可视化设计</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">03. 数据类型</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>Data Types - Data Visualization and D3.js</p></h3>
+  <video controls>
+  <source src="03. Data Types - Data Visualization and D3.js-ZqRIS9etBqY.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="03. Data Types - Data Visualization and D3.js-ZqRIS9etBqY.zh-CN.vtt" label="zh-CN">
+  <track default="false" kind="subtitles" srclang="ar" src="03. Data Types - Data Visualization and D3.js-ZqRIS9etBqY.ar.vtt" label="ar">
+  <track default="false" kind="subtitles" srclang="pt-BR" src="03. Data Types - Data Visualization and D3.js-ZqRIS9etBqY.pt-BR.vtt" label="pt-BR">
+  <track default="true" kind="subtitles" srclang="en" src="03. Data Types - Data Visualization and D3.js-ZqRIS9etBqY.en.vtt" label="en">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="视频相关的额外资料">视频相关的额外资料</h2>
+<ul>
+<li><a href="https://www.gapminder.org/tools/#_locale_id=en;&chart-type=bubbles" rel="noopener noreferrer" target="_blank">Gapminder上的可视化案例</a></li>
+<li><a href="https://www.youtube.com/watch?v=jbkSRLYSojo" rel="noopener noreferrer" target="_blank">Hans Rosling的 “200个国家、200年、 4 分钟” 的演讲</a></li>
+<li><a href="https://classroom.udacity.com/courses/ud359/lessons/692548568/concepts/6785689350923" rel="noopener noreferrer" target="_blank">不同的数据类型1 - 数值变量</a></li>
+<li><a href="https://www.udacity.com/course/viewer#!/c-ud359/l-692548568/m-678568936" rel="noopener noreferrer" target="_blank">不同的数据类型2 - 分类变量</a></li>
+<li><a href="https://classroom.udacity.com/courses/ud359/lessons/692548568/concepts/6785689370923" rel="noopener noreferrer" target="_blank">不同的数据类型3 - 时间续列变量</a></li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据类型（第一部分）</p></h3>
+  <div>
+  <h2 id="数据类型汇总">数据类型汇总</h2>
+<h3 id="定量">定量</h3>
+<p>定量数据是可以用数字衡量的数据，例如温度、金钱和猫咪的抓痕数。你可以将定量数据分成两组：连续数据和离散数据。<strong>离散</strong>数据只能包含特定的值。例如，交易售出的商品数量只能是正整数，你不可能购买 2.5 个枕头（或 2.5 只猫！）</p>
+<p>连续数据可以是某个范围内的任何值，例如时间、高度或金钱。</p>
+<h3 id="定性">定性</h3>
+<p>定性数据是对事物进行描述的信息，无法用数字量化，例如男性/女性和头发颜色。这些是<strong>分类</strong>数据，表示属于某个类别和组。通常，你需要按照类别对数据分组并进行对比。</p>
+<p>数据还可以是<strong>有序</strong>数据，例如排名和在问卷调查中看到的主观量表，例如“你觉得炸玉米饼怎么样？” </p>
+<ol>
+<li>好恶心！</li>
+<li>不好吃</li>
+<li>还行</li>
+<li>好吃</li>
+<li>很美味！</li>
+</ol>
+<p>你有时候会看到有序数据被编号了（1 到 5），但是这些数字并不表示任何含义。</p>
+<p>这些是你将看到的典型数据类型。你可能会处理图片或文字，这些内容似乎不符合上述类别。但是大部分情况下，你可以将它们转换为数字或类别。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据类型示例</p></h3>
+  <div>
+  <h2 id="以下是到目前为止的总结">以下是到目前为止的总结</h2>
+<ul>
+<li>定量<ul>
+<li>连续<ul>
+<li>时间、高度、重量、金钱、利率、温度</li></ul></li>
+<li>离散<ul>
+<li>出售的数量、会的语言数量、昨天收到的邮件数量</li></ul></li></ul></li>
+<li>定性<ul>
+<li>分类<ul>
+<li>性别、头发颜色、国家/地区、猫咪品种</li></ul></li>
+<li>有序<ul>
+<li>排名、调查问卷问题，例如“你对猫咪有何感受？”<ol>
+<li>讨厌猫咪</li>
+<li>不喜欢</li>
+<li>保持中立</li>
+<li>喜欢</li>
+<li>非常喜欢</li></ol></li></ul></li></ul></li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>流程图</p></h3>
+  <div>
+  <p>下面的流程图可以帮助你明白你的数据归为何种数据类型。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据类型流程图</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/flowchart.001.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>数据类型练习</p></h3>
+  <div>
+  <h3 id="确定正确的数据类型">确定正确的数据类型</h3>
+<p>请查看下面这个示例数据集：</p>
+<p>|调查问卷|    身高（厘米）| 性别| 抓痕（猫咪）<br />
+|----|----|----|----|----|<br />
+|1|    173.57|     F|  1|<br />
+|5    |199.13     |M| 0|<br />
+|4|    186.41|     M|  1|<br />
+|2    |169.98     |F  |3|<br />
+|4|    164.39| F |2|<br />
+|3    |170.67     |M  |5|</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>“性别”数据类型</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p><strong>性别</strong>列是哪个数据类型？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1471299546924" name="214390" id="a1471299546924">
+        <label for="a1471299546924"><p>连续</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1471299547708" name="214390" id="a1471299547708">
+        <label for="a1471299547708"><p>有序</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1471299548245" name="214390" id="a1471299548245">
+        <label for="a1471299548245"><p>分类</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1471299548804" name="214390" id="a1471299548804">
+        <label for="a1471299548804"><p>离散</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    分类
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>身高数据类型</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p><strong>身高</strong>列是哪个数据类型？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1471300179622" name="214391" id="a1471300179622">
+        <label for="a1471300179622"><p>连续</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1471300180318" name="214391" id="a1471300180318">
+        <label for="a1471300180318"><p>有序</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1471300180853" name="214391" id="a1471300180853">
+        <label for="a1471300180853"><p>分类</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1471300181389" name="214391" id="a1471300181389">
+        <label for="a1471300181389"><p>离散</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    连续
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>问卷调查数据类型测验</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p><strong>问卷调查</strong>列是哪个数据类型？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1471300842679" name="214392" id="a1471300842679">
+        <label for="a1471300842679"><p>连续</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1471300844376" name="214392" id="a1471300844376">
+        <label for="a1471300844376"><p>有序</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1471300844951" name="214392" id="a1471300844951">
+        <label for="a1471300844951"><p>分类</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1471300845592" name="214392" id="a1471300845592">
+        <label for="a1471300845592"><p>离散</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    有序
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="04. 视觉编码.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. 数据类型')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
