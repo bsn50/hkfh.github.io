@@ -1,0 +1,349 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>练习：插入和删除</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>电子表格 1：入门</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 简介.html">01. 简介</a>
+    </li>
+    <li class="">
+      <a href="02. 为何要用电子表格？.html">02. 为何要用电子表格？</a>
+    </li>
+    <li class="">
+      <a href="03. 电子表格的优点.html">03. 电子表格的优点</a>
+    </li>
+    <li class="">
+      <a href="04. 入门.html">04. 入门</a>
+    </li>
+    <li class="">
+      <a href="05. 导航：工作表.html">05. 导航：工作表</a>
+    </li>
+    <li class="">
+      <a href="06. 列和行标签.html">06. 列和行标签</a>
+    </li>
+    <li class="">
+      <a href="07. 导航：菜单栏.html">07. 导航：菜单栏</a>
+    </li>
+    <li class="">
+      <a href="08. 菜单栏.html">08. 菜单栏</a>
+    </li>
+    <li class="">
+      <a href="09. 导航：快捷键.html">09. 导航：快捷键</a>
+    </li>
+    <li class="">
+      <a href="10. 填充.html">10. 填充</a>
+    </li>
+    <li class="">
+      <a href="11. 复制数据.html">11. 复制数据</a>
+    </li>
+    <li class="">
+      <a href="12. 练习：复制数据.html">12. 练习：复制数据</a>
+    </li>
+    <li class="">
+      <a href="13. 区域寻址.html">13. 区域寻址</a>
+    </li>
+    <li class="">
+      <a href="14. 区域寻址.html">14. 区域寻址</a>
+    </li>
+    <li class="">
+      <a href="15. 相对与绝对寻址.html">15. 相对与绝对寻址</a>
+    </li>
+    <li class="">
+      <a href="16. 相对与绝对寻址.html">16. 相对与绝对寻址</a>
+    </li>
+    <li class="">
+      <a href="17. 插入和删除.html">17. 插入和删除</a>
+    </li>
+    <li class="">
+      <a href="18. 练习：插入和删除.html">18. 练习：插入和删除</a>
+    </li>
+    <li class="">
+      <a href="19. 保存数据.html">19. 保存数据</a>
+    </li>
+    <li class="">
+      <a href="20. 文件类型.html">20. 文件类型</a>
+    </li>
+    <li class="">
+      <a href="21. 概括.html">21. 概括</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">18. 练习：插入和删除</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="练习：插入和删除">练习：插入和删除</h1>
+<p>在下面的练习中，你将整合学到的关于<strong>插入</strong>和<strong>删除</strong>以及关于<strong>寻址</strong>和<strong>填充</strong>的知识。开始练习前，系统会要求你下载并打开 <code>fruit_stand.xlsx</code>，该文件在本页底部提供下载链接。查找页面底部"辅助材料"，其下方有一个指向 <code>fruit_stand.xlsx</code> 的链接，点击并进行下载。使用你电脑上的电子表格应用程序打开该文件。它看起来应该是这样的：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/fruit-stand.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>通过完成任务来完成练习！</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>下面的列表列出了此练习的一系列步骤。每完成一个步骤，则从列表中划掉一个。任务列表中的小测试见下方。</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="0c5c7c16-4ccd-4521-a675-5a3382dbda46--0">
+        <label for="0c5c7c16-4ccd-4521-a675-5a3382dbda46--0"><p>从“辅助材料”（见页面底部）下载 <code>fruit_stand.xlsx</code> 文件</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="0c5c7c16-4ccd-4521-a675-5a3382dbda46--1">
+        <label for="0c5c7c16-4ccd-4521-a675-5a3382dbda46--1"><p>在你的电子表格应用中打开 <code>fruit_stand.xlsx</code></p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="0c5c7c16-4ccd-4521-a675-5a3382dbda46--2">
+        <label for="0c5c7c16-4ccd-4521-a675-5a3382dbda46--2"><p>删除重复行</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="0c5c7c16-4ccd-4521-a675-5a3382dbda46--3">
+        <label for="0c5c7c16-4ccd-4521-a675-5a3382dbda46--3"><p>在<strong>橙子（Oranges）</strong> 的右侧插入一个标有<strong>桃子（Peaches）</strong> 的列</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="0c5c7c16-4ccd-4521-a675-5a3382dbda46--4">
+        <label for="0c5c7c16-4ccd-4521-a675-5a3382dbda46--4"><p>在<strong>桃子</strong>列单元格中输入值 <strong>2、3、4、2、1</strong></p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="0c5c7c16-4ccd-4521-a675-5a3382dbda46--5">
+        <label for="0c5c7c16-4ccd-4521-a675-5a3382dbda46--5"><p>在<strong>橙子</strong>的价格（Price）下为<strong>桃子</strong>输入价格 <strong>$0.90</strong></p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="0c5c7c16-4ccd-4521-a675-5a3382dbda46--6">
+        <label for="0c5c7c16-4ccd-4521-a675-5a3382dbda46--6"><p>更正<strong>所有水果（All Fruit）</strong> 的计算并<code>填充</code>公式</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="0c5c7c16-4ccd-4521-a675-5a3382dbda46--7">
+        <label for="0c5c7c16-4ccd-4521-a675-5a3382dbda46--7"><p>小测试：所有水果（见下文）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="0c5c7c16-4ccd-4521-a675-5a3382dbda46--8">
+        <label for="0c5c7c16-4ccd-4521-a675-5a3382dbda46--8"><p>更正<strong>收入（Income）</strong> 的计算，并<code>填充</code>公式</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="0c5c7c16-4ccd-4521-a675-5a3382dbda46--9">
+        <label for="0c5c7c16-4ccd-4521-a675-5a3382dbda46--9"><p>小测试：收入（见下文）</p></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>棒极了！你成功使用一些技巧和公式创建了一个电子表格！</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>所有水果</p></h3>
+  <div>
+  <div>
+    <p><strong>QUESTION:</strong> <p>你为 3 号订单计算的<strong>所有水果</strong>的值是多少？</p></p>
+    <div class="" form-group">
+      <label for="answer"><strong>ANSWER:</strong></label>
+      <textarea class="form-control" id="answer"></textarea>
+    </div>
+  </div>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <p><i>These answers need to be solved by yourself, I believe you can do it</i></p>
+
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>收入</p></h3>
+  <div>
+  <div>
+    <p><strong>QUESTION:</strong> <p>你为 5 号订单计算的<strong>收入</strong>值是多少？</p></p>
+    <div class="" form-group">
+      <label for="answer"><strong>ANSWER:</strong></label>
+      <textarea class="form-control" id="answer"></textarea>
+    </div>
+  </div>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <p><i>These answers need to be solved by yourself, I believe you can do it</i></p>
+
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="19. 保存数据.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('18. 练习：插入和删除')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

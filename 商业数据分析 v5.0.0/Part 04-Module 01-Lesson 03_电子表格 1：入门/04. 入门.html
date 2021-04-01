@@ -1,0 +1,247 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>入门</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>电子表格 1：入门</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 简介.html">01. 简介</a>
+    </li>
+    <li class="">
+      <a href="02. 为何要用电子表格？.html">02. 为何要用电子表格？</a>
+    </li>
+    <li class="">
+      <a href="03. 电子表格的优点.html">03. 电子表格的优点</a>
+    </li>
+    <li class="">
+      <a href="04. 入门.html">04. 入门</a>
+    </li>
+    <li class="">
+      <a href="05. 导航：工作表.html">05. 导航：工作表</a>
+    </li>
+    <li class="">
+      <a href="06. 列和行标签.html">06. 列和行标签</a>
+    </li>
+    <li class="">
+      <a href="07. 导航：菜单栏.html">07. 导航：菜单栏</a>
+    </li>
+    <li class="">
+      <a href="08. 菜单栏.html">08. 菜单栏</a>
+    </li>
+    <li class="">
+      <a href="09. 导航：快捷键.html">09. 导航：快捷键</a>
+    </li>
+    <li class="">
+      <a href="10. 填充.html">10. 填充</a>
+    </li>
+    <li class="">
+      <a href="11. 复制数据.html">11. 复制数据</a>
+    </li>
+    <li class="">
+      <a href="12. 练习：复制数据.html">12. 练习：复制数据</a>
+    </li>
+    <li class="">
+      <a href="13. 区域寻址.html">13. 区域寻址</a>
+    </li>
+    <li class="">
+      <a href="14. 区域寻址.html">14. 区域寻址</a>
+    </li>
+    <li class="">
+      <a href="15. 相对与绝对寻址.html">15. 相对与绝对寻址</a>
+    </li>
+    <li class="">
+      <a href="16. 相对与绝对寻址.html">16. 相对与绝对寻址</a>
+    </li>
+    <li class="">
+      <a href="17. 插入和删除.html">17. 插入和删除</a>
+    </li>
+    <li class="">
+      <a href="18. 练习：插入和删除.html">18. 练习：插入和删除</a>
+    </li>
+    <li class="">
+      <a href="19. 保存数据.html">19. 保存数据</a>
+    </li>
+    <li class="">
+      <a href="20. 文件类型.html">20. 文件类型</a>
+    </li>
+    <li class="">
+      <a href="21. 概括.html">21. 概括</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">04. 入门</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="电子表格入门">电子表格入门</h1>
+<p>本课程演示使用 <em>Windows 10 上的 Microsoft Excel 2016 桌面版</em>的功能、工具和技术。如果你没有 Windows Excel 2016，你可以使用其他电子表格应用程序做小测试和练习。尽管函数与公式在各种应用程序中的表现相同，但其中的菜单和工具有时会有较大差异，特别是更为高级的工具，例如<a href="https://en.wikipedia.org/wiki/Box_plot" rel="noopener noreferrer" target="_blank">箱形图</a>。有时弄清楚这些差异很容易，但有疑问时，最好养成在帮助文件中和网上搜索答案的习惯…你会找到大量关于电子表格的信息！</p>
+<h2 id="excel-2016">Excel 2016</h2>
+<p><a href="https://products.office.com/zh-cn/compare-all-microsoft-office-products?tab=1&wt.srch=1&wt.mc_id=AID623587_SEM_5SOqeNbs" rel="noopener noreferrer" target="_blank">Microsoft Office 365 购买信息</a><br />
+<br>有多个价位可供选择。无论你处于什么环境，请确保下载桌面版本。它具有浏览器版本不具备的一些额外功能。注意，Excel 2016 的 Windows 和 Mac 版本<a href="https://thesmartmethod.com/excel-2016-for-mac-vs-excel-2016-for-windows/" rel="noopener noreferrer" target="_blank">是不同的</a>，且 Mac 版本没有箱线图内置功能。还要注意，Excel 免费在线版本的功能有限，<em>不</em>建议用于此课程。<br> 在将 Excel 2016 安装到 PC 或 Mac 上后，你需要加载以下插件：</p>
+<ul>
+<li><a href="https://support.office.com/zh-cn/article/%E5%8A%A0%E8%BD%BD%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E5%BA%93%EF%BC%8C%E5%9C%A8-excel-%E4%B8%AD-6a63e598-cd6d-42e3-9317-6b40ba1a66b4?ui=zh-CN&rs=zh-CN&ad=CN" rel="noopener noreferrer" target="_blank">分析工具库</a>。  </li>
+</ul>
+<h2 id="google-表格">Google 表格</h2>
+<p><a href="https://docs.google.com/spreadsheets/" rel="noopener noreferrer" target="_blank">打开表格的链接</a><br />
+<br>Google 表格是一款免费的电子表格替代品，可通过添加一些附加组件进行改进可使其功能完备。你需要有一个免费的 Google 账户才能开始使用。如果你已经有账户了，上面的链接会将你导航至相应的位置。如果你没有 Google 账户，可点击“更多选项”创建一个。创建好账户后，打开一页空白表并使用“附加组件”菜单将以下功能添加到你的账户中: </p>
+<ul>
+<li><a href="https://www.ablebits.com/google-sheets-add-ons/remove-duplicates/howto.php" rel="noopener noreferrer" target="_blank">删除重复</a></li>
+<li><a href="https://sites.google.com/site/statisticsforspreadsheets/" rel="noopener noreferrer" target="_blank">统计</a></li>
+</ul>
+<p>👆能访问Google的童鞋可以尝试👆</p>
+<h2 id="apple-numbers">Apple Numbers</h2>
+<p><a href="https://www.apple.com/numbers/" rel="noopener noreferrer" target="_blank">有关 Apple Numbers 的信息</a><br />
+<br> 如果你使用的是 Mac，此应用应该已经内置在其中了。我们演示的大多数功能都能在 Numbers 中使用，并且它与 Excel 文件兼容。不过其中似乎没有轻松创建箱线图的方法，但我们会在“可视化数据”课程中介绍。</p>
+<h2 id="开源替代品">开源替代品</h2>
+<p><a href="https://www.openoffice.org/download/" rel="noopener noreferrer" target="_blank">Apache Open Office 下载</a><br />
+<br><a href="https://www.libreoffice.org/download/download/" rel="noopener noreferrer" target="_blank">LibreOffice 下载</a><br />
+<br>Apache Open Office Calc 和 LibreOffice Calc 都是开源免费的。它们会读取 Excel 格式并提供大部分相同的功能。但是，有<a href="https://wiki.openoffice.org/wiki/Documentation/UserGuide/Migration_Guide/Calc_and_Excel" rel="noopener noreferrer" target="_blank">一些重要的区别</a> 要注意，包括公式语法的差异。有些功能，如箱线图，可能需要在网络上搜索解决方案并执行一些步骤来完成。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="05. 导航：工作表.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. 入门')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
