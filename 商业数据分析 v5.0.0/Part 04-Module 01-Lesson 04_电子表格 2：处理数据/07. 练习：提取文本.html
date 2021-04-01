@@ -1,0 +1,465 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>练习：提取文本</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>电子表格 2：处理数据</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 简介.html">01. 简介</a>
+    </li>
+    <li class="">
+      <a href="02. 单元格公式.html">02. 单元格公式</a>
+    </li>
+    <li class="">
+      <a href="03. 练习：电子表格函数.html">03. 练习：电子表格函数</a>
+    </li>
+    <li class="">
+      <a href="04. SUBSTITUTE 函数.html">04. SUBSTITUTE 函数</a>
+    </li>
+    <li class="">
+      <a href="05. 练习：SUBSTITUTE 函数.html">05. 练习：SUBSTITUTE 函数</a>
+    </li>
+    <li class="">
+      <a href="06. 提取文本.html">06. 提取文本</a>
+    </li>
+    <li class="">
+      <a href="07. 练习：提取文本.html">07. 练习：提取文本</a>
+    </li>
+    <li class="">
+      <a href="08. 调整文本格式.html">08. 调整文本格式</a>
+    </li>
+    <li class="">
+      <a href="09. 练习：UPPER、LOWER 和 PROPER 函数.html">09. 练习：UPPER、LOWER 和 PROPER 函数</a>
+    </li>
+    <li class="">
+      <a href="10. 数学函数.html">10. 数学函数</a>
+    </li>
+    <li class="">
+      <a href="11. 练习：数学函数.html">11. 练习：数学函数</a>
+    </li>
+    <li class="">
+      <a href="12. 重复行.html">12. 重复行</a>
+    </li>
+    <li class="">
+      <a href="13. 练习：重复行.html">13. 练习：重复行</a>
+    </li>
+    <li class="">
+      <a href="14. 拆分列.html">14. 拆分列</a>
+    </li>
+    <li class="">
+      <a href="15. 练习：拆分列.html">15. 练习：拆分列</a>
+    </li>
+    <li class="">
+      <a href="16. 数据排序.html">16. 数据排序</a>
+    </li>
+    <li class="">
+      <a href="17. 练习：数据排序.html">17. 练习：数据排序</a>
+    </li>
+    <li class="">
+      <a href="18. 筛选数据.html">18. 筛选数据</a>
+    </li>
+    <li class="">
+      <a href="19. 练习：筛选数据.html">19. 练习：筛选数据</a>
+    </li>
+    <li class="">
+      <a href="20. 概括.html">20. 概括</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">07. 练习：提取文本</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="练习：提取文本">练习：提取文本</h1>
+<p>在下面的练习中，结合你学到的关于 <strong>FIND</strong> 和 <strong>MID</strong> 函数的知识，提取一系列句子中首次出现 "data" 一词时<em>其后</em> 的第一个单词。比如，在下面这个句子里，你的目标单词为 "is"：</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/extract1.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>由于此次是从文本字符串的中间提取内容，因此你要使用 <strong>MID</strong> 函数和以下语法：</p>
+<pre><code class="text language-text">MID(text, start_num, num_chars)
+text     
+         包含你要提取的字符的文本字符串
+start_num    
+         你要在文本中提取的第一个字符的位置
+num_chars
+         你希望 MID 从文本中返回字符的个数</code></pre>
+<p>想想如何解决这个问题。在使用 <strong>MID</strong> 函数之前，你需要先<strong>查找（FIND）</strong> data 一词后的第一个单词，并确定其中的字符个数。要确定目标单词中的字符个数，你还要<strong>查找（FIND）</strong>目标单词之后的空格。目标单词的大小将等于它之后的空格的位置减去目标单词的开始位置。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/extract2.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>此练习将带你一步步使用中间公式获得最终答案。当在每列顶部单元格中找到正确的公式，你便可以对后面所给的所有例子“自动填充公式”（或复制）单元格。</p>
+<p>提醒一下，这里是使用 <strong>FIND</strong> 函数的语法:</p>
+<pre><code class="text language-text">FIND(find_text, within_text, [start_num])
+find_text    
+         你想查找的文本
+within_text   
+         包含你要查找文本的文本
+start_num    
+         可选 - 开始搜索的字符位置    </code></pre>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <div>
+    <h4>Task Description:</h4>
+    <p>下面的列表列出了此练习的一系列步骤。每完成一步，就将其从列表中划掉。任务列表中的练习见下文。</p>
+  </div>
+
+  <form>
+    <fieldset>
+      <legend>Task List:</legend>
+
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--0">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--0"><p>从资源（参见页面底部的"辅助材料"）下载 <code>extract_text.xlsx</code> 文件</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--1">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--1"><p>在你的电子表格应用中打开 <code>extract_text.xlsx</code></p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--2">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--2"><p>使用 <strong>FIND</strong> 函数创建一个公式，并在Sentence文本中查找单词 "data" 的首字母位置(并自动充填公式)。</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--3">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--3"><p>练习：首个 "data" 的位置（见下文）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--4">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--4"><p>使用 <strong>FIND</strong> 函数创建公式，来查找目标单词第一个字母的位置（并自动填充公式）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--5">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--5"><p>练习：目标单词位置（见下文）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--6">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--6"><p>创建一个公式来找到目标单词后的第一个空格（并自动填充公式）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--7">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--7"><p>创建一个公式来确定目标单词的长度（并自动填充公式）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--8">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--8"><p>练习：目标单词长度（见下文）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--9">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--9"><p>使用 <strong>MID</strong> 函数创建一个公式来输出目标单词（并自动填充公式）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--10">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--10"><p>练习：目标单词（见下文）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--11">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--11"><p>创建一个仅依赖原始文本字符串的单个公式（并自动填充公式）</p></label>
+      </div>
+      <div>
+        <input type="checkbox" id="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--12">
+        <label for="f8233ce2-5b13-42c4-9c9a-b4d3de11e8b8--12"><p>练习：嵌套公式（见下文）</p></label>
+      </div>
+    </fieldset>
+  </form>
+
+  <div>
+    <h4>Task Feedback:</h4>
+
+
+    <p>恭喜！这个练习有点难度，但你搞定了！！！</p>
+  </div>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>首个 "data" 的位置</p></h3>
+  <div>
+  <div>
+    <p><strong>QUESTION:</strong> <p>第六行句子的首个 "data" 的位置在哪里？</p></p>
+    <div class="" form-group">
+      <label for="answer"><strong>ANSWER:</strong></label>
+      <textarea class="form-control" id="answer"></textarea>
+    </div>
+  </div>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <p><i>These answers need to be solved by yourself, I believe you can do it</i></p>
+
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>目标单词位置</p></h3>
+  <div>
+  <div>
+    <p><strong>QUESTION:</strong> <p>第 5 行中目标单词的第一个字母的位置在哪里？</p></p>
+    <div class="" form-group">
+      <label for="answer"><strong>ANSWER:</strong></label>
+      <textarea class="form-control" id="answer"></textarea>
+    </div>
+  </div>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <p><i>These answers need to be solved by yourself, I believe you can do it</i></p>
+
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>目标单词长度</p></h3>
+  <div>
+  <div>
+    <p><strong>QUESTION:</strong> <p>第 3 行中的目标单词多长？</p></p>
+    <div class="" form-group">
+      <label for="answer"><strong>ANSWER:</strong></label>
+      <textarea class="form-control" id="answer"></textarea>
+    </div>
+  </div>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <p><i>These answers need to be solved by yourself, I believe you can do it</i></p>
+
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>目标单词</p></h3>
+  <div>
+  <div>
+    <p><strong>QUESTION:</strong> <p>列出找到的九个目标单词，用空格分隔（请勿使用逗号或其他标点符号！）</p></p>
+    <div class="" form-group">
+      <label for="answer"><strong>ANSWER:</strong></label>
+      <textarea class="form-control" id="answer"></textarea>
+    </div>
+  </div>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <p><i>These answers need to be solved by yourself, I believe you can do it</i></p>
+
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>嵌套公式</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>以下哪个 <strong>G2</strong> 的公式会计算目标单词，并只取决于原文？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1503431267713" name="390224" id="a1503431267713">
+        <label for="a1503431267713"><p>=MID(A2,C2,D2-C2)</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1503431488858" name="390224" id="a1503431488858">
+        <label for="a1503431488858"><p>=MID(A2,FIND(" ",A2,B2)+1,E2)</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1503431536478" name="390224" id="a1503431536478">
+        <label for="a1503431536478"><p>=MID(A2,FIND(" ",A2,FIND("data",A2))+1,FIND(" ",A2,(FIND(" ",A2,FIND("data",A2))+1))-(FIND(" ",A2,FIND("data",A2))+1))</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1503431556806" name="390224" id="a1503431556806">
+        <label for="a1503431556806"><p>="this"</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    =MID(A2,FIND(" ",A2,FIND("data",A2))+1,FIND(" ",A2,(FIND(" ",A2,FIND("data",A2))+1))-(FIND(" ",A2,FIND("data",A2))+1))
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="08. 调整文本格式.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('07. 练习：提取文本')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
