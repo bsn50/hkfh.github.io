@@ -1,0 +1,213 @@
+{
+  "data": {
+    "lesson": {
+      "id": 702772,
+      "key": "94778dd8-ced4-4310-bde6-6d7141a348fb",
+      "title": "基于零售数据挖掘业务特征",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "en-us",
+      "summary": "你将作为一名商业分析师对一家食品零售商的数据进行分析。你需要选择业务中的一个具体领域，比如顾客、供应商、产品、雇员，提供一个与该领域相关信息的演示文稿。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": null,
+      "project": {
+        "key": "1d9cea1d-e769-4c48-a666-f494df707256",
+        "version": "1.0.0",
+        "locale": "zh-cn",
+        "duration": 40320,
+        "semantic_type": "Project",
+        "title": "基于零售数据挖掘业务特征",
+        "description": "要提交你的项目，请执行以下操作：\n\n* 根据[项目审阅标准](https://review.udacity.com/#!/rubrics/2009/view)检查你的项目是否符合要求。审阅专家将按照审阅标准来评估你交付的项目。\n* 使用你喜欢的任何一种演示软件（如 Google 幻灯片，PowerPoint，Keynote等）创建幻灯片。\n\n要查看演示文稿，你需要将幻灯片另存为PDF格式。你可以通过选择 File > Download as > PDF Document，在 Google 幻灯片中执行此操作。\n\n* 使用用于创建可视化的每个SQL查询创建一个单独的文本文件。\n* 将演示文稿另存为 PDF，同时，将文本文件(.txt)格式的SQL查询保存在同一文件夹中。\n\n* 将该文件夹进行压缩，并提交此压缩文件夹，其中包含上述两个文件。\n* 提交该压缩文件。\n",
+        "is_public": true,
+        "summary": null,
+        "forum_path": "",
+        "rubric_id": "2009",
+        "terminal_project_id": null,
+        "resources": null,
+        "image": null
+      },
+      "lab": null,
+      "concepts": [
+        {
+          "id": 645426,
+          "key": "799dc34c-b61b-4506-a606-957e91d591b3",
+          "title": "建立数据库",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "799dc34c-b61b-4506-a606-957e91d591b3",
+            "completed_at": "2019-01-29T06:55:28.996Z",
+            "last_viewed_at": "2019-11-10T14:22:41.397Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Northwind Database",
+                "uri": "https://video.udacity-data.com/topher/2017/April/58eece4c_northwind/northwind.sqlite3"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 645423,
+              "key": "dbf03b13-6208-460b-8545-ee633e0856fc",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 让我们首先来设置一下你的本地环境吧\n\n在教室里开始学习 SQL 是完全没问题的，但要想真正掌握技能，最好的方法是学会本地环境设置，并学习在自己的环境中处理问题。\n\n接下来的几个问题将有助于帮你顺利完成本地设置。完成设置后，你就可以使用这个工作区了，不仅仅是在这个项目中，以后都可以使用哦！\n\n对于我们要使用的环境，非常快就可以完成设置，所以希望你能够马上搞定并运行起来:) \n\n你需要做的就是......\n\n* 下载新数据库\n* 下载 DB Browser for SQLite\n\n将 DB Broswer for SQLite 连接到你的新数据库后，你就可以开始进行下一页任务了！\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 645424,
+              "key": "3485b596-e66e-461d-a52a-3cf3e5621283",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 下载 DB Browser for SQLite\n\n对于不同类型的数据库，可以使用的数据库浏览器也有很多。在本课程中，我们将使用 DB Browser for SQLite。当然了，你也可能使用其他类似的浏览工具。\n\nDB Browser for SQLite 可以在这里下载: http://sqlitebrowser.org/\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 645425,
+              "key": "10b3afa8-15c1-4904-9744-4ad66286546f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 下载数据库\n\n你可以从页面下方下载我们将在此项目中使用的数据库。\n\n## 将 Browser 与数据库连接起来\n\n下面是具体步骤：\n* 打开 DB Browser to SQLite\n* 点击 *Open Database*\n* 导航到 Northwind.sqlite3 文件 (可能在你的下载文件中)\n* 点击 *Execute SQL*\n* 开始查询数据",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 645434,
+          "key": "861c1fe6-d1b4-49b5-bf6a-8bda3569371b",
+          "title": "项目说明",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "861c1fe6-d1b4-49b5-bf6a-8bda3569371b",
+            "completed_at": "2019-01-30T14:48:08.671Z",
+            "last_viewed_at": "2019-11-10T14:22:56.864Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "Northwind Database",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58eece4c_northwind/northwind.sqlite3"
+              },
+              {
+                "name": "All Project Files",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/April/58f1535e_project2-3/project2-3.zip"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 645431,
+              "key": "c03ca447-31ed-495b-90ce-41bc156fc86b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 数据库查询\n## 学习目标\n学员应学会查询关系数据库并提取所需信息。\n学员应学会编写包含连接、聚合与子查询的SQL查询命令。\n学员应学会通过数据可视化有效地展示他们的分析。\n\n## 业务场景\n这里有一家经营各种食品批发的批发商，而是你是这家批发商的商业智能分析师。你负责将分析仪表板放在一起进行管理。他们要求你专注于其业务的一个维度，并创建一个仪表板，提供与该维度相关的各种汇总统计信息。\n\n选择下面的一个维度，然后使用可视化创建一个演示文稿，该演示文稿需要提供有关该维度的高级摘要信息。\n\n* 客户\n* 供应商\n* 产品\n* 雇员\n\n下面是帮助你进行分析的几个问题：\n* 我的客户分布在哪里？\n* 哪些公司在供应我销售的大部分产品？\n* 表现最好的员工是谁？\n* 哪些产品的销售额在增长？\n\n## 数据库\n你将使用的是一个名为 Northwind.sqlite3 的数据库。但是，如果你使用的是 DB Browser for SQLite，请按照如下步骤操作：\n* 点击界面上方的 open database。  \n* 找到并打开 Northwind.sqlite3 数据库文件。\n* 花一些时间来浏览并看懂这些数据。\n\n## 项目提交 \n#### 可视化\n我们建议你使用电子表格应用程序（如Excel或Google表格）来创建可视化。当然了，我们也欢迎你使用你喜欢的任何一种工具。\n\n要从 DB Browser 中导出查询结果，请使用查询结果窗口右下方的按钮。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 645427,
+              "key": "6a838669-cdc1-4056-9022-15e1c53349f2",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/April/58ebe750_db-browser-csv-export/db-browser-csv-export.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6a838669-cdc1-4056-9022-15e1c53349f2",
+              "caption": "",
+              "alt": null,
+              "width": 1980,
+              "height": 1031,
+              "instructor_notes": null
+            },
+            {
+              "id": 645428,
+              "key": "6b6bcf46-42ae-4c7a-9316-cef210f36b71",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "选择 Export to CSV，然后选择与以下内容相匹配的设置。请注意，** New line characters **需要设置为`Unix: LF(\\n)`。 \n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 645430,
+              "key": "11f654f3-b4ec-420a-887d-65b99787b4fb",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/April/58ec1d34_db-browser-csv-export-2/db-browser-csv-export-2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/11f654f3-b4ec-420a-887d-65b99787b4fb",
+              "caption": "",
+              "alt": null,
+              "width": 688,
+              "height": 435,
+              "instructor_notes": null
+            },
+            {
+              "id": 645432,
+              "key": "d5b0dc73-f9cc-496f-b4e8-9fda1748f219",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 演示文稿\n你的演示文稿应包含以下内容：\n* 四到五张幻灯片\n* 每张幻灯片对应一个可视化\n* 每张幻灯片都需要有 1-2 句话的说明\n* 需要包含可视化中用于创建数据的 SQL 查询。\n\n提交文件的模板是 Google 幻灯片文件。请参照提交模板，完成你的项目。我们建议你使用模板中的布局，当然了，也可以使用其他布局。\n\n#### 查询\n请包含一个文本文件，该文件需要包含用于创建可视化的每个查询。\n\n**将你的文本文件与演示文稿放在一个文件夹中并进行压缩，然后提交该压缩文件夹**\n \n<center><a href=\"https://drive.google.com/open?id=1l6NMD_m4J4Mfb2wd4WP_x2hwCkCZ5-isWhGan2SIURg\" target=\"_blank\"><button style=\"box-sizing: border-box; border-radius: 4px; background: #02B3E4; border: none; height: 44px; padding: 0 25px; color: white; cursor: pointer; font-family: Open Sans,sans-serif; display: inline-block; border: none; font-size: 12px; letter-spacing: 1px; font-weight: 600; text-transform: uppercase;\">Submission Template</button></a></center>\n\n#### 其他说明\n\n* 查询输出和可视化之间不应有任何额外的数据准备（排序、过滤、重命名等）。\n* 你的所有四个查询都必须包含连接与聚合。\n* 至少应有一个查询包含子查询。\n* 根据[项目审阅标准](https://review.udacity.com/#!/rubrics/2009/view)检查你的项目是否符合要求。审阅专家将按照审阅标准来评估你交付的项目。\n* 完成项目后，将 PDF 格式的演示文稿与 txt 格式的查询文件打包到一个压缩文件夹中，然后进行提交。\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 645433,
+          "key": "a511767a-486e-47ba-8046-541baf80ea93",
+          "title": "不同的 Date 函数",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a511767a-486e-47ba-8046-541baf80ea93",
+            "completed_at": "2019-01-30T14:48:01.438Z",
+            "last_viewed_at": "2019-12-08T17:34:10.075Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 645429,
+              "key": "bd886437-8241-4d08-9cec-d00c73eccd67",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# [SQLite (用于此项目) 与 Postgres中的Date函数不同 (用于课堂)](https://sqlite.org/lang_datefunc.html) \n\n在这个项目中，你使用的语法与课堂上的SQL语法略有不同。虽然大多数命令和逻辑都是一样的，但SQLite（用于此项目）和PostgreSQL（用于课堂）之间存在一些差异。具体而言，这些差异可能会影响到Date函数的表示。 \n\nPostgres SQL DATE_TRUNC\n\n```\nSELECT DATE_TRUNC('month', o.occurred_at) ord_date\nFROM orders o \n```\n这个查询命令只会返回查询结果中日期字段的年份和月份数据\n\nSQLite 中的 DATE_TRUNC 是 STRFTIME\n```\nSELECT STRFTIME('%Y-%m', o.occurred_at) ord_date\nFROM orders o\n```\n这个查询命令只会返回查询结果中日期字段的年份和月份数据。在SQLite中，我们必须更精确地描述日期格式，因为它会返回指定的所有信息。因此，我们需要通过将最终表中所需日期的部分放在单引号中来指定查询结果。\n\n对于此查询，我们想要的只是年份和月份。其中，%Y代表年份，%m代表月份。以下是完整列表。\n\n%d - day of month: 00\n\n%f - fractional seconds: SS.SSS\n\n%H - hour: 00-24\n\n%j - day of year: 001-366\n\n%J - Julian day number\n\n%m - month: 01-12\n\n%M - minute: 00-59\n\n%s - seconds since 1970-01-01\n\n%S - seconds: 00-59\n\n%w - day of week 0-6 with Sunday==0\n\n%W - week of year: 00-53\n\n%Y - year: 0000-9999\n\nPostgres SQL DATE_PART\n```\nSELECT DATE_PART('month', occurred_at) ord_year\nFROM orders\n```\n这个查询命令只会返回查询结果中日期字段的月份数据\n\nSQLite version of DATE_PART is STRFTIME\n```\nSELECT STRFTIME('%m', o.occurred_at) ord_date\nFROM orders o \n```\n由于我们只想拉出月份数据，因此可以指定在 SQLite 中使用相同的 STRFTIME 函数，我们只需使用 %+字母 来指定我们想要的那部分数据。所以，在这里我们必须使用'%m '而不是'month'。\n\n以下是一些有用的链接，可以帮助你在 SQLite 中处理日期数据：\n* https://www.techonthenet.com/sqlite/functions/strftime.php\n* https://sqlite.org/lang_datefunc.html  \n\n可能你在将来会使用其他 SQL 环境，如 Microsoft SQL Server，Oracle，MySQL 或任何其他 SQL 环境，也可能会再次出现细微的差异。但只要掌握了现在的技能，尝试一下 Google 搜索吧，它会帮助你快速了解你要使用的任何一个环境。\n\n",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

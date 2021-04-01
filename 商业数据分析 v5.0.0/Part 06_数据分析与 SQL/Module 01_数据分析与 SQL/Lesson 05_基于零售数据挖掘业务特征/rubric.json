@@ -1,0 +1,172 @@
+{
+  "id": 2009,
+  "project_id": 296,
+  "upload_types": [
+    "repo",
+    "zip"
+  ],
+  "file_filter_regex": "\\A(?!(((.*/)?(__MACOSX|\\.git|node_modules|bower_components|jspm_packages|\\.idea|build|.ipynb_checkpoints|\\.Trash-0|logs)(\\Z|/))))((.*\\.(css|docx|gradle|htm|html|java|js|markdown|md|pdf|py|rmd|rst|sql|swift|txt|xml|yaml|yml)\\Z)|((.*/)?(README|Readme|readme|Makefile)\\Z))",
+  "nomination_eligible": false,
+  "stand_out": "为了让你的项目脱颖而出，请参考以下几点建议：\n\n* 通过数据寻找有趣的模式与见解，而不是简单地进行概要统计。\n* 使用本课程中未讲授的其他高级 SQL 函数，如**case**函数。\n* 在可视化中充分利用颜色、大小与形状。\n* 利用每张幻灯片上的幻灯片标题和/或图表描述来阐述可视化中的主要见解。\n",
+  "hide_criteria": false,
+  "created_at": "2018-06-12T03:21:53.377Z",
+  "updated_at": "2019-03-28T09:57:32.926Z",
+  "hashtag": "",
+  "max_upload_size_mb": 500,
+  "estimated_sla": null,
+  "project_assistant_enabled": false,
+  "available_for_cert_project": false,
+  "language": "zh-cn",
+  "ndkeys": [
+    "nd100-cn",
+    "nd002-cn-svip",
+    "nd002-cn-advanced"
+  ],
+  "coursekeys": [],
+  "is_career": false,
+  "sections": [
+    {
+      "id": 4374,
+      "name": "SQL 查询",
+      "created_at": "2018-07-30T03:06:18.879Z",
+      "updated_at": "2018-08-03T03:55:14.359Z",
+      "deleted_at": null,
+      "position": 0,
+      "rubric_id": 2009,
+      "rubric_items": [
+        {
+          "id": 12745,
+          "section_id": 4374,
+          "passed_description": "所有的 SQL 查询在执行时都没有出现错误。\n",
+          "exceeded_description": null,
+          "created_at": "2018-07-30T03:06:47.826Z",
+          "updated_at": "2018-08-03T03:55:14.369Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "学员编写的 SQL 查询中，没有出现错误。",
+          "exceedable": false
+        },
+        {
+          "id": 12746,
+          "section_id": 4374,
+          "passed_description": "每个 SQL 查询都需要包含一个或多个连接。",
+          "exceeded_description": null,
+          "created_at": "2018-07-30T03:07:16.305Z",
+          "updated_at": "2018-08-03T03:55:14.378Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "学员可以在 SQL 查询中正确地使用连接。",
+          "exceedable": false
+        },
+        {
+          "id": 12747,
+          "section_id": 4374,
+          "passed_description": "每个 SQL 查询都需要包含一个或多个聚合。",
+          "exceeded_description": null,
+          "created_at": "2018-07-30T03:07:40.113Z",
+          "updated_at": "2018-08-03T03:55:14.385Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "学员可以在 SQL 查询中正确地使用聚合。",
+          "exceedable": false
+        },
+        {
+          "id": 12748,
+          "section_id": 4374,
+          "passed_description": "至少一个 SQL 查询包含子查询。\n",
+          "exceeded_description": null,
+          "created_at": "2018-07-30T03:07:41.744Z",
+          "updated_at": "2018-10-24T03:41:47.586Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 3,
+          "criteria": "学员可以在 SQL 查询中正确地使用子查询。",
+          "exceedable": false
+        },
+        {
+          "id": 12750,
+          "section_id": 4374,
+          "passed_description": "学员在其提交的项目中至少使用了 4 个唯一 SQL 查询。",
+          "exceeded_description": null,
+          "created_at": "2018-07-30T03:08:35.923Z",
+          "updated_at": "2018-08-03T03:55:14.398Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 4,
+          "criteria": "学员可以通过使用 SQL 回答多个问题。",
+          "exceedable": false
+        }
+      ]
+    },
+    {
+      "id": 4375,
+      "name": "演示文稿",
+      "created_at": "2018-07-30T03:09:05.416Z",
+      "updated_at": "2018-08-03T03:55:14.406Z",
+      "deleted_at": null,
+      "position": 1,
+      "rubric_id": 2009,
+      "rubric_items": [
+        {
+          "id": 12751,
+          "section_id": 4375,
+          "passed_description": "提交的幻灯片组织有序，逻辑条理。每张幻灯片都有一个标题，可视化描述中没有严重的拼写错误与语法错误。",
+          "exceeded_description": null,
+          "created_at": "2018-07-30T03:09:42.786Z",
+          "updated_at": "2018-09-15T03:45:01.107Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 0,
+          "criteria": "学员提交的幻灯片组织有序，易于阅读与理解。",
+          "exceedable": false
+        },
+        {
+          "id": 12752,
+          "section_id": 4375,
+          "passed_description": "所有的可视化都能够提供同一指定维度（比如：客户、供应商、产品、雇员）的一些信息。",
+          "exceeded_description": null,
+          "created_at": "2018-07-30T03:10:09.149Z",
+          "updated_at": "2018-09-15T03:51:02.743Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 1,
+          "criteria": "学员知道如何创建用于提供有用信息的数据可视化。",
+          "exceedable": false
+        },
+        {
+          "id": 12753,
+          "section_id": 4375,
+          "passed_description": "所有可视化都应包括标题与轴标签，并在适当的地方附有图例，且易于理解。",
+          "exceeded_description": null,
+          "created_at": "2018-07-30T03:10:32.013Z",
+          "updated_at": "2018-08-03T03:55:14.431Z",
+          "deleted_at": null,
+          "optional": false,
+          "position": 2,
+          "criteria": "学员可以为数据可视化编排清晰的格式，并充分利用标签。",
+          "exceedable": false
+        }
+      ]
+    }
+  ],
+  "project": {
+    "id": 296,
+    "name": "Create Reports from a Database",
+    "nanodegree_key": "nd008",
+    "is_cert_project": false,
+    "audit_project_id": null,
+    "hashtag": null,
+    "audit_rubric_id": 2899,
+    "entitlement_required": null,
+    "is_career": null,
+    "recruitment_family_id": 8,
+    "created_at": "2017-04-12T00:15:21.443Z",
+    "updated_at": "2020-05-20T22:01:04.970Z",
+    "price": "5.0",
+    "ungradeable_price": "3.0",
+    "audit_price": "0.0"
+  }
+}
