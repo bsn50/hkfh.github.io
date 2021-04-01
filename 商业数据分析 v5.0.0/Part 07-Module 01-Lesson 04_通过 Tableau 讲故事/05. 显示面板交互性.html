@@ -1,0 +1,202 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>显示面板交互性</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>通过 Tableau 讲故事</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 用数据表达观点.html">01. 用数据表达观点</a>
+    </li>
+    <li class="">
+      <a href="02. 探索数据.html">02. 探索数据</a>
+    </li>
+    <li class="">
+      <a href="03. 与 Trina 一起深入了解 Tableau.html">03. 与 Trina 一起深入了解 Tableau</a>
+    </li>
+    <li class="">
+      <a href="04. 构建显示面板.html">04. 构建显示面板</a>
+    </li>
+    <li class="">
+      <a href="05. 显示面板交互性.html">05. 显示面板交互性</a>
+    </li>
+    <li class="">
+      <a href="06. 设定格式.html">06. 设定格式</a>
+    </li>
+    <li class="">
+      <a href="07. 故事.html">07. 故事</a>
+    </li>
+    <li class="">
+      <a href="08. 深入学习.html">08. 深入学习</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">05. 显示面板交互性</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>概要</p></h3>
+  <div>
+  <h1 id="显示面板交互性">显示面板交互性</h1>
+<p>能够轻松地添加交互式功能是我最喜欢的 Tableau 功能之一。你已经看过如何从一个视图上创建过滤器并应用到其他视图上。操作使你能够在显示面板中过滤数据、突出显示数据或创建 URL 链接。请观看此 <a href="http://www.tableau.com/learn/tutorials/on-demand/dashboard-interactivity-using-actions" rel="noopener noreferrer" target="_blank">Tableau 教程视频</a>，了解如何创建操作。更多详情请参阅此<a href="http://onlinehelp.tableau.com/current/pro/desktop/en-us/help.htm#actions.html" rel="noopener noreferrer" target="_blank">操作文档</a>。</p>
+<p>观看教程，然后回答关于我创建的<a href="https://public.tableau.com/shared/T2YMK9CX2?:display_count=yes" rel="noopener noreferrer" target="_blank">此显示面板</a>的以下问题。在此显示面板中，我创建了一个突出显示操作，你可以将光标悬停在地图或散布图上，触发突出显示操作。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>思考</p></h3>
+  <div>
+  <p><strong>QUESTION: </strong></p>
+  <p>你是如何创建此操作的？</p>
+
+  <details>
+    <summary><strong>ANSWER:</strong></summary>
+    <p><p>我将所有工作表移到了显示面板中，然后转到 Dashboards &gt; Actions。对于来源工作表，我选择“Orders Map”、“Profit v Quantity”和“Run on action: Hover”。对于目标工作表，我选择“Profit v Quantity”和"Sales over time”。</p></p>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="06. 设定格式.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('05. 显示面板交互性')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

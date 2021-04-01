@@ -1,0 +1,283 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>构建显示面板</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>通过 Tableau 讲故事</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 用数据表达观点.html">01. 用数据表达观点</a>
+    </li>
+    <li class="">
+      <a href="02. 探索数据.html">02. 探索数据</a>
+    </li>
+    <li class="">
+      <a href="03. 与 Trina 一起深入了解 Tableau.html">03. 与 Trina 一起深入了解 Tableau</a>
+    </li>
+    <li class="">
+      <a href="04. 构建显示面板.html">04. 构建显示面板</a>
+    </li>
+    <li class="">
+      <a href="05. 显示面板交互性.html">05. 显示面板交互性</a>
+    </li>
+    <li class="">
+      <a href="06. 设定格式.html">06. 设定格式</a>
+    </li>
+    <li class="">
+      <a href="07. 故事.html">07. 故事</a>
+    </li>
+    <li class="">
+      <a href="08. 深入学习.html">08. 深入学习</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">04. 构建显示面板</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>显示面板</p></h3>
+  <div>
+  <h1 id="显示面板">显示面板</h1>
+<p>显示面板用来将多个表格收集到一起表达一种想法。例如，<a href="http://www.tableau.com/stories/gallery/sales-and-opportunities" rel="noopener noreferrer" target="_blank">这是一个</a>关于 Salesforce 数据中销售机会的显示面板示例。可以从该显示面板中看出，点击某个视图会过滤掉其他视图中的数据。这是其中一个非常棒的交互式功能，使你能够让查看者探索你的数据。显示面板还适合根据各种视图构建报表，从而追踪每天或每周的工作。</p>
+<p>Tableau 在他们的<a href="https://public.tableau.com/en-us/s/gallery" rel="noopener noreferrer" target="_blank">库</a>中提供了大量出色的显示面板。可以查看这些显示面板并寻找灵感。</p>
+<p>要创建新的显示面板，点击底部工具栏中的“New Dashboard”按钮。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/new-dashboard-button.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>这样就可以调出显示面板界面。你可以通过将工作表从左侧工具栏拖到画布上，创建显示面板。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/dashboard-interface.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Tableau 录制了关于如何构建显示面板的大量实用教程视频：</p>
+<ul>
+<li><a href="http://www.tableau.com/learn/tutorials/on-demand/getting-started-dashboards-and-stories" rel="noopener noreferrer" target="_blank">显示面板和故事使用入门</a></li>
+<li><a href="http://www.tableau.com/learn/tutorials/on-demand/building-dashboard" rel="noopener noreferrer" target="_blank">构建显示面板</a></li>
+</ul>
+<p>请观看这些视频，然后继续回到此处。此外，<a href="http://onlinehelp.tableau.com/current/pro/desktop/en-us/help.htm#dashboards.html%3FTocPath%3DPresent%2520Your%2520Work%7CDashboards%7C_____0" rel="noopener noreferrer" target="_blank">这篇关于显示面板的文章</a>提供了更多的信息。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>第二部分</p></h3>
+  <div>
+  <p>这是<a href="https://public.tableau.com/views/Dashboardexample_2/Dashboard1?:embed=y&:display_count=yes" rel="noopener noreferrer" target="_blank">我创建的一个显示面板</a>。你将回答几个问题，说说如何创建该显示面板，你可以在<a href="https://s3.amazonaws.com/content.udacity-data.com/courses/ud1006/Dashboard+example+sheets+only.twbx" rel="noopener noreferrer" target="_blank">此处下载</a>相关工作簿或使用公共显示面板。注意，你可以通过点击地图按国家过滤。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>问题 1</p></h3>
+  <div>
+  <p><strong>QUESTION: </strong></p>
+  <p>如何将销量条形图放到显示面板中？</p>
+
+  <details>
+    <summary><strong>ANSWER:</strong></summary>
+    <p><p>将条形图工作表拖到显示面板画布上。</p></p>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>问题 2</p></h3>
+  <div>
+  <p><strong>QUESTION: </strong></p>
+  <p>你是如何将地图工作表放到条形图下方，并填满整个空间？</p>
+
+  <details>
+    <summary><strong>ANSWER:</strong></summary>
+    <p><p>将地图工作表拖到条形图下方，系统将显示一个填满下半部分的灰色方框。你应该将 Size 选项改为“Automatic”，并将“Number of Orders”图例设为悬浮型，并从右侧拖到地图上。</p></p>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>问题 3</p></h3>
+  <div>
+  <p><strong>QUESTION: </strong></p>
+  <p>如何在地图上创建过滤器，并应用到条形图上？</p>
+
+  <details>
+    <summary><strong>ANSWER:</strong></summary>
+    <p><p>在地图视图上打开菜单，然后选择"Use as filter”。</p></p>
+  </details>
+</div>
+
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="05. 显示面板交互性.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('04. 构建显示面板')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

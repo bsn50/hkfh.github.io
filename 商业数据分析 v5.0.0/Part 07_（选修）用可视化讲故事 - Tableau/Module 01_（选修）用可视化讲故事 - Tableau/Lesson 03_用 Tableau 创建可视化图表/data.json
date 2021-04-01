@@ -1,0 +1,3482 @@
+{
+  "data": {
+    "lesson": {
+      "id": 215530,
+      "key": "f5dc6321-2a54-446b-9a25-9f9226d57138",
+      "title": "用 Tableau 创建可视化图表",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "学习如何使用 Tableau 创建可视化图表",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/f5dc6321-2a54-446b-9a25-9f9226d57138/215530/1553505284121/%E7%94%A8+Tableau+%E5%88%9B%E5%BB%BA%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9B%BE%E8%A1%A8+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/f5dc6321-2a54-446b-9a25-9f9226d57138/215530/1553505280392/%E7%94%A8+Tableau+%E5%88%9B%E5%BB%BA%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9B%BE%E8%A1%A8+Subtitles.zip"
+          },
+          {
+            "name": "Global Superstore",
+            "uri": "https://video.udacity-data.com/topher/2016/September/57e2f0a5_global-superstore/global-superstore.xlsx"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 215375,
+          "key": "1c74bfa5-895e-409a-92c6-a3696b0ab6ca",
+          "title": "什么是 Tableau？",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1c74bfa5-895e-409a-92c6-a3696b0ab6ca",
+            "completed_at": "2019-03-13T05:11:57.020Z",
+            "last_viewed_at": "2020-01-30T01:07:44.489Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214551,
+              "key": "8e019f57-c33c-408b-8abd-8d022f62dc7b",
+              "title": "什么是 Tableau？",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "LeCpU8HvVg8",
+                "china_cdn_id": "LeCpU8HvVg8.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215377,
+          "key": "e03cb70a-5348-4bb5-9a68-d9d1779441ed",
+          "title": "安装 Tableau",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e03cb70a-5348-4bb5-9a68-d9d1779441ed",
+            "completed_at": "2019-03-13T05:12:05.331Z",
+            "last_viewed_at": "2019-12-17T08:11:43.287Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214552,
+              "key": "80e427ff-150e-41d4-a8db-73d5d2574974",
+              "title": "安装 Tableau",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 安装 Tableau (Public)\n\n我猜测你肯定对 Tableau 很期待，现在你需要安装 Tableau。你可以在 Tableau 官网上找到安装程序包。\n\n对于本课程，你可以使用 **Tableau Public**，它是免费版本，与个人版或专业版相比，无法连接所有的数据格式或者数据源，但是已经能够完成大部分的工作。它可以读取文本 (CSV) 文件和 Excel 文件中的数据，你将在这门课程中使用这两种文件。此外，你无法在计算机上保存工作簿，而是保存到云端的公共工作簿中。然后可以在那里下载工作簿，所以使用起来也没什么问题。\n\n#### 开始安装\n\n转到 [https://public.tableau.com/s/](https://public.tableau.com/s/)，你应该会看到如下所示的界面：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 633192,
+              "key": "ca8f9f42-b8a4-46d5-85d0-11adb98487bd",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "<center><img src=\"https://s3.amazonaws.com/video.udacity-data.com/topher/2018/May/5b0e186f_tableau-public/tableau-public.png\" alt=\"tableau-public\"></center>",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214554,
+              "key": "b91b1a5b-29ec-41ed-ba70-17502623b8bd",
+              "title": "安装 Tableau",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "输入电子邮箱，然后系统就会下载 Tableau Public 安装程序。按照你的操作系统对应的安装说明操作。\n\n安装完毕后，转到下一部分，我们将开始使用 Tableau。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215378,
+          "key": "7c79b4bb-c3d2-4ea7-a51e-99993584a983",
+          "title": "连接数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7c79b4bb-c3d2-4ea7-a51e-99993584a983",
+            "completed_at": "2019-03-13T08:16:56.228Z",
+            "last_viewed_at": "2020-01-27T02:05:11.416Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341831,
+              "key": "63a66518-77fa-4c70-ba33-ebd1e923610b",
+              "title": "01 Connecting To Data",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "zuJPPSlbW2c",
+                "china_cdn_id": "zuJPPSlbW2c.mp4"
+              }
+            },
+            {
+              "id": 341832,
+              "key": "5bcdccb4-2771-4e0e-88b2-b9e55537439f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你也可以阅读以下详细的步骤了解如何连接数据。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214555,
+              "key": "8ef2eed2-d22e-4d25-a864-392614f9d332",
+              "title": "连接数据",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 连接数据\n\n开始使用 Tableau。第一步是加载一些数据。\n\n我提供了一个数据集，你将在这节课的后续部分使用它。该数据集包含 Global Superstore 的交易记录，以及收益和销售团队成员列表。你可以在资源部分找到 Excel 文件，请下载该文件。\n\n<center><a href=\"https://github.com/udacity/new-dand-advanced-china/blob/master/Tableau%20%E5%8F%AF%E8%A7%86%E5%8C%96/global-superstore.xlsx?raw=true\" target=\"_blank\"><button style=\"box-sizing: border-box; border-radius: 4px; background: #02B3E4; border: none; height: 44px; padding: 0 25px; color: white; cursor: pointer; font-family: Open Sans,sans-serif; display: inline-block; border: none; font-size: 12px; letter-spacing: 1px; font-weight: 600; text-transform: uppercase;\">下载数据</button></a></center>\n<br>\n\n如果尚未启动 Tableau 的话，请先启动。你应该看到如下所示的界面（如果版本是 10）：\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214556,
+              "key": "d791dd15-c5be-478f-a9e1-fc1c9e1997e2",
+              "title": "Tableau 初始界面",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e2fb95_tableau-initial-ui/tableau-initial-ui.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d791dd15-c5be-478f-a9e1-fc1c9e1997e2",
+              "caption": "",
+              "alt": null,
+              "width": 2174,
+              "height": 1394,
+              "instructor_notes": null
+            },
+            {
+              "id": 214557,
+              "key": "8b993f90-745b-4c07-aade-0099319e20b5",
+              "title": "连接数据 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你将在左侧边栏中看到可以连接的数据源。对于文件资源，你可以连接到 Excel 文件、文本文件（例如 CSV）或统计文件（例如来自 SAS、SPSS 和 R 的文件）。\n\n你可以使用 OData 连接到一些远程资源（连接到服务器），还可以连接到 Google 表格（点击**更多…**）。\n\n开始加载 Global Superstore 数据。点击 “Excel”，然后选择 Global Superstore Excel 文件。 ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214558,
+              "key": "f03c97dc-cfb4-4dab-9764-08c03229fee3",
+              "title": "连接到 Global Superstore",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e43b97_connect-to-global-superstore/connect-to-global-superstore.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f03c97dc-cfb4-4dab-9764-08c03229fee3",
+              "caption": "",
+              "alt": null,
+              "width": 2174,
+              "height": 1394,
+              "instructor_notes": null
+            },
+            {
+              "id": 214559,
+              "key": "1c0d8460-cf16-486e-a2a8-6fea0886272e",
+              "title": "Global Superstore 数据",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "当 Tableau 连接到该数据后，你应该能够在左侧边栏中看到该 Excel 文件中的工作表（*Orders*、*People* 和 *Returns*）。大的橘色字体告诉你将工作表拖到此处，所以将 *Orders* 工作表拖到顶部面板上。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214560,
+              "key": "69c7ea1a-604c-420a-9606-b6e20bfa3632",
+              "title": "数据已加载",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e47870_data-loaded/data-loaded.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/69c7ea1a-604c-420a-9606-b6e20bfa3632",
+              "caption": "",
+              "alt": null,
+              "width": 1235,
+              "height": 793,
+              "instructor_notes": null
+            },
+            {
+              "id": 214561,
+              "key": "7ad36c32-e35a-4fb5-ba97-477c223ae7c5",
+              "title": "数据已加载",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你现在应该能够在面板下方看到 Order 表格的数据预览。我还使用了 [Data Interpreter](https://onlinehelp.tableau.com/current/pro/desktop/en-us/qs_data_interpreter.html)（即左侧的复选框）。Data Interpreter 会尝试清理数据并添加格式，使数据更容易在 Tableau 中使用。\n\nTableau 会自动在标题行中查找列标签。它还会尝试检测每列的数据类型。标题栏里的小图标表示列的数据类型。**Row ID** 是数值数据，**Order ID** 是文本，**Order Date** 是日期，等等。 ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214562,
+              "key": "6be6d7c0-0bd9-4a9e-bc4f-ff6cb175f397",
+              "title": "标题栏",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e47aeb_header-bar/header-bar.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6be6d7c0-0bd9-4a9e-bc4f-ff6cb175f397",
+              "caption": "",
+              "alt": null,
+              "width": 1164,
+              "height": 308,
+              "instructor_notes": null
+            },
+            {
+              "id": 214563,
+              "key": "23a5d9d6-6517-4f44-bab1-48e410f5e5cb",
+              "title": "地理数据",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Tableau 还会查找地理空间数据，如下所示。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214564,
+              "key": "b94d459b-8a3c-4868-9757-57b2000539c6",
+              "title": "标题地理数值数据",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e47df9_header-geo-numerical/header-geo-numerical.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b94d459b-8a3c-4868-9757-57b2000539c6",
+              "caption": "",
+              "alt": null,
+              "width": 2187,
+              "height": 886,
+              "instructor_notes": null
+            },
+            {
+              "id": 214565,
+              "key": "0da1f09f-16b5-4d8d-8fea-e9f5ec062dd8",
+              "title": "数据类型",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你可能注意到了，在第一幅图中，标题中的数值图标 (#) 是蓝色的，但是在上图中是绿色的。Tableau 会猜测数值数据是离散还是连续的，并用颜色表示，**蓝色表示离散数据，绿色表示连续数据** 。稍后你还会见到这类颜色编码。\n\nTableau 并非始终都能猜对数据类型，所以你可以通过点击数据类型符号手动设置。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214566,
+              "key": "ea1bc8f8-585a-43b1-a4e7-f4df7f4795b7",
+              "title": "数据类型菜单",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e47f94_data-type-menu/data-type-menu.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ea1bc8f8-585a-43b1-a4e7-f4df7f4795b7",
+              "caption": "",
+              "alt": null,
+              "width": 468,
+              "height": 356,
+              "instructor_notes": null
+            },
+            {
+              "id": 214567,
+              "key": "faecfb1e-bd2b-433b-96fd-c17ba4fc1e97",
+              "title": "数据类型菜单",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "例如，你可能需要将 Row ID 改成字符串（文本），因为你不会对其进行任何数学运算，只是一个标识符。你可以自己尝试如何进行设置。\n\n因为 Tableau 从猜测的标题行中获取列名称，所以有时候列名称会不准确。幸运的是，你可以重命名，方法是点击三角形并出现下拉菜单，或者直接双击列名称。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214568,
+              "key": "4eb178b6-ba91-4670-8593-9a98eec94636",
+              "title": "重命名列名称",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e481c1_rename-columns/rename-columns.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4eb178b6-ba91-4670-8593-9a98eec94636",
+              "caption": "",
+              "alt": null,
+              "width": 742,
+              "height": 500,
+              "instructor_notes": null
+            },
+            {
+              "id": 214569,
+              "key": "b569973d-0313-4b30-8ad7-157fd25794ca",
+              "title": "拆分列",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "对于字符串列，你可以进行一些简单的变换，比如将数据拆分成多列。例如，Order ID 包含用连字符分隔的三个部分。你可能希望每个部分都成一列。要拆分列，点击列标题中的三角形。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214570,
+              "key": "2f195662-ca30-46cb-8a89-cbe6145affb3",
+              "title": "拆分列",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e55f5e_split-string-column/split-string-column.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2f195662-ca30-46cb-8a89-cbe6145affb3",
+              "caption": "",
+              "alt": null,
+              "width": 862,
+              "height": 556,
+              "instructor_notes": null
+            },
+            {
+              "id": 214571,
+              "key": "636dce27-785d-4200-a5d1-9f14874428f6",
+              "title": "自动拆分",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Tableau 根据分隔字符（此处是连字符）自动拆分。你还可以使用自定义拆分（选择 *Custom Split…*）选择按照不同的字符拆分。拆分过后，每个部分都自成一列。下面是拆分后的效果，你也可以自己试试。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214572,
+              "key": "c4288470-1dc7-406c-8f5f-4763ab90edec",
+              "title": "拆分后",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e55fd7_post-splitting/post-splitting.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c4288470-1dc7-406c-8f5f-4763ab90edec",
+              "caption": "",
+              "alt": null,
+              "width": 1126,
+              "height": 562,
+              "instructor_notes": null
+            },
+            {
+              "id": 214573,
+              "key": "435ed817-373d-454c-afcc-3879345faea0",
+              "title": "计算字段",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "在下拉菜单中，你还会看到 *Create Calculated Field…*。该选项使你能够根据现有列创建新的列。你可以在 Tableau 中\b体验该功能，或在[相关文档](https://onlinehelp.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields.html)中了解详情，我稍后将详细介绍计算字段。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214574,
+              "key": "1867689b-3e60-4888-8d13-4f4d3d90a5d7",
+              "title": "数据预览",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 查看数据\n\n对我来说，经常很有用的功能是在工作表中快速预览数据。如果将光标悬停在某个工作表上方，就会在右侧出现一个图标。点击该图标即可查看数据。\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214575,
+              "key": "4e3bf917-7a86-4b29-b4f6-6dcf6a9d852d",
+              "title": "查看数据",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e562db_view-data-with-arrow/view-data-with-arrow.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4e3bf917-7a86-4b29-b4f6-6dcf6a9d852d",
+              "caption": "",
+              "alt": null,
+              "width": 1208,
+              "height": 793,
+              "instructor_notes": null
+            },
+            {
+              "id": 214576,
+              "key": "60702da6-b086-4dba-b3b1-f554bed04470",
+              "title": "查看数据",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "60702da6-b086-4dba-b3b1-f554bed04470",
+                "completed_at": "2019-03-31T00:32:29.147Z",
+                "last_viewed_at": "2019-04-11T12:34:37.504Z",
+                "unstructured": "{\"selected_id\":\"a1474650933378\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "**People** 工作表列出了每个区域的销售人员。哪个销售人员负责加拿大地区？",
+                "answers": [
+                  {
+                    "id": "a1474650858611",
+                    "text": "Chuck Magee",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474650933378",
+                    "text": "Nicole Hansen",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1474650934328",
+                    "text": "Jack Lebron",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474650935016",
+                    "text": "Deborah Brumfield",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 214577,
+              "key": "7ceea736-f7c1-44db-bb02-d358f3101e5a",
+              "title": "连结",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 连结数据\n\n你经常需要将多个来源的数据整合到一起，例如数据库中的不同表格或 Excel 文件中的工作表。例如，你可能需要包含 *People* 工作表和 *Orders* 工作表中的数据，以便分析每名销售人员的业绩。\n\n在 Tableau 中，你可以将多个工作表拖到顶层面板上。根据你拖到的位置，会出现两种结果：**联合模式**或 **连结模式**。\n\n### 联合\n\n如果将 *People* 拖到 *Orders* 下面，就出现联合效果。联合模式将数据相互堆叠，第二个工作表会附加到第一个工作表的结尾。如果多个工作表的列相同的话，这种方法就很不错，因为列将匹配。但是，如果列不同的话，就会出现很多 “null”，因为为两个工作表都创建了相关列，但是第一个工作表中没有第二个工作表中的某些列。\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214578,
+              "key": "fa5d3d2a-39d7-493f-a418-4488e343e0c0",
+              "title": "联合",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e5b18b_union/union.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fa5d3d2a-39d7-493f-a418-4488e343e0c0",
+              "caption": "",
+              "alt": null,
+              "width": 1051,
+              "height": 768,
+              "instructor_notes": null
+            },
+            {
+              "id": 214579,
+              "key": "6844db03-4cba-4df4-a370-a81221ba5cd7",
+              "title": "连结",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 连结\n\n如果将第二个工作表或表格拖到顶部面板上，但是没有放在第一个工作表的上方，就会出现连结模式。连结模式不会将数据相互堆叠，而是根据共同值将每个工作表中的数据相结合。在这里，*Orders* 和 *People* 都具有列 **Region**，我们可以将其当做共同值。\n\n\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214580,
+              "key": "0c03483c-feb8-4567-8eef-343e28bd3c91",
+              "title": "连结",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e5bd93_joins/joins.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0c03483c-feb8-4567-8eef-343e28bd3c91",
+              "caption": "",
+              "alt": null,
+              "width": 1051,
+              "height": 768,
+              "instructor_notes": null
+            },
+            {
+              "id": 214581,
+              "key": "20cfca72-613f-4327-8854-c103938e6477",
+              "title": "连结 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Tableau 默认情况下会进行“内连结”。只要有共同值，就会结合数据。所以当 *Orders* 中的 **Region** 是 “East” 时，就从 **Region** 为”East”的 *People* 中获取数据。从上图中可以看出，*People* 中的 **Person** 列添加到了 *Orders* 中的数据上。\n\n你可以点击连结符号来更改连结类型。此处，你还可以选择\"左连结\"(\"left inner join”)。正常的内连结仅结合共同的数据，但是左连结会返回原始工作表中行不是 *null* 的数据。\n\n 请务必理解连结概念，因为你将经常组合数据。[此处](https://onlinehelp.tableau.com/current/pro/desktop/en-us/joining_tables.html)是关于连结的 Tableau 文档，如果你之前没遇到过连结的话，建议阅读下这篇文章。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214582,
+              "key": "731e1394-626c-40f3-89fa-b5f841447a79",
+              "title": "连结测验",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "731e1394-626c-40f3-89fa-b5f841447a79",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "如果你想将 People 数据与 Orders 数据组合到一起，并且保留 Orders 中没有共同区域的所有记录，你会怎么操作？"
+              },
+              "answer": {
+                "text": "你会将 People 工作表拖到数据面板上，点击连结符合并选择左连结。",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 341833,
+          "key": "f33fe616-e600-4ab8-a9ae-7b5bdbf2ee4d",
+          "title": "合并数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "f33fe616-e600-4ab8-a9ae-7b5bdbf2ee4d",
+            "completed_at": "2019-03-16T02:18:27.857Z",
+            "last_viewed_at": "2020-01-30T01:07:58.474Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341834,
+              "key": "e766074a-e03e-402f-bec9-0418708509fc",
+              "title": "02 合并表格",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vSjKBMgW1Fw",
+                "china_cdn_id": "vSjKBMgW1Fw.mp4"
+              }
+            },
+            {
+              "id": 341835,
+              "key": "aff51f70-df26-4c6e-8ca2-3381910040ab",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**视频内容纠正：** 0:12时，讲师点击 join 之后，你可以看到表格合并（join）在 *Market* 变量上。事实上，表格应该合并在 *order_id* 上。\n\n如果想进一步了解 join，可以继续阅读以下内容。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341840,
+              "key": "0e5aa85f-d541-476c-8cd0-b125278035b3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 合并数据\n\n你经常需要从不同的数据源合并数据，比如在数据库中不同的表格，或者是 Excel 中不同的表单。举例来说，如果你想将 *People* 表单中的所有信息合并到 *Order* 表单中，你就可以分析不同销售人员的表现。\n\n在 Tableau 中，你可以通过拖动不同表单至顶部面板来完成。你会得到两个不同的结果，取决于你拖到 **union** 还是 **join**。\n\n### Union\n\n如果你拖动 *People* 到 *Order* 下方，你将获得一个联合（Union）。Union 可以让数据“堆叠”在另一个之上，第二张表单将会连接在第一张表单之后。如果你有许多表单，并且它们的列名称都相同，则 Union 用起来会非常方便。然而，如果列不一致，那么你会看到许多 “nulls”，因为 Union 之后所创建的列是为两张表单服务，但第一张表单并没有第二张表单相应列的数据。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341841,
+              "key": "e763ace4-7489-4e33-9b74-41a7d1da713e",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e5b18b_union/union.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e763ace4-7489-4e33-9b74-41a7d1da713e",
+              "caption": "",
+              "alt": null,
+              "width": 1051,
+              "height": 768,
+              "instructor_notes": null
+            },
+            {
+              "id": 341842,
+              "key": "7a59051e-1881-415d-bd64-cc4de8c4f567",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### Joins\n\n如果将第二个表格拖至顶部面板内，而不是拖到第一个表格的上面，你执行的就是 join 操作。join 是基于两个表格的公共值来合并数据，而不是将两个表格的数据堆叠在一起。在本例中，*Orders* 和 *People* 表都含有作为公共值得 **Region** 列。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341851,
+              "key": "547df949-c6c5-471d-8c82-b43004e76cca",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e5bd93_joins/joins.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/547df949-c6c5-471d-8c82-b43004e76cca",
+              "caption": "",
+              "alt": null,
+              "width": 1051,
+              "height": 768,
+              "instructor_notes": null
+            },
+            {
+              "id": 341852,
+              "key": "483703fb-53b3-4501-b08e-e5f5eacf48ea",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Tableau 在默认情况下执行“内连结”(\"inner join\")，但凡存在公共值，就会这样合并数据。因此当 *Orders* 表中 **Region** 列的值为 \"East\" 时，Tableau 就从 *People* 表中 **Region** 列的值同样为 \"East\" 时，提取对应的数据。从而你会看到， *People* 表中的 **Person** 列已经添加到 *Orders* 表对应的列中。\n\n你可以单击 join 符号来更改正在执行的 join 类型。在这种情况下，你也可以选择“左连结”(\"left inner join\")，一般的内连结合并共同的数据，而左连结合并原始表格中所有的数据，并将非公共的行值设置为 \"null\"。\n\n理解 join 概念非常重要，因为你将经常合并数据。这是[Tableau 关于 join 的文档](https://onlinehelp.tableau.com/current/pro/desktop/en-us/joining_tables.html)，如果你从未见过 join, 我建议你读一读。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341854,
+              "key": "b24e64da-7ae3-42b7-8751-7b7d6a165eca",
+              "title": "Join 练习",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b24e64da-7ae3-42b7-8751-7b7d6a165eca",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "如果你想合并 People 数据和 Orders 数据，并保留 Orders 中非“公共区域”的所有记录，你会怎么做？"
+              },
+              "answer": {
+                "text": "你将拖动 People 表单到数据窗格",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 215379,
+          "key": "2db5c897-bbe9-42c8-b66a-d1aae9c4b088",
+          "title": "工作表界面",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "2db5c897-bbe9-42c8-b66a-d1aae9c4b088",
+            "completed_at": "2019-03-16T02:22:53.423Z",
+            "last_viewed_at": "2020-01-30T01:08:11.557Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341856,
+              "key": "f930bd11-103c-48f4-829b-0d1b29444ad4",
+              "title": "03 Tableau 界面",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "q3E4CCYeIyM",
+                "china_cdn_id": "q3E4CCYeIyM.mp4"
+              }
+            },
+            {
+              "id": 341862,
+              "key": "8b990f9e-bbec-4868-8966-c7ebfbd9c622",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你也可以查看下方详细的步骤。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214583,
+              "key": "b881ea68-7a64-446c-9ccd-b83198cde7c2",
+              "title": "工作表界面简介",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 工作表界面\n\n现在你已经加载数据了，该制作图表了。点击底部工具栏中的“Sheet1”。首先我将介绍工作表界面。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214584,
+              "key": "da2c3daf-6b51-4c58-9a61-62aad67fb219",
+              "title": "工作表用户界面",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e6cea7_sheet-ui/sheet-ui.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/da2c3daf-6b51-4c58-9a61-62aad67fb219",
+              "caption": "",
+              "alt": null,
+              "width": 2372,
+              "height": 1640,
+              "instructor_notes": null
+            },
+            {
+              "id": 214585,
+              "key": "455e4ba5-b835-4577-9526-d65f35580719",
+              "title": "数据侧栏",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你将在左侧看到数据列（也称为“字段”），并根据维度和度量划分。分类数据、定性数据和时间数据列为维度。定量数值数据列为度量。Tableau 会自动检查每列的数据类型，并相应地做出拆分。\n\n你将注意到维度用蓝色表示，度量用绿色表示。这和之前见到的颜色编码一样，蓝色表示离散数据，绿色表示连续数据。注意，离散数据只能为特定的值，例如整型或类别，而连续数据可以是任何值。 \n\n维度并非必须是离散的，度量并非必须是连续的。在某些情况下，你可以将离散数据转换为连续数据，例如时间。右击字段，或点击小三角形即可调出菜单。但是分类数据不能这么操作，因为分类数据不能是连续的。你还可以将连续数据转换为离散数据。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214586,
+              "key": "9b772cd7-cd82-4657-8e09-f890d324859c",
+              "title": "字段菜单",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e6f2f1_field-menu/field-menu.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9b772cd7-cd82-4657-8e09-f890d324859c",
+              "caption": "",
+              "alt": null,
+              "width": 355,
+              "height": 355,
+              "instructor_notes": null
+            },
+            {
+              "id": 214587,
+              "key": "4fe8b7af-a337-4bd0-98ef-58ff572a250d",
+              "title": "度量和维度",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Tableau 会自动将度量求总计，但是维度就不会。即它会执行求和和平均值等运算。维度用来对数据分组，并设置粒度。接下来你将学习汇总和粒度，所以暂时不知道这些概念也没关系。\n\n## 制作第一个图表\n\n你可以通过选择要绘制的数据，方法是将相关字段拖到\"列\"或\"行\"功能区上（如下图所示）。当你将离散字段拖到 Columns 功能区中时，系统会创建一个离散轴。当你使用连续字段时，系统会创建一个连续轴。你还可以直接将字段拖到工作表上。\n\n我们开始分析，首先你可以查看每个市场的记录条数。将 **Market** 字段拖到 Columns 功能区上。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214588,
+              "key": "72a068d8-58fb-4ddc-9dba-753fc133be4a",
+              "title": "将 Market 字段拖到 Columns 功能区上",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e6f62e_market-to-columns-arrow/market-to-columns-arrow.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/72a068d8-58fb-4ddc-9dba-753fc133be4a",
+              "caption": "将 Market 字段拖到 Columns 功能区上",
+              "alt": null,
+              "width": 971,
+              "height": 735,
+              "instructor_notes": null
+            },
+            {
+              "id": 214589,
+              "key": "ad4b4a24-f379-4ed3-a23b-8f9a52d8e02b",
+              "title": "首个图表",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你可以在工作表面板上看到坐标轴，显示每个市场的标签。现在将 Measures 中的 **Number of Records** 拖到 Rows 功能区上。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214590,
+              "key": "22c33cee-0481-4176-a754-a2fbaaeefd0f",
+              "title": "市场记录数量",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e6f74e_market-number-of-records/market-number-of-records.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/22c33cee-0481-4176-a754-a2fbaaeefd0f",
+              "caption": "",
+              "alt": null,
+              "width": 987,
+              "height": 747,
+              "instructor_notes": null
+            },
+            {
+              "id": 214591,
+              "key": "aa2756b3-289e-4b90-b522-a12619cac5fe",
+              "title": "记录求和",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你将在 Rows 功能区中看到 **Number of Records** 字段变成了小小的药丸图标，显示为 SUM(Number of Records)。这就叫做汇总，系统会汇总每个市场的数据，并对值求和。你可以将光标悬停在长条上方，看看每个市场的具体和是多少（自己试试看！）\n\n通常，你将通过这种方式充分利用你的图表，将维度和度量字段拖到功能区上。你还可以从图表中删除字段，方法是将药丸图标从功能区上拖走。\n\n接着，你还可以点击坐标轴上的排序图标，对长条排序。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214592,
+              "key": "1355002b-8692-4095-a58c-91ac02cb92da",
+              "title": "按照记录数量对市场排序",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e6fcc8_sorted-markets-with-arrow/sorted-markets-with-arrow.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1355002b-8692-4095-a58c-91ac02cb92da",
+              "caption": "",
+              "alt": null,
+              "width": 971,
+              "height": 735,
+              "instructor_notes": null
+            },
+            {
+              "id": 214593,
+              "key": "f8b8e9cd-1e45-4bbc-aab9-2950275fd1eb",
+              "title": "哪个国家的记录最多？",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "f8b8e9cd-1e45-4bbc-aab9-2950275fd1eb",
+                "completed_at": "2019-03-16T05:42:41.077Z",
+                "last_viewed_at": "2019-04-11T12:38:02.656Z",
+                "unstructured": "{\"selected_id\":\"a1474755434715\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "现在该你自己来练习下了。哪个国家的记录最多？",
+                "answers": [
+                  {
+                    "id": "a1474755414971",
+                    "text": "澳大利亚",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474755434715",
+                    "text": "美国",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1474755435828",
+                    "text": "中国",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474755436454",
+                    "text": "法国",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 214594,
+              "key": "cbdedf62-b637-423c-b95d-a4f37a2d9753",
+              "title": "新建工作表",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e8649c_new-sheets/new-sheets.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/cbdedf62-b637-423c-b95d-a4f37a2d9753",
+              "caption": "",
+              "alt": null,
+              "width": 957,
+              "height": 662,
+              "instructor_notes": null
+            },
+            {
+              "id": 214595,
+              "key": "8aa7e0a9-1f3f-4e12-b1ef-8aad4d20644b",
+              "title": "最终效果",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "终于可以从上图中看出，底部有新建工作表、显示面板和故事的标签页。 \n\n接着，我将解释 Tableau 在后台是如何制作图表的。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215380,
+          "key": "4c2dd222-bceb-4ba9-a2cf-12e8fae62b19",
+          "title": "汇总和粒度",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "4c2dd222-bceb-4ba9-a2cf-12e8fae62b19",
+            "completed_at": "2019-03-16T05:44:13.059Z",
+            "last_viewed_at": "2020-01-30T17:22:53.131Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341863,
+              "key": "b1fc0d6a-8a85-490b-bca7-515fc5b059c9",
+              "title": "04 Aggregation & Granularity",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "GuOytlkqdrQ",
+                "china_cdn_id": "GuOytlkqdrQ.mp4"
+              }
+            },
+            {
+              "id": 214596,
+              "key": "348de298-9975-4013-a58e-e665c024c8eb",
+              "title": "汇总和粒度",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 汇总和粒度\n\n我们开始创建更复杂的图表。首先是创建简单的散布图，看看一些度量是如何相关的。我认为商品销售的越多，利润就越高，我们来看看利润与数量的对比情况。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214597,
+              "key": "29f01aa8-3fa2-478c-a70a-d3865eebbf76",
+              "title": "你的预期是什么？",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "29f01aa8-3fa2-478c-a70a-d3865eebbf76",
+                "completed_at": "2019-03-16T05:47:16.567Z",
+                "last_viewed_at": "2019-04-11T12:40:46.492Z",
+                "unstructured": "{\"selected_ids\":[\"a1474756132073\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "在操作之前，你认为当你将 Quantity 拖到 Columns 上，将 Profit 拖到 Rows 上时，会出现什么情况？",
+                "answers": [
+                  {
+                    "id": "a1474756129621",
+                    "text": "数据中的每个记录有一个数据点",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474756132073",
+                    "text": "只有一个数据点",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1474756132716",
+                    "text": "有一些数据点，呈上升趋势",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 214598,
+              "key": "9624bbdb-600f-421e-9152-068ccb2a5365",
+              "title": "汇总",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "自己尝试一下。你只看到一个数据点！什么情况？为何不是数据集中的每个记录都有一个数据点？ \n\n## 汇总\n\n当我第一次学习 Tableau 时，我不明白为何当我认为会看到多个点时，只看到了一个点。答案在于 Tableau 对数据进行汇总的方式。你应该在药丸中看到 Tableau 对 Quantity 和 Profit 进行了求和。这叫做汇总。它会对数据集中所有记录的 Quantity 和 Profit 进行汇总，因此你只看到了一个点。Quantity 的所有记录有一个和，Profit 的所有记录有一个和。\n\n你可以通过右击药丸或点击三角形选择汇总类型。要更改汇总方法，选择 Measure (Sum)，然后选择Average、Median 等选项。\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214599,
+              "key": "71217150-5ba3-4f33-937e-03ba25bb5e20",
+              "title": "汇总菜单",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e70fd6_aggregation-menu/aggregation-menu.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/71217150-5ba3-4f33-937e-03ba25bb5e20",
+              "caption": "",
+              "alt": null,
+              "width": 509,
+              "height": 523,
+              "instructor_notes": null
+            },
+            {
+              "id": 214600,
+              "key": "e25411a1-cee1-444b-8138-584ab52c6e73",
+              "title": "粒度",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 粒度\n\n要获得更多的数据点，你需要增加粒度。也就是不针对所有记录汇总，而是针对类别汇总。例如，你可以将 Market 拖到标记卡中的“Detail”上。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214601,
+              "key": "d1dca210-6d80-4002-8d68-f57fa2727933",
+              "title": "你的预期结果是什么？",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d1dca210-6d80-4002-8d68-f57fa2727933",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "在操作之前，你认为当你将 Market 拖到“detail”上时会出现什么情况？"
+              },
+              "answer": {
+                "text": "自己尝试一下，如果结果与你的预期不一样，思考下为何不同。",
+                "video": null
+              }
+            },
+            {
+              "id": 214602,
+              "key": "46aed74c-5d87-46cc-8de2-09d7ef4c5206",
+              "title": "粒度 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你应该看到 7 个点，**Market** 中的每个值一个点。你增加了粒度，Tableau 现在按照每个市场汇总数据了。你获得了每个市场的数量和利润之和。汇总结果没变，依然是数量和利润的和，只是按照不同的粒度进行计算。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214603,
+              "key": "e3bb1f95-5ec4-418d-a426-56831a64e588",
+              "title": "市场粒度",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e71599_market-granularity/market-granularity.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e3bb1f95-5ec4-418d-a426-56831a64e588",
+              "caption": "",
+              "alt": null,
+              "width": 987,
+              "height": 747,
+              "instructor_notes": null
+            },
+            {
+              "id": 214604,
+              "key": "4fc93d65-b601-405a-b86f-762793299212",
+              "title": "粒度 3",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你可以将光标悬停在某个点上，看看它属于哪个组，数据值是多少。\n\n你可以通过将维度拖到标记卡上的方框中，更改粒度级别。粒度级别根据维度中组的总数量进行设置。**Category** 字段有三项，将其拖到“Color”上。现在应该能看到 21 个点。每个记录都可能会在 3 个类别中的某个类别里，并在 7 个市场中的某个市场内，所以总的组数为 7 x 3 = 21。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214605,
+              "key": "9e74d857-96ff-4893-adad-15d970e4681e",
+              "title": "Market 和 Category 粒度",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e71aa5_market-and-colors/market-and-colors.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9e74d857-96ff-4893-adad-15d970e4681e",
+              "caption": "",
+              "alt": null,
+              "width": 513,
+              "height": 458,
+              "instructor_notes": null
+            },
+            {
+              "id": 214606,
+              "key": "32be7a2a-2b8c-4aa7-b38c-bfa98e1e2f5f",
+              "title": "粒度 4",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "现在删除 Market，你应该能看到 3 个点，**Category** 中的每项一个点。你已经再次更改了粒度级别，现在 Profit 和 Quantity 之和根据 **Category** 中的值进行汇总。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214607,
+              "key": "4472328d-3f8f-4a0f-9975-8c29cf4d5f6a",
+              "title": "Region 和 Category 有多少个点？",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4472328d-3f8f-4a0f-9975-8c29cf4d5f6a",
+                "completed_at": "2019-03-16T05:50:44.008Z",
+                "last_viewed_at": "2019-04-11T12:40:58.872Z",
+                "unstructured": "{\"selected_id\":\"a1474763623445\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "如果将 Region 添加到“detail”中，你应该能够看到多少个点？Region 字段中有 13 个唯一值。\n",
+                "answers": [
+                  {
+                    "id": "a1474763559835",
+                    "text": "1",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474763623445",
+                    "text": "39",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1474763624069",
+                    "text": "13",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474763624803",
+                    "text": "3",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215381,
+          "key": "490d0ba5-e5ae-4b4c-8dbf-325ecae3bf2c",
+          "title": "Show Me 功能",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "490d0ba5-e5ae-4b4c-8dbf-325ecae3bf2c",
+            "completed_at": "2019-03-16T05:50:52.666Z",
+            "last_viewed_at": "2020-01-30T17:23:33.298Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214608,
+              "key": "97ec52f8-0f5a-4381-b7fe-cc1e7b8a9a94",
+              "title": "Show Me",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# Show Me \n\nShow Me 功能使你能够快速了解稍后可以添加的基本图表。你可以在工作表的右上角找到该功能，如下图所示。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214609,
+              "key": "da5561ce-b36f-44a9-991d-ff17773c3498",
+              "title": "Show Me 面板",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e71f0e_show-me-panel-with-arrow/show-me-panel-with-arrow.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/da5561ce-b36f-44a9-991d-ff17773c3498",
+              "caption": "",
+              "alt": null,
+              "width": 718,
+              "height": 568,
+              "instructor_notes": null
+            },
+            {
+              "id": 214610,
+              "key": "57171650-c3a5-4df4-9dcb-dc87047e39fd",
+              "title": "Show Me 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "可以看到并排条形图需要一个或多个维度和一个或多个度量。尝试选择 **Market**、**Category** 和 **Profit**。你可以同时按下 Command+Control（快捷键取决于你的操作系统），并点击多个字段进行选择。选择好后，选择并排条形图并让系统为你绘制一个图表。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214611,
+              "key": "069cdedc-c42c-4015-bd80-32601078df1e",
+              "title": "选中字段",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e71f79_show-me-selected/show-me-selected.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/069cdedc-c42c-4015-bd80-32601078df1e",
+              "caption": "",
+              "alt": null,
+              "width": 1036,
+              "height": 747,
+              "instructor_notes": null
+            },
+            {
+              "id": 214612,
+              "key": "17736638-8932-4812-911b-b83efdad1811",
+              "title": "结果",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e71f8e_show-me-bar-chart/show-me-bar-chart.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/17736638-8932-4812-911b-b83efdad1811",
+              "caption": "",
+              "alt": null,
+              "width": 1173,
+              "height": 747,
+              "instructor_notes": null
+            },
+            {
+              "id": 214613,
+              "key": "2e20fb80-61b2-4d4c-a083-cf786697ef3f",
+              "title": "Show Me 最终效果",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "接着你可以自定义该图表。当你决定好要查看什么或显示什么后，Show Me 通常是个不错的开端。你可以随意研究 Show Me 面板，你可以通过该面板制作各种不同的图表。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215382,
+          "key": "a9f076d0-cc66-46c2-b35c-15fabb1a3e3e",
+          "title": "层级",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a9f076d0-cc66-46c2-b35c-15fabb1a3e3e",
+            "completed_at": "2019-03-16T05:58:08.968Z",
+            "last_viewed_at": "2020-01-30T17:55:04.161Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341864,
+              "key": "a43fac8f-6e03-4e2d-8286-3a6a42a99d0f",
+              "title": "05 Hierarchies",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "vkHeQcI08yc",
+                "china_cdn_id": "vkHeQcI08yc.mp4"
+              }
+            },
+            {
+              "id": 214614,
+              "key": "ff68d8c1-95b1-4281-a7f3-264038eae036",
+              "title": "层级",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 层级\n\n试着操作下：新建一个工作表，将 **Order Date** 拖到 Columns 上，将 **Profit** 拖到 Rows 上。 你应该能看到一个折线图，这是 Tableau 的默认时间数据图表。Order Date 药丸上现在有一个小的加号，点击该加号，看看会发生什么。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214615,
+              "key": "680494ed-409f-4bdf-a8af-6a7206ef0c07",
+              "title": "Order Date 层级",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e86688_order-date-hierarchy/order-date-hierarchy.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/680494ed-409f-4bdf-a8af-6a7206ef0c07",
+              "caption": "",
+              "alt": null,
+              "width": 1173,
+              "height": 747,
+              "instructor_notes": null
+            },
+            {
+              "id": 214616,
+              "key": "539b6ddf-09f4-468b-9a11-4d6d31e5a1b1",
+              "title": "继续细分测验",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "539b6ddf-09f4-468b-9a11-4d6d31e5a1b1",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "Quarters 药丸也有一个加号。如果点击该加号，你认为会发生什么？"
+              },
+              "answer": {
+                "text": "日期现在拆分为月份了！",
+                "video": null
+              }
+            },
+            {
+              "id": 214617,
+              "key": "1b944ad1-4a10-4d5f-beaa-235e8f4add1f",
+              "title": "继续细分",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "刚才的操作是细分层级，从年份数据开始，然后按季度分组。Tableau 自动按日期和时间日期字段创建时间期限层级。当你继续细分时，就会获得更精细的划分，从年份到季度，到月份，再到一天。\n\n现在你将注意到药丸中出现小的减号了。点击该减号将回到上一层级。\n\n你可以通过将药丸从功能区中拖走，从图表中删除层级。例如，如果细分到月份，然后删除 Year 和 Quarter，你将看到如下图所示的效果：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214618,
+              "key": "85d59cc2-46f3-4f06-9c56-ffc1b5d2fd8b",
+              "title": "层级月份",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e87092_hierarchy-month/hierarchy-month.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/85d59cc2-46f3-4f06-9c56-ffc1b5d2fd8b",
+              "caption": "",
+              "alt": null,
+              "width": 1173,
+              "height": 747,
+              "instructor_notes": null
+            },
+            {
+              "id": 214619,
+              "key": "5e3b4959-8240-4d1a-80a0-29012fa4107f",
+              "title": "更多层级",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "可能与你预期的不一样，我以为会显示 4 年的每月利润。但是，每个月只有一个值。出现这种情况是因为 Tableau 将 **Order Date** 设成了离散数据类型，所以对每个月的 Profit 值进行汇总。即每个值是该月的 Profit 在四年内值的和。\n\n但是，通常我希望看到所有 4 年的长线条分布情况。要更改这一绘制方法，你需要一个*连续*坐标轴，并将 **Order Date** 转换为连续数据。一种做法是打开 **Order Date** 字段菜单（右击，或点击三角形），选择“Convert to Continuous”。\n\n你还可以打开 Month 药丸上的菜单，然后将其转换为连续数据： ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214620,
+              "key": "6b75d381-f7c7-4886-bd49-c3e3d19b1858",
+              "title": "Month 药丸菜单",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e97565_month-pill-menu-labeled/month-pill-menu-labeled.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6b75d381-f7c7-4886-bd49-c3e3d19b1858",
+              "caption": "",
+              "alt": null,
+              "width": 560,
+              "height": 655,
+              "instructor_notes": null
+            },
+            {
+              "id": 214621,
+              "key": "b1f0935d-a9fb-4bc2-91c4-6f1b3668bd7c",
+              "title": "具有时间的层级",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "如果在连续部分选择\"Month”，它将切换为整个时间范围的月度利润视图。自己试试看。\n\n你应该在药丸中看到一个加号，使你能够继续细分，从而查看每周利润。但是，现在没有减号了，所以无法回到上一层级。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214622,
+              "key": "d6678143-7cd9-430e-9a75-4945dbbb16f4",
+              "title": "月度连续数据",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e98cee_hierarchy-continuous/hierarchy-continuous.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d6678143-7cd9-430e-9a75-4945dbbb16f4",
+              "caption": "",
+              "alt": null,
+              "width": 1173,
+              "height": 747,
+              "instructor_notes": null
+            },
+            {
+              "id": 214623,
+              "key": "6d9cb889-d124-4f3c-9abd-22b0efcaf7a8",
+              "title": "手动创建层级",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 手动创建层级\n\nTableau 根据数据自动创建了层级，但是你也可以自己创建层级。例如，**Sub-Category** 中的每个值都属于 **Category** 中的某项。比如，对于 **Sub-Category** 值为\"Bookcases”的记录，**Category** 值始终为\"Furniture”。这里有一个层级，**Sub-Category** 值从 **Category** 值中分支出来。\n\n你可以创建一个层级，方法是选择 **Category** 和 **Sub-Category**（同时按下 control+command，然后点这两个字段），然后打开菜单并选择 *Hierarchy* > *Create Hierarchy...*",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214624,
+              "key": "c1f58239-8b88-42a1-8392-189a00ba16dd",
+              "title": "创建层级",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e98e6f_create-hierarchy/create-hierarchy.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c1f58239-8b88-42a1-8392-189a00ba16dd",
+              "caption": "",
+              "alt": null,
+              "width": 510,
+              "height": 452,
+              "instructor_notes": null
+            },
+            {
+              "id": 214625,
+              "key": "84b80378-8af5-4304-a35f-1bff04dfff94",
+              "title": "手动创建层级",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "现在你可以创建新的层级并设定名称。我设为\"Categories”。它出现在左侧，你可以将其拖到功能区上，就像普通字段那样。但是现在以\"Category”开头，并具有一个加号，你可以细分到\"Sub-Categories”。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214626,
+              "key": "05628094-3eb6-4cf8-81cc-a11675d488a8",
+              "title": "Category 层级",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e99eb5_hierarchy-categories-labeled/hierarchy-categories-labeled.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/05628094-3eb6-4cf8-81cc-a11675d488a8",
+              "caption": "",
+              "alt": null,
+              "width": 1094,
+              "height": 808,
+              "instructor_notes": null
+            },
+            {
+              "id": 214627,
+              "key": "cb3b0d2c-6cc8-42b6-8c73-f1ff7a796b92",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "最后，我们听听 Trina 是如何使用层级的。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214628,
+              "key": "e66b6caa-c90e-4245-9b1e-b179b2320814",
+              "title": "Trina 对层级的介绍",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "ys8Cn0o5gNI",
+                "china_cdn_id": "ys8Cn0o5gNI.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215383,
+          "key": "ed1198aa-f382-4a72-bb2a-075b5b0ff503",
+          "title": "标记选项",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ed1198aa-f382-4a72-bb2a-075b5b0ff503",
+            "completed_at": "2019-03-16T06:12:46.230Z",
+            "last_viewed_at": "2020-01-30T18:21:28.627Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341865,
+              "key": "a656d674-9958-4752-9b63-1225041a1428",
+              "title": "06 Practice With Marks And Filters",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "RPAv7WLkutk",
+                "china_cdn_id": "RPAv7WLkutk.mp4"
+              }
+            },
+            {
+              "id": 214629,
+              "key": "f6b230eb-5318-495b-aa6c-882b654771a5",
+              "title": "标记 1",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 标记选项\n\n通常，你需要向图表中添加更多的维度。你可以通过标记卡实现。它具有以下选项：颜色、大小和形状。你可以通过将维度或度量拖到 Marks 功能区上，向图表中添加维度（增大粒度）。\n\n## 颜色\n\n大多数情况下，你将用颜色标记数据。在 Tableau 中操作很简单，只需将相关字段拖到标记卡中的\"Color”上。我在下方制作了月度利润折线图，按照 **Segment** 拆分。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214630,
+              "key": "d0d12b2b-455c-43ca-8d1c-965c467f2467",
+              "title": "具有颜色的折线图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e9a505_lines-with-color/lines-with-color.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d0d12b2b-455c-43ca-8d1c-965c467f2467",
+              "caption": "",
+              "alt": null,
+              "width": 1110,
+              "height": 820,
+              "instructor_notes": null
+            },
+            {
+              "id": 214631,
+              "key": "7175c798-c2cc-4d29-8b93-da9b8f79a999",
+              "title": "颜色选项",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 颜色选项\n\n点击标记卡中的\"Color”就可以更改用来表示数据的调色板。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214632,
+              "key": "86f9f1e3-7cf0-4bd8-b51e-1340a38b55c5",
+              "title": "调色板",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e9a551_colors-choose-palette/colors-choose-palette.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/86f9f1e3-7cf0-4bd8-b51e-1340a38b55c5",
+              "caption": "",
+              "alt": null,
+              "width": 996,
+              "height": 597,
+              "instructor_notes": null
+            },
+            {
+              "id": 214633,
+              "key": "49bb7e88-99ee-4d27-9c58-7be76ac35c2f",
+              "title": "颜色 1",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你可以在菜单中选择调色板然后点击\"Assign Palette”来更改颜色，然后点击“应用”或“确定”做出更改。你也可以更改单个颜色，点击数据项然后点击调色板中的某个颜色。\n\n颜色还适合在地图上表示数据。下面是几个示例。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214634,
+              "key": "3c421c6e-1079-405f-9d89-a2f988c2b6fa",
+              "title": "在地图上用颜色标注离散数据",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eb4996_color-map-discrete/color-map-discrete.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3c421c6e-1079-405f-9d89-a2f988c2b6fa",
+              "caption": "用相应的定性调色板表示离散数据。",
+              "alt": null,
+              "width": 1524,
+              "height": 962,
+              "instructor_notes": null
+            },
+            {
+              "id": 214635,
+              "key": "69ab3712-3ec0-4ce5-bdca-219096961f49",
+              "title": "在地图上用颜色标注顺序数据",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eb49cd_color-map-sequential/color-map-sequential.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/69ab3712-3ec0-4ce5-bdca-219096961f49",
+              "caption": "用离散型调色板表示连续数据（利润）。",
+              "alt": null,
+              "width": 1528,
+              "height": 964,
+              "instructor_notes": null
+            },
+            {
+              "id": 214636,
+              "key": "2671d7d4-7190-4e31-baa1-68708f0d9f51",
+              "title": "设置颜色",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "如果你没有用颜色标注数据，依然可以更改图形元素的颜色。点击\"Color”就会出现颜色选择器，并设置标记颜色，如下所示。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214637,
+              "key": "d9ee5117-9f1b-4504-8f42-292bd8bde67c",
+              "title": "更改颜色",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eb4a6a_color-change/color-change.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d9ee5117-9f1b-4504-8f42-292bd8bde67c",
+              "caption": "",
+              "alt": null,
+              "width": 1846,
+              "height": 1134,
+              "instructor_notes": null
+            },
+            {
+              "id": 214638,
+              "key": "8b329e93-c5df-4fe2-a024-db3422d0a66e",
+              "title": "Tableau 和颜色",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "颜色是创建吸引人和易于理解的可视化图表的最重要因素之一。在最新的版本 10 中，Tableau（及其公司）花了大量时间来改进颜色设置。你可以在[此处](http://www.tableau.com/about/blog/2016/7/colors-upgrade-tableau-10-56782)了解他们的改进之处。\n\n## 大小\n\n将离散或连续字段拖到\"Size”上将按照标记大小标注数据。你将经常在散布图（通常称为气泡图）中使用这种标注方法。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214639,
+              "key": "4f201574-d7af-4ea9-835a-5ead23f5f0de",
+              "title": "气泡图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eb4ce8_size-bubble-plot/size-bubble-plot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4f201574-d7af-4ea9-835a-5ead23f5f0de",
+              "caption": "",
+              "alt": null,
+              "width": 2480,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214640,
+              "key": "e27efb2c-5c5b-455d-8890-5b8a4f986b67",
+              "title": "气泡图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "我在上图中绘制了每个国家的平均数量与平均利润。我使用标记大小表示平均折扣，很明显折扣导致相关国家的利润出现负增长。\n\n和颜色一样，如果没有用大小标注数据，你可以点击标记卡并移动滑条来设置大小。\n\n## 形状\n\n和颜色及形状一样，你可以用标记形状标注数据。对于形状，只能使用离散数据。此外，如果有太多类别，形状就很难识别。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214641,
+              "key": "92d8c4bd-8db3-43b2-aad5-175a845d9479",
+              "title": "形状",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eb515a_shape-scatter/shape-scatter.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/92d8c4bd-8db3-43b2-aad5-175a845d9479",
+              "caption": "",
+              "alt": null,
+              "width": 2480,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214642,
+              "key": "fa7286b3-d831-4805-ae4d-3c9d07ea95de",
+              "title": "Detail",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "如果没有用形状标注任何数据，则可以设置形状。\n\n## 其他卡片\n\n借助 “Detail” 卡，你能够添加不含任何视觉标注的字段。这样就可以增进粒度，并且不用添加任何图形效果。\n\n\"Label” 卡可以为所有标记添加标签。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 341867,
+          "key": "925fd189-f776-4c23-a515-c98a15029561",
+          "title": "标记练习",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "925fd189-f776-4c23-a515-c98a15029561",
+            "completed_at": "2019-03-16T06:16:02.692Z",
+            "last_viewed_at": "2020-01-30T17:54:12.908Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341868,
+              "key": "ffdf1b62-94e4-4aac-beb6-40ec389fb9d1",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 标记练习\n\n使用 \"Global Superstore\" 数据集创建可视化图表，使之显示:\n * y 轴为 profit，x 轴为 shipping costs\n * 以颜色表示 order priority, 以形状（实心填充）表示 category, 然后添加 market 作为详细级别（level of detail)。\n * 高亮 market，以便凸显每个市场的数据。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341869,
+              "key": "12ffbb15-11a7-4b27-a81d-c250ab0fd98b",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/May/590a55a1_practice-with-marks/practice-with-marks.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/12ffbb15-11a7-4b27-a81d-c250ab0fd98b",
+              "caption": "",
+              "alt": null,
+              "width": 944,
+              "height": 716,
+              "instructor_notes": null
+            },
+            {
+              "id": 341870,
+              "key": "d796aa65-c88d-45be-8b94-7f2a888b1fc8",
+              "title": "标记练习",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d796aa65-c88d-45be-8b94-7f2a888b1fc8",
+                "completed_at": "2019-03-16T06:56:25.716Z",
+                "last_viewed_at": "2019-04-11T12:47:37.407Z",
+                "unstructured": "{\"selected_id\":\"a1499140066000\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "将光标悬停在右上角最远的标记，所选标记代表的是哪个市场？",
+                "answers": [
+                  {
+                    "id": "a1499140042063",
+                    "text": "Africa",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499140066000",
+                    "text": "APAC",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1499140068921",
+                    "text": "EU",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499140071714",
+                    "text": "US",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215384,
+          "key": "744d086e-e611-4fe5-b8c9-ed40ef9cc022",
+          "title": "组图（small multiples）",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "744d086e-e611-4fe5-b8c9-ed40ef9cc022",
+            "completed_at": "2019-03-13T08:16:57.908Z",
+            "last_viewed_at": "2020-01-30T18:21:34.982Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214643,
+              "key": "c22b21fd-65ec-493f-914a-f8f132a9d786",
+              "title": "小多组图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 组图（small multiples）\n\n组图是我最喜欢的可视化技巧之一。在 Tableau 里可以便捷地实现组图可视化，只需将多个维度拖到 Columns 和 Rows 功能区上即可创建组图。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214644,
+              "key": "5e9171bc-5e80-4839-919d-e4afd377b6c9",
+              "title": "季度小多组图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e9a6f3_small-multiples-quarters/small-multiples-quarters.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5e9171bc-5e80-4839-919d-e4afd377b6c9",
+              "caption": "",
+              "alt": null,
+              "width": 1110,
+              "height": 754,
+              "instructor_notes": null
+            },
+            {
+              "id": 214645,
+              "key": "6771d56b-e296-4722-8c52-f105a6fc2042",
+              "title": "小多组图 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "图中是四个单独的图表，显示了了四年内每个季度的利润增长情况。注意到图表按水平方向分布，这是由 Columns 工作区中的 **Order Date** 字段造成的。\n\n但是，是什么因素推动了这些增长？我们来看看。可以将 **Category** 拖到 Rows 工作区内。这样将创建更多的图表，数据按照 **Category** 划分并垂直分布。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214647,
+              "key": "5692b95c-7bfc-4c7e-82c9-1cde82f12d7d",
+              "title": "Order Date 类别的小多组图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e9a77c_small-multiples-with-category/small-multiples-with-category.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5692b95c-7bfc-4c7e-82c9-1cde82f12d7d",
+              "caption": "",
+              "alt": null,
+              "width": 1110,
+              "height": 754,
+              "instructor_notes": null
+            },
+            {
+              "id": 214646,
+              "key": "3b615f30-6737-4eb1-ba60-ff761626b316",
+              "title": "小多组图 3",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "现在可以看出，技术是利润增长的主要推动因素。组图适合展示绝大多数的图表类型，下面是几个示例。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214648,
+              "key": "d81e27a2-7584-4c84-a9bb-a64c4f0cbfff",
+              "title": "小多组图示例",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e9b8b0_small-multiples-examples/small-multiples-examples.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d81e27a2-7584-4c84-a9bb-a64c4f0cbfff",
+              "caption": "",
+              "alt": null,
+              "width": 903,
+              "height": 695,
+              "instructor_notes": null
+            },
+            {
+              "id": 214649,
+              "key": "4855cc4c-538f-4e0b-a7f1-484cebaebb96",
+              "title": "小多组图示例",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "在上述散点图中，你可以轻松地对比每个类别每项的利润。现在就很清楚为何技术是增长的主要推动因素了（正如之前看到的），每项的利润要比其他类别的利润高很多。 \n\n组图还适用于地图。从上面右图中可以看出哪些州在亏损，哪些州在盈利。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341881,
+              "key": "2275c136-bd10-4d5d-8fa7-83bcf05bd774",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 小多组图练习\n\n现在轮到你了，请使用 \"LinkedIn Top Skills\" 数据创建小多组图，以进行数据可视化练习。基本上，你的目标是创建如下所示的可视化图表。每个小多组图图表显示的是，某种特定技能的排名随时间而变化的情况。请随意探索我在下面所作的可视化图表，我在图表中仅仅探索了两个和数据相关的技能。（如果长时间未显示出下方可视化图表，可尝试刷新页面~）\n\n<iframe src=\"https://public.tableau.com/views/LinkedInTopSkills_13/Sheet4?:showVizHome=no&:toolbar=no:embed=true\"\n width=\"750\" height=\"600\"></iframe>",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 341871,
+          "key": "284abab0-0c5b-4b2b-addb-d2ff17838284",
+          "title": "双坐标轴",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "284abab0-0c5b-4b2b-addb-d2ff17838284",
+            "completed_at": "2019-03-16T06:57:02.532Z",
+            "last_viewed_at": "2020-01-30T18:21:45.743Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341872,
+              "key": "1d3c0410-fb25-452a-8899-21a8b3c9b84e",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 双坐标轴\n\n有时候，你需要在一个图表上对比两个变量。如果将两个度量拖到 Rows 功能区上，就会出现两个图表，而不是一个。例如，我们试着在一个图表上绘制利润和销量图表。将 **Profit** 和 **Sales** 拖到 Rows 功能区上，结果如下图所示：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341874,
+              "key": "d9d3f70a-887e-4da0-88f7-948c3e1e9b12",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e9c15a_dual-axis-before/dual-axis-before.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d9d3f70a-887e-4da0-88f7-948c3e1e9b12",
+              "caption": "",
+              "alt": null,
+              "width": 1190,
+              "height": 775,
+              "instructor_notes": null
+            },
+            {
+              "id": 341875,
+              "key": "ba0a56bb-fa1e-4e0d-9b0b-07ccb60c5b1b",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "下面是两个图表，但是我们只想要一个。你可以将两条折线放到一个图表上，方法是在其中一个度量上右击打开菜单，选择“Dual Axis”。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341876,
+              "key": "01bca9db-f2e3-4103-be62-bd2694ea5e38",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e9c219_dual-axis-menu/dual-axis-menu.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/01bca9db-f2e3-4103-be62-bd2694ea5e38",
+              "caption": "",
+              "alt": null,
+              "width": 505,
+              "height": 554,
+              "instructor_notes": null
+            },
+            {
+              "id": 341877,
+              "key": "2cef93e9-6066-4b67-9ed7-01b7828bc0d8",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "应该看起来如下图所示：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341878,
+              "key": "0d9083de-978d-488d-a8d6-81ea19b17e48",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e9c422_dual-axis-after/dual-axis-after.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0d9083de-978d-488d-a8d6-81ea19b17e48",
+              "caption": "",
+              "alt": null,
+              "width": 1190,
+              "height": 775,
+              "instructor_notes": null
+            },
+            {
+              "id": 341879,
+              "key": "6dbfbed2-8e89-4a37-90e5-28d5ac94bbd4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你可以采取快捷操作：将第二个度量拖到视图的右侧。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341880,
+              "key": "13215c49-f782-4ec7-b2ee-169c5922bac9",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e9c507_dual-axis-dragged-cropped/dual-axis-dragged-cropped.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/13215c49-f782-4ec7-b2ee-169c5922bac9",
+              "caption": "",
+              "alt": null,
+              "width": 1142,
+              "height": 725,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215385,
+          "key": "7e854342-9b36-45c6-991d-42db7b3b20a7",
+          "title": "过滤器",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7e854342-9b36-45c6-991d-42db7b3b20a7",
+            "completed_at": "2019-03-16T07:03:43.047Z",
+            "last_viewed_at": "2020-01-30T20:19:11.517Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214658,
+              "key": "96516f13-22aa-4052-b502-f7b19911a2af",
+              "title": "过滤器简介",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 过滤器\n\n我最喜欢的一个 Tableau 功能是能够快速制作交互式过滤器。这样，你就可以仅查看感兴趣的数据，使用户也能这么做。\n\n## 过滤器基础知识\n\n你可以采用几种不同的方式来创建过滤器。首先，可以直接在视图中创建过滤器。假设有下面这个图表，上面有很多的视觉元素，你想简化下。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214659,
+              "key": "ac191611-844a-40b7-b03f-4a777a3f0b5d",
+              "title": "过滤之前",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eac6d3_filter-before/filter-before.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ac191611-844a-40b7-b03f-4a777a3f0b5d",
+              "caption": "",
+              "alt": null,
+              "width": 2326,
+              "height": 1640,
+              "instructor_notes": null
+            },
+            {
+              "id": 214660,
+              "key": "69e267ce-27f5-4ac8-aa76-7ab7a77af080",
+              "title": "从视图中过滤",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你可以直接从该视图中过滤，方法是选择数据，右击点开上下文菜单，然后创建过滤器。我选择了几个想要保留的类别。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214661,
+              "key": "53866438-5d6f-4052-94bc-052fb027b622",
+              "title": "从上下文菜单中过滤",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eac752_filter-from-view/filter-from-view.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/53866438-5d6f-4052-94bc-052fb027b622",
+              "caption": "",
+              "alt": null,
+              "width": 1090,
+              "height": 1056,
+              "instructor_notes": null
+            },
+            {
+              "id": 214662,
+              "key": "4878a577-eaa9-4053-8b3b-a933a0c1244f",
+              "title": "从上下文菜单中过滤",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "从上图中可以看出我可以选择\"Keep only”，这样会过滤掉所选值之外的所有值。我还可以选择排除所选值。我将选择\"Keep only”。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214663,
+              "key": "70f60d38-172b-472e-a595-847e41558585",
+              "title": "过滤子类别之后",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eac7b9_filter-after-sub-categories/filter-after-sub-categories.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/70f60d38-172b-472e-a595-847e41558585",
+              "caption": "",
+              "alt": null,
+              "width": 2326,
+              "height": 1640,
+              "instructor_notes": null
+            },
+            {
+              "id": 214664,
+              "key": "44782d9a-1943-4f3d-b51e-1433ab73540e",
+              "title": "Filter 功能区",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Filters 功能区上现在有个子类别药丸了，因为我是根据该字段进行过滤。还有很多区域，所以我将选择仅查看几种区域。还可以通过将字段拖到 Filters 功能区上创建过滤器。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214665,
+              "key": "b9371ca4-c4c2-4a72-a80f-1b326615836a",
+              "title": "通过拖动字段创建过滤器",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eac986_filter-drag-region-cropped/filter-drag-region-cropped.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b9371ca4-c4c2-4a72-a80f-1b326615836a",
+              "caption": "",
+              "alt": null,
+              "width": 1115,
+              "height": 692,
+              "instructor_notes": null
+            },
+            {
+              "id": 214666,
+              "key": "876942b7-e13e-4d4d-b3be-80f068109306",
+              "title": "Filter 功能区",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "如果你也这么操作的话，应该会弹出菜单。有四种不同的标签页，使你能够按照不同的方式过滤。我将选择四个区域。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214667,
+              "key": "4374b27b-db35-4af2-920d-3d19a2299446",
+              "title": "过滤器菜单",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eaca57_filter-select-regions/filter-select-regions.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4374b27b-db35-4af2-920d-3d19a2299446",
+              "caption": "",
+              "alt": null,
+              "width": 1164,
+              "height": 1232,
+              "instructor_notes": null
+            },
+            {
+              "id": 214668,
+              "key": "f664c72d-cf1b-4d53-84c2-ec53d07cdbba",
+              "title": "已过滤",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "最后，这是所有内容都过滤后的效果。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214669,
+              "key": "e95072b2-67b9-44d6-96a4-91094096e63b",
+              "title": "过滤所有内容后",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eaca9d_filter-after/filter-after.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e95072b2-67b9-44d6-96a4-91094096e63b",
+              "caption": "",
+              "alt": null,
+              "width": 2326,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214670,
+              "key": "52501f28-1e75-40a8-8ad4-e8cc4cf335f0",
+              "title": "交互式过滤器",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 交互式过滤器\n\n这是在菜单中设置的静态过滤器，如果你想更改的话，需要回到菜单。Tableau 有个很棒的功能，使你能够让过滤器变成交互式，并在视图中进行控制。\n\n为此，在 Filters 功能区的 Region 药丸上打开菜单。效果应该如下所示：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214671,
+              "key": "04e26b51-4549-4372-b207-3ec2321c5be9",
+              "title": "过滤器显示菜单",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eae64d_filter-show/filter-show.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/04e26b51-4549-4372-b207-3ec2321c5be9",
+              "caption": "",
+              "alt": null,
+              "width": 474,
+              "height": 772,
+              "instructor_notes": null
+            },
+            {
+              "id": 214672,
+              "key": "60f6163a-ff3e-420b-8d0c-9f455401824c",
+              "title": "Show Filter",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "点击”Show Filter”会显示过滤器控件（可以在下图的右侧看到）。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214673,
+              "key": "7528b9a9-b1a5-4d13-b73c-ce0e3783ece8",
+              "title": "过滤器控件",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eaea74_filter-interactive/filter-interactive.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7528b9a9-b1a5-4d13-b73c-ce0e3783ece8",
+              "caption": "",
+              "alt": null,
+              "width": 2326,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214674,
+              "key": "37659981-8b94-45cc-9e43-fdb0dff0ec18",
+              "title": "过滤器选项",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你可以更改过滤器的控制方式，方法是打开控件上的菜单，并点击小三角形。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214675,
+              "key": "7c4e2028-3c20-46e7-aff9-3577cb6e31c7",
+              "title": "过滤器选项菜单",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eaedec_filter-interactive-menu/filter-interactive-menu.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7c4e2028-3c20-46e7-aff9-3577cb6e31c7",
+              "caption": "",
+              "alt": null,
+              "width": 666,
+              "height": 962,
+              "instructor_notes": null
+            },
+            {
+              "id": 214676,
+              "key": "baa8f9a0-8770-4c3f-b9d1-36e8a6e11040",
+              "title": "过滤器选项",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "试试不同的选项，看看效果如何。我选择 Multiple Values（下拉菜单）以节省屏幕空间。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214677,
+              "key": "19af819f-72c2-43df-ae4a-b4fc9d703526",
+              "title": "区域过滤器下拉菜单",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eaee4f_filter-interactive-changed/filter-interactive-changed.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/19af819f-72c2-43df-ae4a-b4fc9d703526",
+              "caption": "",
+              "alt": null,
+              "width": 1406,
+              "height": 964,
+              "instructor_notes": null
+            },
+            {
+              "id": 214678,
+              "key": "9a95c512-85cf-4fba-ac51-9167f5b34699",
+              "title": "过滤器下拉菜单",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "现在是个下拉菜单，我可以从中选择要在视图中查看的区域。\n\n## 关于过滤器的更多知识\n\n这种交互式过滤器是 Tableau 最强大的功能之一。Tableau 提供了大量的很棒的教程视频，你可以在[此处](http://www.tableau.com/learn/tutorials/on-demand/using-filter-shelf)找到这些视频。你可能需要创建一个帐号，当然你后面肯定要用到的，并且该网站上提供了大量实用的教程视频。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 341884,
+          "key": "67347d5a-ad4f-45b4-a6c4-90600008967b",
+          "title": "散点图和小多组图结合",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "67347d5a-ad4f-45b4-a6c4-90600008967b",
+            "completed_at": "2019-03-16T07:14:46.543Z",
+            "last_viewed_at": "2020-01-30T18:21:54.067Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341885,
+              "key": "37dc7ec5-69bd-42a2-8d47-5bfefc31fff7",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 让我们来练习一下吧！\n\n现在你已经学完了基础知识，请自行尝试一下吧。你将使用一个叫做[Marvel superhero and supervillain statistics](https://github.com/udacity/new-dand-advanced-china/blob/master/Tableau%20%E5%8F%AF%E8%A7%86%E5%8C%96/superherodata-tableau.xlsx?raw=true)的小型数据集，来完成这个图表。以下是给你的提示：\n\n* 创建散点图，x 轴为 speed，y 轴为 intelligence\n* 用颜色表示 alignment\n* 用大小表示 power\n* 将形状改为实心填充圆\n* 添加标签以在旁边显示每个数据点的名称\n\n你的图表应该类似于下面的图表：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341886,
+              "key": "2bb2915b-64dc-44fe-9315-a1fcc50fbd46",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/February/589e6575_superheroplot/superheroplot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2bb2915b-64dc-44fe-9315-a1fcc50fbd46",
+              "caption": "",
+              "alt": null,
+              "width": 891,
+              "height": 547,
+              "instructor_notes": null
+            },
+            {
+              "id": 341887,
+              "key": "1f245946-8024-4be5-b3fa-211b9fad22ca",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "1f245946-8024-4be5-b3fa-211b9fad22ca",
+                "completed_at": "2019-03-16T07:22:54.206Z",
+                "last_viewed_at": "2019-04-11T12:55:54.320Z",
+                "unstructured": "{\"selected_id\":\"a1499143265483\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "既然你已经建好了可视化图表，请重新排列，以确定谁拥有最强的综合 strength, speed 和 combat 三者的实力。",
+                "answers": [
+                  {
+                    "id": "a1499143254319",
+                    "text": "Hulk",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499143265483",
+                    "text": "Thor",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1499143278267",
+                    "text": "Spiderman",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499143280122",
+                    "text": "Iron Man",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 341888,
+              "key": "01354391-1d1d-48f1-b782-01fa1a0fb2b3",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "[在这里](https://public.tableau.com/views/SuperHeroPlot/Sheet1?:embed=y&:display_count=yes)，你可以找到 Tableau Public 版本.",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215386,
+          "key": "798689a9-2895-4255-8c6f-8f1b0e52c3f7",
+          "title": "组和集合",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "798689a9-2895-4255-8c6f-8f1b0e52c3f7",
+            "completed_at": "2019-03-16T07:23:48.081Z",
+            "last_viewed_at": "2020-01-30T18:22:38.452Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214679,
+              "key": "dddef305-d19f-46c9-a5a9-4233613a635b",
+              "title": "组和集合简介",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 组和集合\n\nTableau 有两种将数据组合到一起的方法：*组*和*集合*。它们比较相似，但是也有差别，我将详细介绍。\n\n将数据点组合到一起可以帮助传达你的观点。例如，如果你要指出亏损的产品，可以创建一个此类产品组，然后单独标注颜色，以便与盈利产品区分开来。\n\n## 组\n\n组通常从视图中创建，方法是在视图中选择多个数据点。例如，我想查看数据集中各个国家的平均销量和平均利润。你应该跟着我一起操作，这样你可以练习下如何创建组和集合。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214680,
+              "key": "7c3e4be4-d17f-4455-b7c4-f739c302f73b",
+              "title": "销量和利润",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eaf6a1_profit-vs-quantity-countries/profit-vs-quantity-countries.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7c3e4be4-d17f-4455-b7c4-f739c302f73b",
+              "caption": "",
+              "alt": null,
+              "width": 1870,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214681,
+              "key": "7ac18ff1-50dd-48c0-ac00-d730576bc361",
+              "title": "组 1",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "出现有趣的情况，似乎有两个平均数量不同的集群。你可以通过将其中一个集群组合到一起，进行更多的可视化操作，详细了解这种情况。要选择平均数量低的数据点，按下鼠标并在左侧集群周围拖一个方框。然后，将光标悬停在一个数据点上方，系统将弹出小菜单，或者右击数据点，此时将出现大菜单。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214684,
+              "key": "257af90f-6787-47c2-a6df-e3e477ecbf54",
+              "title": "小的悬停菜单",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eaf768_groups-create-hover/groups-create-hover.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/257af90f-6787-47c2-a6df-e3e477ecbf54",
+              "caption": "小的悬停菜单",
+              "alt": null,
+              "width": 906,
+              "height": 964,
+              "instructor_notes": null
+            },
+            {
+              "id": 214685,
+              "key": "65a7bbd3-dee5-48e6-81d7-16de6af367f8",
+              "title": "大的右击菜单",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eaf7ae_groups-create-menu/groups-create-menu.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/65a7bbd3-dee5-48e6-81d7-16de6af367f8",
+              "caption": "大的右击菜单",
+              "alt": null,
+              "width": 900,
+              "height": 1136,
+              "instructor_notes": null
+            },
+            {
+              "id": 214686,
+              "key": "6df6196e-a3cb-483f-b5d9-e1a6a1bc855f",
+              "title": "创建组",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你可以从悬停菜单中创建组，方法是点击链接图标（看起来像个别针）。在右击菜单中选择\"Group”。应该如下图所示。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214682,
+              "key": "2fe74481-ade1-44b2-88c4-08a57eb8f4dd",
+              "title": "组已创建",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eaf86a_groups-created/groups-created.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2fe74481-ade1-44b2-88c4-08a57eb8f4dd",
+              "caption": "",
+              "alt": null,
+              "width": 1870,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214683,
+              "key": "f0bbd846-1e69-4991-8117-ffc2ae97bce5",
+              "title": "组已创建",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "现在有一个组，叫做 Country (组) 1，这是你刚刚创建的组。我将其重命名为\"Low Quantity Countries”。该组其实就是你在视图中选择的国家列表，可以在下面的\"Edit Group”菜单中看到。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214687,
+              "key": "03ef5150-13f8-4b96-ac9b-e92f5d2c56c1",
+              "title": "组成员",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eafa33_group-members/group-members.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/03ef5150-13f8-4b96-ac9b-e92f5d2c56c1",
+              "caption": "",
+              "alt": null,
+              "width": 1182,
+              "height": 1240,
+              "instructor_notes": null
+            },
+            {
+              "id": 214688,
+              "key": "0990d5f4-326c-4886-94bd-33c6a179171d",
+              "title": "组和地图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "创建好组后，可以在其他工作表中使用该组。例如，创建一个地图，显示数量低的国家在全世界是如何分布的。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214689,
+              "key": "964f4cc7-a982-45d8-85c0-b87787523b54",
+              "title": "在地图中使用组",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eaface_groups-used-in-map/groups-used-in-map.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/964f4cc7-a982-45d8-85c0-b87787523b54",
+              "caption": "",
+              "alt": null,
+              "width": 2424,
+              "height": 1490,
+              "instructor_notes": null
+            },
+            {
+              "id": 214690,
+              "key": "59dad41e-f806-492b-a5ef-8b48dabdfa20",
+              "title": "组的最终效果",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "我在图中使用创建的组 (Low Quantity Countries) 对地图着色。蓝色国家属于该组，即平均数量低的国家。很明显大部分国家是非洲、中东和东欧国家。\n\n## 集合\n\n集合与组相似，你可以选择数据点并创建集合。但是，集合可以是动态的，当基础数据变化时，集合成员也会变化，但是组是静态的，成员始终不变。\n\n例如，假设你想看绩效不佳的产品对整体利润有何影响。你可以根据亏损的产品名称或 ID 创建集合，其中平均利润低于 0。要创建集合，打开 **Product Name** 字段的菜单，并选择 Create > Set...\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214691,
+              "key": "65901dda-033e-42fa-99bc-d783139cdf66",
+              "title": "创建集合",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eb0bdb_set-create/set-create.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/65901dda-033e-42fa-99bc-d783139cdf66",
+              "caption": "",
+              "alt": null,
+              "width": 1046,
+              "height": 1048,
+              "instructor_notes": null
+            },
+            {
+              "id": 214692,
+              "key": "7c15cf7d-7f1c-4453-bd1c-9fab3bceb529",
+              "title": "编辑集合",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "这样会调出编辑集合的菜单。点击\"Condition”标签页，然后选择 By field: Profit Average < 0，如下图所示。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214693,
+              "key": "b25e22c3-611b-44bb-b647-b4a85b8f6d0f",
+              "title": "编辑集合",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eb0cd8_set-edit/set-edit.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b25e22c3-611b-44bb-b647-b4a85b8f6d0f",
+              "caption": "",
+              "alt": null,
+              "width": 1166,
+              "height": 1502,
+              "instructor_notes": null
+            },
+            {
+              "id": 214694,
+              "key": "3adbf040-d550-4301-8fca-81db23137e4f",
+              "title": "不良产品集合",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "这样会创建产品集合，其中平均利润低于零。我们可以在图表中使用集合来表示亏损的产品。我们看看产品不同子类别的总利润。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214695,
+              "key": "169ddb30-e31c-49cc-9112-2307b7ea66eb",
+              "title": "利润集合",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eb0d57_set-profits/set-profits.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/169ddb30-e31c-49cc-9112-2307b7ea66eb",
+              "caption": "",
+              "alt": null,
+              "width": 2480,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214696,
+              "key": "0827061a-a33b-4095-b688-90d28023c0e0",
+              "title": "利润集合",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "借助刚刚创建的集合，你可以将这些长条区分为亏损和盈利类别。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214697,
+              "key": "90ca72c1-b608-4af9-a48f-692afeabeaa3",
+              "title": "利润集合的颜色",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57eb0e2d_set-colors/set-colors.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/90ca72c1-b608-4af9-a48f-692afeabeaa3",
+              "caption": "",
+              "alt": null,
+              "width": 2480,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214698,
+              "key": "280fdd75-56c9-4624-bad2-50aa83084744",
+              "title": "集合颜色",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "红色长条显示因为坏的产品造成的亏损金额。似乎办公用品几乎总是获胜者，但是设备亏损了很多钱。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214699,
+              "key": "26079d78-a932-42e7-9d29-e6a4cf2f8d17",
+              "title": "Trina 对组和集合的介绍",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "I59eqlvfMZk",
+                "china_cdn_id": "I59eqlvfMZk.mp4"
+              }
+            },
+            {
+              "id": 214700,
+              "key": "2505c70f-bf67-491a-9fb5-958b5250cae9",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "正如 Trina 提到的，集合与组相似，但是你可以创建动态集合，并随着数据的变化相应地更新。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 341891,
+          "key": "7db72e32-a65c-4c12-bb1f-9797e511cd9f",
+          "title": "为世界杯数据绘制可视化地图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "7db72e32-a65c-4c12-bb1f-9797e511cd9f",
+            "completed_at": "2019-03-16T07:45:42.741Z",
+            "last_viewed_at": "2020-01-30T18:22:48.344Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "World-Cup-Data",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/September/59ba26f4_world-cup-data/world-cup-data.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 341892,
+              "key": "fce4c2b9-393f-4aed-8fb1-7c33b54c3304",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 为世界杯数据绘制可视化地图\n\n页面底部有一个世界杯比赛的链接，你可以使用此数据创建许多有趣的可视化图表。数据包括一行自 1930 年以来每场世界杯比赛的记录。\n\n### 目标\n这个练习的目标是创建一个分布图，以显示自 2002 年以来每个国家的进球数。本可视化图表应当显示年份过滤器，以便轻松更改数据中包含的年份。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341893,
+              "key": "2d0b2434-c21a-4b8d-889f-26dea2dd7757",
+              "title": "数据准备",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2d0b2434-c21a-4b8d-889f-26dea2dd7757",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "首先，下载并连接数据，然后花几分钟时间加以探索。在准备好显示每个国家的进球数之前，你需要采取哪些步骤来准备数据？"
+              },
+              "answer": {
+                "text": "当我探索数据时，我注意到 **goals** 变量显示的是比分（比如 3-2），而不是每支队伍各自的进球数。所以该变量必须加以拆分。\n\n我也注意到，每场比赛都有 1 队和 2 队，这意味着我们不得不重新格式化数据，以使各支比赛队伍的组合单独成行。在这种情形下，撇开 Tableau, 而使用 Excel，Python 或者其他工具来准备数据会更容易，现在去做吧。每场比赛最多应该有两行，一行为 1 队及其对应进球数，一行为 2 队及其进球数。\n\n",
+                "video": null
+              }
+            },
+            {
+              "id": 341894,
+              "key": "7e5ad1b4-1f77-42b6-a48a-370678cc5edf",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "一旦你设置好了数据，在 Tableau 中建立连接，放手一试！一旦你创建了图表，请回答下面的测验问题。你所得到的可视化图表应该如下所示：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341896,
+              "key": "e7162154-ba50-423e-88a1-289636863ce0",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2017/May/590a4eec_world-cup-map/world-cup-map.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e7162154-ba50-423e-88a1-289636863ce0",
+              "caption": "",
+              "alt": null,
+              "width": 1276,
+              "height": 676,
+              "instructor_notes": null
+            },
+            {
+              "id": 341897,
+              "key": "d8962b59-b73f-4e39-bbf3-449f71a4ebbc",
+              "title": "Goals 1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "d8962b59-b73f-4e39-bbf3-449f71a4ebbc",
+                "completed_at": "2019-04-14T06:02:58.734Z",
+                "last_viewed_at": "2019-04-14T06:03:07.744Z",
+                "unstructured": "{\"selected_id\":\"a1499143913876\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "2000 至 2014 年，进球总数排名第 2 的国家进了多少球？",
+                "answers": [
+                  {
+                    "id": "a1499143894816",
+                    "text": "30",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499143911731",
+                    "text": "31",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499143913876",
+                    "text": "47",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1499143919741",
+                    "text": "52",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 341898,
+              "key": "4fb6c7e8-ebab-43b0-866d-362560456ade",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 组\n\n现在过滤得到仅在 2014 年进行的比赛，创建两个组：一组包括北美和中美洲的所有国家，一组包括南美洲的所有国家。你应当得出，S.America region 有 6 个国家，N.America region 有 4 个国家。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341899,
+              "key": "61d5fc80-7c2c-400b-9d33-162addbe607c",
+              "title": "按组划分进球数",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "61d5fc80-7c2c-400b-9d33-162addbe607c",
+                "completed_at": "2019-04-14T06:03:14.818Z",
+                "last_viewed_at": "2019-04-14T06:03:30.162Z",
+                "unstructured": "{\"selected_id\":\"a1499144010799\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "每个地区的国家在 2014 年的进球得分各是多少？",
+                "answers": [
+                  {
+                    "id": "a1499143990078",
+                    "text": "S. America: 35, N. America: 10",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499144004989",
+                    "text": "S. America: 40, N. America: 11",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499144010799",
+                    "text": "S. America: 44, N. America: 16",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1499144016260",
+                    "text": "S. America: 56, N. America: 20",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 341900,
+              "key": "bc733643-f332-4c22-ba0f-4c3e88075197",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 答案文件\n如果你遇到麻烦，你可以在 Tableau Public 上找到答案文件.\n\n* [按照 Country](https://public.tableau.com/views/WorldCup-GoalsbyCountry/ByCountry?:embed=y&:display_count=yes)\n* [按照 Region](https://public.tableau.com/shared/NQK52WTTY?:display_count=yes)",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215387,
+          "key": "dec63d74-5ae5-4371-bbf5-0ecf3a3092b6",
+          "title": "计算字段",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dec63d74-5ae5-4371-bbf5-0ecf3a3092b6",
+            "completed_at": "2019-03-16T07:48:50.525Z",
+            "last_viewed_at": "2020-01-30T18:22:53.692Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341901,
+              "key": "834840dc-fefc-4b4c-bfa6-c88755984b1e",
+              "title": "07 计算字段",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "dXEvq03E5lc",
+                "china_cdn_id": "dXEvq03E5lc.mp4"
+              }
+            },
+            {
+              "id": 214701,
+              "key": "268705e4-a4f0-4ef8-9d00-a3dac8c5028c",
+              "title": "计算字段",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 计算字段\n\n有时候，你想要查看某项数据，但是找不到具体的字段。例如，也许你想知道每个订单记录每项产品的利润。看起来很简单，只需针对每个记录将利润除以订单，然后汇总，但是如何在 Tableau 中进行除法运算呢？\n\n答案是**计算字段**。计算字段使你能够创建新的字段并用在可视化图表中。如果你有在 Excel 中使用公式的经验，那么创建计算字段应该很简单。\n\n要创建计算字段，打开某个字段（例如 **Profit**）的菜单，然后选择 Create > Calculated Field…（如下图所示）。你还可以在顶部菜单栏上点击\"Analysis”，然后选择\"Create Calculated Field...\"",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214702,
+              "key": "f39f645f-cc42-4e67-9a94-1c5edf747d76",
+              "title": "创建计算字段",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57ebe7c5_calculated-field-from-field-menu/calculated-field-from-field-menu.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f39f645f-cc42-4e67-9a94-1c5edf747d76",
+              "caption": "",
+              "alt": null,
+              "width": 1056,
+              "height": 902,
+              "instructor_notes": null
+            },
+            {
+              "id": 214703,
+              "key": "60174461-22da-4cfe-89c5-3b80091fd401",
+              "title": "计算字段 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你应该看到编辑器：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214704,
+              "key": "e64c7c5a-12bb-4c15-b30d-7da0a00421ac",
+              "title": "计算字段面板",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57ebf49d_calculated-field-panel/calculated-field-panel.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e64c7c5a-12bb-4c15-b30d-7da0a00421ac",
+              "caption": "",
+              "alt": null,
+              "width": 2174,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214705,
+              "key": "02d838b0-e7ae-4a5a-b889-198d54f727cf",
+              "title": "计算字段",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "如果你没有看到函数面板，点击编辑器右侧的小三角形。\n\n编辑器中的字段两边出现方括号，例如 `[Profit]`。你可以在此处进行简单的运算，例如加上常量，或乘以该字段。还可以使用函数，例如绝对值，求正弦、平方根等等。如果想使字段中的值都为正数，则使用 `ABS([Profit])`。右侧有一个函数列表，当你选择某个函数时，就会出现简短的文档。\n\n我们想要创建一个新的字段，用来计算每个记录每项产品的利润。非常简单，只需使用 `[Profit]/[Quantity]`，我在下图中这么操作了，我还将计算字段重命名为\"Profit per item”。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214706,
+              "key": "6b011ce8-04e1-43c9-961a-fb87110f294b",
+              "title": "每项产品的利润",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57ebfcc3_calculated-field-/calculated-field-.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6b011ce8-04e1-43c9-961a-fb87110f294b",
+              "caption": "",
+              "alt": null,
+              "width": 2174,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214707,
+              "key": "584a9ec6-f598-495f-b41f-beb87249b0a3",
+              "title": "使用计算字段",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "点击”OK”并创建好后，新的字段就会显示在数据面板中。你可以像任何其他字段一样使用它。我创建了一个关于每个子类别的每项产品平均利润图表。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214708,
+              "key": "7ca4a9fd-f0e0-426a-b698-6868a5d492e0",
+              "title": "每项产品利润条形图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57ebfd60_calculated-profit-per-item/calculated-profit-per-item.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7ca4a9fd-f0e0-426a-b698-6868a5d492e0",
+              "caption": "",
+              "alt": null,
+              "width": 2174,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214709,
+              "key": "4f6ae87f-d721-4fba-9ee2-687206b7a748",
+              "title": "关于每项利润的更多信息",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你可以在左侧看到 **Profit per item** 字段。名称旁边的小等号 `=#` 表示它是计算字段。这个字段表示的是每个记录每项产品的利润。我们想知道每个子类别每项产品的平均利润，所以将其拖到 Columns 上并求平均值。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214710,
+              "key": "e72597ff-d426-4f5a-9526-c266fde9d4aa",
+              "title": "汇总",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 对计算字段进行汇总\n\n你也可以直接在计算字段中进行汇总运算。例如，我们还可以通过 `SUM([Profit])/SUM([Quantity])` 计算每项产品的利润。`SUM()` 函数的计算流程就像在视图中对字段进行操作一样。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214711,
+              "key": "f760d176-55e0-4bed-b198-ebba36c54db7",
+              "title": "汇总后的计算字段",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57ec0596_calculated-aggregation/calculated-aggregation.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f760d176-55e0-4bed-b198-ebba36c54db7",
+              "caption": "",
+              "alt": null,
+              "width": 2326,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214712,
+              "key": "53d567cf-b392-4042-b6a1-6429c988cf81",
+              "title": "差异",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "两种计算每项产品利润的方法看起来基本相同，但是有一些差异，例如在\"Tables”中。我将更详细地介绍，使你能了解 Tableau 如何效果更好。\n\n如果我将表格展开为产品...",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214713,
+              "key": "8d44081f-6884-4807-8bb2-cbdebdd5cebf",
+              "title": "每项产品的利润",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57ec0832_calculated-aggregation-products/calculated-aggregation-products.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8d44081f-6884-4807-8bb2-cbdebdd5cebf",
+              "caption": "",
+              "alt": null,
+              "width": 2326,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214714,
+              "key": "5dd7d82e-b300-4f58-9665-01895784b3a6",
+              "title": "产品差异",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "我们看到了一些奇怪的地方。两种方法产生的很多结果截然不同。第三个产品的每项利润是 $9 或 -$5。查看 Profit 和 Quantity 的值，似乎汇总方法 (`SUM([Profit])/SUM([Quantity]`) 操作正确。我将查看每个记录，看看是什么情况。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214715,
+              "key": "5e035145-1245-4eca-9540-5a916b603254",
+              "title": "每项利润行级别",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57ec1db4_calculated-field-rows/calculated-field-rows.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/5e035145-1245-4eca-9540-5a916b603254",
+              "caption": "",
+              "alt": null,
+              "width": 2522,
+              "height": 1546,
+              "instructor_notes": null
+            },
+            {
+              "id": 214716,
+              "key": "f6f1bef7-c5b6-4ea4-b01b-a9e4a0029aa4",
+              "title": "汇总（续）",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "在行级别，两种计算方法是一样的，是 [Profit]/[Quantity] 运算的平均值导致了差异。对于”Atlantic Mobile 4-Shelf Bookcases”产品，所有比例都正确。但是求平均值时，(28-112+28+42+28+42)/6 = 9.333，就得出在产品名称级别看到的结果。 \n\n另一个计算中的汇总运算会帮助我们做出处理。它始终会计算我们所处的粒度级别比例。你可以在粒度级别看到 `Profit` 和 `Quantity` 进行求和运算，比例 `SUM([Profit])/SUM([Quantity])` 就是根据这些数字得出的。\n\n这两种运算回答的是不同的问题。 \n\n1. 任何产品内或任何其他类别级别的*单个订单*的利润比例是多少？\n  * 使用 Average `[Profit]/[Quantity]` \n\n2. 某个类别任何级别的利润比例是多少？\n  * 使用 `SUM([Profit])/SUM([Quantity])`\n\n在处理数据时，确保回答的是正确的问题！ ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214717,
+              "key": "a86e42f2-4a0a-4997-b957-48baa2e022e5",
+              "title": "条件语句",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 条件语句\n\n和 Excel 及大多数编程语言一样，你可以在计算中使用条件语句（例如`IF`、`THEN`、`ELSE`）。例如，要创建新的字段，将销量分类为“good”和“bad”，你可以：\n\n`IF SUM([Sales]) > 10000 THEN \"Good\" ELSE \"Bad\"`\n\n你将经常看到这种格式，有很多使用函数 `IIF` 的简写版本。函数用法可以是 `IIF(conditions, if true, if false)`\n\n`IIF(SUM([Sales]) > 10000, \"Good\", \"Bad\")`\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214719,
+              "key": "543d2552-4762-44e6-a2f4-82eaa6fb2b0e",
+              "title": "字符串",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 字符串运算\n\n很多时候，你处理的数据将是字符串（文本），例如这个数据集中的产品名称。在计算过程中，你可以拆分字符串中的单词，在字符串中查找单词和连结字符串。\n\n这个 [Tableau 教程视频](http://www.tableau.com/learn/tutorials/on-demand/string-calculations)和[这篇帖子](http://www.clearlyandsimply.com/clearly_and_simply/2014/06/string-calculations-in-tableau.html)很不错，其中给出了很多有深度的示例。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214718,
+              "key": "54dc822a-f316-431f-8c54-7e4ce8250830",
+              "title": "关于计算的更多内容",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 关于计算字段的更多内容\n\n关于计算字段还有很多要学的知识，这节课就不详细介绍了。如果你想详细了解计算字段，欢迎参阅 [Tableau 文档](https://onlinehelp.tableau.com/current/pro/desktop/zh-cn/help.html#calculations_calculatedfields.html)。当你使用 Tableau 时，一定要经常查看官方文档。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 341902,
+          "key": "83989d73-3a14-4939-88dd-8b381f0dc5d4",
+          "title": "表格计算",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "83989d73-3a14-4939-88dd-8b381f0dc5d4",
+            "completed_at": "2019-03-13T08:16:57.846Z",
+            "last_viewed_at": "2020-01-30T18:44:33.338Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341903,
+              "key": "1e4c8c69-93ab-4be0-9460-8accd7393e21",
+              "title": "08 表格计算",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Vkf3Ft93zMc",
+                "china_cdn_id": "Vkf3Ft93zMc.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 341904,
+          "key": "ec5e8356-5479-4a64-9765-04efbb5c33c4",
+          "title": "更多Tableau数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ec5e8356-5479-4a64-9765-04efbb5c33c4",
+            "completed_at": "2019-03-16T08:21:24.093Z",
+            "last_viewed_at": "2019-12-17T13:03:23.760Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341905,
+              "key": "e94c1a66-14a4-40f9-bd41-e7b7f9fae195",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 让我们来练习吧！\n\n更好使用 Tableau 的最佳途径之一，就是重新创建可视化图表。在接下来的几个章节，我已经创建好了一张可视化图表，你必须仿作图表。如果被卡住了，你可以通过点击图表右侧的下载按钮，下载已完成的仪表板。祝你好运！",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 341906,
+          "key": "ce244a4d-cf74-4142-bd71-234355579a57",
+          "title": "可视化练习：最热技能",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "ce244a4d-cf74-4142-bd71-234355579a57",
+            "completed_at": "2019-03-13T05:12:29.876Z",
+            "last_viewed_at": "2020-01-30T18:44:59.103Z",
+            "unstructured": null
+          },
+          "resources": {
+            "files": [
+              {
+                "name": "linkedin-top-skills",
+                "uri": "http://video.udacity-data.com.s3.amazonaws.com/topher/2017/July/595b2290_linkedin-top-skills/linkedin-top-skills.xlsx"
+              }
+            ],
+            "google_plus_link": null,
+            "career_resource_center_link": null,
+            "coaching_appointments_link": null,
+            "office_hours_link": null,
+            "aws_provisioning_link": null
+          },
+          "atoms": [
+            {
+              "id": 341907,
+              "key": "cabcb0fe-096e-4d23-8ec9-2a34e57eb17a",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# LinkedIn 最热技能\n\n这个可视化项目源自于每周一 Tableau 的 *Makeover Monday* 系列, 它将数据可视化和底层数据一起发布，由 Tableau 爱好者竞相改进，以创造出最棒的可视化作品。我已经重新创建了可视化图表，并将其嵌入项目下面。你可以在[这里](https://www.tableau.com/about/blog/2017/4/flex-your-data-skills-makeover-monday-68584)找到原始帖子。\n\n花几分钟浏览一遍帖子，然后请自行尝试动手重建它！这个图表可能有点棘手，这里有几点提示，也许有所帮助：\n* 过滤仅使用美国在 2016 年的数据。 \n* 尝试使用 dual axis, 以同时显示线形图和点状图。\n\n<iframe src=\"https://public.tableau.com/views/LinkedInTopSkillsDashboard/Dashboard2?:showVizHome=no&:toolbar=no:embed=true\"\n width=\"750\" height=\"400\"></iframe>\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341908,
+              "key": "4e2c355a-e055-4461-a074-f5f690b7e356",
+              "title": "LinkedIn 技能",
+              "semantic_type": "ValidatedQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "4e2c355a-e055-4461-a074-f5f690b7e356",
+                "completed_at": "2019-04-14T06:20:33.599Z",
+                "last_viewed_at": "2019-04-14T06:20:33.599Z",
+                "unstructured": "{\"answer\":\"python\",\"is_correct\":false}"
+              },
+              "question": {
+                "prompt": "一旦你创建了可视化图表，请更改过滤器以显示澳大利亚的数据。2014 年至 2016 年间，何种技能的排名增幅最大（只考虑三年内数据中出现的技能）？",
+                "matchers": [
+                  {
+                    "expression": "Network and Information Security"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 341909,
+          "key": "e6690e70-0aec-4aa7-bf3c-0f4b959cfae9",
+          "title": "可视化练习：最热技能箱线图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e6690e70-0aec-4aa7-bf3c-0f4b959cfae9",
+            "completed_at": "2019-03-13T05:13:13.130Z",
+            "last_viewed_at": "2020-01-30T18:45:08.362Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341910,
+              "key": "522f6d3d-a10d-4149-899c-3ff6866a867f",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# LinkedIn 最热技能箱线图\n\n现在让我们创建 Tableau 的 *Makeover Monday* 系列下半部分的可视化图表。在[这里](https://www.tableau.com/about/blog/2017/4/flex-your-data-skills-makeover-monday-68584)，你可以再次找到原帖。\n\n一些提示：\n* 依据所有国家和所有年份的平均排名将数据分类。\n* 花点时间思考每个维度和度量 应该放到哪个功能区。\n\n<iframe src=\"https://public.tableau.com/views/LinkedInTopSkillsDashboard/Sheet2?:showVizHome=no&:toolbar=no:embed=true\"\n width=\"700\" height=\"500\"></iframe>\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 341913,
+              "key": "aa5bec45-bede-4bd7-817e-2047f0989a20",
+              "title": "功能区",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "aa5bec45-bede-4bd7-817e-2047f0989a20",
+                "completed_at": "2019-03-31T03:45:09.821Z",
+                "last_viewed_at": "2019-04-14T06:22:23.460Z",
+                "unstructured": "{\"selected_id\":\"a1499145041080\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "排名量度应该放在什么功能区内？",
+                "answers": [
+                  {
+                    "id": "a1499145020280",
+                    "text": "Rows",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499145041080",
+                    "text": "Columns",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1499145051141",
+                    "text": "Filters",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499145051718",
+                    "text": "Pages",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499145059055",
+                    "text": "Marks",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 341914,
+              "key": "2d4a2035-63bf-490a-9196-56eb34526452",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2d4a2035-63bf-490a-9196-56eb34526452",
+                "completed_at": "2019-03-31T03:45:31.479Z",
+                "last_viewed_at": "2019-04-14T06:22:28.609Z",
+                "unstructured": "{\"selected_id\":\"a1499145108884\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "年份字段应该放在什么功能区内？",
+                "answers": [
+                  {
+                    "id": "a1499145108884",
+                    "text": "Rows",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1499145116611",
+                    "text": "Columns",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499145123394",
+                    "text": "Pages",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499145128506",
+                    "text": "Filters",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499145132986",
+                    "text": "Marks",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 341915,
+              "key": "144e07e2-a83b-42c6-ad6d-873838073b25",
+              "title": "",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "144e07e2-a83b-42c6-ad6d-873838073b25",
+                "completed_at": "2019-03-31T03:45:39.602Z",
+                "last_viewed_at": "2019-04-14T06:22:37.043Z",
+                "unstructured": "{\"selected_id\":\"a1499145231149\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "技能字段应该放在什么功能区内？",
+                "answers": [
+                  {
+                    "id": "a1499145231149",
+                    "text": "Row",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1499145241598",
+                    "text": "Column",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499145246398",
+                    "text": "Pages",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499145251380",
+                    "text": "Filters",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1499145259405",
+                    "text": "Marks",
+                    "is_correct": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 341917,
+          "key": "52b80eaf-f9e8-4a64-bc9f-42395239555d",
+          "title": "可视化练习：最热技能分布图",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "52b80eaf-f9e8-4a64-bc9f-42395239555d",
+            "completed_at": "2019-03-16T07:48:45.755Z",
+            "last_viewed_at": "2020-01-30T20:19:08.296Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341918,
+              "key": "c8fd81f8-3260-4413-98fb-0b96f9367c98",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# LinkedIn 最热技能分布图\n\n让我们再次使用 LinkedIn 最热技能数据。这次请利用 2016 年的数据集，创建各个国家的 LinkedIn 最热技能分布图，如下图所示：\n\n<iframe src=\"https://public.tableau.com/views/LinkedInTopSkillsDashboard/Sheet3?:showVizHome=no&:toolbar=no:embed=true\"\n width=\"750\" height=\"400\"></iframe>\n",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 341919,
+          "key": "41b4ae77-8c73-403c-8ba1-b6f96a32ac93",
+          "title": "小结",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "41b4ae77-8c73-403c-8ba1-b6f96a32ac93",
+            "completed_at": "2019-03-16T07:48:46.938Z",
+            "last_viewed_at": "2019-12-17T13:06:05.314Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 341920,
+              "key": "7e182de3-41b2-435e-96aa-3e2bd9cffc74",
+              "title": "L3 小结",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "y46uDftUXHo",
+                "china_cdn_id": "y46uDftUXHo.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+WEBVTT
+Kind: captions
+Language: pt-BR
+
+00:00:00.300 --> 00:00:04.467
+Bom, como disse antes, o Tableau
+é muito bom para explorar os dados.
+
+00:00:04.501 --> 00:00:06.968
+Então queria saber se,
+como especialista no Tableau,
+
+00:00:07.001 --> 00:00:10.199
+você poderia nos mostrar
+como explora um conjunto de dados.
+
+00:00:10.232 --> 00:00:13.267
+Claro. Há muitas maneiras
+de explorar dados,
+
+00:00:13.300 --> 00:00:16.634
+mas gosto muito
+de usar perguntas.
+
+00:00:16.667 --> 00:00:22.400
+Tenho um conjunto de dados aqui
+com os filmes de maior bilheteria.
+
+00:00:22.434 --> 00:00:25.167
+Temos várias maneiras
+de explorar os dados.
+
+00:00:25.200 --> 00:00:29.033
+Por exemplo, temos "Diretores",
+"Gêneros", "Título dos filmes",
+
+00:00:29.067 --> 00:00:31.200
+"Custo", "Renda"...
+
+00:00:31.234 --> 00:00:35.634
+Então estou curiosa
+para saber sobre os diretores
+
+00:00:35.667 --> 00:00:37.434
+e a renda que eles geraram.
+
+00:00:37.467 --> 00:00:40.067
+Então vou pegar
+a dimensão dos diretores
+
+00:00:40.100 --> 00:00:42.334
+e arrastá-la até a tela.
+
+00:00:42.367 --> 00:00:48.234
+E vou procurar "Renda",
+arrastar para cá e ordenar.
+
+00:00:48.267 --> 00:00:51.968
+Agora vou poder ver
+os diretores
+
+00:00:52.000 --> 00:00:54.234
+e quanto dinheiro
+eles geraram.
+
+00:00:54.267 --> 00:00:58.467
+Bom, estou curiosa
+quanto ao Peter Jackson.
+
+00:00:58.501 --> 00:01:01.734
+Então vou manter apenas
+o Peter Jackson.
+
+00:01:01.767 --> 00:01:04.467
+Vou filtrar
+todos os outros diretores.
+
+00:01:04.501 --> 00:01:08.601
+Posso ver que os filmes dele
+geraram muita renda,
+
+00:01:08.634 --> 00:01:11.601
+mas de que filmes
+estamos falando?
+
+00:01:11.634 --> 00:01:14.834
+Então vou pegar
+os títulos de filme
+
+00:01:14.868 --> 00:01:17.300
+e arrastar para cá.
+
+00:01:17.334 --> 00:01:21.300
+Aqui posso ver todos os filmes
+que ele fez em determinado período.
+
+00:01:21.334 --> 00:01:25.767
+Também estou interessada em saber
+quando esses filmes foram feitos.
+
+00:01:25.801 --> 00:01:30.901
+Tenho as datas de lançamento
+
+00:01:30.934 --> 00:01:33.234
+e também vou arrastá-las
+para cá.
+
+00:01:33.267 --> 00:01:37.601
+Ótimo. Agora temos os filmes
+de 2001 a 2014.
+
+00:01:37.634 --> 00:01:42.167
+Não quero saber de "King Kong"
+nem "Um Olhar do Paraíso",
+
+00:01:42.200 --> 00:01:44.200
+então vamos excluir
+estes dois.
+
+00:01:44.234 --> 00:01:47.801
+Agora podemos comparar
+"O Senhor dos Anéis" e "O Hobbit".
+
+00:01:47.834 --> 00:01:52.367
+Bom, que conjunto de filmes,
+que trilogia é melhor?
+
+00:01:52.400 --> 00:01:56.204
+Essa é uma discussão
+que temos no escritório.
+
+00:01:56.237 --> 00:01:58.466
+"Qual é o melhor?
+'O Senhor dos Anéis' ou 'O Hobbit'?"
+
+00:01:58.499 --> 00:02:03.133
+Agora temos dados para responder
+a esta pergunta quantitativamente.
+
+00:02:03.167 --> 00:02:06.267
+Então temos a renda
+dos dois filmes.
+
+00:02:06.300 --> 00:02:08.200
+Podemos ver que a renda
+de "O Senhor dos Anéis"
+
+00:02:08.234 --> 00:02:10.000
+cresceu com o tempo,
+
+00:02:10.033 --> 00:02:13.868
+e a renda de "O Hobbit"
+foi caindo com o tempo.
+
+00:02:13.901 --> 00:02:16.934
+Mas quanto custou
+para fazer estes filmes?
+
+00:02:16.968 --> 00:02:20.267
+Estamos vendo apenas
+qual foi a renda.
+
+00:02:20.300 --> 00:02:23.934
+Bom, também temos
+o custo para analisar.
+
+00:02:23.968 --> 00:02:27.100
+Então vamos passar
+o custo para cá.
+
+00:02:27.534 --> 00:02:33.167
+Agora, em apenas 1min, consegui
+descobrir algo muito interessante:
+
+00:02:33.200 --> 00:02:36.167
+apesar de o custo
+de "O Senhor dos Anéis" ter caído,
+
+00:02:36.200 --> 00:02:37.900
+a renda continuou aumentando.
+
+00:02:37.933 --> 00:02:42.534
+Já o custo de "O Hobbit"
+foi muito mais alto
+
+00:02:42.567 --> 00:02:44.701
+e, com o passar do tempo,
+a renda caiu.
+
+00:02:44.734 --> 00:02:47.634
+Então o Tableau
+é uma maneira muito fácil
+
+00:02:47.667 --> 00:02:50.067
+de arrastar e acrescentar
+rapidamente novos elementos,
+
+00:02:50.100 --> 00:02:53.400
+explorar os dados, vê-los
+de muitas maneiras diferentes
+
+00:02:53.434 --> 00:02:55.100
+e começar
+a responder perguntas.
+
+00:02:55.133 --> 00:02:56.634
+E ganhar apostas dos amigos.
+
+00:02:56.667 --> 00:02:58.968
+E ganhar apostas dos amigos.
+Isso é o mais importante.
+
+00:02:59.200 --> 00:03:00.501
+*END*
+
+00:03:00.534 --> 00:03:01.834
+*CODE*
+

@@ -1,0 +1,803 @@
+{
+  "data": {
+    "lesson": {
+      "id": 215531,
+      "key": "820d84b6-974f-4531-b4da-371de2f91e79",
+      "title": "通过 Tableau 讲故事",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "在本课程中，你将向Tableau专家学习，并开始整理你自己的数据面板和故事。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/820d84b6-974f-4531-b4da-371de2f91e79/215531/1545014397365/%E9%80%9A%E8%BF%87+Tableau+%E8%AE%B2%E6%95%85%E4%BA%8B+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/820d84b6-974f-4531-b4da-371de2f91e79/215531/1545014394713/%E9%80%9A%E8%BF%87+Tableau+%E8%AE%B2%E6%95%85%E4%BA%8B+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 215388,
+          "key": "b337a5fa-b932-4159-8972-4461ed3f4963",
+          "title": "用数据表达观点",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b337a5fa-b932-4159-8972-4461ed3f4963",
+            "completed_at": "2019-03-10T04:25:01.238Z",
+            "last_viewed_at": "2020-01-30T18:45:31.451Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214721,
+              "key": "81509e9e-fc72-48e7-a107-cf4dd68ea4a1",
+              "title": "用数据传递观点",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "KDnca1zszIo",
+                "china_cdn_id": "KDnca1zszIo.mp4"
+              }
+            },
+            {
+              "id": 214722,
+              "key": "cfd89c0a-df65-4814-af4f-866e25423394",
+              "title": "用数据表达观点",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "现在你已经能够用 Tableau 制作图表了，该用这些图表来表达观点了。\n\n首先，我将介绍如何探索你的数据，以便了解所发生的情况。例如，最好需要了解变量是如何分布的，数据是否有任何问题。你还需要寻找规律并提出有趣的问题。 \n\n你还需要与他人分享你的数据。Tableau 适合创建交互式显示面板和故事，使读者能够自己研究你的数据。显示面板将多个视图变成一种观点。故事对视图和显示面板进行顺序描述。借助显示面板和故事，你的职责是帮助用户与你要讲述的数据故事进行互动。\n\n### 关于这节课内容的注意事项\n在这节课，我将请你观看 Tableau 的教程视频并阅读文档。这么做的原因有两个。首先，他们录制了大量有用的教程视频，我几乎不需要做出任何改进。其次，你要习惯于使用他们的文档和支持，因为在学完这门课程后，你将经常参考这些资料。 ",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215389,
+          "key": "fd4272a8-ec76-4389-b8a9-a94ead53660e",
+          "title": "探索数据",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "fd4272a8-ec76-4389-b8a9-a94ead53660e",
+            "completed_at": "2019-03-10T04:25:05.187Z",
+            "last_viewed_at": "2020-01-27T02:05:57.297Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214723,
+              "key": "df1c3cc7-639e-4ab0-86ee-da37b74e7878",
+              "title": "概要",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "当你第一次开始处理数据集时，你需要探索该数据集。你需要了解数据是如何分布的，此外还需要从数据中找出有趣的规律。\n\n我们来看看 Trina 是如何探索数据的。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214724,
+              "key": "ae40db88-2c94-41f0-b97d-4c10950acf20",
+              "title": "与 Trina 一起探索数据",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "sLzULEjMY1E",
+                "china_cdn_id": "sLzULEjMY1E.mp4"
+              }
+            },
+            {
+              "id": 214725,
+              "key": "8a5e6442-c3a1-40d3-8999-1078bf09910d",
+              "title": "第二部分",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "关于探索数据的一些建议：\n* 通过制作条形图查看各种类别的记录数量\n* 制作直方图，看看数据是如何分布的\n* 制作散布图，看看变量之间的关系\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214726,
+              "key": "ef4276f7-adb0-495e-9063-864328be5679",
+              "title": "探索示例",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/580574fc_exploring-example/exploring-example.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ef4276f7-adb0-495e-9063-864328be5679",
+              "caption": "数据探索示例",
+              "alt": null,
+              "width": 649,
+              "height": 609,
+              "instructor_notes": null
+            },
+            {
+              "id": 214727,
+              "key": "c0956d9d-4af0-403c-b046-015c04bf5f33",
+              "title": "Pages 卡片",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "上图是我进行的一些探索。首先，我查看了不同市场之间记录的分布情况。我还查看了利润。利润似乎与记录不成比例。与欧盟相比，Global Superstore 在拉美的每个记录利润要低。\n\n然后，我想知道每个记录的利润分布情况。我制作了一个直方图，并进行过滤，仅侧重于中心部分。似乎在接近 0 处，大多数记录的利润都低于 10 美元。分布图偏向正的利润值，但是依然有很多记录表明 Global Superstore 处于亏损状态。\n\n最后，我通过散布图查看了数量和利润之间的关系。我还通过子类别对数据进行拆分，并按类别标注颜色。这样可以看出不同类别的关系是不同的。可以想象有一条线穿过每组彩色圆点。线条 *Technology* 比  *Office Supplies* 的坡度要陡很多，*Furniture* 则位于二者之间。\n\n## Pages 卡片\n\n你还可以通过 Pages 文件架浏览群组，轻松地探索数据。通过将维度拖到 Pages 文件架上，你可以在同一图表中轻松地浏览该维度中的每个项目。开启“Show History”后，你就可以查看数据点是如何在页面之间切换的。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214728,
+              "key": "58f1b102-3aa8-448d-9603-583a95198c9f",
+              "title": "Pages 文件架",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/580592d5_page-shelf/page-shelf.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/58f1b102-3aa8-448d-9603-583a95198c9f",
+              "caption": "使用 Pages 文件架对比数据中的年份期限内每月的销量",
+              "alt": null,
+              "width": 1242,
+              "height": 720,
+              "instructor_notes": null
+            },
+            {
+              "id": 214729,
+              "key": "73920667-4ade-4ea9-8fd1-bfa1e45ff82e",
+              "title": "探索测验",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "73920667-4ade-4ea9-8fd1-bfa1e45ff82e",
+                "completed_at": "2019-04-14T06:37:55.274Z",
+                "last_viewed_at": "2019-04-14T06:37:58.774Z",
+                "unstructured": "{\"selected_id\":\"a1476760717736\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "数据中的哪个子类别的销售额最高？",
+                "answers": [
+                  {
+                    "id": "a1476741281292",
+                    "text": "艺术品 (Art)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476760647258",
+                    "text": "复印机(Copiers)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476760717736",
+                    "text": "手机 (Phones)",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1476760765465",
+                    "text": "Storage",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 214730,
+              "key": "6c234c39-3fca-4d78-9956-39900df2490a",
+              "title": "探索测验 2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "6c234c39-3fca-4d78-9956-39900df2490a",
+                "completed_at": "2019-04-14T06:38:03.028Z",
+                "last_viewed_at": "2019-04-14T06:38:14.177Z",
+                "unstructured": "{\"selected_id\":\"a1476760998475\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "在具有最高销售额的子类别中，哪一个产品的利润最大？",
+                "answers": [
+                  {
+                    "id": "a1476760872598",
+                    "text": "苹果手机 (Apple Smart Phone)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476760981776",
+                    "text": "佳能 imageCLASS 2000复印机 (Canon imageCLASS 2000 Copier)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476760996149",
+                    "text": "Sauder经典书架 (Sauder Classic Bookcase, Traditional)",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1476760998475",
+                    "text": "思科智能手机(Cisco Smart Phone, Full Sized)",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215390,
+          "key": "e02dfa39-62d3-4f96-bc60-646410878b32",
+          "title": "与 Trina 一起深入了解 Tableau",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "e02dfa39-62d3-4f96-bc60-646410878b32",
+            "completed_at": "2019-03-10T04:25:18.568Z",
+            "last_viewed_at": "2020-01-27T02:09:25.390Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214731,
+              "key": "f40c7b89-8bd5-45ce-aae0-15c8ee1b627c",
+              "title": "与 Trina 一起深入了解 Tableau",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "i9xslfFp80g",
+                "china_cdn_id": "i9xslfFp80g.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215391,
+          "key": "dfa07dc5-baa2-406e-a5d1-56baf2414cba",
+          "title": "构建显示面板",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "dfa07dc5-baa2-406e-a5d1-56baf2414cba",
+            "completed_at": "2019-03-10T04:25:37.444Z",
+            "last_viewed_at": "2020-01-30T20:18:24.254Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214732,
+              "key": "e11213ca-faf5-4d4f-b61e-27764f788671",
+              "title": "显示面板",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 显示面板\n\n显示面板用来将多个表格收集到一起表达一种想法。例如，[这是一个](http://www.tableau.com/stories/gallery/sales-and-opportunities)关于 Salesforce 数据中销售机会的显示面板示例。可以从该显示面板中看出，点击某个视图会过滤掉其他视图中的数据。这是其中一个非常棒的交互式功能，使你能够让查看者探索你的数据。显示面板还适合根据各种视图构建报表，从而追踪每天或每周的工作。\n\nTableau 在他们的[库](https://public.tableau.com/en-us/s/gallery)中提供了大量出色的显示面板。可以查看这些显示面板并寻找灵感。\n\n要创建新的显示面板，点击底部工具栏中的“New Dashboard”按钮。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214733,
+              "key": "0db13654-6bff-4473-a9a9-ea9ab4daafea",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5806942e_new-dashboard-button/new-dashboard-button.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0db13654-6bff-4473-a9a9-ea9ab4daafea",
+              "caption": "",
+              "alt": null,
+              "width": 1052,
+              "height": 823,
+              "instructor_notes": null
+            },
+            {
+              "id": 214734,
+              "key": "f0f72772-3efc-474f-a964-f1ed86dc4be4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "这样就可以调出显示面板界面。你可以通过将工作表从左侧工具栏拖到画布上，创建显示面板。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214735,
+              "key": "819e0891-d133-47c9-8bef-7e2855666aa3",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5806945f_dashboard-interface/dashboard-interface.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/819e0891-d133-47c9-8bef-7e2855666aa3",
+              "caption": "",
+              "alt": null,
+              "width": 1052,
+              "height": 823,
+              "instructor_notes": null
+            },
+            {
+              "id": 214736,
+              "key": "2ed55f90-60cf-4f5c-b2e3-4a41aeb25db2",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Tableau 录制了关于如何构建显示面板的大量实用教程视频：\n\n* [显示面板和故事使用入门](http://www.tableau.com/learn/tutorials/on-demand/getting-started-dashboards-and-stories)\n* [构建显示面板](http://www.tableau.com/learn/tutorials/on-demand/building-dashboard)\n\n请观看这些视频，然后继续回到此处。此外，[这篇关于显示面板的文章](http://onlinehelp.tableau.com/current/pro/desktop/en-us/help.htm#dashboards.html%3FTocPath%3DPresent%2520Your%2520Work%7CDashboards%7C_____0)提供了更多的信息。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214737,
+              "key": "598f3e21-3f69-42ad-8cf4-54963e6741f4",
+              "title": "第二部分",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "这是[我创建的一个显示面板](https://public.tableau.com/views/Dashboardexample_2/Dashboard1?:embed=y&:display_count=yes)。你将回答几个问题，说说如何创建该显示面板，你可以在[此处下载](https://s3.amazonaws.com/content.udacity-data.com/courses/ud1006/Dashboard+example+sheets+only.twbx)相关工作簿或使用公共显示面板。注意，你可以通过点击地图按国家过滤。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214738,
+              "key": "b25c70b2-b3b8-4902-b695-dc3ddbfc0cfe",
+              "title": "问题 1",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "b25c70b2-b3b8-4902-b695-dc3ddbfc0cfe",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "如何将销量条形图放到显示面板中？"
+              },
+              "answer": {
+                "text": "将条形图工作表拖到显示面板画布上。",
+                "video": null
+              }
+            },
+            {
+              "id": 214739,
+              "key": "bad7cdeb-2c88-47bd-bae1-1913975672ba",
+              "title": "问题 2",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "bad7cdeb-2c88-47bd-bae1-1913975672ba",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "你是如何将地图工作表放到条形图下方，并填满整个空间？"
+              },
+              "answer": {
+                "text": "将地图工作表拖到条形图下方，系统将显示一个填满下半部分的灰色方框。你应该将 Size 选项改为“Automatic”，并将“Number of Orders”图例设为悬浮型，并从右侧拖到地图上。",
+                "video": null
+              }
+            },
+            {
+              "id": 214740,
+              "key": "208d523d-9430-4f1b-9d26-6195325c8fb0",
+              "title": "问题 3",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "208d523d-9430-4f1b-9d26-6195325c8fb0",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "如何在地图上创建过滤器，并应用到条形图上？"
+              },
+              "answer": {
+                "text": "在地图视图上打开菜单，然后选择\"Use as filter”。",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 215392,
+          "key": "a09ee8c4-95cb-4f86-8155-2255a22348ee",
+          "title": "显示面板交互性",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "a09ee8c4-95cb-4f86-8155-2255a22348ee",
+            "completed_at": "2019-03-10T04:25:41.885Z",
+            "last_viewed_at": "2020-01-30T20:18:36.928Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214741,
+              "key": "02956f01-243f-4071-9bf0-e831515b58bc",
+              "title": "概要",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 显示面板交互性\n\n能够轻松地添加交互式功能是我最喜欢的 Tableau 功能之一。你已经看过如何从一个视图上创建过滤器并应用到其他视图上。操作使你能够在显示面板中过滤数据、突出显示数据或创建 URL 链接。请观看此 [Tableau 教程视频](http://www.tableau.com/learn/tutorials/on-demand/dashboard-interactivity-using-actions)，了解如何创建操作。更多详情请参阅此[操作文档](http://onlinehelp.tableau.com/current/pro/desktop/en-us/help.htm#actions.html)。\n\n观看教程，然后回答关于我创建的[此显示面板](https://public.tableau.com/shared/T2YMK9CX2?:display_count=yes)的以下问题。在此显示面板中，我创建了一个突出显示操作，你可以将光标悬停在地图或散布图上，触发突出显示操作。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214742,
+              "key": "e68fc99e-7705-4103-a3f3-16ab135995cf",
+              "title": "思考",
+              "semantic_type": "ReflectAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "e68fc99e-7705-4103-a3f3-16ab135995cf",
+                "completed_at": null,
+                "last_viewed_at": null,
+                "unstructured": null
+              },
+              "question": {
+                "title": null,
+                "semantic_type": "TextQuestion",
+                "evaluation_id": null,
+                "text": "你是如何创建此操作的？"
+              },
+              "answer": {
+                "text": "我将所有工作表移到了显示面板中，然后转到 Dashboards > Actions。对于来源工作表，我选择“Orders Map”、“Profit v Quantity”和“Run on action: Hover”。对于目标工作表，我选择“Profit v Quantity”和\"Sales over time”。",
+                "video": null
+              }
+            }
+          ]
+        },
+        {
+          "id": 215393,
+          "key": "9ebdd448-e668-463b-b458-7cb8947df56c",
+          "title": "设定格式",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9ebdd448-e668-463b-b458-7cb8947df56c",
+            "completed_at": "2019-03-10T04:25:45.819Z",
+            "last_viewed_at": "2020-01-30T18:46:19.578Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214743,
+              "key": "82624522-dde3-4ffb-905b-c6f7b340ecf0",
+              "title": "概要",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 设定格式\n\n你可以设定两种主要类型的格式。首先，你可以通过颜色、标记框线、标签、工具提示等设定数据显示格式。标签和工具提示的文本可以设定颜色、大小、字体等。你还可以更改背景视图的底纹和边框。\n\n设定格式可以帮助你个性化工作表和显示面板，强调某些内容并使可视化图表更清晰。\n\n大部分情况下，你可以点击大部分对象并点击“Format...”打开格式菜单。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214744,
+              "key": "1c0f0089-72d2-410e-b3d6-f80d597c9ee1",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5807c0dc_format-from-menu/format-from-menu.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/1c0f0089-72d2-410e-b3d6-f80d597c9ee1",
+              "caption": "",
+              "alt": null,
+              "width": 696,
+              "height": 589,
+              "instructor_notes": null
+            },
+            {
+              "id": 214745,
+              "key": "7566a623-8e4f-40db-b0d1-81e7789dd178",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "这样可以调出格式面板，你将在左侧看到该面板。你还可以在菜单栏中使用格式菜单选择要对哪些元素设定格式，这样也会调出格式面板。然后可以更改字体、对齐方式、工作表颜色、边框和线条。\n\n你可以通过在标记卡上点击任何方框，对标记设定格式。例如，你可以通过点击 Size 更改标记的大小，或点击 Color 更改颜色。\n\n下面是关于对工具提示设定格式的示例。点击“Tooltip”后，系统随即会弹出一个编辑器。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214746,
+              "key": "7bf84432-1ee0-4349-add2-4ddd352072ac",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5807c201_tooltip-editor/tooltip-editor.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7bf84432-1ee0-4349-add2-4ddd352072ac",
+              "caption": "",
+              "alt": null,
+              "width": 868,
+              "height": 507,
+              "instructor_notes": null
+            },
+            {
+              "id": 214747,
+              "key": "18c1d7ba-a0c3-45e1-9a43-a776c11b7a19",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你可以在此编辑器中更改字体、大小、颜色、样式等，所有这些格式都会显示在视图中的工具提示中。你可以使用不在视图中的字段，方法是将这些字段拖到标记卡中的工具提示方框中。\n\n例如，我想包含 **Number of Records** 字段，我可以将其拖放到“工具提示”方框中，然后更改某些文本格式。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214748,
+              "key": "19aa1cce-c2b4-4b1d-b331-e35cdbda0d20",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5807c2e4_tooltip-formatted/tooltip-formatted.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/19aa1cce-c2b4-4b1d-b331-e35cdbda0d20",
+              "caption": "",
+              "alt": null,
+              "width": 868,
+              "height": 507,
+              "instructor_notes": null
+            },
+            {
+              "id": 214749,
+              "key": "51688ab8-a109-40b7-8f49-d7f37ef928b5",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "在视图中如下所示：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214750,
+              "key": "e54ee270-0890-47b5-8c4d-89a413cee565",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5807c30e_post-format-tooltip/post-format-tooltip.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e54ee270-0890-47b5-8c4d-89a413cee565",
+              "caption": "",
+              "alt": null,
+              "width": 696,
+              "height": 589,
+              "instructor_notes": null
+            },
+            {
+              "id": 214751,
+              "key": "5dda92cf-41c8-49e0-b8ce-51cbb1c4b527",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "通过使用这种格式，可以使可视化图表变得美观，并且信息更丰富。\n\n要了解如何对视图中的标记设定格式，请观看此[教程视频](http://www.tableau.com/learn/tutorials/on-demand/formatting)。要了解格式面板，请观看此[视频](http://www.tableau.com/learn/tutorials/on-demand/formatting-pane).",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215394,
+          "key": "398460f5-2f43-46ee-9fef-487c3ea46289",
+          "title": "故事",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "398460f5-2f43-46ee-9fef-487c3ea46289",
+            "completed_at": "2019-03-16T08:50:35.921Z",
+            "last_viewed_at": "2020-01-30T18:46:29.231Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214752,
+              "key": "0496341c-da1c-487e-9779-c5fb70ea2570",
+              "title": "概要",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "# 故事\n\n故事非常适合叙述你从数据中发现的规律。它们和显示面板相似，你可以创建工作表，然后将工作表拖到故事中。但是，每个工作表都单独显示，并且会有按顺序显示的叙述性文字。\n\n这是我创建的一个[故事](https://public.tableau.com/shared/8B7RH9JPC?:display_count=yes)，我想查看为何 Global Superstore 在某些国家是亏损状态。你可以在[此处](https://s3.amazonaws.com/content.udacity-data.com/courses/ud1006/Poor+Markets+Story.twbx)下载工作簿或使用公共故事。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214753,
+              "key": "d093ee6c-cdef-4e0f-9f0c-d258923eb887",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5807abbd_my-example-story/my-example-story.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d093ee6c-cdef-4e0f-9f0c-d258923eb887",
+              "caption": "",
+              "alt": null,
+              "width": 820,
+              "height": 615,
+              "instructor_notes": null
+            },
+            {
+              "id": 214754,
+              "key": "a3429c27-afd0-460a-a4c9-b97385d9a0f4",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "从这个故事中可以看出，在很多国家，超低价折扣是亏损状态的罪魁祸首。折扣活动并没有带来利润增长，并且亏损状态越来越严重。也许应该停止优惠活动，或者完全退出这些市场。\n\n## 创建故事\n\n要新建故事，点击底部的“New Story”按钮。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214755,
+              "key": "9d96f82a-7269-414b-9203-cbd9562c56fb",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5807ae91_create-a-story/create-a-story.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/9d96f82a-7269-414b-9203-cbd9562c56fb",
+              "caption": "",
+              "alt": null,
+              "width": 1556,
+              "height": 930,
+              "instructor_notes": null
+            },
+            {
+              "id": 214756,
+              "key": "7709cca3-7b1b-438c-b836-f5a2a0bffa75",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "这样就会出现故事界面：\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214757,
+              "key": "0c0020a9-a421-42e9-8ef4-a393b225b56f",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5807b3a2_story-interface/story-interface.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0c0020a9-a421-42e9-8ef4-a393b225b56f",
+              "caption": "",
+              "alt": null,
+              "width": 1322,
+              "height": 875,
+              "instructor_notes": null
+            },
+            {
+              "id": 214758,
+              "key": "0d23266f-c7f9-4881-8a00-115049b21908",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "接着将工作表拖到视图中，创建第一个故事点。在灰色方框中，你可以添加文字以开始叙述。要创建下个故事点，点击“New Blank Point”。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214759,
+              "key": "b782ca90-552f-474e-a3a6-d7888759c56c",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5807b479_new-story-point/new-story-point.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b782ca90-552f-474e-a3a6-d7888759c56c",
+              "caption": "",
+              "alt": null,
+              "width": 1322,
+              "height": 875,
+              "instructor_notes": null
+            },
+            {
+              "id": 214760,
+              "key": "a80a17af-aceb-4a88-9525-896bdf92a5aa",
+              "title": null,
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "要详细了解如何创建故事，请观看由 Tableau 提供的此[教程视频](http://www.tableau.com/learn/tutorials/on-demand/story-points)。[此处](https://onlinehelp.tableau.com/current/pro/online/mac/en-us/stories.html)是故事的文档\n\n尝试根据我在工作簿中提供的工作表重现我的故事。你可以点击上述链接下载该工作簿。我发现一个有用的操作是将每个工作表设为填满整个视图，教程视频中注明了这一点。这样可以使视图在故事中展开，并填满屏幕空间。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214761,
+              "key": "736a9932-f3c1-4903-83b5-c2fa9a7e0e59",
+              "title": null,
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/5807b552_entire-view/entire-view.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/736a9932-f3c1-4903-83b5-c2fa9a7e0e59",
+              "caption": "",
+              "alt": null,
+              "width": 1225,
+              "height": 777,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215396,
+          "key": "baef776a-ae93-4561-9955-f1e937c5dcdf",
+          "title": "深入学习",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "baef776a-ae93-4561-9955-f1e937c5dcdf",
+            "completed_at": "2019-03-16T08:50:43.386Z",
+            "last_viewed_at": "2020-01-30T18:47:06.525Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214762,
+              "key": "25cee687-d332-4126-a391-8f3dca521508",
+              "title": "深入学习",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "SnLQlP5J7c8",
+                "china_cdn_id": "SnLQlP5J7c8.mp4"
+              }
+            },
+            {
+              "id": 214763,
+              "key": "f17483e9-ecbd-45f9-8a81-6ece677b6782",
+              "title": "概要",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "**资源列表：**\n* 你可以观看各种由 Tableau 提供的[教程视频](http://www.tableau.com/learn/training)\n* 搜索[论坛](https://community.tableau.com/community/forums)并提出问题，论坛非常有帮助。\n* [Makeover Monday](http://vizwiz.blogspot.com/search/label/Makeover%20Monday) 提供了大量值得学习的精彩示例。\n* 当然还有相关文档：[Mac](http://onlinehelp.tableau.com/current/pro/online/mac/en-us/help.htm) 和 [Windows](http://onlinehelp.tableau.com/current/pro/online/windows/en-us/help.htm)",
+              "instructor_notes": ""
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>探索数据</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>通过 Tableau 讲故事</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 用数据表达观点.html">01. 用数据表达观点</a>
+    </li>
+    <li class="">
+      <a href="02. 探索数据.html">02. 探索数据</a>
+    </li>
+    <li class="">
+      <a href="03. 与 Trina 一起深入了解 Tableau.html">03. 与 Trina 一起深入了解 Tableau</a>
+    </li>
+    <li class="">
+      <a href="04. 构建显示面板.html">04. 构建显示面板</a>
+    </li>
+    <li class="">
+      <a href="05. 显示面板交互性.html">05. 显示面板交互性</a>
+    </li>
+    <li class="">
+      <a href="06. 设定格式.html">06. 设定格式</a>
+    </li>
+    <li class="">
+      <a href="07. 故事.html">07. 故事</a>
+    </li>
+    <li class="">
+      <a href="08. 深入学习.html">08. 深入学习</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">02. 探索数据</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>概要</p></h3>
+  <div>
+  <p>当你第一次开始处理数据集时，你需要探索该数据集。你需要了解数据是如何分布的，此外还需要从数据中找出有趣的规律。</p>
+<p>我们来看看 Trina 是如何探索数据的。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>与 Trina 一起探索数据</p></h3>
+  <video controls>
+  <source src="02. 与 Trina 一起探索数据-sLzULEjMY1E.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="02. 与 Trina 一起探索数据-sLzULEjMY1E.zh-CN.vtt" label="zh-CN">
+  <track default="true" kind="subtitles" srclang="en" src="02. 与 Trina 一起探索数据-sLzULEjMY1E.en.vtt" label="en">
+  <track default="false" kind="subtitles" srclang="pt-BR" src="02. 与 Trina 一起探索数据-sLzULEjMY1E.pt-BR.vtt" label="pt-BR">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>第二部分</p></h3>
+  <div>
+  <p>关于探索数据的一些建议：</p>
+<ul>
+<li>通过制作条形图查看各种类别的记录数量</li>
+<li>制作直方图，看看数据是如何分布的</li>
+<li>制作散布图，看看变量之间的关系</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>探索示例</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/exploring-example.png" alt="数据探索示例" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>数据探索示例</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Pages 卡片</p></h3>
+  <div>
+  <p>上图是我进行的一些探索。首先，我查看了不同市场之间记录的分布情况。我还查看了利润。利润似乎与记录不成比例。与欧盟相比，Global Superstore 在拉美的每个记录利润要低。</p>
+<p>然后，我想知道每个记录的利润分布情况。我制作了一个直方图，并进行过滤，仅侧重于中心部分。似乎在接近 0 处，大多数记录的利润都低于 10 美元。分布图偏向正的利润值，但是依然有很多记录表明 Global Superstore 处于亏损状态。</p>
+<p>最后，我通过散布图查看了数量和利润之间的关系。我还通过子类别对数据进行拆分，并按类别标注颜色。这样可以看出不同类别的关系是不同的。可以想象有一条线穿过每组彩色圆点。线条 <em>Technology</em> 比  <em>Office Supplies</em> 的坡度要陡很多，<em>Furniture</em> 则位于二者之间。</p>
+<h2 id="pages-卡片">Pages 卡片</h2>
+<p>你还可以通过 Pages 文件架浏览群组，轻松地探索数据。通过将维度拖到 Pages 文件架上，你可以在同一图表中轻松地浏览该维度中的每个项目。开启“Show History”后，你就可以查看数据点是如何在页面之间切换的。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Pages 文件架</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/page-shelf.png" alt="使用 Pages 文件架对比数据中的年份期限内每月的销量" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>使用 Pages 文件架对比数据中的年份期限内每月的销量</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>探索测验</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>数据中的哪个子类别的销售额最高？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1476741281292" name="214729" id="a1476741281292">
+        <label for="a1476741281292"><p>艺术品 (Art)</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476760647258" name="214729" id="a1476760647258">
+        <label for="a1476760647258"><p>复印机(Copiers)</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476760717736" name="214729" id="a1476760717736">
+        <label for="a1476760717736"><p>手机 (Phones)</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476760765465" name="214729" id="a1476760765465">
+        <label for="a1476760765465"><p>Storage</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    手机 (Phones)
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>探索测验 2</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>在具有最高销售额的子类别中，哪一个产品的利润最大？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1476760872598" name="214730" id="a1476760872598">
+        <label for="a1476760872598"><p>苹果手机 (Apple Smart Phone)</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476760981776" name="214730" id="a1476760981776">
+        <label for="a1476760981776"><p>佳能 imageCLASS 2000复印机 (Canon imageCLASS 2000 Copier)</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476760996149" name="214730" id="a1476760996149">
+        <label for="a1476760996149"><p>Sauder经典书架 (Sauder Classic Bookcase, Traditional)</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1476760998475" name="214730" id="a1476760998475">
+        <label for="a1476760998475"><p>思科智能手机(Cisco Smart Phone, Full Sized)</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    思科智能手机(Cisco Smart Phone, Full Sized)
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="03. 与 Trina 一起深入了解 Tableau.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('02. 探索数据')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

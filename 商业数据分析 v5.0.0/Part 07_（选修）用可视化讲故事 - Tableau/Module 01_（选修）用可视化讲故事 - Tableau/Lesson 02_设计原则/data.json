@@ -1,0 +1,2117 @@
+{
+  "data": {
+    "lesson": {
+      "id": 215529,
+      "key": "768ad141-46b9-4701-9d5a-5a4ddf26cf4b",
+      "title": "设计原则",
+      "semantic_type": "Lesson",
+      "is_public": true,
+      "version": "1.0.0",
+      "locale": "zh-cn",
+      "summary": "了解如何设计可视化图表，才能带来最大的影响。",
+      "lesson_type": "Classroom",
+      "display_workspace_project_only": false,
+      "resources": {
+        "files": [
+          {
+            "name": "Videos Zip File",
+            "uri": "https://zips.udacity-data.com/768ad141-46b9-4701-9d5a-5a4ddf26cf4b/215529/1553504100806/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99+Videos.zip"
+          },
+          {
+            "name": "Transcripts Zip File",
+            "uri": "https://zips.udacity-data.com/768ad141-46b9-4701-9d5a-5a4ddf26cf4b/215529/1553504098304/%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99+Subtitles.zip"
+          }
+        ],
+        "google_plus_link": null,
+        "career_resource_center_link": null,
+        "coaching_appointments_link": null,
+        "office_hours_link": null,
+        "aws_provisioning_link": null
+      },
+      "project": null,
+      "lab": null,
+      "concepts": [
+        {
+          "id": 215365,
+          "key": "d6da4fb0-9a2a-40b9-8e1a-426a2a003bb9",
+          "title": "课程概述",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "d6da4fb0-9a2a-40b9-8e1a-426a2a003bb9",
+            "completed_at": "2019-03-15T13:16:07.636Z",
+            "last_viewed_at": "2020-01-10T08:42:17.160Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214424,
+              "key": "e60ebb97-772f-4a62-a745-662fceb93d00",
+              "title": "课程概述",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "Q0lZkNF6O0g",
+                "china_cdn_id": "Q0lZkNF6O0g.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 177977,
+          "key": "30639889280923",
+          "title": "常见图表类型",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "30639889280923",
+            "completed_at": "2019-03-15T13:18:05.851Z",
+            "last_viewed_at": "2020-01-10T08:42:24.303Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 176202,
+              "key": "3063988928",
+              "title": "常见图表类型",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "Stephen Few 撰写的有关<a href=\"http://www.perceptualedge.com/articles/ie/the_right_graph.pdf\" target=\"_blank\">选择正确图表类型</a>的文章。\n\nStephen Few 撰写的<a href=\"http://www.perceptualedge.com/articles/misc/Graph_Selection_Matrix.pdf\" target=\"_blank\">图形选择矩阵</a>。\n\nAndrew Abela 撰写的<a href=\"http://extremepresentation.typepad.com/.shared/image.html?/photos/uncategorized/choosing_a_good_chart.jpg\" target=\"_blank\">图表建议</a>。\n\nSolomon Messing 撰写的<a href=\"http://solomonmessing.wordpress.com/2014/10/11/when-to-use-stacked-barcharts/\" target=\"_blank\">何时使用堆叠柱状图？</a>。\n\nJonathan 在视频 0:33 处提到，当 y 值取决于 x 值时，要使用散点图。他的意思是 y 值取决于 x 值时，通常要用到散点图，但是这种依赖关系不需要为真。散点图非常适合用来呈现两组配对的值（比如：人的身高和体重），以确定它们之间是否存在关系。\n\n视频 1:41 处，Jonathan 说：“我会使用直方图来描述连续数据，而且我可能想要对其进行分组。”直方图要求对数据进行分组。也就是说，直方图呈现连续数据每个离散区间内的数量。例如，年龄在 0-10、11-20、21-30、31-40、41-50、51-60、61-70、71-80、81-90、91 及以上各个区间的人数。",
+              "video": {
+                "youtube_id": "xD2_AU6atqA",
+                "china_cdn_id": "xD2_AU6atqA.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215366,
+          "key": "b9d567d3-d7e4-4dda-9194-62bf55b5adbf",
+          "title": "基本图表",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "b9d567d3-d7e4-4dda-9194-62bf55b5adbf",
+            "completed_at": "2019-03-15T13:22:00.706Z",
+            "last_viewed_at": "2019-12-17T07:25:38.182Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214425,
+              "key": "a47295fd-0c14-448b-9f67-06810bcd548f",
+              "title": "条形图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "首先，我们来讨论几个你将经常用到的基本图表。这些也是构建更复杂图表的基本组成部分。\n\n### 柱状图、散点图和折线图 \n你已经在上节课的“视觉编码”部分见过三种最常用的图表类型：柱状图、散点图和折线图。\n\n当你对比几组数据时，柱状图通常是最佳选择。人类能够凭直觉根据长条的长度和区域判断区别。长条越大，内容越多。\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214426,
+              "key": "28142b13-16a4-4ef0-a2b6-eaf385b15059",
+              "title": "表格",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 表格\n有时候，你需要显示数据的实际值，这时候适合使用表格。可能有点违反直觉，因为整个这门课程都是讲使用图形而不是表格。但是，有时候更需要观察实际值，而不是进行对比。你也可以在图表中轻松地标注颜色和添加格式（粗体或斜体），强调希望观看者注意的内容。例如，用红色表示亏损，或用绿色表示逐月增长情况。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214427,
+              "key": "fa791fbe-b8a0-4791-8b65-97c9a3c09b85",
+              "title": "数据表格",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f3e119_data-table/data-table.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fa791fbe-b8a0-4791-8b65-97c9a3c09b85",
+              "caption": "",
+              "alt": null,
+              "width": 589,
+              "height": 342,
+              "instructor_notes": null
+            },
+            {
+              "id": 214428,
+              "key": "57a0db99-ef59-442a-8cf0-66b42a151965",
+              "title": "地理空间图表",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 地理空间图表\n\n地理空间数据（国家/地区、州、纬度、经度）可以通过地图来表示。你通常会见到两种类型的地图。[分级统计图](https://en.wikipedia.org/wiki/Choropleth_map)在地图上使用颜色来表示与地点相关的另一个值，例如人口、人口密度、GDP 等。[示意地图](https://en.wikipedia.org/wiki/Cartogram)与等值线图相似，但是会扭曲区域（例如国家）界线来表示值，通常还会用颜色表示。我将通过几个示例详细介绍。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214429,
+              "key": "834b56bb-caf2-450e-bc35-8ab27fcf4256",
+              "title": "等值线图文本",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 分级统计图\n\n正如之前提到的，用颜色表示数据的地图称为[分级统计图](https://en.wikipedia.org/wiki/Choropleth_map)。这些地图非常适合表示各个地点之间的数据对比情况。通常，此类地图会拆分为各个地区，例如国家、州/省/地区或更小的区域（例如县）。\n\n甚至可以更加细分，例如这个[关于美国人口调查种族身份的精彩地图](http://www.coopercenter.org/demographics/Racial-Dot-Map)。该地图用一个点表示在 2010 年美国人口调查中记录的每个人。这是用分类变量（种族）及地理空间数据来展示美国公民分布情况的一个示例。\n\n下面是另一个分级统计图示例。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214430,
+              "key": "8e8775af-7aad-49e8-9b4a-c8b4fa2c4425",
+              "title": "等值线图示例",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f3e1a9_cloropeth/cloropeth.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8e8775af-7aad-49e8-9b4a-c8b4fa2c4425",
+              "caption": "",
+              "alt": null,
+              "width": 921,
+              "height": 589,
+              "instructor_notes": null
+            },
+            {
+              "id": 214431,
+              "key": "b5f72a6d-5c57-4600-8e2e-a7dd73a2ae31",
+              "title": "示意地图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 示意地图\n\n[示意地图](http://www.clearlyandsimply.com/clearly_and_simply/2009/10/choropleth-maps-with-tableau.html)会在地图中通过扭曲区域界线来表示一些变量，例如人口或国民生产总值。示意地图通常还用颜色来表示另一个变量，以便提供更多的信息。适合强调该变量，但是不是准确的表示形式。难以理解扭曲的区域相互对比情况。有时候，某些区域会完全消失或太扭曲变形了，根本不知道看的是什么。\n\n此外，没有任何方法可以绘制示意地图。维基百科文章列出了 *25* 个创建示意地图的不同算法，请谨慎地使用。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214432,
+              "key": "21ccf41e-9ddb-4fd3-bb53-7e8a419f59b1",
+              "title": "示意地图示例",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f3e23e_cartogram-2008-electoral-vote/cartogram-2008-electoral-vote.gif",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/21ccf41e-9ddb-4fd3-bb53-7e8a419f59b1",
+              "caption": "这是美国地图，每个州的大小已经扭曲，以便表示选举人票的相对数量（基于各州的人口）。",
+              "alt": null,
+              "width": 1000,
+              "height": 850,
+              "instructor_notes": null
+            },
+            {
+              "id": 214433,
+              "key": "84af0b2c-f59e-4a0a-b359-f92fafc3d941",
+              "title": "小多组图组 1",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 组图\n\n[组图](https://en.wikipedia.org/wiki/Small_multiple)是指一系列具有相同标尺的图表，通过组图我们能够轻松地对比几组不同的数据。这些图表可以是任何类型：折线图、柱状图，[散点图](http://matatat.org/images/body_fat_percentage_5_1.png)、[地图](https://public.tableau.com/pt-br/s/blog/2016/06/showing-trends-over-time-and-space-use-small-multiple-maps)。 \n\nEdward Tufte 在《Visual Display of Quantitative Information》一书中经常提到这一术语。有时候还会称作格子图（因为看起来像是一格一格的图像组合）。组图是我最喜欢的可视化方法，而且很常用。先来看看下面这个折线图：\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214434,
+              "key": "93fb9301-3c70-458a-a529-65a13478ff00",
+              "title": "折线图反面示例",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f3ec30_bad-line-chart/bad-line-chart.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/93fb9301-3c70-458a-a529-65a13478ff00",
+              "caption": "",
+              "alt": null,
+              "width": 754,
+              "height": 447,
+              "instructor_notes": null
+            },
+            {
+              "id": 214435,
+              "key": "eb2c4837-bab4-4668-ab53-797625b073e6",
+              "title": "小多组图组 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "该图表显示了每组数据中每个成员的线条。所有这些线条都相互堆叠在一起，很难看出相互之间的对比情况。如果每个都单独放入一个图表，那么就能轻松地对比每个成员在一段时间内值的变化情况。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214436,
+              "key": "c53c0e1c-8cb8-46fa-af67-1e76de9e15e8",
+              "title": "格子图表",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f3ec57_trellis-plots/trellis-plots.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c53c0e1c-8cb8-46fa-af67-1e76de9e15e8",
+              "caption": "",
+              "alt": null,
+              "width": 1850,
+              "height": 852,
+              "instructor_notes": null
+            },
+            {
+              "id": 214437,
+              "key": "256b53b2-8209-44d0-9772-e04b988a0810",
+              "title": "往外过渡",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "现在你已经知道如何制作一些简单的图表，我将在可视化分布部分介绍如何使用这些图表。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215367,
+          "key": "6568643b-1e4b-4152-9199-a952bb875947",
+          "title": "可视化分布",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "6568643b-1e4b-4152-9199-a952bb875947",
+            "completed_at": "2019-03-15T13:24:14.027Z",
+            "last_viewed_at": "2019-12-17T07:30:15.324Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214438,
+              "key": "792bda4c-84f5-462f-9f17-1082aa76de87",
+              "title": "直方图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "有时候，显示数据的实际分布情况是最佳选择。分布图可能不是正态的！可能存在异常值，使均值出现严重的偏差。条形图等可以隐藏这些问题。你在一开始探索数据时，也需要查看分布图。\n\n### 直方图\n\n直方图是将值分组成多个值范围的条形图。例如，假设有一组年龄数据：29 岁、69 岁、44 岁、69 岁、31 岁、43 岁、32 岁、62 岁、8 岁、53 岁。你可以将年龄按每 10 岁分组，然后算出每个年龄范围的人数。如下所示：\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214439,
+              "key": "b8635533-37a1-4a22-afb1-0131ff17d070",
+              "title": "直方图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d33a2e_histogram/histogram.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b8635533-37a1-4a22-afb1-0131ff17d070",
+              "caption": "直方图示例",
+              "alt": null,
+              "width": 800,
+              "height": 550,
+              "instructor_notes": null
+            },
+            {
+              "id": 214440,
+              "key": "c318a040-2067-465f-9d38-c5501cf6d7cd",
+              "title": "直方图 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "从图中可以清晰地看出年龄分布情况。我给出了数据很少的示例，但是假设有成百上千个数据点。除非使用直方图，否则无法显示数据分布情况。\n\n值的范围通常称为*组距*，将数据分组的过程称为*分组*。明显我对数据进行了*分组*用的是动词形式。要学会使用正确的术语，这样才能与其他分析师交流。\n\n你将经常用到直方图来可视化连续变量的分布情况。但是，你需要了解一些信息。组距和界点的位置会显著影响到分布图的外观。\n\n分组有个不错的属性，即对直条中的数据求平均值，这样可以减少干扰，但是如果组距太宽，分布图可能就会丢失细节信息。但是，如果组距太窄，可能就会出现太多的干扰，可能会丢失有意思的细节。此外，界点的位置会影响直方图的外观。有时候，你需要进行尝试并犯错，才能得出正确的组距。\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214441,
+              "key": "4287def4-911a-4f58-bfe7-e1dcdd78002c",
+              "title": "箱线图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 箱线图\n\n[箱线图](https://en.wikipedia.org/wiki/Box_plot)是一种常见的可视化图表，使用*区间*来显示一般分布形状。区间是大于某个百分比的数据的值。例如，50% 区间是指大于 50% 的数据的值，通常称为中间值。95% 区间是指大于 95% 的数据的值。所有箱线图都使用 25%、50% 和 75% 区间，通常称为*四分位数*。通常，还会使用*箱须*（或侧栏）来表示更大的区间，或者最小区间和最大区间。你还会经常看到箱线图显示了异常值、大于或小于箱须值的数据点。\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214442,
+              "key": "3536a817-b1eb-4620-88f5-f75a546aeeec",
+              "title": "箱线图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f3f1da_box-plot/box-plot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3536a817-b1eb-4620-88f5-f75a546aeeec",
+              "caption": "",
+              "alt": null,
+              "width": 882,
+              "height": 382,
+              "instructor_notes": null
+            },
+            {
+              "id": 214443,
+              "key": "674de369-30b8-4ac3-ab22-878a6ce4a157",
+              "title": "箱线图 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "从图中可以看出，用颜色标注区间使你能够了解潜在分布情况。如果区间在中间值两边保持对称，分布图就可能是正态的。但是，如果区间揉成一团，则表明分布图是偏斜的。\n\n对于箱线图要谨慎使用。因为你将分布图简化成大约五个数字，有可能使非正态分布看起来像正态的。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214444,
+              "key": "f798d7e4-7b17-4e74-b6fd-2b5e2ecec143",
+              "title": "箱线图隐藏非正态数据",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f3f9d6_histogram-and-box-plot-nonnormal/histogram-and-box-plot-nonnormal.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f798d7e4-7b17-4e74-b6fd-2b5e2ecec143",
+              "caption": "左侧的直方图显示的是非正态分布，而右侧的箱线图使数据看起来似乎是正态的。",
+              "alt": null,
+              "width": 1421,
+              "height": 547,
+              "instructor_notes": null
+            },
+            {
+              "id": 214445,
+              "key": "d4a81145-ad7f-4d75-8803-4960da2bd1a9",
+              "title": "小提琴图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 小提琴图\n\n[小提琴图](https://en.wikipedia.org/wiki/Violin_plot)会显示平滑的数据分布图。分布图使用一种叫做核密度估计的方法进行近似估计，你不需要了解该方法，但是该方法很神奇，你可以在[此处](https://en.wikipedia.org/wiki/Kernel_density_estimation)了解详情。和箱线图相似，通常也会包含区间，但是也会显示实际数据分布。\n\n小提琴图几乎适合所有情况。它们会展示非正态分布（箱线图则不会）。但是，平滑操作可能会丢失细节，对于少量数据来说，经常会失败。个人而言，我喜欢使用小提琴图而不是箱线图，但是有时候可能需要快速简单的分布图。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214446,
+              "key": "09efd068-cfa8-4036-b804-46454326f111",
+              "title": "小提琴图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f3fd98_violin-plot-2/violin-plot-2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/09efd068-cfa8-4036-b804-46454326f111",
+              "caption": "",
+              "alt": null,
+              "width": 732,
+              "height": 612,
+              "instructor_notes": null
+            },
+            {
+              "id": 214447,
+              "key": "9ecdf2c6-318f-4432-a957-137d0e0df3b6",
+              "title": "纸带记录图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 纸带记录图\n\n很多时候，我喜欢用纸带记录图直接绘制出数据。纸带记录图用点表示每组的实际数据。如果没有太多数据，可以直接沿着直线绘制数据。如果数据很多的话，点经常会重叠，所以可以在无值维度中随机地散布数据，或者使用幻灯片。当然，如果有太多数据的话，就会让人困惑，所以纸带记录图并非适合所有情况。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214448,
+              "key": "d5d95c2d-0bb2-4233-9ae8-bd05d9510152",
+              "title": "纸带记录图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f4106c_strip-plot/strip-plot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d5d95c2d-0bb2-4233-9ae8-bd05d9510152",
+              "caption": "",
+              "alt": null,
+              "width": 750,
+              "height": 213,
+              "instructor_notes": null
+            },
+            {
+              "id": 214449,
+              "key": "afb3783f-9da2-4c96-9c29-4b7153f181d1",
+              "title": "可视化是一种艺术",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 可视化是一种艺术\n\n我刚刚介绍了几种可视化分布图。你使用哪个呢？该如何从这些图表之间做出选择呢？\n\n可视化就像一门艺术。你需要思考你有哪些问题，什么样的选择最适合回答这些问题。你还需要考虑根本数据。如果有很多的数据，纸带记录图可能就不适合了。如果有很少的数据，小提琴图和箱线图可能不适合。首先，你需要尝试几种图表，多试试并犯错。有了几次经验之后，你就更善于做出最佳选择了。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215368,
+          "key": "040943ae-2b6d-4949-9564-dc53e7ca3aca",
+          "title": "选择合适的图表",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "040943ae-2b6d-4949-9564-dc53e7ca3aca",
+            "completed_at": "2019-03-15T13:25:32.449Z",
+            "last_viewed_at": "2019-12-17T07:36:12.787Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214450,
+              "key": "49052a6a-be39-419f-a2c4-c0e9b0832e2e",
+              "title": "选择图表",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 如何选择图表\n\n你有一些数据并且知道想要显示什么，但是如何选择最佳图表来讲述故事呢？说实话，掌握这一技能需要练习和经验，但是我将提供一个实用的图表选择流程图。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214451,
+              "key": "cc117360-5d4d-4a7a-a2cd-f2a2fc14fe5c",
+              "title": "图表建议",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d34e20_choosing-a-good-chart-09/choosing-a-good-chart-09.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/cc117360-5d4d-4a7a-a2cd-f2a2fc14fe5c",
+              "caption": "Andrew Abela 博士 (http://extremepresentation.typepad.com/blog/2006/09/choosing_a_good.html) 给出的图表建议",
+              "alt": null,
+              "width": 1650,
+              "height": 1275,
+              "instructor_notes": null
+            },
+            {
+              "id": 214452,
+              "key": "10209383-896d-4c9c-a8b5-61fe48232b56",
+              "title": "选择正确的图表",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "当然，这个流程图并非涵盖所有图表，还有很多其他可视化图表\n\n### 图表选择示例\n\n当你在探索数据时，首先要做的是查看各种变量的分布情况。根据以上图表，你需要显示单个变量的分布。下面我划分为少量数据点和多个数据点，变成列直方图和线条直方图。\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214453,
+              "key": "d2a5b315-5602-40b6-bf08-b3368c684920",
+              "title": "直方图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f412ec_line-vs-column-histogram/line-vs-column-histogram.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d2a5b315-5602-40b6-bf08-b3368c684920",
+              "caption": "",
+              "alt": null,
+              "width": 1346,
+              "height": 459,
+              "instructor_notes": null
+            },
+            {
+              "id": 214454,
+              "key": "177743b8-1da0-422d-8497-fadc51cecb2c",
+              "title": "图表选择 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "现在你需要查看变量之间的关系。对于两个变量来说，散点图可能是不错的选择。如果你要添加第三个变量，则可以使用气泡图，点的大小表示第三个变量。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214455,
+              "key": "70736e8a-749c-4322-803e-01802b4798d4",
+              "title": "散点图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f41d57_scatter-combined/scatter-combined.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/70736e8a-749c-4322-803e-01802b4798d4",
+              "caption": "这个散点图显示了关于超级英雄和超级恶棍数据。显示了速度与智慧之间的关系。",
+              "alt": null,
+              "width": 829,
+              "height": 595,
+              "instructor_notes": null
+            },
+            {
+              "id": 214456,
+              "key": "64db8889-7cb4-4ec5-9355-b0a1f6b9bff0",
+              "title": "气泡图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f41d70_bubble-combined/bubble-combined.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/64db8889-7cb4-4ec5-9355-b0a1f6b9bff0",
+              "caption": "这个气泡图显示了超级英雄和超级恶棍数据，现在包含他们的力量，用气泡大小来表示。",
+              "alt": null,
+              "width": 786,
+              "height": 684,
+              "instructor_notes": null
+            },
+            {
+              "id": 214457,
+              "key": "bb145b95-6f1b-4d80-aa43-a4efdcd92f52",
+              "title": "图表选择 3",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "再看一个示例！假设有一组网站访问者数据。你要跟踪用户的访问日期和时间，以及用户是从何渠道（目标广告、电子邮件、推特等）来访问你的网站的。建议显示通过每个渠道来访问的用户数量对比情况。因为你要对多个时间段进行对比，所以折线图是不错的选择。此外，因为还要对比各个渠道，所以可以为每个渠道添加一个线条。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214458,
+              "key": "578d58e0-e705-4838-851b-4b55ae4d042f",
+              "title": "按渠道划分的流量",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f4211b_traffic-by-channel/traffic-by-channel.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/578d58e0-e705-4838-851b-4b55ae4d042f",
+              "caption": "",
+              "alt": null,
+              "width": 750,
+              "height": 449,
+              "instructor_notes": null
+            },
+            {
+              "id": 214459,
+              "key": "ebb92567-eaf9-4c6f-a999-8cb1806dcc7f",
+              "title": "图表选择 4",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "Stephen Few 发表了一篇关于如何选择正确图表的[文章](http://www.perceptualedge.com/articles/ie/the_right_graph.pdf)。请阅读一下这篇文章，然后我将提出一些问题，使你能够练习选择图表。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214460,
+              "key": "2450bd37-1320-4f32-b8b0-7d3be509a78f",
+              "title": "选择最佳图表 #1",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "2450bd37-1320-4f32-b8b0-7d3be509a78f",
+                "completed_at": "2019-03-15T13:26:18.435Z",
+                "last_viewed_at": "2019-04-10T14:34:43.829Z",
+                "unstructured": "{\"selected_id\":\"a1474405906720\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "哪个图表最适合表示五个竞争者在过去 5 年每个月的市场份额？",
+                "answers": [
+                  {
+                    "id": "a1474405903584",
+                    "text": "堆叠柱状图",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474405906720",
+                    "text": "百分比堆叠面积图",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1474405907608",
+                    "text": "饼图",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474406087783",
+                    "text": "散点图",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 214461,
+              "key": "86313e5f-cc78-4420-9fe5-5a97aba0b998",
+              "title": "选择最佳图表 #2",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "86313e5f-cc78-4420-9fe5-5a97aba0b998",
+                "completed_at": "2019-03-15T13:26:36.150Z",
+                "last_viewed_at": "2019-04-10T14:34:46.101Z",
+                "unstructured": "{\"selected_id\":\"a1475618609243\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "哪个图表最适合表示教育和收入之间的关系？",
+                "answers": [
+                  {
+                    "id": "a1474406444814",
+                    "text": "堆叠直条图",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1475618608307",
+                    "text": "百分比堆叠面积图",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1475618608906",
+                    "text": "饼图",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1475618609243",
+                    "text": "散点图",
+                    "is_correct": true
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": 215369,
+          "key": "9abe55d9-e353-4d1e-b672-53174a75e540",
+          "title": "其他很棒的图表",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "9abe55d9-e353-4d1e-b672-53174a75e540",
+            "completed_at": "2019-03-15T13:26:41.236Z",
+            "last_viewed_at": "2019-12-17T07:39:53.554Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214462,
+              "key": "a61b6c76-b80b-40f2-8bd0-f1641f723e06",
+              "title": "其他很棒的图表",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "以下是我尚未提到的其他很棒的图表。\n\n### 子弹图\n\n子弹图由 Stephen Few 开发而成，是条形图的一种延伸，将多个衡量结果相互堆叠进行对比。例如，我在图中将 2014 年的总利润（蓝色直条）与 2013 年的总利润（灰色直条）进行对比。从图中可以看出，大多数的类别和细分都超过了 2013 年的利润，但是企业家具除外。\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214463,
+              "key": "52fa24b4-662c-4616-b4fd-3ad84d9720dd",
+              "title": "子弹图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d35099_bullet-graph/bullet-graph.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/52fa24b4-662c-4616-b4fd-3ad84d9720dd",
+              "caption": "子弹图！",
+              "alt": null,
+              "width": 784,
+              "height": 264,
+              "instructor_notes": null
+            },
+            {
+              "id": 214464,
+              "key": "9bc68bf8-115b-4c87-8672-1bb929b93e2d",
+              "title": "迷你图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 迷你图\n\nEdward Tufte 在《Visual Display of Quantitative Information》中提出了这类图表（并且给出了小多组图组这一名称），以便简要地可视化随着时间推移而变化的定量数据。迷你图很简单，旨在强调在很小的显示区域内的数量变化。这种图表变得热门起来，广泛应用于金融领域。你将经常在股票中见到此类图表，用于表示股价随着时间的变化情况。[Edward Tufte 和其他人](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001OR)写了一篇关于迷你图的文章，建议阅读一下。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214465,
+              "key": "bc1bb106-8ec0-4545-b1ed-79a6e06a647f",
+              "title": "Yahoo 迷你图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f4233e_sparkline-chart/sparkline-chart.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/bc1bb106-8ec0-4545-b1ed-79a6e06a647f",
+              "caption": "来源：Yahoo Finance。Yahoo Finance 经常使用迷你图。以下网站提供了更多的示例：https://finance.yahoo.com/most-active。",
+              "alt": null,
+              "width": 872,
+              "height": 120,
+              "instructor_notes": null
+            },
+            {
+              "id": 214466,
+              "key": "14e09f2c-b504-4443-8318-0a6935e0411d",
+              "title": "相连的散点图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 相连的散点图\n\n我喜欢这类图表。相连的散点图显示了你将在散点图中看到的正态关系，但是会添加第三个维度，例如日期，从而为可视化提供更多的背景信息。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214467,
+              "key": "0babbda1-64d0-4822-8722-067994d8491e",
+              "title": "相连的折线图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f42d1d_connected-line-plot/connected-line-plot.gif",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/0babbda1-64d0-4822-8722-067994d8491e",
+              "caption": "",
+              "alt": null,
+              "width": 400,
+              "height": 300,
+              "instructor_notes": null
+            },
+            {
+              "id": 214468,
+              "key": "48086e97-6daa-4f63-8cbc-9ab690ff5433",
+              "title": "核密度估计",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 核密度估计\n\n核密度估计 (KDE) 实际上是一种很华丽的直方图。直方图的原理是可视化数据分布情况。但是，组距应该多宽呢？界点应该位于何处？KDE 可以避免这些问题，并估计出数据的分布情况。基本原理是将每个数据点替换为“内核”，例如正态曲线或高顶礼帽或三角形，然后对它们求和。我之前讨论小提琴图时提到过这些内容。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214469,
+              "key": "8ea61e5d-8893-4405-a9a1-ecc212158762",
+              "title": "KDE",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f4288e_kde/kde.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8ea61e5d-8893-4405-a9a1-ecc212158762",
+              "caption": "“使用相同数据绘制而成的直方图（左侧）和核密度估计（右侧）对比情况。6 个内核是红色虚线曲线，核密度估计是蓝色曲线。数据点是 X 轴上的地毯图。” https://en.wikipedia.org/wiki/Kernel_density_estimation",
+              "alt": null,
+              "width": 2880,
+              "height": 1440,
+              "instructor_notes": null
+            },
+            {
+              "id": 214470,
+              "key": "05fca5b1-593c-4f86-a0a3-05e82b0ec325",
+              "title": "核密度估计 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "但是，你依然可以为内核选择参数，例如高斯曲线的带宽。因此，这种方法依然存在任意性，但是与直方图相比，通常效果更好（但是更复杂）。如果你对此类图表感兴趣的话，建议阅读[这篇文章](https://en.wikipedia.org/wiki/Kernel_density_estimation)（我认为这类图表很酷）。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214471,
+              "key": "2d9e8e3e-60f4-4d66-9ffb-bb7bf68f0597",
+              "title": "循环图",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 循环图\n\n循环图用于将周期性数据进行分组。例如，如果有多个星期的数据，最好是将所有数据按一周的某一天分组，这样可以更清晰地查看每周的趋势。\n\n这是[关于循环图的简介](https://www.perceptualedge.com/articles/guests/intro_to_cycle_plots.pdf)，作者是 Stephen Few（又是他的成果，他有很多不错的研究成果）。 ",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214472,
+              "key": "83fb767a-f50c-4ae1-a1b4-843c3d880f40",
+              "title": "循环图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57ffebef_screen-shot-2016-10-13-at-1.16.08-pm/screen-shot-2016-10-13-at-1.16.08-pm.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/83fb767a-f50c-4ae1-a1b4-843c3d880f40",
+              "caption": "",
+              "alt": null,
+              "width": 1446,
+              "height": 898,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215370,
+          "key": "159ed131-113d-440f-8326-4b76b871ddf9",
+          "title": "使用颜色",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "159ed131-113d-440f-8326-4b76b871ddf9",
+            "completed_at": "2019-03-15T13:28:23.799Z",
+            "last_viewed_at": "2019-12-17T07:43:41.413Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214473,
+              "key": "3c99d5c6-465e-460a-96b2-91e439bba5f1",
+              "title": "颜色 1",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 使用颜色\n\n颜色是设计可视化图表的重要工具，使你能够表示另一个变量或对数据分组。但是，在选择使用哪种颜色以及如何应用这些颜色时，需要考虑很多问题。首先，我将讨论如何为要处理的数据选择正确的调色板。然后，我将讨论如何考虑色盲人士。 \n\n请看看下面两个关于 GDP 和预期寿命的图表，了解下颜色的作用：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214474,
+              "key": "479c2d29-199d-4010-ba60-51f5a7984cd5",
+              "title": "GDP 与预期寿命（没有颜色）",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d9dedb_gdp-life/gdp-life.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/479c2d29-199d-4010-ba60-51f5a7984cd5",
+              "caption": "2010 年各国的人均 GDP 与预期寿命，可以看到基本上升趋势。",
+              "alt": null,
+              "width": 648,
+              "height": 360,
+              "instructor_notes": null
+            },
+            {
+              "id": 214475,
+              "key": "2cf28530-1e56-487d-aeb0-2cec7affa3e0",
+              "title": "GDP 与预期寿命（有颜色）",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d9df06_gdp-life-color/gdp-life-color.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/2cf28530-1e56-487d-aeb0-2cec7affa3e0",
+              "caption": "GDP 与预期寿命，现在用颜色标注区域。可以轻松地看到不同区域的国家是如何分组的。",
+              "alt": null,
+              "width": 648,
+              "height": 360,
+              "instructor_notes": null
+            },
+            {
+              "id": 214476,
+              "key": "c11d4624-2c4b-4cbb-852b-a1126e9c50a4",
+              "title": "调色板",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "看到添加颜色后提供了大量额外的信息。我们知道，GDP 越高，预期寿命就越长。但是，通过将各个国家所属的区域用颜色标注，我们可以从此图中看到不同类型的国家在全球的分布情况。GDP 很低的国家几乎都在撒哈拉以南非洲，很高的国家则是欧洲和北美。中间的橘色部分是[独立国家联合体](https://en.wikipedia.org/wiki/Commonwealth_of_Independent_States)，即前苏联国家（如果你觉得该缩写一开始没明白的话，我也没明白）。\n\n颜色是可视化过程中的重要工具，我们必须正确使用颜色，才能产生最大的影响。\n\n### 调色板\n\n调色板是指用来表示数据值的颜色范围。对于定量和定性数据，你需要使用不同的调色板。选择正确的调色板非常重要。例如，我们来看一个使用非常广泛但是很糟糕的调色板。(在这里朝着 [Jake VanderPlas](https://jakevdp.github.io/blog/2014/10/16/how-bad-is-your-colormap/) 吼叫吧）。\n\n在过去一段时间内，可视化工具（例如 MATLAB 和 Python 的 matplotlib 库）使用的默认调色板是 **jet**。（幸运的是，二者都更新为了新的调色板）。你可能还会听到**彩虹**调色板这一说法。jet 调色板的颜色从深蓝到深红，然后一直变成绿色和黄色。我在下方提供了该调色板的彩色版本和灰度模式，以显示色谱和亮度。\n\n\njet/彩虹调色板存在缺点，因为亮度并没有从一端平滑地过渡到另一端。黄色比其余颜色要亮很多，使某些数据显的格外重要，实际上并非如此。与大片的绿色相比，黄色和蓝绿色异常突出。从图中可以看到 jet 调色板的亮度，并不是平滑的渐变",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214477,
+              "key": "fdbf107d-aeb0-45e3-9cb7-537d91e12950",
+              "title": "Jet 1",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d87b4b_jet/jet.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fdbf107d-aeb0-45e3-9cb7-537d91e12950",
+              "caption": "Jet!",
+              "alt": null,
+              "width": 576,
+              "height": 144,
+              "instructor_notes": null
+            },
+            {
+              "id": 214478,
+              "key": "7fa6381f-cbaa-4058-92b1-3978a8e59742",
+              "title": "Color 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "可以看出，从感官上来说，很短的蓝绿色和黄色区域比其他区域要色彩强烈很多。这些区域的数据将被过于强调。通过查看灰度版本，很明显蓝绿色和黄色区域比较突出是因为它们的亮度比其他部分要高。出现这种情况是因为[我们的大脑对颜色的感知有所不同](https://en.wikipedia.org/wiki/Color_vision#Cone_cells_in_the_human_eye)。与红色相比，我们的眼睛对绿色更敏感，对红色的敏感性又要比蓝色高。所以在计算机屏幕上，255 的红色比 255 的蓝色看起来要亮。\n\n可以从下面的示例中看到 jet 扭曲了我们对重要性的感知。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214479,
+              "key": "7119b251-2e3f-4313-88e8-d0c782a65fd6",
+              "title": "Jet 和灰度",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d87b87_jet-gray/jet-gray.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/7119b251-2e3f-4313-88e8-d0c782a65fd6",
+              "caption": "黄色和蓝绿色区域的亮度达到峰值。",
+              "alt": null,
+              "width": 576,
+              "height": 396,
+              "instructor_notes": null
+            },
+            {
+              "id": 214480,
+              "key": "17dc4194-e4e6-4be2-96ea-b708b59545ef",
+              "title": "颜色 3",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "黄色和蓝绿色区域比红色和蓝色区域要亮很多，并引人注目，但红色和蓝色区域实际上才是需要关注的（极端）部分。我们的大脑认为亮度越高的区域越重要。可以从灰度版本中看出，在黄色和蓝绿色边缘部分，亮度出现峰值。\n\n相反，我们应该使用符合以下特征的调色板：亮度呈线性变化，并存在极端值，同时在颜色之间平滑过渡。下面我将使用一个从红色变成浅黄色然后变成绿色的发散性调色板。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214483,
+              "key": "c75d726d-941b-4f51-a4d8-e38f05c43514",
+              "title": "发散性 1",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d89413_diverging1/diverging1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c75d726d-941b-4f51-a4d8-e38f05c43514",
+              "caption": "发散性调色板从红色变成黄色再变成绿色",
+              "alt": null,
+              "width": 576,
+              "height": 144,
+              "instructor_notes": null
+            },
+            {
+              "id": 214481,
+              "key": "fe655088-b31c-4eae-898d-611cc4c8ef3c",
+              "title": "发散性 2",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d89451_diverging2/diverging2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fe655088-b31c-4eae-898d-611cc4c8ef3c",
+              "caption": "这个调色板的正面区域和负面区域之间存在平滑过渡。",
+              "alt": null,
+              "width": 576,
+              "height": 396,
+              "instructor_notes": null
+            },
+            {
+              "id": 214482,
+              "key": "af091273-0fcd-4439-8bf6-5db1f3cd2f05",
+              "title": "连续性调色板",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "对于这个调色板，色带之间的过渡很平滑，红色和绿色区域的亮度相等。通常，jet 调色板是个不太好的选择。我们应该选择线性调色板，如上所示。当前的大部分可视化软件都使我们能够选择调色板，所以在用颜色设计可视化图表时，记住这一点。\n\n### 连续性调色板\n\n线性亮度调色板存在两种基本类型：连续性调色板和发散性调色板（我在上面使用了，并且稍后将再次提到）。连续性调色板的浅色到深色或深色到浅色之间的过渡很平滑。这种调色板适合连续性数据，所有颜色都是正面的，所以低值用浅色表示，高值用深色表示（或者相反的模式）。下面是一个从浅红色到深红色的连续性调色板示例。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214484,
+              "key": "046df786-1e29-4c82-a471-ea8aa1d6e74f",
+              "title": "连续性 1",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d8959c_sequential1/sequential1.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/046df786-1e29-4c82-a471-ea8aa1d6e74f",
+              "caption": "从浅红色到深红色的连续性调色板",
+              "alt": null,
+              "width": 576,
+              "height": 144,
+              "instructor_notes": null
+            },
+            {
+              "id": 214485,
+              "key": "e0920f4e-a6de-4894-90fe-5f9305e770d6",
+              "title": "连续性 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你还可以使用色调和亮度都会变化的调色板：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214486,
+              "key": "f0b89068-d594-4ebd-bba1-a7eb05b21a30",
+              "title": "具有不同色调的连续性调色板",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d895cc_sequential2/sequential2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f0b89068-d594-4ebd-bba1-a7eb05b21a30",
+              "caption": "色调也变化的连续性调色板",
+              "alt": null,
+              "width": 576,
+              "height": 216,
+              "instructor_notes": null
+            },
+            {
+              "id": 214487,
+              "key": "a5a0d8ff-9c79-40c9-8f3a-f9b1d6bfe9a1",
+              "title": "Sequentials with Gaussians",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "下图是几个高斯模型调色板。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214488,
+              "key": "db32faa3-cb91-42f8-b205-64fb40fabab1",
+              "title": "具有高斯模型的连续性调色板",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d895ff_sequential-gaussians/sequential-gaussians.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/db32faa3-cb91-42f8-b205-64fb40fabab1",
+              "caption": "两个高斯块的连续性调色板。",
+              "alt": null,
+              "width": 720,
+              "height": 216,
+              "instructor_notes": null
+            },
+            {
+              "id": 214489,
+              "key": "714ee771-dbed-44f4-955f-451fdb356c97",
+              "title": "发散性调色板",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 发散性调色板\n\n如果数据存在某些断点，例如值从负数变成正数，经常适合使用发散性调色板。发散性调色板从一个颜色过渡到另一个颜色，经过一个浅色（或深色），亮度呈线性变化。你已经见过一个发散性调色板，即从红色变成绿色的调色板。下面是更多的示例：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214490,
+              "key": "ce1f6742-291b-4e98-abd1-e7134f730160",
+              "title": "发散性调色板",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d89650_diverging3/diverging3.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/ce1f6742-291b-4e98-abd1-e7134f730160",
+              "caption": "几个发散性调色板示例",
+              "alt": null,
+              "width": 576,
+              "height": 216,
+              "instructor_notes": null
+            },
+            {
+              "id": 214491,
+              "key": "9faee463-1190-4670-ba7a-53bac578af93",
+              "title": "发散性调色板 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "下图是对与之前相同的高斯模型应用颜色后的效果，但是一个是负数。我还提供了 jet 调色板，使你能够看到蓝绿色和黄色如何在水泡周围形成圆环，而在另一个调色板中，这些颜色之间的过渡很平滑。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214492,
+              "key": "8c9a1a09-9760-417e-846e-7a77ef6fa038",
+              "title": "发散性高斯模型",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d8971e_diverging-gaussians/diverging-gaussians.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8c9a1a09-9760-417e-846e-7a77ef6fa038",
+              "caption": "应用到高斯块上的发散性调色板。注意 jet 调色板导致的缺陷。",
+              "alt": null,
+              "width": 720,
+              "height": 216,
+              "instructor_notes": null
+            },
+            {
+              "id": 214493,
+              "key": "41dfeba6-de6c-43c9-af52-a0a7c5ef9cd3",
+              "title": "定性调色板",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "#### 定性数据的调色板\n\n对于定性数据，经常需要对比不同组或类别的数据。为此，你需要选择肉眼看去尽量不同的颜色。[I want hue](http://tools.medialab.sciences-po.fr/iwanthue/) 是一款很棒的工具，可以最佳方式构建独特的调色板。我在下图中创建了一个散点图，表示鸢尾花样本的花瓣长度和宽度。通过用不同的颜色标注各个物种，可以清晰地看出数据分成三个不同的群体。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214494,
+              "key": "fc818185-88d3-4200-be23-9cd8b48af0da",
+              "title": "用颜色标注的鸢尾花散点图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d89a12_iris/iris.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/fc818185-88d3-4200-be23-9cd8b48af0da",
+              "caption": "收集的鸢尾花数据，根据物种标注颜色。",
+              "alt": null,
+              "width": 576,
+              "height": 396,
+              "instructor_notes": null
+            },
+            {
+              "id": 214495,
+              "key": "04a8acdf-1560-46fb-a0a1-cdae23830475",
+              "title": "色盲",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 为色盲人士设计颜色\n\n人类通过视网膜内的细胞（叫做[视锥细胞](https://en.wikipedia.org/wiki/Cone_cell)）产生的信号来识别颜色。光线进入眼睛，到达视锥细胞，视锥细胞向大脑发送电子信号。通常有三类视锥细胞：S（短波）、M（中波）和 L（长波）。它们对不同波长的光敏感。短波视锥细胞对蓝色敏感，中波对绿色敏感，长波对红色敏感。 \n\n但是，大约有 10% 的男性和 1% 的女性存在基因突变，影响到这些视锥细胞，产生[色盲](https://en.wikipedia.org/wiki/Color_blindness)。最常见的色盲形式是红绿色盲，通常是因为中波视锥细胞对光敏感性转移到了红色光线上，这种突变称为*绿色弱视*。绿色弱视人群无法区分红色和绿色，如下图的红色和绿色苹果所示：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214496,
+              "key": "79191b06-bed8-426b-b799-59fd8f171c14",
+              "title": "色盲苹果示例",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d89b2a_braeburn-grannysmith-dichromat-sim/braeburn-grannysmith-dichromat-sim.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/79191b06-bed8-426b-b799-59fd8f171c14",
+              "caption": "如果你是绿色弱视，那么你看到的这两个苹果就是底下的两种色彩。",
+              "alt": null,
+              "width": 327,
+              "height": 367,
+              "instructor_notes": null
+            },
+            {
+              "id": 214497,
+              "key": "f365769c-23cb-414c-ac7f-0a2a11ae6fa2",
+              "title": "其他资源",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "实际上有很大一部分人群是色盲，所以在设计可视化图表时要考虑到这类人。避免使用红绿调色板，改为使用蓝橙调色板。\n\n### 其他资源\n\n还有很多关于颜色的知识可以学习，此处是 Robert Simmon 的[一系列帖子](http://earthobservatory.nasa.gov/blogs/elegantfigures/2013/08/05/subtleties-of-color-part-1-of-6/)，可以帮助你开始学习。\n\n此外，还有很多免费在线工具可以帮助你构建调色板。\n\n* [Paletton](http://paletton.com) \n* [Adobe color wheel](https://color.adobe.com/)\n* [I want hue](http://tools.medialab.sciences-po.fr/iwanthue/)，用于构建定性数据调色板",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 177994,
+          "key": "30639889550923",
+          "title": "选择合适的色调",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "30639889550923",
+            "completed_at": "2019-03-15T13:29:13.974Z",
+            "last_viewed_at": "2019-12-17T07:47:01.744Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 176219,
+              "key": "3063988955",
+              "title": "小心颜色",
+              "semantic_type": "QuizAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "user_state": {
+                "node_key": "3063988955",
+                "completed_at": "2019-03-15T13:29:56.854Z",
+                "last_viewed_at": "2019-04-10T14:43:10.907Z",
+                "unstructured": "{\"check1\":true}"
+              },
+              "instruction": {
+                "video": {
+                  "youtube_id": "aKwXLGs0Rfs",
+                  "china_cdn_id": "aKwXLGs0Rfs.mp4"
+                },
+                "text": null
+              },
+              "question": {
+                "title": "小心颜色",
+                "alt_text": "",
+                "background_image": "//lh4.ggpht.com/d7_WHwPEYeA540v7xwh7KDaLLkF7h9YB5xPaCKtgeGG3rHKvrXEf7HuV4lB2lOCarktLiq6_NhMJYqBjzA=s0#w=1920&h=1080",
+                "non_google_background_image": "https://s3.cn-north-1.amazonaws.com.cn/u-img/3063988955",
+                "semantic_type": "ImageFormQuestion",
+                "evaluation_id": "3082758961",
+                "widgets": [
+                  {
+                    "group": null,
+                    "initial_value": "false",
+                    "label": null,
+                    "marker": "check1",
+                    "model": "CheckboxWidget",
+                    "is_text_area": null,
+                    "tabindex": null,
+                    "placement": {
+                      "height": 0.05,
+                      "width": 0.05,
+                      "x": 0.12513637780548628,
+                      "y": 0.8499514966740577
+                    }
+                  }
+                ]
+              },
+              "answer": {
+                "text": null,
+                "video": {
+                  "youtube_id": null,
+                  "china_cdn_id": "null.mp4"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 177997,
+          "key": "30639889570923",
+          "title": "冗余编码",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "30639889570923",
+            "completed_at": "2019-03-15T13:30:12.692Z",
+            "last_viewed_at": "2019-12-17T07:47:39.914Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 176220,
+              "key": "3063988957",
+              "title": "冗余编码",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "有时候，双重编码在 <a href=\"http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html?_r=1&\" target=\"_blank\">Facebook IPO</a>（需要 VPN 访问）等图形中可能会有所帮助。散点图较为复杂，因此双重编码（比如：沿 x 轴的颜色和位置）可以帮助读者理解数据。\n\n此处的条形图简单得多，而且颜色不传递有关数据的额外信息。\n\n设计可视化图形没有硬性规定，从根本上说，你应该考虑目标受众以及他们是否习惯解读不同的图形。",
+              "video": {
+                "youtube_id": "RU3rI_pO8Rc",
+                "china_cdn_id": "RU3rI_pO8Rc.mp4"
+              }
+            }
+          ]
+        },
+        {
+          "id": 215371,
+          "key": "97e97593-d98f-4efe-8349-aca432bd86ac",
+          "title": "形状、大小和其他工具",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "97e97593-d98f-4efe-8349-aca432bd86ac",
+            "completed_at": "2019-03-15T13:31:23.307Z",
+            "last_viewed_at": "2019-12-17T07:48:49.237Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214498,
+              "key": "fed3c187-abf2-4ef1-b075-e28689015d7d",
+              "title": "标记大小",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 表示数据的其他方式\n\n现在你应该能够在可视化图表中熟练地使用颜色来表示值了。有时候，除了颜色之外，你需要显示更多的数据。你可以使用不同的表示方式，例如在散点图中使用不同形状和大小的标记。下面我将介绍如何使用这些工具在一个图表中展示更多的数据。\n\n### 使用不同大小的标记\n\n在制作散点图时，你是用点（或者其他符号）来表示数据。通常，这些符号称之为标记。值可以用标记的**大小**来表示。即，值越大点就越大。例如，请看之前的 GDP 与预期寿命示例，但是这次人口用不同标记大小来表示：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214499,
+              "key": "b4df9716-4b0a-4bc1-8a65-34c1ed79ba0f",
+              "title": "标记大小",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d9e14a_gdp-life-pop-size-color/gdp-life-pop-size-color.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/b4df9716-4b0a-4bc1-8a65-34c1ed79ba0f",
+              "caption": "GDP 与预期寿命，用标记大小表示人口。",
+              "alt": null,
+              "width": 648,
+              "height": 360,
+              "instructor_notes": null
+            },
+            {
+              "id": 214500,
+              "key": "c5f3d196-8168-4696-ab10-73fa2d176ef0",
+              "title": "标记大小 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "大的蓝点很突出，表示的是中国和印度。美国是右侧的大紫点。该图表现在包含了很多不同的信息。我们可以看到预期寿命随着 GDP 增长而延长、各个国家位于世界的哪个地方、这些地点的相对人口。\n\n#### 注意事项\n\n虽然我们可以从标记大小中得出大量信息，但是并非很准确的表示方法。大小如何解读模糊不清。我们应该对比标记的直径还是面积？\n\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214501,
+              "key": "6668e7e9-e846-4d8d-aa64-a6154df24b41",
+              "title": "大小对比",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57d9eb37_size-comparison/size-comparison.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6668e7e9-e846-4d8d-aa64-a6154df24b41",
+              "caption": "无法确定是对比标记的面积还是直径。",
+              "alt": null,
+              "width": 625,
+              "height": 245,
+              "instructor_notes": null
+            },
+            {
+              "id": 214502,
+              "key": "649b5013-e7de-4e9e-ba2f-00209282e4a8",
+              "title": "形状",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 标记形状\n\n在散点图中，数据还可以用标记的形状来表示（折线图也可以，如果里面使用了标记的话）。例如，你可以用不同的符号（而不是颜色）来表示不同物种的鸢尾花：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214503,
+              "key": "249e0a67-7884-40ee-bfa0-de2a99934453",
+              "title": "鸢尾花物种标记",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57daa592_iris-markers/iris-markers.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/249e0a67-7884-40ee-bfa0-de2a99934453",
+              "caption": "使用标记来表示鸢尾花物种。",
+              "alt": null,
+              "width": 576,
+              "height": 396,
+              "instructor_notes": null
+            },
+            {
+              "id": 214504,
+              "key": "7920bcbe-10b8-4372-ac57-d0abdf3caf17",
+              "title": "标记 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "但是标记也存在一定的限制。看看当我在 GDP 与预期寿命图表中尝试使用标记表示地区时，会发生什么情况：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214505,
+              "key": "752e3aea-cb9a-4254-8002-2735267dc009",
+              "title": "使用标记的 GDP 与预期寿命图表",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57daa60d_gdp-life-markers/gdp-life-markers.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/752e3aea-cb9a-4254-8002-2735267dc009",
+              "caption": "GDP 与预期寿命，地区用标记形状表示。",
+              "alt": null,
+              "width": 648,
+              "height": 360,
+              "instructor_notes": null
+            },
+            {
+              "id": 214506,
+              "key": "b820cbd1-1981-4b58-bde6-a5d805790b09",
+              "title": "标记 3",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "我在此图中需要使用大量不同的标记。结果都混合在一起，与使用颜色表示地区相比，不够清晰。当组数很小时，使用标记形状来表示组。当标记形状的数量变多时，就很难在图中进行区分，整个图都变得混乱不堪。\n\n### 冗余编码\n\n有时候，你需要强调数据的某个方面。在这种情况下，你可以使用*两种*方法（而不是一种）来表示数据，这叫做冗余编码。下面是经济合作与发展组织 (OECD) 国家/地区自 2000 年以来的失业率分布图。我使用了标记大小和颜色来表示国家/地区数量及各自的失业率。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214507,
+              "key": "4fb4832e-675e-454f-a7db-97dcebdb7e85",
+              "title": "失业率",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57dafc1c_leonard-plot/leonard-plot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/4fb4832e-675e-454f-a7db-97dcebdb7e85",
+              "caption": "经济合作与发展组织 (OECD) 国家/地区的失业率。",
+              "alt": null,
+              "width": 1050,
+              "height": 600,
+              "instructor_notes": null
+            }
+          ]
+        },
+        {
+          "id": 215372,
+          "key": "422d05c0-b170-4e69-90d4-3e750a96f5b0",
+          "title": "少即是多",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "422d05c0-b170-4e69-90d4-3e750a96f5b0",
+            "completed_at": "2019-03-15T13:32:16.571Z",
+            "last_viewed_at": "2019-12-17T07:51:48.103Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214508,
+              "key": "da461536-7aa8-46a0-b585-fc77a1b7f419",
+              "title": "少即是多 1",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 图表垃圾\n\n在设计可视化图表时，你需要删掉数据中的所有无关内容。Edward Tufte 将所有的无关内容称为[图表垃圾](http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=00040Z)。\n\n例如，下面这个图表展示的是宇宙飞船火箭助推器的 O 形环损坏。在挑战者号爆炸之后的调查中就出现了这张图。当时的调查确定宇宙飞船爆炸是因为在发射过程中，天气很冷，O 形环出现故障。（O 形环是用来对两个物体之间的空隙进行密封的橡胶环）",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214509,
+              "key": "51622a55-654d-40e6-a4a3-a72f2aaff2ae",
+              "title": "图表垃圾！",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57daff33_challenger2/challenger2.gif",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/51622a55-654d-40e6-a4a3-a72f2aaff2ae",
+              "caption": "火箭助推器中的 O 形环损坏。",
+              "alt": null,
+              "width": 611,
+              "height": 489,
+              "instructor_notes": null
+            },
+            {
+              "id": 214510,
+              "key": "2d61f125-af45-4bc8-bf69-59633a2dddda",
+              "title": "图表垃圾",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "该图表中的信息太多，实际上很难从中得出任何信息。火箭是经典的图表垃圾，视觉元素没有表示数据，而是引起干扰。我清理了上图中的数据：",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214511,
+              "key": "15f639af-07a0-4652-a532-7c6770155d34",
+              "title": "效果好的挑战者号图表",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57db040b_challenger-good/challenger-good.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/15f639af-07a0-4652-a532-7c6770155d34",
+              "caption": "我的挑战者号 O 形环数据版本",
+              "alt": null,
+              "width": 576,
+              "height": 396,
+              "instructor_notes": null
+            },
+            {
+              "id": 214512,
+              "key": "cb69abd1-2391-4338-9df3-0f57b42da8d0",
+              "title": "图表垃圾 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "根据之前的数据，你立即就能看出挑战者号飞船上的 O 形环几乎肯定会在这一外部温度出现故障。\n\n你有时候还会看到具有图案、3D 效果、密度网格等的图表。所有这些都会影响读者对数据的理解。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214513,
+              "key": "6dff8a49-aeff-459e-b087-b740d8c86065",
+              "title": "经典图表垃圾",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57db0904_usefuljunk-teaser/usefuljunk-teaser.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6dff8a49-aeff-459e-b087-b740d8c86065",
+              "caption": "Tufte 的“Visual Display”中的经典图表垃圾示例",
+              "alt": null,
+              "width": 560,
+              "height": 236,
+              "instructor_notes": null
+            },
+            {
+              "id": 214514,
+              "key": "9fb067cd-31b8-49eb-9c30-093fe68e946f",
+              "title": "图表垃圾 3",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "如果只能从这门课程中学到一样东西的话，那就是请勿使用 3D 效果。不仅仅是因为 3D 几乎始终没必要（是图表垃圾！），而且会歪曲数据。请查看这张 Macworld 2008 年主题演讲中的幻灯片。Apple 最广为人知的就是精彩的设计，但是很明显没有好好的设计可视化图表。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214515,
+              "key": "6fc77449-7f4a-424e-a542-9e1cf11dfb49",
+              "title": "Apple 饼图反面示例",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57db0fc1_dsc-0143/dsc-0143.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/6fc77449-7f4a-424e-a542-9e1cf11dfb49",
+              "caption": "坏的苹果派（没错，这个双关笑话是我想出来的）。",
+              "alt": null,
+              "width": 440,
+              "height": 292,
+              "instructor_notes": null
+            },
+            {
+              "id": 214516,
+              "key": "e1207528-a578-4f32-ae20-26fdb252519b",
+              "title": "不好的 3D 效果",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "这个饼图存在 3D 效果，顶部向后倾斜。虽然紫色部分标为 21.2%，但是肉眼看去，比绿色 19.5% 部分要小。它们创建了一个本身就很难看明白的饼图，并且变得更糟糕。\n\n## 数据墨水\n\n即使没有图表垃圾，很多图表也会将很多视觉空间留给非数据元素。Tufte 使用*墨水*一词来指代图表中的任何视觉元素。表示数据的视觉元素是数据墨水，其他所有元素是非数据墨水。作为设计师，我们应该尽量减少非数据墨水的量，从而删除数据中的干扰项。\n\n查看正常的柱状图。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214517,
+              "key": "64df7004-8260-4ae3-976b-2e00d5b289ba",
+              "title": "柱状图原图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57df69f9_bar-original/bar-original.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/64df7004-8260-4ae3-976b-2e00d5b289ba",
+              "caption": "表示三种鸢尾花物种的平均测量结果的典型柱状图。",
+              "alt": null,
+              "width": 576,
+              "height": 396,
+              "instructor_notes": null
+            },
+            {
+              "id": 214518,
+              "key": "3b3356ee-968f-4382-a096-e045e32c96fc",
+              "title": "条形图 1",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "上图是一个典型的柱状图。上面存在可以删掉的非数据墨水。例如，图表周围的方框是不表示任何数据的墨水。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214519,
+              "key": "11840689-864d-4b49-a25f-4b53f15c0067",
+              "title": "删掉方框的图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57df6a60_bar-despined/bar-despined.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/11840689-864d-4b49-a25f-4b53f15c0067",
+              "caption": "同一柱状图，只是没有恼人的方框了。",
+              "alt": null,
+              "width": 576,
+              "height": 396,
+              "instructor_notes": null
+            },
+            {
+              "id": 214520,
+              "key": "5f21dd45-0adb-4140-bafb-5ccc195a6a2c",
+              "title": "柱状图 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "纵轴没必要存在，除了刻度线之外，所以也可以删了。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214521,
+              "key": "f5730f78-5e4d-4efd-b9b4-f1a85fb76385",
+              "title": "没有左侧线条的柱状图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57df6ace_bar-no-left-spine/bar-no-left-spine.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f5730f78-5e4d-4efd-b9b4-f1a85fb76385",
+              "caption": "没有纵轴的柱状图。",
+              "alt": null,
+              "width": 576,
+              "height": 396,
+              "instructor_notes": null
+            },
+            {
+              "id": 214522,
+              "key": "ee107e66-1803-4e4d-8277-4dd7b51a6083",
+              "title": "柱状图 3",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "最后，我可以添加白色网格，帮助读者正确地看出长条高度。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214523,
+              "key": "d3ea4ce3-b521-4e54-9e32-7f08f3e309ef",
+              "title": "具有网格的柱状图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57df6b1e_bar-with-grid/bar-with-grid.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/d3ea4ce3-b521-4e54-9e32-7f08f3e309ef",
+              "caption": "用白色网格表示纵轴刻度的柱状图。",
+              "alt": null,
+              "width": 576,
+              "height": 396,
+              "instructor_notes": null
+            },
+            {
+              "id": 214524,
+              "key": "04ac7353-c9d1-4237-b712-ff68b79cd680",
+              "title": "柱状图 4",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "通过对比原图和最终版本，可以看出我删除了很多非数据墨水。图表的重心是数据，应该尽量减少干扰性视觉元素。\n\n现在，我们看看可以从另一种常见图表“箱线图”中删除哪些元素。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214525,
+              "key": "f05f2306-9a56-42ad-9653-ec4d9a12a87f",
+              "title": "鸢尾花箱线图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57df5cea_iris-box-plot/iris-box-plot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/f05f2306-9a56-42ad-9653-ec4d9a12a87f",
+              "caption": "",
+              "alt": null,
+              "width": 360,
+              "height": 360,
+              "instructor_notes": null
+            },
+            {
+              "id": 214526,
+              "key": "922c3c7f-2688-49f9-ba5c-1200b8b5a9ed",
+              "title": "删除箱线图中的元素",
+              "semantic_type": "CheckboxQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "922c3c7f-2688-49f9-ba5c-1200b8b5a9ed",
+                "completed_at": "2019-03-15T13:34:40.560Z",
+                "last_viewed_at": "2019-04-10T14:46:50.425Z",
+                "unstructured": "{\"selected_ids\":[\"a1474256231013\",\"a1474256220919\"],\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "对于上述箱线图，图中有很多不表示任何数据的墨水。该箱线图中的哪些元素应该删掉？",
+                "answers": [
+                  {
+                    "id": "a1474256220919",
+                    "text": "水平结束端点",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1474256231013",
+                    "text": "中心方框",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1474256250000",
+                    "text": "异常值标记",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474256254244",
+                    "text": "正中线",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 214527,
+              "key": "b1878ff9-c80d-404b-a380-508d663294e7",
+              "title": "箱线图 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "这是删掉所有不必要的标记（例如方框和水平结束端点）之后的箱线图。展示的是同一数据，但是线条少多了。原始图表有 9 个垂直线条和 15 个水平线条。我将其缩减成了 6 个垂直线条和 3 个点。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214528,
+              "key": "597d4564-bbb4-49d9-a299-ea6a5f6087aa",
+              "title": "最简化的箱线图",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57df5e83_iris-box-plot-minimal/iris-box-plot-minimal.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/597d4564-bbb4-49d9-a299-ea6a5f6087aa",
+              "caption": "同一数据，但是墨水更少。",
+              "alt": null,
+              "width": 360,
+              "height": 360,
+              "instructor_notes": null
+            },
+            {
+              "id": 214529,
+              "key": "752f2714-fde6-4df2-90fa-97ed9aef08df",
+              "title": "继续",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "希望你已经明白少即是多。我们应该始终尝试缩减可视化图表，使读者更容易理解。\n\n接着，我将介绍如何设计可视化图表，避免错误地表示数据。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215373,
+          "key": "09ccb216-66c5-435e-bab2-495318818d73",
+          "title": "诚信原则",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "09ccb216-66c5-435e-bab2-495318818d73",
+            "completed_at": "2019-03-15T13:35:40.664Z",
+            "last_viewed_at": "2019-12-17T07:55:08.794Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214530,
+              "key": "6e78dcd1-872a-4761-9aae-71f60fb29c89",
+              "title": "请勿歪曲数据",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 请勿歪曲数据\n\n你有责任用最真实的方式展示数据。可视化图表是可以被故意歪曲，用来欺骗他人，比如用各种方式歪曲条形图。\n\n下面是福克斯新闻在 2012 年展示的一个具有欺骗性的图表示例（反面例子，不要学习！）。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214531,
+              "key": "280961a2-aa6c-46a1-8a36-44d616244b50",
+              "title": "条形图反面示例",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57dbfc37_bad-viz-2/bad-viz-2.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/280961a2-aa6c-46a1-8a36-44d616244b50",
+              "caption": "如何通过条形图撒谎。",
+              "alt": null,
+              "width": 644,
+              "height": 476,
+              "instructor_notes": null
+            },
+            {
+              "id": 214532,
+              "key": "e22b82f0-4926-4728-a1c7-c96f1e980c87",
+              "title": "条形图反面示例",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "上图展示了税率的变化。乍一看上去，变化好像特别大（5 倍增长）。但是，如果再去看实际数字，就会发现仅从 35% 增长到了 39.6%，只有 13% 的增长（ (百分之 4.6 的增长点）。人们容易认为条形图的基线是 0，但是此图的基线为 34%，超出了我们的设想范围。因此，我们有理由猜测，该图的创建者可能想故意欺骗观众，使他们认为税率出现了很大的变化，实际上并非如此。\n\n如果要重新创建该图表，准确地显示各个值，那么变化几乎可以忽略。\n",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214533,
+              "key": "18904829-be68-41f0-91e2-343b95f84a28",
+              "title": "重新创建减税图表",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/October/57f42505_tax-rate-scale-start-at-zero/tax-rate-scale-start-at-zero.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/18904829-be68-41f0-91e2-343b95f84a28",
+              "caption": "",
+              "alt": null,
+              "width": 592,
+              "height": 449,
+              "instructor_notes": null
+            },
+            {
+              "id": 214534,
+              "key": "91f0c773-dcaf-48ba-a104-baf77a6e4cb7",
+              "title": "撒谎因素",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 畸变因子\n\n这就要提到 Edward Tufte 在《Visual Display》中提出的一个概念，即**畸变因子**。没错，又是他，强烈建议你阅读这本图书。畸变因子会将图表的效果大小与数据的效果大小进行对比。效果是指要对比的差异。例如，在税率图表中对比的是直条的高度，所以效果是右侧直条比左侧直条高多少。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214535,
+              "key": "48683126-467d-40e3-a7d8-facbaa6f3aaf",
+              "title": "畸变因子等式",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57dc3550_lie-factor/lie-factor.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/48683126-467d-40e3-a7d8-facbaa6f3aaf",
+              "caption": "",
+              "alt": null,
+              "width": 300,
+              "height": 36,
+              "instructor_notes": null
+            },
+            {
+              "id": 214536,
+              "key": "b3ce894c-1d89-4f03-8dff-b965228edf53",
+              "title": "畸变因子 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "要计算畸变因子，需要将图表的效果大小与数据的效果大小相除。下面又是一个反面例子。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214537,
+              "key": "8c021eb4-5f19-456f-8ffa-3d0bff201dc5",
+              "title": "医生",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57dc117f_liefactor-doctor/liefactor-doctor.jpg",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/8c021eb4-5f19-456f-8ffa-3d0bff201dc5",
+              "caption": "来自 Tufte 的《Visual Display of Quantitative Information》（《洛杉矶时报》，1979 年 8 月 5 日）中的示例）",
+              "alt": null,
+              "width": 411,
+              "height": 579,
+              "instructor_notes": null
+            },
+            {
+              "id": 214538,
+              "key": "9fda1943-404b-4a08-9b29-d4d0f744f2e1",
+              "title": "医生畸变因子",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "猜猜上述图片中的哪个方面是与数据对应、关联的？医生的高度？医生图像的面积？第一感觉是医生高度与百分比成比例，但是我们实际上将视觉面积看做数据编码。因此，我将使用这一面积来计算图形效果。在最大的医生图片周围画个长方形，高 437 像素，宽 181 像素，所以面积约为 79000 平方像素。中间的医生图片面积约为 30500 平方像素，小的医生图片的面积约为 16500 平方像素。\n\n我们算算 1964 和 1990 之间的对比畸变因子。视觉效果是 1964 年的医生大了多少。即 (79000 - 16500)/16500 = 3.79，所以医生大小之间的差别是小医生图片大小的 379%。实际数据的效果是 (27-12)/12 = 1.25，或者数据差别是比 1990 年数据点大 125%。除以这些值，畸变因子是 3.79/1.25 = **3.03**。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214539,
+              "key": "cf02d457-660d-4ce3-a33c-cbd0024ad9b4",
+              "title": "畸变因子",
+              "semantic_type": "RadioQuizAtom",
+              "is_public": true,
+              "instructor_notes": null,
+              "user_state": {
+                "node_key": "cf02d457-660d-4ce3-a33c-cbd0024ad9b4",
+                "completed_at": "2019-03-30T11:59:48.037Z",
+                "last_viewed_at": "2019-04-10T14:48:30.129Z",
+                "unstructured": "{\"selected_id\":\"a1474036594015\",\"is_correct\":true}"
+              },
+              "question": {
+                "prompt": "上面的福克斯新闻条形图的畸变因子是多少？以下是一些实用数据：小的直条高 27 像素，大的直条高 146 像素。",
+                "answers": [
+                  {
+                    "id": "a1474036450908",
+                    "text": "4.57",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474036594015",
+                    "text": "33.54",
+                    "is_correct": true
+                  },
+                  {
+                    "id": "a1474036597272",
+                    "text": "0.030",
+                    "is_correct": false
+                  },
+                  {
+                    "id": "a1474036635389",
+                    "text": "1",
+                    "is_correct": false
+                  }
+                ]
+              }
+            },
+            {
+              "id": 214540,
+              "key": "58c6aeaa-f937-491c-83df-da8a2f452683",
+              "title": "不规则区间",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "### 折线图和不规则的区间\n\n条形图并非是唯一可以被歪曲的常见图表。折线图也经常以不规则区间连接线条。例如，下图跳过了 1999 年和 2002 年，但是图形元素按照正常区间放置，歪曲了数据。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214541,
+              "key": "e2718771-8427-4d70-a247-9a2aac470901",
+              "title": "不规则的区间",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57e00ec4_line-bad-intervals/line-bad-intervals.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/e2718771-8427-4d70-a247-9a2aac470901",
+              "caption": "具有不规则区间的折线图（Mike Alexander，\nExcel 2007 Dashboard and Reports for Dummies）",
+              "alt": null,
+              "width": 578,
+              "height": 488,
+              "instructor_notes": null
+            },
+            {
+              "id": 214542,
+              "key": "69f11dfa-94e9-4164-aa91-fc1bd7d8989a",
+              "title": "不规则的区间 2",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "折线图显示了数据点之间的变化速率。如果区间像上图一样不规则，展示的变化就会不准确了，很可能会变得更加夸张。\n\n1998 年和 2000 年之间的变化似乎很大，但是如果在二者之间填上 1999 年的数据，并适当增加空间，增加幅度就可能和其他年份一样了。2001 年和 2003 年之间的变化比其他区间的要小，但是实际上是两年间隔，而不是一年，随着时间推移的变化幅度比实际的看起来要大。 \n\n[这篇文章](http://www.perceptualedge.com/articles/visual_business_intelligence/line_graphs_and_irregular_intervals.pdf)（作者：Stephen Few）很好地解释了如何使用具有不规则区间的折线图。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215374,
+          "key": "01207a85-f07a-4f2b-8bee-2cfc04629884",
+          "title": "一般设计技巧",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "01207a85-f07a-4f2b-8bee-2cfc04629884",
+            "completed_at": "2019-03-15T13:41:07.230Z",
+            "last_viewed_at": "2019-12-17T07:56:46.214Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214543,
+              "key": "d0ccf8db-b979-455b-b44d-0ba5af66ce9b",
+              "title": "设计技巧",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "## 设计技巧\n\n我能给出的最好建议是在制作可视化图表时，第一次尝试不要过于投入。通常，你需要进行多次设计以强调要表达的意思。例如，我将逐步讲解我是如何设计你之前看到的失业率图表的。\n\n我想知道失业率随着时间推移如何变化，所以我从[公共 OECD 数据网站](https://data.oecd.org/)上获取了一些数据。这些数据包含经济合作与发展组织 (OECD) 国家/地区的失业率（民用劳动力的百分比）。我第一次尝试时创建了一组直方图来显示每年的失业率分布情况。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214544,
+              "key": "94934018-0a81-4e18-8697-8224eea9f5c0",
+              "title": "失业率",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57db6a92_unemployment-hists/unemployment-hists.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/94934018-0a81-4e18-8697-8224eea9f5c0",
+              "caption": "第一次尝试！",
+              "alt": null,
+              "width": 720,
+              "height": 720,
+              "instructor_notes": null
+            },
+            {
+              "id": 214545,
+              "key": "6b1de00d-1033-450c-ba50-5b9f532fa6c2",
+              "title": "第二次尝试",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "可以看出在 2003 年和 2007 年之间有两次峰值。在 2008 年失业率非常低，然后在萧条时期上升了。虽然我喜欢小多组图组（我真的喜欢），但是我发现很难按照不同年份对比直方图。我还需要将这些数据压缩到一个图表中。\n\n要解决这些问题，我觉得我可以用点表示直方图（点大小表示直方图直条里的国家/地区数量）。然后，我可以沿着 x 轴绘出每年，沿着 y 轴绘出每个直方图，数量用标记大小表示。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214546,
+              "key": "740efa00-de05-4c43-bdc2-e8a1f001feb3",
+              "title": "用点表示的失业率",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57db6c33_leonard-plot-no-color/leonard-plot-no-color.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/740efa00-de05-4c43-bdc2-e8a1f001feb3",
+              "caption": "用点表示的失业率（第二次尝试）。",
+              "alt": null,
+              "width": 1050,
+              "height": 600,
+              "instructor_notes": null
+            },
+            {
+              "id": 214547,
+              "key": "c4fb7e6b-3b84-4eed-9429-056c12a12bf5",
+              "title": "第三次尝试",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "看起来好多了！可以看出失业率随着时间推移的变化分布图。有两个下降峰值，然后有一个急剧上升。但是 x 轴上的标签都挤到一起了，所以需要重新调整。\n\n我想到，如果添加一些颜色来表示直条数量（冗余编码！），我可以突出显示失业率在不同年份的变化情况。",
+              "instructor_notes": ""
+            },
+            {
+              "id": 214548,
+              "key": "c9a3c39a-e354-48df-b2a2-d00bc3bcfe5b",
+              "title": "最终版本",
+              "semantic_type": "ImageAtom",
+              "is_public": true,
+              "url": "https://video.udacity-data.com/topher/2016/September/57db6dbc_leonard-plot/leonard-plot.png",
+              "non_google_url": "https://s3.cn-north-1.amazonaws.com.cn/u-img/c9a3c39a-e354-48df-b2a2-d00bc3bcfe5b",
+              "caption": "最终版本！变化的峰值用颜色和点大小进行强调。",
+              "alt": null,
+              "width": 1050,
+              "height": 600,
+              "instructor_notes": null
+            },
+            {
+              "id": 214549,
+              "key": "8a086679-c1c3-4f6e-8ecc-ac34ae7931c7",
+              "title": "结束",
+              "semantic_type": "TextAtom",
+              "is_public": true,
+              "text": "你还可以与朋友或同事分享你的可视化图表，确保他人能够理解中心意思。现代设计的一个原则是不断对产品进行用户测试。这种方法也非常适合设计可视化图表。\n\n### 讲述正确的故事\n\n正如在这节课中学到的那样，我们可以采用各种不同的技巧用视觉元素表示数据。即使是同一数据，不同的表示方法也会讲述不同的故事。\n[这篇文章](http://www.storytellingwithdata.com/blog/2014/01/multifaceted-data-and-story)很好地讲解了通过如何强调不同的视觉元素来改变故事。",
+              "instructor_notes": ""
+            }
+          ]
+        },
+        {
+          "id": 215376,
+          "key": "1fe00b30-5bc2-4be1-9c97-10f44214cbbf",
+          "title": "继续学习！",
+          "semantic_type": "Concept",
+          "is_public": true,
+          "user_state": {
+            "node_key": "1fe00b30-5bc2-4be1-9c97-10f44214cbbf",
+            "completed_at": "2019-03-15T13:41:45.580Z",
+            "last_viewed_at": "2019-12-17T07:58:42.006Z",
+            "unstructured": null
+          },
+          "resources": null,
+          "atoms": [
+            {
+              "id": 214550,
+              "key": "e381e32c-785d-4768-80fc-883469a1a89d",
+              "title": "继续学习！",
+              "semantic_type": "VideoAtom",
+              "is_public": true,
+              "instructor_notes": "",
+              "video": {
+                "youtube_id": "i-ulsdVHhCc",
+                "china_cdn_id": "i-ulsdVHhCc.mp4"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "_deprecated": [
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_background_image",
+      "reason": "(2016/8/18) Not sure, ask i18n team for alternative"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    },
+    {
+      "name": "non_google_url",
+      "reason": "(2016/8/18) Not sure, ask i18n team for reason"
+    }
+  ]
+}

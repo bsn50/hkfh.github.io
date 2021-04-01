@@ -1,0 +1,212 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>建立数据库</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>基于零售数据挖掘业务特征</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 建立数据库.html">01. 建立数据库</a>
+    </li>
+    <li class="">
+      <a href="02. 项目说明.html">02. 项目说明</a>
+    </li>
+    <li class="">
+      <a href="03. 不同的 Date 函数.html">03. 不同的 Date 函数</a>
+    </li>
+    <li class="">
+      <a href="Project Description - 基于零售数据挖掘业务特征.html">Project Description - 基于零售数据挖掘业务特征</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - 基于零售数据挖掘业务特征.html">Project Rubric - 基于零售数据挖掘业务特征</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">01. 建立数据库</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="让我们首先来设置一下你的本地环境吧">让我们首先来设置一下你的本地环境吧</h1>
+<p>在教室里开始学习 SQL 是完全没问题的，但要想真正掌握技能，最好的方法是学会本地环境设置，并学习在自己的环境中处理问题。</p>
+<p>接下来的几个问题将有助于帮你顺利完成本地设置。完成设置后，你就可以使用这个工作区了，不仅仅是在这个项目中，以后都可以使用哦！</p>
+<p>对于我们要使用的环境，非常快就可以完成设置，所以希望你能够马上搞定并运行起来:) </p>
+<p>你需要做的就是……</p>
+<ul>
+<li>下载新数据库</li>
+<li>下载 DB Browser for SQLite</li>
+</ul>
+<p>将 DB Broswer for SQLite 连接到你的新数据库后，你就可以开始进行下一页任务了！</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="下载-db-browser-for-sqlite">下载 DB Browser for SQLite</h2>
+<p>对于不同类型的数据库，可以使用的数据库浏览器也有很多。在本课程中，我们将使用 DB Browser for SQLite。当然了，你也可能使用其他类似的浏览工具。</p>
+<p>DB Browser for SQLite 可以在这里下载: <a href="http://sqlitebrowser.org/" rel="noopener noreferrer" target="_blank">http://sqlitebrowser.org/</a></p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="下载数据库">下载数据库</h2>
+<p>你可以从页面下方下载我们将在此项目中使用的数据库。</p>
+<h2 id="将-browser-与数据库连接起来">将 Browser 与数据库连接起来</h2>
+<p>下面是具体步骤：</p>
+<ul>
+<li>打开 DB Browser to SQLite</li>
+<li>点击 <em>Open Database</em></li>
+<li>导航到 Northwind.sqlite3 文件 (可能在你的下载文件中)</li>
+<li>点击 <em>Execute SQL</em></li>
+<li>开始查询数据</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="02. 项目说明.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('01. 建立数据库')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

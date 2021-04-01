@@ -1,0 +1,212 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>不同的 Date 函数</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>基于零售数据挖掘业务特征</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 建立数据库.html">01. 建立数据库</a>
+    </li>
+    <li class="">
+      <a href="02. 项目说明.html">02. 项目说明</a>
+    </li>
+    <li class="">
+      <a href="03. 不同的 Date 函数.html">03. 不同的 Date 函数</a>
+    </li>
+    <li class="">
+      <a href="Project Description - 基于零售数据挖掘业务特征.html">Project Description - 基于零售数据挖掘业务特征</a>
+    </li>
+    <li class="">
+      <a href="Project Rubric - 基于零售数据挖掘业务特征.html">Project Rubric - 基于零售数据挖掘业务特征</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">03. 不同的 Date 函数</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h1 id="sqlite-用于此项目-与-postgres中的date函数不同-用于课堂httpssqliteorglang_datefunchtml"><a href="https://sqlite.org/lang_datefunc.html" rel="noopener noreferrer" target="_blank">SQLite (用于此项目) 与 Postgres中的Date函数不同 (用于课堂)</a></h1>
+<p>在这个项目中，你使用的语法与课堂上的SQL语法略有不同。虽然大多数命令和逻辑都是一样的，但SQLite（用于此项目）和PostgreSQL（用于课堂）之间存在一些差异。具体而言，这些差异可能会影响到Date函数的表示。 </p>
+<p>Postgres SQL DATE_TRUNC</p>
+<pre><code>SELECT DATE_TRUNC('month', o.occurred_at) ord_date
+FROM orders o </code></pre>
+<p>这个查询命令只会返回查询结果中日期字段的年份和月份数据</p>
+<p>SQLite 中的 DATE_TRUNC 是 STRFTIME</p>
+<pre><code>SELECT STRFTIME('%Y-%m', o.occurred_at) ord_date
+FROM orders o</code></pre>
+<p>这个查询命令只会返回查询结果中日期字段的年份和月份数据。在SQLite中，我们必须更精确地描述日期格式，因为它会返回指定的所有信息。因此，我们需要通过将最终表中所需日期的部分放在单引号中来指定查询结果。</p>
+<p>对于此查询，我们想要的只是年份和月份。其中，%Y代表年份，%m代表月份。以下是完整列表。</p>
+<p>%d - day of month: 00</p>
+<p>%f - fractional seconds: SS.SSS</p>
+<p>%H - hour: 00-24</p>
+<p>%j - day of year: 001-366</p>
+<p>%J - Julian day number</p>
+<p>%m - month: 01-12</p>
+<p>%M - minute: 00-59</p>
+<p>%s - seconds since 1970-01-01</p>
+<p>%S - seconds: 00-59</p>
+<p>%w - day of week 0-6 with Sunday==0</p>
+<p>%W - week of year: 00-53</p>
+<p>%Y - year: 0000-9999</p>
+<p>Postgres SQL DATE_PART</p>
+<pre><code>SELECT DATE_PART('month', occurred_at) ord_year
+FROM orders</code></pre>
+<p>这个查询命令只会返回查询结果中日期字段的月份数据</p>
+<p>SQLite version of DATE_PART is STRFTIME</p>
+<pre><code>SELECT STRFTIME('%m', o.occurred_at) ord_date
+FROM orders o </code></pre>
+<p>由于我们只想拉出月份数据，因此可以指定在 SQLite 中使用相同的 STRFTIME 函数，我们只需使用 %+字母 来指定我们想要的那部分数据。所以，在这里我们必须使用'%m '而不是'month'。</p>
+<p>以下是一些有用的链接，可以帮助你在 SQLite 中处理日期数据：</p>
+<ul>
+<li><a href="https://www.techonthenet.com/sqlite/functions/strftime.php" rel="noopener noreferrer" target="_blank">https://www.techonthenet.com/sqlite/functions/strftime.php</a></li>
+<li><a href="https://sqlite.org/lang_datefunc.html" rel="noopener noreferrer" target="_blank">https://sqlite.org/lang_datefunc.html</a>  </li>
+</ul>
+<p>可能你在将来会使用其他 SQL 环境，如 Microsoft SQL Server，Oracle，MySQL 或任何其他 SQL 环境，也可能会再次出现细微的差异。但只要掌握了现在的技能，尝试一下 Google 搜索吧，它会帮助你快速了解你要使用的任何一个环境。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. 不同的 Date 函数')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
