@@ -1,0 +1,415 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>练习：将商业问题分类</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>选择分析方法</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 选择分析方法.html">01. 选择分析方法</a>
+    </li>
+    <li class="">
+      <a href="02. 非预测性商业问题.html">02. 非预测性商业问题</a>
+    </li>
+    <li class="">
+      <a href="03. 练习：将商业问题分类.html">03. 练习：将商业问题分类</a>
+    </li>
+    <li class="">
+      <a href="04. 预测性商业问题.html">04. 预测性商业问题</a>
+    </li>
+    <li class="">
+      <a href="05. 数据不足的商业问题.html">05. 数据不足的商业问题</a>
+    </li>
+    <li class="">
+      <a href="06. 数据丰富的商业问题.html">06. 数据丰富的商业问题</a>
+    </li>
+    <li class="">
+      <a href="07. 数值型和非数值型结果.html">07. 数值型和非数值型结果</a>
+    </li>
+    <li class="">
+      <a href="08. 练习：区分数值或分类.html">08. 练习：区分数值或分类</a>
+    </li>
+    <li class="">
+      <a href="09. 数值型模型介绍.html">09. 数值型模型介绍</a>
+    </li>
+    <li class="">
+      <a href="10. 非数值型模型介绍.html">10. 非数值型模型介绍</a>
+    </li>
+    <li class="">
+      <a href="11. 练习：选择合适模型.html">11. 练习：选择合适模型</a>
+    </li>
+    <li class="">
+      <a href="12. 模型选择评估.html">12. 模型选择评估</a>
+    </li>
+    <li class="">
+      <a href="13. 课程总结.html">13. 课程总结</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">03. 练习：将商业问题分类</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>练习</p></h3>
+  <div>
+  <p>让我们来练习将商业问题分类上节课介绍的几类。请将下面的每个商业问题标记为以下几种类型之一：</p>
+<ul>
+<li>预测性</li>
+<li>地理空间</li>
+<li>细分</li>
+<li>聚合</li>
+<li>描述性</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>1</p></h3>
+  <div>
+  <h4 id="案例-1">案例 1:</h4>
+<p>Qwiki Mart 想要另建一个店铺地点。它想要选择一个可能拥有最多业务的地址，同时想要确保该地址没有在另一家分店的 4 英里范围内。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>#1</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>哪种类型的数据分析方法最适用于回答这个问题？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1466466953400" name="213682" id="a1466466953400">
+        <label for="a1466466953400"><p>预测性</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466466954096" name="213682" id="a1466466954096">
+        <label for="a1466466954096"><p>地理空间</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466466954584" name="213682" id="a1466466954584">
+        <label for="a1466466954584"><p>细分</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466466955072" name="213682" id="a1466466955072">
+        <label for="a1466466955072"><p>聚合</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466466955607" name="213682" id="a1466466955607">
+        <label for="a1466466955607"><p>描述性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    地理空间
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>2</p></h3>
+  <div>
+  <h4 id="案例-2">案例 2:</h4>
+<p>TShirts.com 收到关于他们网页加载缓慢的投诉。为了确保有足够的服务器能力来应对拥堵，他们想要预测未来的网页拥堵状况。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>2</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>哪种类型的数据分析方法最适用于回答这个问题？ </p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1466467119097" name="213684" id="a1466467119097">
+        <label for="a1466467119097"><p>预测性</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466467119655" name="213684" id="a1466467119655">
+        <label for="a1466467119655"><p>地理空间</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466467120160" name="213684" id="a1466467120160">
+        <label for="a1466467120160"><p>细分</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466467120688" name="213684" id="a1466467120688">
+        <label for="a1466467120688"><p>聚合</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466467127207" name="213684" id="a1466467127207">
+        <label for="a1466467127207"><p>描述性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    预测性
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>3</p></h3>
+  <div>
+  <h4 id="案例-3">案例 3:</h4>
+<p>ShipYourStuff.com 想要知道他们运送了多少货物到每个邮编位置、省份和区域，因为他们的管理层想要不同地区的汇总。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>3</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>哪种类型的数据分析方法最适用于回答这个问题？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1466468126536" name="213686" id="a1466468126536">
+        <label for="a1466468126536"><p>预测性</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466468127080" name="213686" id="a1466468127080">
+        <label for="a1466468127080"><p>地理空间</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466468127504" name="213686" id="a1466468127504">
+        <label for="a1466468127504"><p>细分</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466468127904" name="213686" id="a1466468127904">
+        <label for="a1466468127904"><p>聚合</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1466468128512" name="213686" id="a1466468128512">
+        <label for="a1466468128512"><p>描述性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    聚合
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>4</p></h3>
+  <div>
+  <h4 id="案例-4">案例 4:</h4>
+<p>Pretty Faces Cosmetics 想要面向他们的 3 个最大的客户群体做市场营销。他们需要创建不同的客户群体，计算每个客户群体有多少人，然后确定哪个群体拥有最多的客户数量。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>4</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>哪种类型的数据分析方法最适用于回答这个问题？答案可能不止一个。</p></legend>
+    </fieldset>
+
+    <div>
+      <input type="checkbox" value="a1466468327488" name="213688" id="a1466468327488">
+      <label for="a1466468327488"><p>预测性</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1466468328032" name="213688" id="a1466468328032">
+      <label for="a1466468328032"><p>地理空间</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1466468328488" name="213688" id="a1466468328488">
+      <label for="a1466468328488"><p>细分</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1466468328984" name="213688" id="a1466468328984">
+      <label for="a1466468328984"><p>聚合</p></label>
+    </div>
+    <div>
+      <input type="checkbox" value="a1466468329472" name="213688" id="a1466468329472">
+      <label for="a1466468329472"><p>描述性</p></label>
+    </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    <ul>
+      <li>细分</li>
+      <li>聚合</li>
+  </ul>
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>定义</p></h3>
+  <div>
+  <h4 id="预测性（predictive）">预测性（Predictive）</h4>
+<p>预测性分析用现有的数据来预测将来会发生的结果。比如，一个公司通过预测分析来预测需求或者预测客户是否会对广告有所反应。</p>
+<h4 id="地理空间（geospatial）">地理空间（Geospatial）</h4>
+<p>这类型的分析利用地理位置数据推导结论。例子有：</p>
+<ul>
+<li>通过地理位置如邮编区域、省份或乡镇来区分客户； </li>
+<li>计算你的店铺与各种地点间的距离；</li>
+<li>根据你的客户地址创建一个交易区域用作后续分析。</li>
+</ul>
+<p>有些地理空间分析需要使用特殊软件 —— 比如可以将地址转换成经度和纬度、或者能够计算地图上两个不同地点间驾驶时间的软件。</p>
+<h4 id="细分（segmentation）">细分（Segmentation）</h4>
+<p>细分是将数据分组的过程。分组可以是简单的，比如购买不同东西的客户，也可以是复杂的，比如根据客户的人口特征统计来识别相似的店铺。</p>
+<h4 id="聚合（aggregation）">聚合（Aggregation）</h4>
+<p>这种方法用于计算跨组或跨维度的数据，在数据分析中很常用。举例来说，你想要某个销售员的月度销售汇总，将其每个月的销售额相加即可。然后，你可能需要跨维度进行汇总，比如各销售领域的月度销售汇总。在这个案例中，你可以计算出每个销售员的月度销售情况，然后将一个地区的所有销售员的月度销售额相加。</p>
+<p>聚合通常用于报告，以达到划分和区别信息的作用，有助于管理层制定决策和观察表现。</p>
+<h4 id="描述性（descriptive）">描述性（Descriptive）</h4>
+<p>描述性统计可提供一个数据样本的简单概括。比如说计算一所学校申请者的平均 GPA，或者计算一个职业棒球员的击球平均水平。在我们的电力供应案例中，我们可以使用描述性统计计算每小时、每天或每个日期的平均温度。</p>
+<p>一些常用的描述性统计包括平均值、中位数、众数、标准方差和四分位差。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="04. 预测性商业问题.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('03. 练习：将商业问题分类')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,398 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Excel 的多元线性回归</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>线性回归</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 商业问题.html">01. 商业问题</a>
+    </li>
+    <li class="">
+      <a href="02. 解决商业问题.html">02. 解决商业问题</a>
+    </li>
+    <li class="">
+      <a href="03. 练习：数据理解.html">03. 练习：数据理解</a>
+    </li>
+    <li class="">
+      <a href="04. 数据理解解决方案.html">04. 数据理解解决方案</a>
+    </li>
+    <li class="">
+      <a href="05. 问题解决框架.html">05. 问题解决框架</a>
+    </li>
+    <li class="">
+      <a href="06. 线性回归简介.html">06. 线性回归简介</a>
+    </li>
+    <li class="">
+      <a href="07. Google 表格中的线性方程.html">07. Google 表格中的线性方程</a>
+    </li>
+    <li class="">
+      <a href="08. 线性回归验证.html">08. 线性回归验证</a>
+    </li>
+    <li class="">
+      <a href="09. 练习：简单线性回归.html">09. 练习：简单线性回归</a>
+    </li>
+    <li class="">
+      <a href="10. 简单线性回归解决方案.html">10. 简单线性回归解决方案</a>
+    </li>
+    <li class="">
+      <a href="11. 多元线性回归简介.html">11. 多元线性回归简介</a>
+    </li>
+    <li class="">
+      <a href="12. 多元线性回归概念.html">12. 多元线性回归概念</a>
+    </li>
+    <li class="">
+      <a href="13. Excel 的多元线性回归.html">13. Excel 的多元线性回归</a>
+    </li>
+    <li class="">
+      <a href="14. 多元线性回归验证.html">14. 多元线性回归验证</a>
+    </li>
+    <li class="">
+      <a href="15. 线性回归与分类变量.html">15. 线性回归与分类变量</a>
+    </li>
+    <li class="">
+      <a href="16. 虚拟变量练习.html">16. 虚拟变量练习</a>
+    </li>
+    <li class="">
+      <a href="17. 解释线性回归结果.html">17. 解释线性回归结果</a>
+    </li>
+    <li class="">
+      <a href="18. 评估方程.html">18. 评估方程</a>
+    </li>
+    <li class="">
+      <a href="19. 评估方程解决方案.html">19. 评估方程解决方案</a>
+    </li>
+    <li class="">
+      <a href="20. 分析总结.html">20. 分析总结</a>
+    </li>
+    <li class="">
+      <a href="21. 课程概括.html">21. 课程概括</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">13. Excel 的多元线性回归</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>数据准备</p></h3>
+  <div>
+  <h4>初始步骤：准备和了解你的数据</h4>
+<p>给定任何数据集，我们必须确保数据是干净的，没有偏差（bias）。在此演示中，我们假设数据是清理过的，并且对我们任意变量都没有任何偏差。你可以在<a href="https://classroom.udacity.com/courses/ud977/lessons/62614c2d-0e8c-45e6-a225-cdc34495e911/concepts/d200ff73-f9fa-4a16-b09b-4f1d1671984f" rel="noopener noreferrer" target="_blank">创建分析数据集</a> 课程中学习有关清理数据的更多信息。</p>
+<p>一旦有了干净的数据集，为多元线性回归做准备的下一项是理解每个预测变量和目标变量之间的关系。我们可以通过绘制每个预测变量和目标变量之间的散点图来直观地做到这一点。</p>
+<p>在开始前，请下载文件 <strong>Linear Example Data.xlsx</strong> 并探索此数据是什么样的。你可以在页面底部访问该文件。</p>
+<p><strong>注</strong>：如果你要绘制平均工单数直方图，你会看到大部分数据介于 0 和 100 之间，且并非正态分布。让我们假设这个数据集代表了我们在此部分课程中继续这个示例所需的所有数据。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>员工数量</p></h3>
+  <div>
+  <h4>员工数量</h4>
+<p>我们先来创建一个表示员工数量和平均工单数变量关系的散点图。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>员工数量与平均工单数</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/tickets-employees-plot.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>合同价值</p></h3>
+  <div>
+  <p>可以看到，随着员工数量的增加，平均工单数也以近似线性的趋势增长。此图中的趋势线显示预测变量“员工数量”是用于创建多元线性回归模型的良好潜在预测变量。</p>
+<p><strong>重要</strong>：这一点很重要，因为线性回归模型假定我们的数值预测变量与预测变量之间存在线性关系。好的实践方法是，在使变量通过线性回归模型之前，先分析单个变量。</p>
+<h4>合同价值</h4>
+<p>现在我们来创建一个描述变量“合同价值”和“平均工单数”之间关系的散点图。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>合同价值与平均工单数</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/tickets-value-plot.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>合同价值（伪造的）</p></h3>
+  <div>
+  <p>尽管合同价值由离散数字组成，我们仍然可以看到合同价值与工单数之间存在线性关系。随着合同价值的增加，工单数也会增加。</p>
+<h4>反例</h4>
+<p>假设合同价值与平均工单数之间没有关系。那么，在散点图上会是怎样的？</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>合同价值与平均工单数（反例）</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/value-contract-no-linear-relationship.png" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>多重共线性</p></h3>
+  <div>
+  <p>在这个反例中，随着合同价值的增加，我们不会看到平均工单数增加（或减少）的趋势。该图中的趋势线是平坦的，我们可以得出结论，合同价值不是初步探索多元线性回归模型的一个很好的变量。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>分类变量</p></h3>
+  <div>
+  <h4 id="分类变量如何？">分类变量如何？</h4>
+<p>由于分类变量的性质，我们不能使用散点图或任何其他图来查看分类变量是否存在线性关系。</p>
+<p>检验线性关系的最好方法是通过回归模型来运行分类变量，然后查看相关系数是否显著，且具有较高的多重 R 平方（multiple-R-squared）。如果存在线性关系，则相关系数应该是显著的，且多重 R 平方应该相应较高（.70）</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>完成准备步骤</p></h3>
+  <div>
+  <h4>完成准备</h4>
+<p>因此对于我们的初始建模练习，我们应使用员工数量和合同价值来初步构建我们的多元线性回归模型。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>步骤</p></h3>
+  <div>
+  <h4>Excel 中的多元线性回归步骤</h4>
+<h5>第 1 步</h5>
+<p>确保在 Microsoft Excel 中激活 Analysis ToolPak 加载项。你可以<a href="https://support.office.com/zh-cn/article/%E5%8A%A0%E8%BD%BD%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%E5%BA%93-6a63e598-cd6d-42e3-9317-6b40ba1a66b4?ui=zh-CN&rs=zh-CN&ad=CN" rel="noopener noreferrer" target="_blank">在此</a>找到说明。</p>
+<h5>第 2 步</h5>
+<p>在 Excel 中，选择“数据分析”（Data Analysis）。在弹出窗口中选择“回归”（Regression），然后选择确定。</p>
+<h5>第 3 步</h5>
+<p>输入 Y 范围应该为目标变量的范围，在这个例子中即平均工单数。输入 X 范围应为预测变量的数据范围，在这个例子中即员工人数和合同价值，因为它们都表现出与平均工单数存在线性关系的可能。</p>
+<h5>第 4 步</h5>
+<p>点击确定运行模型并查看结果。我们可以快速看到线性方程的系数，结果为：</p>
+<h5><center>Y = -24.2667 + 0.1019 X1 + 0.00067 X2</center></h5>
+<p>其中 X1 为员工数量，X2 为合同价值。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Excel 中的多元线性回归</p></h3>
+  <video controls>
+  <source src="13. Excel 中的多元线性回归-kShe0b-sK4o.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="13. Excel 中的多元线性回归-kShe0b-sK4o.zh-CN.vtt" label="zh-CN">
+  <track default="true" kind="subtitles" srclang="en" src="13. Excel 中的多元线性回归-kShe0b-sK4o.en.vtt" label="en">
+  <track default="false" kind="subtitles" srclang="pt-BR" src="13. Excel 中的多元线性回归-kShe0b-sK4o.pt-BR.vtt" label="pt-BR">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>调整的 R 平方</p></h3>
+  <div>
+  <h4>R 平方与调整的 R 平方（Adjusted R-Squared）</h4>
+<p>调整的 R 平方应该被用于多元线性回归，因为在模型中添加额外变量时出现了一种现象。简而言之，包含的变量越多，R 平方越高 —— 即使附加变量和目标变量之间没有关系。因此，我们使用调整的 R 平方。</p>
+<p>你可以<a href="https://en.wikipedia.org/wiki/Coefficient_of_determination#Adjusted_R2" rel="noopener noreferrer" target="_blank">在此</a> 找到有关调整的 R 平方的更多信息。注意，链接文章中的“解释变量”（explanatory variables） = “预测变量”（predictor variables）。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>R 平方</p></h3>
+  <video controls>
+  <source src="13. R 平方-RiKojRP54vs.mp4" type="video/mp4">
+
+  <track default="false" kind="subtitles" srclang="zh-CN" src="13. R 平方-RiKojRP54vs.zh-CN.vtt" label="zh-CN">
+  <track default="true" kind="subtitles" srclang="en" src="13. R 平方-RiKojRP54vs.en.vtt" label="en">
+  <track default="false" kind="subtitles" srclang="pt-BR" src="13. R 平方-RiKojRP54vs.pt-BR.vtt" label="pt-BR">
+</video>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>应用回归结果</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>上面的模型给出了以下公式：工单数 = -24.267 + 0.1019 * 员工人数 + 0.0007 * 合同价值。对于拥有 750 名员工且合同价值为 13,000 美元的客户，模型预测的结果将是怎样？</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1477539539825" name="213780" id="a1477539539825">
+        <label for="a1477539539825"><p>61</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1477539892968" name="213780" id="a1477539892968">
+        <label for="a1477539892968"><p>93</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1477539893481" name="213780" id="a1477539893481">
+        <label for="a1477539893481"><p>112</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    61
+  </details>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="14. 多元线性回归验证.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('13. Excel 的多元线性回归')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

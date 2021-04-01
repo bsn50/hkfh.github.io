@@ -1,0 +1,714 @@
+<!-- udacity2.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>模型选择评估</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>选择分析方法</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. 选择分析方法.html">01. 选择分析方法</a>
+    </li>
+    <li class="">
+      <a href="02. 非预测性商业问题.html">02. 非预测性商业问题</a>
+    </li>
+    <li class="">
+      <a href="03. 练习：将商业问题分类.html">03. 练习：将商业问题分类</a>
+    </li>
+    <li class="">
+      <a href="04. 预测性商业问题.html">04. 预测性商业问题</a>
+    </li>
+    <li class="">
+      <a href="05. 数据不足的商业问题.html">05. 数据不足的商业问题</a>
+    </li>
+    <li class="">
+      <a href="06. 数据丰富的商业问题.html">06. 数据丰富的商业问题</a>
+    </li>
+    <li class="">
+      <a href="07. 数值型和非数值型结果.html">07. 数值型和非数值型结果</a>
+    </li>
+    <li class="">
+      <a href="08. 练习：区分数值或分类.html">08. 练习：区分数值或分类</a>
+    </li>
+    <li class="">
+      <a href="09. 数值型模型介绍.html">09. 数值型模型介绍</a>
+    </li>
+    <li class="">
+      <a href="10. 非数值型模型介绍.html">10. 非数值型模型介绍</a>
+    </li>
+    <li class="">
+      <a href="11. 练习：选择合适模型.html">11. 练习：选择合适模型</a>
+    </li>
+    <li class="">
+      <a href="12. 模型选择评估.html">12. 模型选择评估</a>
+    </li>
+    <li class="">
+      <a href="13. 课程总结.html">13. 课程总结</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">12. 模型选择评估</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>介绍</p></h3>
+  <div>
+  <h1 id="方法图评估">方法图评估</h1>
+<p>现在我们经历了几个情景，让我们做更多的练习来寻找解决不同商业问题的正确方法。为以下的每个描述选择正确的方法。使用方法图来帮助做决定。</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>方法图</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/methodology-map.jpg" alt="" class="img img-fluid">
+    <figcaption class="figure-caption">
+      
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q10</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>某家大银行正在考虑更改所有分行的营业时间。在向所有分行全面实施这个方案之前，他们想用一个数据驱动的方法来预估更改营业时间的影响。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453933855" name="213719" id="a1473453933855">
+        <label for="a1473453933855"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453934191" name="213719" id="a1473453934191">
+        <label for="a1473453934191"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453934751" name="213719" id="a1473453934751">
+        <label for="a1473453934751"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453935390" name="213719" id="a1473453935390">
+        <label for="a1473453935390"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453935855" name="213719" id="a1473453935855">
+        <label for="a1473453935855"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453936535" name="213719" id="a1473453936535">
+        <label for="a1473453936535"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    A/B 测试
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q1</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>某家高端家具制造商想知道如果他们寄出商品目录的话，邮寄清单上的哪些顾客最有可能进行采购。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473451165046" name="213720" id="a1473451165046">
+        <label for="a1473451165046"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473451165528" name="213720" id="a1473451165528">
+        <label for="a1473451165528"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473451165930" name="213720" id="a1473451165930">
+        <label for="a1473451165930"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473451166265" name="213720" id="a1473451166265">
+        <label for="a1473451166265"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473451166913" name="213720" id="a1473451166913">
+        <label for="a1473451166913"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473451167401" name="213720" id="a1473451167401">
+        <label for="a1473451167401"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    二元
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q2</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>同一家高端家具制造商现在想要知道如果他们向邮寄清单上的所有客户寄出商品目录，能获得多少收入。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473452983346" name="213721" id="a1473452983346">
+        <label for="a1473452983346"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473452983730" name="213721" id="a1473452983730">
+        <label for="a1473452983730"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473452984115" name="213721" id="a1473452984115">
+        <label for="a1473452984115"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473452984491" name="213721" id="a1473452984491">
+        <label for="a1473452984491"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473452984907" name="213721" id="a1473452984907">
+        <label for="a1473452984907"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453010465" name="213721" id="a1473453010465">
+        <label for="a1473453010465"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    连续型
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q3</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>某宠物店已有 13 家店铺，现在想要开第 14 家店铺。为了确定最佳店铺地址，它想要预测每个潜在地址的销售额。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453085738" name="213722" id="a1473453085738">
+        <label for="a1473453085738"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453086234" name="213722" id="a1473453086234">
+        <label for="a1473453086234"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453086626" name="213722" id="a1473453086626">
+        <label for="a1473453086626"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453087386" name="213722" id="a1473453087386">
+        <label for="a1473453087386"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453087850" name="213722" id="a1473453087850">
+        <label for="a1473453087850"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453088570" name="213722" id="a1473453088570">
+        <label for="a1473453088570"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    连续型
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q5</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>一家小银行突然涌入了一批新用户申请贷款。它想通过预测每个贷款申请人是否可能拖欠贷款，来确定哪些贷款申请人值得信任。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453147305" name="213723" id="a1473453147305">
+        <label for="a1473453147305"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453147651" name="213723" id="a1473453147651">
+        <label for="a1473453147651"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453148833" name="213723" id="a1473453148833">
+        <label for="a1473453148833"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453149369" name="213723" id="a1473453149369">
+        <label for="a1473453149369"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453149817" name="213723" id="a1473453149817">
+        <label for="a1473453149817"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453151297" name="213723" id="a1473453151297">
+        <label for="a1473453151297"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    二元
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q6</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>某高端咖啡连锁店想知道，关于他们最新推出的美食三明治，电视广告是否能带来良好的投资回报。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453232401" name="213724" id="a1473453232401">
+        <label for="a1473453232401"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453232825" name="213724" id="a1473453232825">
+        <label for="a1473453232825"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453233169" name="213724" id="a1473453233169">
+        <label for="a1473453233169"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453233585" name="213724" id="a1473453233585">
+        <label for="a1473453233585"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453233945" name="213724" id="a1473453233945">
+        <label for="a1473453233945"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453234344" name="213724" id="a1473453234344">
+        <label for="a1473453234344"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    A/B 测试
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>非预测性</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>某餐饮连锁店想知道去年每家店铺的销售额。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473454722789" name="213725" id="a1473454722789">
+        <label for="a1473454722789"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454723230" name="213725" id="a1473454723230">
+        <label for="a1473454723230"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454724252" name="213725" id="a1473454724252">
+        <label for="a1473454724252"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454724628" name="213725" id="a1473454724628">
+        <label for="a1473454724628"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454725053" name="213725" id="a1473454725053">
+        <label for="a1473454725053"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454725532" name="213725" id="a1473454725532">
+        <label for="a1473454725532"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    非预测性
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q7</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>某家生产销售电子游戏的公司想预告每月销售数据，以平衡供需关系，帮助决策，从而构建有竞争力的基础架构并更好地衡量公司业绩。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453311419" name="213726" id="a1473453311419">
+        <label for="a1473453311419"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453311882" name="213726" id="a1473453311882">
+        <label for="a1473453311882"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453312217" name="213726" id="a1473453312217">
+        <label for="a1473453312217"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453312833" name="213726" id="a1473453312833">
+        <label for="a1473453312833"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453313266" name="213726" id="a1473453313266">
+        <label for="a1473453313266"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453314185" name="213726" id="a1473453314185">
+        <label for="a1473453314185"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    基于时间型
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q8</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>你的一个朋友正在挑选钻石，因为他马上就要订婚了。他有一个有关钻石的大型数据集，想通过钻石的物理属性来预测价格。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453386256" name="213727" id="a1473453386256">
+        <label for="a1473453386256"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453387193" name="213727" id="a1473453387193">
+        <label for="a1473453387193"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453387632" name="213727" id="a1473453387632">
+        <label for="a1473453387632"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453388064" name="213727" id="a1473453388064">
+        <label for="a1473453388064"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453389192" name="213727" id="a1473453389192">
+        <label for="a1473453389192"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453389600" name="213727" id="a1473453389600">
+        <label for="a1473453389600"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    连续型
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q9</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>某大学担心辍学问题。他们想预测每个学生是否可能辍学，从而提前进行干预以帮助他们顺利完成学业。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473453527506" name="213728" id="a1473453527506">
+        <label for="a1473453527506"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453527903" name="213728" id="a1473453527903">
+        <label for="a1473453527903"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453528199" name="213728" id="a1473453528199">
+        <label for="a1473453528199"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453528751" name="213728" id="a1473453528751">
+        <label for="a1473453528751"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453529072" name="213728" id="a1473453529072">
+        <label for="a1473453529072"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473453530055" name="213728" id="a1473453530055">
+        <label for="a1473453530055"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    二元
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q11</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>某大型超市连锁店想知道，将网站上的链接换成图片是否能增加移动 app 的下载量。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473454004407" name="213729" id="a1473454004407">
+        <label for="a1473454004407"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454004847" name="213729" id="a1473454004847">
+        <label for="a1473454004847"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454005230" name="213729" id="a1473454005230">
+        <label for="a1473454005230"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454005511" name="213729" id="a1473454005511">
+        <label for="a1473454005511"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454006055" name="213729" id="a1473454006055">
+        <label for="a1473454006055"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454006457" name="213729" id="a1473454006457">
+        <label for="a1473454006457"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    A/B 测试
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Q12</p></h3>
+  <div>
+  <form>
+    <fieldset>
+      <legend><p>某高山度假村想预测明年的每月房间预定数量以帮助他们决定是否进行扩张。</p></legend>
+    </fieldset>
+
+      <div>
+        <input type="radio" value="a1473454070754" name="213730" id="a1473454070754">
+        <label for="a1473454070754"><p>连续型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454071071" name="213730" id="a1473454071071">
+        <label for="a1473454071071"><p>基于时间型</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454071591" name="213730" id="a1473454071591">
+        <label for="a1473454071591"><p>二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454071991" name="213730" id="a1473454071991">
+        <label for="a1473454071991"><p>非二元</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454072382" name="213730" id="a1473454072382">
+        <label for="a1473454072382"><p>A/B 测试</p></label>
+      </div>
+      <div>
+        <input type="radio" value="a1473454072734" name="213730" id="a1473454072734">
+        <label for="a1473454072734"><p>非预测性</p></label>
+      </div>
+  </form>
+
+  <details>
+    <summary><strong>SOLUTION:</strong></summary>
+    基于时间型
+  </details>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>恭喜</p></h3>
+  <div>
+  <p>做得好！你已经迈出了重要的第一步，可以能够为上述问题提供有用的结果和建议了。</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="13. 课程总结.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://us-udacity.github.io/" target="_blank">【udacity2.0 】If you need more courses, please add wechat：udacity6</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('12. 模型选择评估')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
